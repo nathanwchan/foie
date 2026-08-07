@@ -3,10 +3,21 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import FilterBar from "../components/FilterBar.astro";
 import ResourceCard from "../components/ResourceCard.astro";
 import { getResources } from "../lib/content";
+import { execFileSync } from "node:child_process";
 
 const resources = await getResources();
 const feed = resources;
-const initialTopic = Astro.url.searchParams.get("topic") ?? "";
+let updatedAt = new Date();
+try {
+  const commitDate = execFileSync("git", ["log", "-1", "--format=%cI"], { encoding: "utf8" }).trim();
+  if (commitDate) updatedAt = new Date(commitDate);
+} catch {
+  // Static hosts without Git metadata fall back to the build time.
+}
+const updatedAtIso = updatedAt.toISOString();
+const updatedDate = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/Los_Angeles" }).format(updatedAt);
+const updatedTime = new Intl.DateTimeFormat("en-US", { hour: "numeric", minute: "2-digit", hour12: true, timeZone: "America/Los_Angeles" }).format(updatedAt).replace(" ", "").toLowerCase();
+const updatedLabel = `${updatedDate} ${updatedTime}`;
 ---
 
 <BaseLayout>
@@ -22,27 +33,44 @@ const initialTopic = Astro.url.searchParams.get("topic") ?? "";
     <div class="feed-layout">
       <div class="feed-main">
         <div class="feed-heading">
-          <div><h2>Latest signals</h2></div>
+          <p class="chronology-label"><span aria-hidden="true">↓</span> Newest first</p>
+          <p class="last-updated" data-last-updated data-updated-at={updatedAtIso} data-updated-label={updatedLabel}>last updated {updatedLabel}</p>
         </div>
         <FilterBar resources={resources} />
         <div class="feed-list resource-grid" id="resource-results" data-pagefind-body>
           {feed.map((resource) => <ResourceCard resource={resource} />)}
         </div>
         <div id="empty-state" class="empty-state" hidden>
-          <h2>No signals match those filters.</h2>
-          <p>Try a broader topic or clear the current search.</p>
+          <h2>No resources match that search.</h2>
+          <p>Try another keyword or clear the search.</p>
         </div>
       </div>
     </div>
   </section>
 </BaseLayout>
 
-<script is:inline define:vars={{ initialTopic }}>
-  if (initialTopic) {
-    const topic = document.querySelector("#topic-filter");
-    if (topic) {
-      topic.value = initialTopic;
-      topic.dispatchEvent(new Event("change"));
-    }
+<script>
+  const updated = document.querySelector<HTMLElement>("[data-last-updated]");
+
+  function relativeAge(date: Date) {
+    const minutes = Math.max(0, Math.floor((Date.now() - date.getTime()) / 60_000));
+    if (minutes < 1) return "just now";
+    if (minutes === 1) return "1 minute ago";
+    if (minutes < 60) return `${minutes} minutes ago`;
+    const hours = Math.floor(minutes / 60);
+    if (hours === 1) return "1 hour ago";
+    if (hours < 24) return `${hours} hours ago`;
+    const days = Math.floor(hours / 24);
+    return days === 1 ? "1 day ago" : `${days} days ago`;
   }
+
+  function updateRelativeAge() {
+    const iso = updated?.dataset.updatedAt;
+    const label = updated?.dataset.updatedLabel;
+    if (!updated || !iso || !label) return;
+    updated.textContent = `last updated ${label} (${relativeAge(new Date(iso))})`;
+  }
+
+  updateRelativeAge();
+  window.setInterval(updateRelativeAge, 60_000);
 </script>

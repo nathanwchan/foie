@@ -1,47 +1,28 @@
 ---
 import type { ResourceEntry } from "../lib/content";
-import { formatLabels, topicLabels } from "../lib/taxonomy";
 
 interface Props { resources: ResourceEntry[] }
 const { resources } = Astro.props;
-const formats = [...new Set(resources.map((item) => item.data.format))].sort();
-const publishers = [...new Set(resources.map((item) => item.data.publisher))].sort();
-const years = [...new Set(resources.map((item) => (item.data.publishedAt ?? item.data.discoveredAt).getUTCFullYear()))].sort((a, b) => b - a);
-const topics = [...new Set(resources.flatMap((item) => item.data.topics))].sort();
+const keywords = ["Agents", "Xcode", "Testing", "SwiftUI"];
 ---
 
-<section class="filter-panel" aria-label="Filter resources">
-  <div class="search-field">
-    <label for="resource-search">Search the signal</label>
+<section class="filter-panel" aria-label="Search resources">
+  <p class="filter-label">Search the collection</p>
+  <div class="filter-row">
     <div class="search-input-wrap">
       <span aria-hidden="true">⌕</span>
-      <input id="resource-search" type="search" placeholder="Agents, Xcode, evaluation…" autocomplete="off" />
-      <kbd>⌘ K</kbd>
+      <input id="resource-search" type="search" placeholder="Search resources" autocomplete="off" aria-label="Search resources" />
+    </div>
+    <div class="keyword-chips" aria-label="Common searches">
+      {keywords.map((keyword) => <button class="keyword-chip" type="button" data-keyword={keyword} aria-pressed="false">{keyword}</button>)}
     </div>
   </div>
-  <div class="filter-grid">
-    <label>Topic
-      <select id="topic-filter"><option value="">All topics</option>{topics.map((topic) => <option value={topic}>{topicLabels[topic]}</option>)}</select>
-    </label>
-    <label>Format
-      <select id="format-filter"><option value="">All formats</option>{formats.map((format) => <option value={format}>{formatLabels[format]}</option>)}</select>
-    </label>
-    <label>Publisher
-      <select id="publisher-filter"><option value="">All publishers</option>{publishers.map((publisher) => <option value={publisher}>{publisher}</option>)}</select>
-    </label>
-    <label>Year
-      <select id="year-filter"><option value="">All years</option>{years.map((year) => <option value={year}>{year}</option>)}</select>
-    </label>
-  </div>
-  <div class="filter-status" aria-live="polite">
-    <p><strong id="result-count">{resources.length}</strong> resources, newest first</p>
-    <button id="clear-filters" class="text-button" type="button">Clear filters</button>
-  </div>
+  <p class="filter-status" aria-live="polite"><strong id="result-count">{resources.length}</strong> resources</p>
 </section>
 
 <script>
   const search = document.querySelector<HTMLInputElement>("#resource-search");
-  const controls = ["topic", "format", "publisher", "year"].map((key) => document.querySelector<HTMLSelectElement>(`#${key}-filter`));
+  const chips = [...document.querySelectorAll<HTMLButtonElement>("[data-keyword]")];
   const cards = [...document.querySelectorAll<HTMLElement>("[data-resource-card]")];
   const count = document.querySelector<HTMLElement>("#result-count");
   const empty = document.querySelector<HTMLElement>("#empty-state");
@@ -71,31 +52,24 @@ const topics = [...new Set(resources.flatMap((item) => item.data.topics))].sort(
 
   function applyFilters() {
     const query = search?.value.trim().toLowerCase() ?? "";
-    const values = Object.fromEntries(controls.map((control) => [control?.id.replace("-filter", ""), control?.value ?? ""]));
     let visible = 0;
     cards.forEach((card) => {
       const textMatch = !query || pagefindMatches?.has(card.dataset.slug ?? "") || (!pagefindMatches && card.dataset.search?.includes(query));
-      const matches = textMatch
-        && (!values.topic || card.dataset.topics?.split(" ").includes(values.topic))
-        && (!values.format || card.dataset.format === values.format)
-        && (!values.publisher || card.dataset.publisher === values.publisher)
-        && (!values.year || card.dataset.year === values.year);
-      card.hidden = !matches;
-      if (matches) visible += 1;
+      card.hidden = !textMatch;
+      if (textMatch) visible += 1;
     });
     if (count) count.textContent = String(visible);
     if (empty) empty.hidden = visible !== 0;
+    chips.forEach((chip) => chip.setAttribute("aria-pressed", String(chip.dataset.keyword?.toLowerCase() === query)));
   }
 
   search?.addEventListener("input", () => queryPagefind(search.value.trim()));
-  controls.forEach((control) => control?.addEventListener("change", applyFilters));
-  document.querySelector("#clear-filters")?.addEventListener("click", () => {
-    if (search) search.value = "";
-    controls.forEach((control) => { if (control) control.value = ""; });
-    pagefindMatches = null;
-    applyFilters();
-    search?.focus();
-  });
+  chips.forEach((chip) => chip.addEventListener("click", () => {
+    if (!search) return;
+    const keyword = chip.dataset.keyword ?? "";
+    search.value = search.value.trim().toLowerCase() === keyword.toLowerCase() ? "" : keyword;
+    queryPagefind(search.value);
+  }));
   document.addEventListener("keydown", (event) => {
     if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
       event.preventDefault();
