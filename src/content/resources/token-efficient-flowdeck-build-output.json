@@ -1,0 +1,26 @@
+{
+  "id": "token-efficient-flowdeck-build-output",
+  "slug": "token-efficient-flowdeck-build-output",
+  "canonicalUrl": "https://x.com/afterxleep/status/2085403759933333793",
+  "media": {
+    "type": "x",
+    "postId": "2085403759933333793",
+    "videoUrl": "https://video.twimg.com/ext_tw_video/2085403742631854080/pu/vid/avc1/800x632/6NDnGFK-Y3rSlwre.mp4?tag=12",
+    "posterUrl": "https://pbs.twimg.com/ext_tw_video_thumb/2085403742631854080/pu/img/OM82V5PcIxIQiMh2.jpg",
+    "title": "FlowDeck presents compact build diagnostics to a coding agent"
+  },
+  "title": "Cut Build Feedback From 2.2 Million Tokens to 121",
+  "publisher": "Daniel Bernal",
+  "publisherUrl": "https://x.com/afterxleep",
+  "authors": [{ "name": "Daniel Bernal", "url": "https://x.com/afterxleep" }],
+  "publishedAt": "2026-08-06",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "social",
+  "topics": ["xcode-tooling", "agent-workflows", "testing-evaluation"],
+  "summary": "Daniel Bernal reports that the same clean build produced 2.2 million tokens through xcodebuild and 121 through FlowDeck, illustrating how raw logs can bury the error an agent needs. An iOS team can benchmark its build-output adapter and retain actionable diagnostics with enough context to debug.",
+  "takeaway": "Measure the token cost of a representative failing build, then replace raw xcodebuild output with structured diagnostics that preserve the first actionable error.",
+  "availability": "available",
+  "userIds": ["daniel-bernal"],
+  "relatedResourceIds": ["six-months-building-ios-without-xcode", "flowdeck-agent-build-run-ios", "token-efficient-xcode-simulator-automation"]
+}

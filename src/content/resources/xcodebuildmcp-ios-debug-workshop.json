@@ -1,0 +1,24 @@
+{
+  "id": "xcodebuildmcp-ios-debug-workshop",
+  "slug": "xcodebuildmcp-ios-debug-workshop",
+  "canonicalUrl": "https://www.youtube.com/watch?v=cmPLV9S7eaU",
+  "media": {
+    "type": "youtube",
+    "videoId": "cmPLV9S7eaU",
+    "title": "Getting Started with XcodeBuildMCP: Let AI Agents Debug Your iOS Apps"
+  },
+  "title": "Getting Started With XcodeBuildMCP",
+  "publisher": "Sentry",
+  "publisherUrl": "https://sentry.io/",
+  "authors": [{ "name": "Cameron Cooke", "url": "https://www.async-let.com/" }],
+  "publishedAt": "2026-05-13",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "video",
+  "topics": ["xcode-tooling", "agent-workflows", "testing-evaluation", "visual-validation"],
+  "summary": "Cameron Cooke demonstrates how an AI agent can use XcodeBuildMCP to build, launch, inspect, interact with, debug, and verify native iOS and macOS apps from its coding environment. An iOS team can reproduce the workshop against a small app and require Simulator evidence instead of stopping at compilation.",
+  "takeaway": "Give the agent one complete native feedback loop—build, launch, interact, inspect, and verify—and require observable Simulator evidence before accepting its work.",
+  "availability": "available",
+  "userIds": ["cameron-cooke"],
+  "relatedResourceIds": ["xcode-mcp-field-notes", "sim-use-mobile-verification-loop", "mobile-agent-device-proof"]
+}

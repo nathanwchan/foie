@@ -1,0 +1,24 @@
+{
+  "id": "six-months-building-ios-without-xcode",
+  "slug": "six-months-building-ios-without-xcode",
+  "canonicalUrl": "https://x.com/afterxleep/status/2024072154082386081",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HBby5dpWUAALyTo.jpg",
+    "alt": "FlowDeck terminal interface used to build and run an iOS app"
+  },
+  "title": "Six Months Building iOS Without Opening Xcode",
+  "publisher": "Daniel Bernal",
+  "publisherUrl": "https://x.com/afterxleep",
+  "authors": [{ "name": "Daniel Bernal", "url": "https://x.com/afterxleep" }],
+  "publishedAt": "2026-02-18",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "social",
+  "topics": ["agent-workflows", "xcode-tooling", "testing-evaluation", "visual-validation"],
+  "summary": "Daniel Bernal reports using Codex with FlowDeck for six months: the agent writes code, catches build errors, launches the app, inspects the Simulator UI, and fixes its work while Xcode remains installed but unopened. An iOS team can turn that loop into explicit build, run, inspect, and correction gates.",
+  "takeaway": "Standardize the agent’s build, run, and Simulator-inspection commands, then require it to observe and correct the running app before handing work to a person.",
+  "availability": "available",
+  "userIds": ["daniel-bernal"],
+  "relatedResourceIds": ["flowdeck-agent-build-run-ios", "sim-use-mobile-verification-loop", "agentic-ios-delivery-pipeline"]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "codex-mastodon-ios-tuist-migration",
+  "slug": "codex-mastodon-ios-tuist-migration",
+  "canonicalUrl": "https://tuist.dev/blog/2026/02/02/migrating-mastodon-ios-to-tuist-with-codex",
+  "media": {
+    "type": "image",
+    "url": "https://tuist.dev/marketing/images/blog/2026/02/02/migrating-mastodon-ios-to-tuist-with-codex/og.jpg",
+    "alt": "Codex cut Mastodon iOS clean builds 80% article cover"
+  },
+  "title": "Codex Cut Mastodon iOS Clean Builds 80%",
+  "publisher": "Tuist",
+  "publisherUrl": "https://tuist.dev/",
+  "authors": [{ "name": "Pedro Piñera", "url": "https://github.com/pepicrft" }],
+  "publishedAt": "2026-02-02",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": ["agent-workflows", "xcode-tooling", "agent-readable-architecture", "testing-evaluation"],
+  "summary": "Pedro Piñera documents giving Codex a production Mastodon iOS project to migrate to Tuist, where it repaired target boundaries and a runtime Objective-C linking failure before verifying the app in Simulator. An iOS team can baseline the original, require build-and-launch parity, and benchmark caching only after runtime validation; Tuist reports clean builds falling from 110.8 to 22.3 seconds in this case.",
+  "takeaway": "For agent-led project migrations, preserve a working baseline and gate completion on launch behavior—not compilation—before measuring build-performance gains.",
+  "availability": "available",
+  "relatedResourceIds": ["agent-driven-ios-tech-debt-migration", "coding-agents-production-ios", "agentic-ios-delivery-pipeline"]
+}

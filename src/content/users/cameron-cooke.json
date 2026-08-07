@@ -1,0 +1,16 @@
+{
+  "id": "cameron-cooke",
+  "name": "Cameron Cooke",
+  "addedAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "avatar": {
+    "url": "https://avatars.githubusercontent.com/u/630601?v=4",
+    "sourceProfileUrl": "https://github.com/cameroncooke"
+  },
+  "profiles": [
+    { "platform": "website", "handle": "async-let.com", "url": "https://www.async-let.com/" },
+    { "platform": "x", "handle": "@camsoft2000", "url": "https://x.com/camsoft2000" },
+    { "platform": "github", "handle": "@cameroncooke", "url": "https://github.com/cameroncooke" },
+    { "platform": "linkedin", "handle": "/in/cameroncooke1", "url": "https://www.linkedin.com/in/cameroncooke1/" }
+  ]
+}

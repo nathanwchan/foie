@@ -2,6 +2,10 @@
   "version": 1,
   "updatedAt": "2026-08-07",
   "entries": [
+    { "canonicalUrl": "https://x.com/afterxleep/status/2085403759933333793", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "token-efficient-flowdeck-build-output" },
+    { "canonicalUrl": "https://www.youtube.com/watch?v=cmPLV9S7eaU", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "xcodebuildmcp-ios-debug-workshop" },
+    { "canonicalUrl": "https://x.com/afterxleep/status/2024072154082386081", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "six-months-building-ios-without-xcode" },
+    { "canonicalUrl": "https://tuist.dev/blog/2026/02/02/migrating-mastodon-ios-to-tuist-with-codex", "aliases": ["https://x.com/pepicrft/status/2019079104029442206"], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "codex-mastodon-ios-tuist-migration" },
     { "canonicalUrl": "https://stacktracepodcast.fm/episodes/209", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "stacktrace-209-ai-open-source-testing" },
     { "canonicalUrl": "https://simonbs.dev/posts/put-your-coding-agents-in-your-pocket", "aliases": ["https://simonbs.dev/posts/put-your-coding-agents-in-your-pocket/"], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "coding-agents-in-your-pocket" },
     { "canonicalUrl": "https://x.com/rudrank/status/2035891494079594683", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "local-xcode-testflight-release-loop" },

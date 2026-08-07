@@ -1,0 +1,16 @@
+{
+  "id": "daniel-bernal",
+  "name": "Daniel Bernal",
+  "addedAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "avatar": {
+    "url": "https://avatars.githubusercontent.com/u/1156669?v=4",
+    "sourceProfileUrl": "https://github.com/afterxleep"
+  },
+  "profiles": [
+    { "platform": "website", "handle": "danielbernal.co", "url": "https://danielbernal.co/" },
+    { "platform": "x", "handle": "@afterxleep", "url": "https://x.com/afterxleep" },
+    { "platform": "github", "handle": "@afterxleep", "url": "https://github.com/afterxleep" },
+    { "platform": "linkedin", "handle": "/in/danielbernalm", "url": "https://www.linkedin.com/in/danielbernalm/" }
+  ]
+}
