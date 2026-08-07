@@ -17,7 +17,7 @@
   "lastVerifiedAt": "2026-08-06",
   "format": "article",
   "topics": ["sdlc-automation", "testing-evaluation", "agent-readable-architecture", "human-in-the-loop"],
-  "summary": "DoorDash’s iOS platform team encoded a repeatable XCTest-to-Swift-Testing migration in Cursor rules, connected build and test commands through SweetPad and MCP, and kept module ownership with individual teams. Reliability gates, including repeated clean runs, turned a broad migration into bounded work that agents could verify.",
+  "summary": "Matheus Gois describes how DoorDash’s iOS platform team encoded a repeatable XCTest-to-Swift-Testing migration in Cursor rules, connected build and test commands through SweetPad and MCP, and kept module ownership with individual teams. Reliability gates, including repeated clean runs, turned a broad migration into bounded work that agents could verify.",
   "takeaway": "Pilot one module with a repo rule that maps XCTest APIs to Swift Testing, includes the exact build/test commands, and requires three clean runs. Let the module owner review behavior before rolling it out.",
   "availability": "available",
   "relatedResourceIds": ["building-ios-apps-with-agents", "swe-bench-mobile"]

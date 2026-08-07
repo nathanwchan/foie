@@ -117,11 +117,11 @@ main { min-height: calc(100vh - 210px); }
 .resource-card h3 { margin: 13px 0 9px; font-size: clamp(21px, 2.2vw, 29px); line-height: 1.08; letter-spacing: -0.038em; transition: color 160ms ease; }
 .resource-card:hover h3 { color: var(--blue); }
 .card-summary { margin: 0; color: var(--muted); font-size: 14px; }
+.summary-author { color: var(--blue); font-weight: 680; }
+.summary-author:hover { text-decoration: underline; text-underline-offset: 2px; }
 .card-takeaway { margin-top: 16px; padding: 15px 17px; border: 1px solid color-mix(in srgb, var(--blue) 18%, var(--line)); border-radius: 15px; background: var(--blue-soft); }
 .card-takeaway strong { display: block; margin-bottom: 5px; color: var(--blue); font-size: 10px; font-weight: 760; letter-spacing: .07em; text-transform: uppercase; }
 .card-takeaway p { margin: 0; color: var(--text); font-size: 13px; line-height: 1.45; }
-.card-byline { margin: 14px 0 0; color: var(--muted); font-size: 12px; }
-.card-byline a { color: var(--blue); font-weight: 680; }
 .alternate-sources { margin: 14px 0 0; color: var(--muted); font-size: 11px; }
 .alternate-sources a { color: var(--blue); font-weight: 680; }
 .card-media { min-width: 0; margin-top: 34px; }

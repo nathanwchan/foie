@@ -48,6 +48,15 @@ const resources = defineCollection({
     takeaway: z.string().min(45).max(280),
     availability: z.enum(availabilityStatuses).default("available"),
     relatedResourceIds: z.array(z.string()).default([])
+  }).superRefine((resource, context) => {
+    const primaryAuthor = resource.authors[0]?.name;
+    if (primaryAuthor && !resource.summary.startsWith(primaryAuthor)) {
+      context.addIssue({
+        code: "custom",
+        path: ["summary"],
+        message: "Summary must begin with the primary author's exact name"
+      });
+    }
   })
 });
 

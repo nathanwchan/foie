@@ -17,7 +17,7 @@
   "lastVerifiedAt": "2026-08-06",
   "format": "social",
   "topics": ["visual-validation", "testing-evaluation", "xcode-tooling", "agent-workflows"],
-  "summary": "Loupe is a Swift command-line tool that exposes native view properties, accessibility structure, application state, traces, logs, hit testing, screenshots, and runtime probes to coding agents. Its author positions that app-side evidence as a complement to simulator-control tools, which can show a screen without explaining its runtime structure.",
+  "summary": "New_Leader_3644 introduces Loupe, a Swift command-line tool that exposes native view properties, accessibility structure, application state, traces, logs, hit testing, screenshots, and runtime probes to coding agents. The author positions that app-side evidence as a complement to simulator-control tools, which can show a screen without explaining its runtime structure.",
   "takeaway": "When a screenshot is ambiguous, capture the accessibility tree, native component properties, hit-test result, logs, and app state together. Ask the agent to cite that evidence in its diagnosis.",
   "availability": "available",
   "relatedResourceIds": ["sim-use-mobile-verification-loop", "sunday-swift-agent-verification"]

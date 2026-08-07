@@ -13,6 +13,9 @@ const { resource } = Astro.props;
 const { data } = resource;
 const sortDate = data.publishedAt ?? data.discoveredAt;
 const year = sortDate.getUTCFullYear().toString();
+const primaryAuthor = data.authors[0];
+const authorUrl = primaryAuthor.url ?? data.canonicalUrl;
+const summaryAfterAuthor = data.summary.slice(primaryAuthor.name.length);
 ---
 
 <article
@@ -34,12 +37,11 @@ const year = sortDate.getUTCFullYear().toString();
         <time datetime={sortDate.toISOString()}>{displayDate(sortDate)}</time>
       </div>
       <h3><a href={data.canonicalUrl} target="_blank" rel="noreferrer">{data.title} <span aria-hidden="true">↗</span></a></h3>
-      <p class="card-summary">{data.summary}</p>
+      <p class="card-summary"><a class="summary-author" href={authorUrl} target="_blank" rel="noreferrer">{primaryAuthor.name}</a>{summaryAfterAuthor}</p>
       <div class="card-takeaway">
         <strong>Practical takeaway</strong>
         <p>{data.takeaway}</p>
       </div>
-      <p class="card-byline">By <a href={data.publisherUrl ?? data.canonicalUrl} target="_blank" rel="noreferrer">{data.publisher}</a></p>
       {data.alternateUrls.length > 0 && (
         <p class="alternate-sources">Alternate versions: {data.alternateUrls.map((url, index) => (
           <><a href={url} target="_blank" rel="noreferrer">{hostName(url)} ↗</a>{index < data.alternateUrls.length - 1 ? ", " : ""}</>

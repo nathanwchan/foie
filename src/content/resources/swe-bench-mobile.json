@@ -17,7 +17,7 @@
   "lastVerifiedAt": "2026-08-06",
   "format": "paper",
   "topics": ["testing-evaluation", "agent-workflows", "human-in-the-loop"],
-  "summary": "SWE-Bench Mobile evaluates 22 agent-model configurations on realistic tasks drawn from a production mixed Swift and Objective-C codebase, including multimodal requirements and comprehensive tests. The best configuration solved only 12 percent of tasks, and the same model varied by as much as sixfold across agent harnesses.",
+  "summary": "Muxin Tian and collaborators evaluate 22 agent-model configurations in SWE-Bench Mobile using realistic tasks drawn from a production mixed Swift and Objective-C codebase, including multimodal requirements and comprehensive tests. The best configuration solved only 12 percent of tasks, and the same model varied by as much as sixfold across agent harnesses.",
   "takeaway": "Turn 20–50 closed iOS issues into a private benchmark with tests and manual acceptance checks. Replay it whenever the model or agent harness changes, and compare solved-task and regression rates.",
   "availability": "available",
   "relatedResourceIds": ["building-ios-apps-with-agents", "doordash-swift-testing-migration"]

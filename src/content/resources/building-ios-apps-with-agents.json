@@ -17,7 +17,7 @@
   "lastVerifiedAt": "2026-08-06",
   "format": "video",
   "topics": ["agent-workflows", "visual-validation", "testing-evaluation", "xcode-tooling", "human-in-the-loop"],
-  "summary": "Meta iOS engineer Vivian Qu explains why mobile agents struggle with proprietary toolchains, fragmented device targets, incomplete platform context, and slow verification. Her central prescription is a scoped plan plus a build-run-inspect loop that gives the agent simulator, interaction, screenshot, and test evidence.",
+  "summary": "Vivian Qu, a Meta iOS engineer, explains why mobile agents struggle with proprietary toolchains, fragmented device targets, incomplete platform context, and slow verification. Her central prescription is a scoped plan plus a build-run-inspect loop that gives the agent simulator, interaction, screenshot, and test evidence.",
   "takeaway": "Start with one simulator device and OS pair. Give the agent commands to build, launch, interact, capture screenshots, and rerun tests; require that evidence in every PR before expanding the device matrix.",
   "availability": "available",
   "relatedResourceIds": ["doordash-swift-testing-migration", "swe-bench-mobile"]

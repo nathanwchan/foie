@@ -20,7 +20,7 @@ Every resource requires a `media` object:
 
 Never generate placeholder art. Prefer entry-specific media over generic publisher branding, and add any equivalent public recording page to `alternateUrls`.
 
-Summaries must be 120–640 characters. Takeaways must be 45–280 characters. Write original prose grounded only in the inspected source.
+Summaries must be 120–640 characters and begin with the exact name in `authors[0].name`. The card links that opening name to the author's profile URL, falling back to the canonical source when no profile is available. Takeaways must be 45–280 characters. Write original prose grounded only in the inspected source.
 
 ## Discovery ledger
 

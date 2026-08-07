@@ -61,6 +61,8 @@ export async function validateContent(rootDirectory) {
     if ((data.takeaway?.length ?? 0) < 45 || data.takeaway.length > 280) errors.push(`${label}: takeaway must be 45–280 characters`);
     if (!isDate(data.discoveredAt) || !isDate(data.lastVerifiedAt) || (data.publishedAt !== null && !isDate(data.publishedAt))) errors.push(`${label}: invalid date`);
     if (!Array.isArray(data.authors) || data.authors.length === 0 || data.authors.some((author) => !author.name)) errors.push(`${label}: at least one named author is required`);
+    const primaryAuthor = data.authors?.[0]?.name;
+    if (primaryAuthor && !data.summary.startsWith(primaryAuthor)) errors.push(`${label}: summary must begin with primary author ${primaryAuthor}`);
     for (const value of [data.canonicalUrl, ...(data.alternateUrls ?? [])]) {
       try {
         const normalized = canonicalizeUrl(value);

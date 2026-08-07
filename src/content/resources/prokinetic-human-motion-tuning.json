@@ -18,7 +18,7 @@
   "lastVerifiedAt": "2026-08-06",
   "format": "social",
   "topics": ["visual-validation", "human-in-the-loop", "agent-workflows"],
-  "summary": "Mumo describes a workflow where Claude Code or Codex generates native motion, ProKinetic renders it, and tunable values appear as live controls. A human adjusts timing and feel at native refresh rates, then exports the chosen parameters back to the agent and source files.",
+  "summary": "Mumo iOS Designer describes a workflow where Claude Code or Codex generates native motion, ProKinetic renders it, and tunable values appear as live controls. A human adjusts timing and feel at native refresh rates, then exports the chosen parameters back to the agent and source files.",
   "takeaway": "Expose spring, duration, delay, and damping values as live controls. Let the agent create the animation structure, but require a human to tune and approve the final motion on-device.",
   "availability": "available",
   "relatedResourceIds": ["propmotion-swiftui-agent-skill", "death-of-good-enough-ios-motion"]
