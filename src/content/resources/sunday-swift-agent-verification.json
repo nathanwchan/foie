@@ -19,5 +19,5 @@
   "summary": "Hesham Salman documents a five-step verification skill: a human confirms success criteria, the agent builds and launches, inspects screenshots and the accessibility hierarchy, checks logs and accessibility, then produces a structured report with video evidence. He explicitly limits it to observable screen state rather than claiming it replaces unit or end-to-end tests.",
   "takeaway": "Before the agent builds, have it propose observable acceptance criteria for human approval. Require a report that maps every criterion to a screenshot, hierarchy evidence, logs, and a clear pass or fail.",
   "availability": "available",
-  "relatedResourceIds": ["building-ios-apps-with-agents", "loupe-runtime-ui-inspection", "xcode-agent-swiftui-preview-audit"]
+  "relatedResourceIds": ["building-ios-apps-with-agents", "coding-agents-production-ios", "loupe-runtime-ui-inspection", "xcode-agent-swiftui-preview-audit"]
 }

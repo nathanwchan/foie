@@ -1,0 +1,23 @@
+{
+  "id": "coding-agents-production-ios",
+  "slug": "coding-agents-production-ios",
+  "canonicalUrl": "https://ignatovv.me/blog/coding-agents-for-production-ios/",
+  "media": {
+    "type": "image",
+    "url": "https://ignatovv.me/blog/sprint-velocity.webp",
+    "alt": "Story points per month for Vova Ignatov's production iOS work from January 2025 through January 2026"
+  },
+  "title": "Coding agents for production iOS: a senior engineer's setup for 2x the output",
+  "publisher": "Vova Ignatov",
+  "publisherUrl": "https://ignatovv.me/",
+  "authors": [{ "name": "Vova Ignatov", "url": "https://ignatovv.me/" }],
+  "publishedAt": "2026-02-15",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "article",
+  "topics": ["agent-workflows", "agent-readable-architecture", "code-review", "visual-validation", "sdlc-automation", "human-in-the-loop"],
+  "summary": "Vova Ignatov reports that eight months of daily agent use on Anytype's production iOS app more than doubled his tracked output, attributing the change to reviewed, codebase-specific skills, detailed task context, isolated worktrees, and simulator evidence rather than exotic tooling. Experienced iOS teams can start with one recurring task, document each agent mistake in a focused skill, and require code review plus simulator proof before expanding autonomy.",
+  "takeaway": "Pick one recurring iOS task and run a correction loop: brief it with existing patterns, review every line, verify in the simulator, and turn each new failure mode into a reviewed skill.",
+  "availability": "available",
+  "relatedResourceIds": ["building-ios-apps-with-agents", "sunday-swift-agent-verification", "state-of-agentic-ios-engineering-2026"]
+}
