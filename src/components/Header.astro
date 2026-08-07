@@ -1,20 +1,8 @@
----
-const pathname = Astro.url.pathname;
-const links = [
-  { href: "/about/", label: "Method" }
-];
----
-
 <header class="site-header">
   <div class="header-inner shell">
     <a class="wordmark" href="/" aria-label="Future of iOS Engineering home">
       <span class="wordmark-mark" aria-hidden="true">F</span>
       <span class="wordmark-text">Future of iOS Engineering</span>
     </a>
-    <nav aria-label="Primary navigation">
-      {links.map((link) => (
-        <a href={link.href} aria-current={pathname.startsWith(link.href) ? "page" : undefined}>{link.label}</a>
-      ))}
-    </nav>
   </div>
 </header>
