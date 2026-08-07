@@ -2,6 +2,10 @@
 
 ## Resource files
 
+### Scheduled discovery eligibility
+
+Scheduled curation publishes editorial posts only: articles, conference talks or recordings, videos, podcast episodes, papers, and substantive social posts. Articles and recordings about tools are eligible, but direct repositories, GitHub projects or releases, package listings, app listings, tool or product pages, and direct tool documentation are not. Keep an ineligible artifact only as a private ledger alias when it helps deduplicate or verify an eligible editorial post. An explicit curator request naming an exact artifact may override this rule for a manual addition.
+
 Store resources in `src/content/resources/<id>.json`. The filename, `id`, and `slug` must match and use lowercase hyphen-case.
 
 Required values are enforced in `src/content.config.ts`. Use these enums:
