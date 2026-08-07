@@ -3,11 +3,18 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import CollectionHero from "../components/CollectionHero.astro";
 import FilterBar from "../components/FilterBar.astro";
 import ResourceCard from "../components/ResourceCard.astro";
-import { getResources } from "../lib/content";
+import { getResources, getUsers } from "../lib/content";
 import { execFileSync } from "node:child_process";
 
 const resources = await getResources();
-const feed = resources;
+const users = await getUsers();
+const usersById = new Map(users.map((user) => [user.data.id, user]));
+const feed = resources.map((resource) => ({
+  resource,
+  authorUserId: resource.data.userIds.find((userId) =>
+    usersById.get(userId)?.data.name === resource.data.authors[0].name
+  )
+}));
 let updatedAt = new Date();
 try {
   const commitDate = execFileSync("git", ["log", "-1", "--format=%cI"], { encoding: "utf8" }).trim();
@@ -33,7 +40,7 @@ const updatedLabel = `${updatedDate} ${updatedTime}`;
         </div>
         <FilterBar resources={resources} />
         <div class="feed-list resource-grid" id="resource-results" data-pagefind-body>
-          {feed.map((resource) => <ResourceCard resource={resource} />)}
+          {feed.map(({ resource, authorUserId }) => <ResourceCard resource={resource} authorUserId={authorUserId} />)}
         </div>
         <div id="empty-state" class="empty-state" hidden>
           <h2>No posts match that search.</h2>

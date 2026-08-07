@@ -7,14 +7,15 @@ import ResourceMedia from "./ResourceMedia.astro";
 
 interface Props {
   resource: ResourceEntry;
+  authorUserId?: string;
 }
 
-const { resource } = Astro.props;
+const { resource, authorUserId } = Astro.props;
 const { data } = resource;
 const sortDate = data.publishedAt ?? data.discoveredAt;
 const year = sortDate.getUTCFullYear().toString();
 const primaryAuthor = data.authors[0];
-const authorUrl = primaryAuthor.url ?? data.canonicalUrl;
+const authorUrl = authorUserId ? `/users#${authorUserId}` : primaryAuthor.url ?? data.canonicalUrl;
 const summaryAfterAuthor = data.summary.slice(primaryAuthor.name.length);
 ---
 
@@ -38,7 +39,7 @@ const summaryAfterAuthor = data.summary.slice(primaryAuthor.name.length);
         <time datetime={sortDate.toISOString()}>{displayDate(sortDate)}</time>
       </div>
       <h3><a href={data.canonicalUrl} target="_blank" rel="noreferrer">{data.title} <span aria-hidden="true">↗</span></a></h3>
-      <p class="card-summary"><a class="summary-author" href={authorUrl} target="_blank" rel="noreferrer">{primaryAuthor.name}</a>{summaryAfterAuthor}</p>
+      <p class="card-summary"><a class="summary-author" href={authorUrl} target={authorUserId ? undefined : "_blank"} rel={authorUserId ? undefined : "noreferrer"}>{primaryAuthor.name}</a>{summaryAfterAuthor}</p>
       <div class="card-takeaway">
         <strong>Practical takeaway</strong>
         <p>{data.takeaway}</p>
