@@ -1,0 +1,24 @@
+{
+  "id": "agent-driven-ios-tech-debt-migration",
+  "slug": "agent-driven-ios-tech-debt-migration",
+  "canonicalUrl": "https://hachyderm.io/@jpsim/116029519306818091",
+  "media": {
+    "type": "image",
+    "url": "https://media.hachyderm.io/accounts/avatars/109/526/552/375/178/309/original/6eb3d15cbe2fcc35.jpeg",
+    "alt": "JP Simard, author of an agent-driven iOS architecture migration"
+  },
+  "title": "An Agent-Driven iOS Tech-Debt Migration",
+  "publisher": "JP Simard",
+  "publisherUrl": "https://hachyderm.io/@jpsim",
+  "authors": [{ "name": "JP Simard", "url": "https://www.jpsim.com/" }],
+  "publishedAt": "2026-02-07",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "social",
+  "topics": ["agent-workflows", "agent-readable-architecture", "testing-evaluation", "human-in-the-loop"],
+  "summary": "JP Simard reports that Ramp built CI infrastructure to migrate roughly 80 instances of a legacy architectural pattern in its iOS app, completed the migration in two weeks, and then measured a threefold reduction in affected-user crash rate. An iOS team can use agents for a similarly bounded migration after defining the target pattern, automated checks, and outcome metrics.",
+  "takeaway": "Turn recurring legacy patterns into a bounded, measurable migration: enumerate every instance, automate verification in CI, merge incrementally, and compare production stability before and after.",
+  "availability": "available",
+  "userIds": ["jp-simard"],
+  "relatedResourceIds": ["mobile-development-age-ai", "jp-simard-escaping-ide", "doordash-swift-testing-migration"]
+}

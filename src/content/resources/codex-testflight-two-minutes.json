@@ -1,0 +1,24 @@
+{
+  "id": "codex-testflight-two-minutes",
+  "slug": "codex-testflight-two-minutes",
+  "canonicalUrl": "https://aiosdispatch.com/posts/aios-dispatch-15",
+  "media": {
+    "type": "image",
+    "url": "https://aiosdispatch.com/logo.png",
+    "alt": "AiOS Dispatch logo"
+  },
+  "title": "AiOS Dispatch 15: From Codex to TestFlight in Two Minutes",
+  "publisher": "AiOS Dispatch",
+  "publisherUrl": "https://aiosdispatch.com/",
+  "authors": [{ "name": "Rudrank Riyam", "url": "https://rudrank.com/" }],
+  "publishedAt": "2026-02-11",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": ["sdlc-automation", "agent-workflows", "agent-readable-architecture", "human-in-the-loop"],
+  "summary": "Rudrank Riyam documents Thomas Ricouard giving Codex access to an agent-readable App Store Connect CLI and reaching external TestFlight review in under two minutes, including compliance, group creation, metadata, and submission. An iOS team can reproduce the pattern by exposing explicit flags, structured output, clean exit codes, and a reviewable release workflow rather than bespoke chat integrations.",
+  "takeaway": "Make release automation self-describing for both humans and agents: expose explicit commands, machine-readable state, deterministic failures, and an auditable path from signed build to TestFlight review.",
+  "availability": "available",
+  "userIds": ["rudrank-riyam"],
+  "relatedResourceIds": ["local-xcode-testflight-release-loop", "agent-maintained-app-store-toolchain", "ios-subscriptions-asc-cli-revenuecat-mcp"]
+}

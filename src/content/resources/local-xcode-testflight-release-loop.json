@@ -1,0 +1,24 @@
+{
+  "id": "local-xcode-testflight-release-loop",
+  "slug": "local-xcode-testflight-release-loop",
+  "canonicalUrl": "https://x.com/rudrank/status/2035891494079594683",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HEDwNYfbUAAX16u.jpg",
+    "alt": "Cover image for Rudrank Riyam's local Xcode and TestFlight release workflow"
+  },
+  "title": "Replacing Xcode Cloud with ASC CLI for Faster, Local Builds",
+  "publisher": "Rudrank Riyam",
+  "publisherUrl": "https://x.com/rudrank",
+  "authors": [{ "name": "Rudrank Riyam", "url": "https://rudrank.com/" }],
+  "publishedAt": "2026-03-23",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "social",
+  "topics": ["sdlc-automation", "xcode-tooling", "agent-workflows", "agent-readable-architecture"],
+  "summary": "Rudrank Riyam contrasts Xcode Cloud’s unattended, push-triggered pipeline with a local release loop that resolves the next build number, archives and exports in Xcode, uploads the IPA, and distributes it through TestFlight. An iOS team can commit the workflow, validate and dry-run it, and pass structured outputs between steps so agents never need to scrape logs.",
+  "takeaway": "Keep cloud CI for unattended branch builds, but encode the local ship-now path as a validated, versioned workflow with structured outputs and an explicit TestFlight handoff.",
+  "availability": "available",
+  "userIds": ["rudrank-riyam"],
+  "relatedResourceIds": ["codex-testflight-two-minutes", "agent-maintained-app-store-toolchain", "ios-subscriptions-asc-cli-revenuecat-mcp"]
+}

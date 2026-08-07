@@ -2,6 +2,9 @@
   "version": 1,
   "updatedAt": "2026-08-07",
   "entries": [
+    { "canonicalUrl": "https://x.com/rudrank/status/2035891494079594683", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "local-xcode-testflight-release-loop" },
+    { "canonicalUrl": "https://aiosdispatch.com/posts/aios-dispatch-15", "aliases": ["https://www.aiosdispatch.com/posts/aios-dispatch-15"], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "codex-testflight-two-minutes" },
+    { "canonicalUrl": "https://hachyderm.io/@jpsim/116029519306818091", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "agent-driven-ios-tech-debt-migration" },
     { "canonicalUrl": "https://x.com/twostraws/status/2078039730759811369", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "adversarial-unit-test-sweep" },
     { "canonicalUrl": "https://rudrank.com/a-sols-work-shipping-with-gpt-5-6-sol", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "sols-work-shipping-gpt-5-6-sol" },
     { "canonicalUrl": "https://www.youtube.com/watch?v=hDFOy-ynJ6I", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "ai-generated-swift-instruments-performance" },
