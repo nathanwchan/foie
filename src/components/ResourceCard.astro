@@ -48,8 +48,10 @@ const year = sortDate.getUTCFullYear().toString();
         ))}</p>
       )}
     </div>
-    <div class="card-media">
-      <ResourceMedia resource={resource} />
-    </div>
+    {data.media && (
+      <div class="card-media">
+        <ResourceMedia resource={resource} />
+      </div>
+    )}
   </div>
 </article>
