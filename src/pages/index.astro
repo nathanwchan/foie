@@ -61,6 +61,7 @@ const updatedLabel = `${updatedDate} ${updatedTime}`;
 
   function initializeNewResourceBadges() {
     const cards = Array.from(document.querySelectorAll<HTMLElement>("[data-resource-card]"));
+    const feed = document.querySelector<HTMLElement>("#resource-results");
 
     try {
       const storedSlugs = window.localStorage.getItem(seenResourcesStorageKey);
@@ -72,6 +73,12 @@ const updatedLabel = `${updatedDate} ${updatedTime}`;
         card.querySelector<HTMLElement>("[data-new-badge]")?.removeAttribute("hidden");
         return true;
       });
+      const unseenCardSet = new Set(unseenCards);
+      const seenCards = cards.filter((card) => !unseenCardSet.has(card));
+
+      // The server-rendered order is already newest-first, so this stable partition
+      // preserves publication order inside both the unseen and seen groups.
+      feed?.append(...unseenCards, ...seenCards);
 
       const markSeen = (card: HTMLElement) => {
         const slug = card.dataset.slug;
