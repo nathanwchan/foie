@@ -67,11 +67,16 @@ if (data.format === "video" && data.media.type === "youtube") {
 }
 ---
 
-<span class={`format-icon format-${data.format} platform-${platform}`} aria-hidden="true">
+<span
+  class={`format-icon format-${data.format} platform-${platform}`}
+  aria-hidden={platform === "x" ? undefined : "true"}
+  aria-label={platform === "x" ? label : undefined}
+  role={platform === "x" ? "img" : undefined}
+>
   {brandIcon ? (
     <svg class="brand-icon" viewBox="0 0 24 24" focusable="false"><path d={brandIcon.path}></path></svg>
   ) : (
     <FormatIcon size={14} />
   )}
 </span>
-<span>{label}</span>
+{platform !== "x" && <span>{label}</span>}
