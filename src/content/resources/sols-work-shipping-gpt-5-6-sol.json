@@ -1,0 +1,24 @@
+{
+  "id": "sols-work-shipping-gpt-5-6-sol",
+  "slug": "sols-work-shipping-gpt-5-6-sol",
+  "canonicalUrl": "https://rudrank.com/a-sols-work-shipping-with-gpt-5-6-sol",
+  "media": {
+    "type": "image",
+    "url": "https://rudrank.com/images/a-sols-work-shipping-with-gpt-5-6-sol.png",
+    "alt": "A Sol's Work article cover about long-running GPT 5.6 Sol engineering tasks"
+  },
+  "title": "A Sol's Work: Shipping with GPT 5.6 Sol",
+  "publisher": "Rudrank Riyam",
+  "publisherUrl": "https://rudrank.com/",
+  "authors": [{ "name": "Rudrank Riyam", "url": "https://rudrank.com/" }],
+  "publishedAt": "2026-07-09",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": ["agent-workflows", "sdlc-automation", "code-review", "testing-evaluation", "human-in-the-loop"],
+  "summary": "Rudrank Riyam reports using GPT 5.6 Sol for long-running engineering lanes that triage pull requests, respond to review, wait for CI, merge, release, and verify live state across iOS apps and developer tools. An iOS team can pilot the approach on one disjoint lane, define what good and no proven regression mean, and judge success by whether the final report still matches raw evidence hours later.",
+  "takeaway": "For unattended work, assign disjoint lanes, document invariants, require current-state and live-result proof, and accept an honest no-regression finding instead of demanding a patch.",
+  "availability": "available",
+  "userIds": ["rudrank-riyam"],
+  "relatedResourceIds": ["agent-maintained-app-store-toolchain", "ios-subscriptions-asc-cli-revenuecat-mcp"]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "agentic-ios-delivery-pipeline",
+  "slug": "agentic-ios-delivery-pipeline",
+  "canonicalUrl": "https://www.donnywals.com/setting-up-a-delivery-pipeline-for-your-agentic-ios-projects/",
+  "media": {
+    "type": "image",
+    "url": "https://www.donnywals.com/wp-content/og_images/setting-up-a-delivery-pipeline-for-your-agentic-ios-projects.png",
+    "alt": "Agentic iOS delivery pipeline article cover"
+  },
+  "title": "Setting Up a Delivery Pipeline for Your Agentic iOS Projects",
+  "publisher": "Donny Wals",
+  "publisherUrl": "https://www.donnywals.com/",
+  "authors": [{ "name": "Donny Wals", "url": "https://www.donnywals.com/" }],
+  "publishedAt": "2026-02-16",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": ["sdlc-automation", "code-review", "testing-evaluation", "human-in-the-loop"],
+  "summary": "Donny Wals lays out a delivery loop in which living agent instructions and reviewed plans guide implementation, automated review and CI guard the pull request, and each merge produces a TestFlight build. An iOS team can start by codifying existing conventions, requiring green tests and human device review, then automate the archive-and-upload step once those gates are dependable.",
+  "takeaway": "Build layered evidence into the path to TestFlight: reviewed plans, local tests, human code and device checks, independent PR review, CI, and a final release build.",
+  "availability": "available",
+  "userIds": ["donny-wals"],
+  "relatedResourceIds": ["flowdeck-agent-build-run-ios", "doordash-swift-testing-migration", "agentic-development-product-bloat"]
+}

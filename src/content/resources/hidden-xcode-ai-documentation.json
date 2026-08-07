@@ -1,0 +1,24 @@
+{
+  "id": "hidden-xcode-ai-documentation",
+  "slug": "hidden-xcode-ai-documentation",
+  "canonicalUrl": "https://www.youtube.com/watch?v=3ml6gIBF5MY",
+  "media": {
+    "type": "youtube",
+    "videoId": "3ml6gIBF5MY",
+    "title": "Exploring AI Driven Coding: Hidden Xcode AI Documentation"
+  },
+  "title": "Exploring AI Driven Coding: Hidden Xcode AI Documentation",
+  "publisher": "Rudrank Riyam",
+  "publisherUrl": "https://www.youtube.com/@rudrankriyamm",
+  "authors": [{ "name": "Rudrank Riyam", "url": "https://rudrank.com/" }],
+  "publishedAt": "2026-01-12",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "video",
+  "topics": ["agent-readable-architecture", "xcode-tooling", "human-in-the-loop"],
+  "summary": "Rudrank Riyam shows that Xcode’s app bundle contains Markdown guidance for frameworks such as Foundation Models, AlarmKit, and Liquid Glass that can be supplied to external coding agents. An iOS team can inspect the bundled files for useful generation patterns, but should check every API and deployment claim against current first-party documentation because the video identifies stale details in the files.",
+  "takeaway": "Use Xcode's bundled Markdown as local agent context, not unquestioned truth; verify versions, availability, and deprecated APIs before accepting generated code.",
+  "availability": "available",
+  "userIds": ["rudrank-riyam"],
+  "relatedResourceIds": ["swiftui-expert-agent-skill", "state-of-agentic-ios-engineering-2026"]
+}

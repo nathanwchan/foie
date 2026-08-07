@@ -1,0 +1,24 @@
+{
+  "id": "tipping-point-agentic-programming",
+  "slug": "tipping-point-agentic-programming",
+  "canonicalUrl": "https://dimillian.medium.com/the-tipping-point-d624283cbd6d?sk=86d87662a4575354cea49086510f70f5",
+  "media": {
+    "type": "image",
+    "url": "https://cdn-images-1.medium.com/max/600/71e2b3b61d04de734395b0fec922e79d0a48efe386f295522412c1b85d4eb788",
+    "alt": "The Tipping Point article cover"
+  },
+  "title": "The Tipping Point",
+  "publisher": "Thomas Ricouard",
+  "publisherUrl": "https://dimillian.medium.com/",
+  "authors": [{ "name": "Thomas Ricouard", "url": "https://www.dimillian.app/" }],
+  "publishedAt": "2026-02-06",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": ["agent-workflows", "human-in-the-loop"],
+  "summary": "Thomas Ricouard describes a collective shift from using AI for isolated code completion to supervising multiple agents that can carry substantial programming work in parallel. An iOS team can use that claimed tipping point as a prompt to redesign review capacity, ownership, and engineering judgment around faster code generation rather than assuming more output automatically creates more value.",
+  "takeaway": "When implementation throughput rises, redesign the human side of the system—review, product judgment, accountability, and prioritization—before multiplying agent lanes.",
+  "availability": "available",
+  "userIds": ["thomas-ricouard"],
+  "relatedResourceIds": ["state-of-agentic-ios-engineering-2026", "month-with-openai-codex"]
+}

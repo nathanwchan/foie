@@ -1,0 +1,24 @@
+{
+  "id": "adversarial-unit-test-sweep",
+  "slug": "adversarial-unit-test-sweep",
+  "canonicalUrl": "https://x.com/twostraws/status/2078039730759811369",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/profile_images/1544366852423426049/QkCxDxMJ_400x400.jpg",
+    "alt": "Paul Hudson, author of the adversarial unit test sweep prompt"
+  },
+  "title": "An Adversarial Unit Test Sweep for Agent-Written Code",
+  "publisher": "Paul Hudson",
+  "publisherUrl": "https://x.com/twostraws",
+  "authors": [{ "name": "Paul Hudson", "url": "https://www.hackingwithswift.com/" }],
+  "publishedAt": "2026-07-17",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "social",
+  "topics": ["testing-evaluation", "code-review", "human-in-the-loop"],
+  "summary": "Paul Hudson shares a prompt for making a coding agent attack edge cases, malformed inputs, races, boundaries, exhaustion, corrupted state, and invalid assumptions, while removing redundant tests and preserving regressions for bugs found. An iOS team can apply the sweep to one mature test target, then review whether each generated test exercises meaningful behavior rather than implementation trivia.",
+  "takeaway": "Ask agents to challenge both production code and the test suite: every test should prove distinct behavior, every discovered bug should gain a regression case, and the suite must finish cleanly.",
+  "availability": "available",
+  "userIds": ["paul-hudson"],
+  "relatedResourceIds": ["swiftui-agent-skill-paul-hudson", "doordash-swift-testing-migration"]
+}

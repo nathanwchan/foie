@@ -1,0 +1,24 @@
+{
+  "id": "mobile-development-age-ai",
+  "slug": "mobile-development-age-ai",
+  "canonicalUrl": "https://www.jpsim.com/mobile-development-in-the-age-of-ai/",
+  "media": {
+    "type": "image",
+    "url": "https://media.hachyderm.io/accounts/avatars/109/526/552/375/178/309/original/6eb3d15cbe2fcc35.jpeg",
+    "alt": "JP Simard, author of Mobile Development in the Age of AI"
+  },
+  "title": "Mobile Development in the Age of AI",
+  "publisher": "JP Simard",
+  "publisherUrl": "https://www.jpsim.com/",
+  "authors": [{ "name": "JP Simard", "url": "https://www.jpsim.com/" }],
+  "publishedAt": "2026-01-02",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": ["agent-workflows", "agent-readable-architecture", "human-in-the-loop"],
+  "summary": "JP Simard argues that coding agents make translation between web, Android, and native iOS implementations cheap enough to change the economics of separate platform codebases. A mobile team can use an existing implementation as executable context for a native first pass, then keep human judgment focused on domain rules, architecture, platform fidelity, taste, and validation.",
+  "takeaway": "Treat cross-platform implementations as context rather than specifications: let agents translate the first pass, but make platform experts own correctness, idiom, and QA.",
+  "availability": "available",
+  "userIds": ["jp-simard"],
+  "relatedResourceIds": ["jp-simard-escaping-ide", "state-of-agentic-ios-engineering-2026"]
+}

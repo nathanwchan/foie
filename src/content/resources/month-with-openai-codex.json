@@ -1,0 +1,24 @@
+{
+  "id": "month-with-openai-codex",
+  "slug": "month-with-openai-codex",
+  "canonicalUrl": "https://www.highcaffeinecontent.com/blog/20260301-A-Month-With-OpenAIs-Codex",
+  "media": {
+    "type": "image",
+    "url": "https://files.mastodon.social/media_attachments/files/116/009/789/662/502/801/original/c18c2aba0bd90a85.jpeg",
+    "alt": "A multiplatform UIKit prototype built during Steve Troughton-Smith's month with Codex"
+  },
+  "title": "A Month With OpenAI's Codex",
+  "publisher": "High Caffeine Content",
+  "publisherUrl": "https://www.highcaffeinecontent.com/",
+  "authors": [{ "name": "Steve Troughton-Smith", "url": "https://www.highcaffeinecontent.com/" }],
+  "publishedAt": "2026-03-01",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": ["agent-workflows", "xcode-tooling", "human-in-the-loop"],
+  "summary": "Steve Troughton-Smith recounts a month using Codex to prototype UIKit apps, migrate Objective-C to Swift, port iOS projects to Android and Windows, resurrect a Unity game in SpriteKit, and debug an unfamiliar production codebase. An iOS team can emulate his safest pattern by giving the agent a handwritten source of truth and style rules, iterating with screenshots, and keeping human taste in control of the result.",
+  "takeaway": "Use existing native code, project templates, style guidance, and screenshots as strong context; treat agent output as accelerated implementation that still depends on human direction and taste.",
+  "availability": "available",
+  "userIds": ["steve-troughton-smith"],
+  "relatedResourceIds": ["mobile-development-age-ai", "state-of-agentic-ios-engineering-2026"]
+}

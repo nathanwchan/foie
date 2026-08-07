@@ -1,0 +1,24 @@
+{
+  "id": "ai-generated-swift-instruments-performance",
+  "slug": "ai-generated-swift-instruments-performance",
+  "canonicalUrl": "https://www.youtube.com/watch?v=hDFOy-ynJ6I",
+  "media": {
+    "type": "youtube",
+    "videoId": "hDFOy-ynJ6I",
+    "title": "AI Wrote Swift Code That Looked Fine… Until Xcode Instruments Exposed It"
+  },
+  "title": "AI Wrote Swift Code That Looked Fine… Until Xcode Instruments Exposed It",
+  "publisher": "Antoine van der Lee",
+  "publisherUrl": "https://www.youtube.com/@avanderlee",
+  "authors": [{ "name": "Antoine van der Lee", "url": "https://www.avanderlee.com/" }],
+  "publishedAt": "2026-05-26",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "video",
+  "topics": ["testing-evaluation", "xcode-tooling", "human-in-the-loop"],
+  "summary": "Antoine van der Lee profiles an AI-generated Swift wallpaper app whose correct-looking output hides hangs, actor-isolation bottlenecks, and unnecessary suspension points. An iOS team can use Instruments to measure each concurrency change, compare release-build traces, and reject generated code that compiles but does not meet performance expectations.",
+  "takeaway": "Treat Instruments traces as acceptance evidence for AI-written concurrency code; verify hangs, task lifetimes, actor isolation, and queue behavior before shipping.",
+  "availability": "available",
+  "userIds": ["antoine-van-der-lee"],
+  "relatedResourceIds": ["xcode-agent-swiftui-preview-audit"]
+}

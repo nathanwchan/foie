@@ -1,0 +1,24 @@
+{
+  "id": "flowdeck-agent-build-run-ios",
+  "slug": "flowdeck-agent-build-run-ios",
+  "canonicalUrl": "https://www.donnywals.com/how-i-use-flowdeck-to-let-my-ai-agent-build-and-run-my-apps/",
+  "media": {
+    "type": "image",
+    "url": "https://www.donnywals.com/wp-content/og_images/how-i-use-flowdeck-to-let-my-ai-agent-build-and-run-my-apps.png",
+    "alt": "How Donny Wals uses FlowDeck with an AI agent article cover"
+  },
+  "title": "How I Use FlowDeck to Let My AI Agent Build and Run My Apps",
+  "publisher": "Donny Wals",
+  "publisherUrl": "https://www.donnywals.com/",
+  "authors": [{ "name": "Donny Wals", "url": "https://www.donnywals.com/" }],
+  "publishedAt": "2026-04-17",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": ["agent-workflows", "xcode-tooling", "testing-evaluation", "visual-validation"],
+  "summary": "Donny Wals describes replacing noisy direct calls to xcodebuild, simctl, and devicectl with a configured CLI that returns structured build errors, streams logs, and writes Simulator screenshots plus accessibility trees. An iOS team can encode its preferred build-run-test path in a skill and AGENTS.md, while retaining human review for whether the UI actually feels right.",
+  "takeaway": "Make one low-noise build and Simulator path the agent default, require a successful build and functional UI check before review, and reserve visual taste for a person.",
+  "availability": "available",
+  "userIds": ["donny-wals"],
+  "relatedResourceIds": ["agentic-ios-delivery-pipeline", "sim-use-mobile-verification-loop", "xcode-mcp-field-notes"]
+}

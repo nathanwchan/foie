@@ -1,0 +1,24 @@
+{
+  "id": "ai-agents-control-ios-simulator",
+  "slug": "ai-agents-control-ios-simulator",
+  "canonicalUrl": "https://www.youtube.com/watch?v=mD6vpokRpsU",
+  "media": {
+    "type": "youtube",
+    "videoId": "mD6vpokRpsU",
+    "title": "AI Agents Can Now Control the iOS Simulator"
+  },
+  "title": "AI Agents Can Now Control the iOS Simulator",
+  "publisher": "Antoine van der Lee",
+  "publisherUrl": "https://www.youtube.com/@avanderlee",
+  "authors": [{ "name": "Antoine van der Lee", "url": "https://www.avanderlee.com/" }],
+  "publishedAt": "2026-05-11",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "video",
+  "topics": ["agent-workflows", "xcode-tooling", "testing-evaluation", "visual-validation"],
+  "summary": "Antoine van der Lee demonstrates an agent using RocketSim’s CLI and bundled skill to inspect, tap, type, navigate, check accessibility, and recover from changed Simulator state. An iOS team can adopt the compact screen protocol for one end-to-end flow and compare completion time, wrong actions, and token use against its current automation path.",
+  "takeaway": "Give agents structured Simulator state and interaction feedback, then require them to verify the resulting screen instead of trusting coordinates or compilation alone.",
+  "availability": "available",
+  "userIds": ["antoine-van-der-lee"],
+  "relatedResourceIds": ["token-efficient-xcode-simulator-automation", "sim-use-mobile-verification-loop", "rocketsim-16-physical-devices-ai-agents"]
+}

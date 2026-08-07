@@ -1,0 +1,24 @@
+{
+  "id": "token-efficient-xcode-simulator-automation",
+  "slug": "token-efficient-xcode-simulator-automation",
+  "canonicalUrl": "https://www.avanderlee.com/ai-development/ai-powered-xcode-simulator-automation-token-efficient/",
+  "media": {
+    "type": "image",
+    "url": "https://swiftlee-banners.herokuapp.com/imagegenerator.php?title=AI-Powered+Xcode+Simulator+Automation+%28token-efficient%29",
+    "alt": "AI-Powered Xcode Simulator Automation article cover"
+  },
+  "title": "AI-Powered Xcode Simulator Automation (token-efficient)",
+  "publisher": "SwiftLee",
+  "publisherUrl": "https://www.avanderlee.com/",
+  "authors": [{ "name": "Antoine van der Lee", "url": "https://www.avanderlee.com/" }],
+  "publishedAt": "2026-05-11",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": ["agent-workflows", "xcode-tooling", "testing-evaluation", "visual-validation"],
+  "summary": "Antoine van der Lee explains how RocketSim keeps Simulator context in its Mac app and returns compact, structured output for agent-driven reads and interactions. An iOS team can reproduce the article’s task suite—including nested navigation, duplicate labels, off-screen controls, stale state, and web login—and measure reliability and context cost before adopting it.",
+  "takeaway": "Benchmark Simulator tools on difficult, repeatable flows and record wall time, output size, token estimates, wrong taps, failures, and recovery—not polished demos alone.",
+  "availability": "available",
+  "userIds": ["antoine-van-der-lee"],
+  "relatedResourceIds": ["ai-agents-control-ios-simulator", "sim-use-mobile-verification-loop", "rocketsim-16-physical-devices-ai-agents"]
+}

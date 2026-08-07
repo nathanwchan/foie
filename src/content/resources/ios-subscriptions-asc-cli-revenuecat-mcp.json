@@ -1,0 +1,24 @@
+{
+  "id": "ios-subscriptions-asc-cli-revenuecat-mcp",
+  "slug": "ios-subscriptions-asc-cli-revenuecat-mcp",
+  "canonicalUrl": "https://rudrank.com/a-better-ios-subscription-setup-workflow-with-asc-cli-and-revenuecat-mcp",
+  "media": {
+    "type": "image",
+    "url": "https://rudrank.com/images/og-asc-cli-revenuecat-mcp.png",
+    "alt": "App Store Connect CLI and RevenueCat MCP subscription workflow"
+  },
+  "title": "Exploring ASC CLI: Faster iOS Subscriptions with CLI and RevenueCat MCP",
+  "publisher": "Rudrank Riyam",
+  "publisherUrl": "https://rudrank.com/",
+  "authors": [{ "name": "Rudrank Riyam", "url": "https://rudrank.com/" }],
+  "publishedAt": "2026-03-09",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": ["agent-workflows", "sdlc-automation", "human-in-the-loop"],
+  "summary": "Rudrank Riyam combines an idempotent App Store Connect CLI setup with RevenueCat’s MCP so an agent can create the store-side subscription first, pass the shared product identifier forward, and configure entitlements, offerings, packages, and a paywall. An iOS team can automate one sandbox product while retaining the JSON output and read-back verification as audit evidence.",
+  "takeaway": "Keep Apple's billing configuration and RevenueCat behavior as separate stages joined by one product ID, and require each automated stage to read back the state it created.",
+  "availability": "available",
+  "userIds": ["rudrank-riyam"],
+  "relatedResourceIds": ["agent-maintained-app-store-toolchain", "sols-work-shipping-gpt-5-6-sol"]
+}

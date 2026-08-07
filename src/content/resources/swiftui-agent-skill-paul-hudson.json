@@ -1,0 +1,24 @@
+{
+  "id": "swiftui-agent-skill-paul-hudson",
+  "slug": "swiftui-agent-skill-paul-hudson",
+  "canonicalUrl": "https://www.hackingwithswift.com/articles/282/swiftui-agent-skill-claude-codex-ai",
+  "media": {
+    "type": "image",
+    "url": "https://www.hackingwithswift.com/uploads/swiftui.jpg",
+    "alt": "SwiftUI graphic for Paul Hudson's SwiftUI Agent Skill article"
+  },
+  "title": "SwiftUI Agent Skill – Write Better Code with Claude, Codex, and Other AI Tools",
+  "publisher": "Hacking with Swift",
+  "publisherUrl": "https://www.hackingwithswift.com/",
+  "authors": [{ "name": "Paul Hudson", "url": "https://www.hackingwithswift.com/" }],
+  "publishedAt": "2026-03-11",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": ["agent-readable-architecture", "code-review", "human-in-the-loop"],
+  "summary": "Paul Hudson presents an Agent Skills package that reviews AI-written SwiftUI for modern API use, performance, accessibility, concurrency, design, and project hygiene. An iOS team can install the skill at project scope, run it against a representative screen, and turn accepted findings into review rules without treating generated guidance as a substitute for engineering judgment.",
+  "takeaway": "Give coding agents current, reviewable SwiftUI guidance, then validate suggested API, accessibility, and performance changes against the app's requirements and deployment target.",
+  "availability": "available",
+  "userIds": ["paul-hudson"],
+  "relatedResourceIds": ["adversarial-unit-test-sweep", "swiftui-expert-agent-skill"]
+}
