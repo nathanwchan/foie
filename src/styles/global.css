@@ -129,11 +129,8 @@ main { min-height: calc(100vh - 210px); }
 .evidence-practitioner { color: var(--mint); background: color-mix(in srgb, var(--mint) 13%, transparent); }
 .evidence-community { color: var(--orange); background: color-mix(in srgb, var(--orange) 13%, transparent); }
 .publisher, .verified, .availability { color: var(--muted); }
-.topic-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
-.topic-row span, .topic-pill, .signal-topics span { padding: 4px 8px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--muted); font-size: 10px; font-weight: 620; }
-.source-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-.source-links a { display: inline-flex; align-items: center; min-height: 34px; padding: 0 11px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--muted); font-size: 11px; font-weight: 680; }
-.source-links .source-link-primary { border-color: transparent; background: var(--blue); color: #fff; }
+.alternate-sources { margin: 14px 0 0; color: var(--muted); font-size: 11px; }
+.alternate-sources a { color: var(--blue); font-weight: 680; }
 .preview-link { display: block; min-width: 0; }
 .preview-link .resource-preview { height: 100%; }
 
@@ -232,7 +229,8 @@ input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible
 .detail-fact { padding: 18px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
 .detail-fact dt { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
 .detail-fact dd { margin: 5px 0 0; font-weight: 640; }
-.signal-topics { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+.signal-topics { display: flex; flex-wrap: wrap; gap: 7px 14px; margin-top: 26px; color: var(--muted); font-size: 12px; }
+.signal-topics span:not(:last-child)::after { content: " ·"; color: var(--subtle); }
 .source-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
 .related { padding-top: 52px; border-top: 1px solid var(--line); }
 

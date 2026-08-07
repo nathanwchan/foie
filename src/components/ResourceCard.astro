@@ -52,13 +52,11 @@ const year = sortDate.getUTCFullYear().toString();
         <span class="verified">Verified {displayDate(data.lastVerifiedAt)}</span>
         {data.availability !== "available" && <span class="availability">{data.availability}</span>}
       </div>
-      <div class="topic-row" aria-label="Topics">
-        {data.topics.map((topic) => <span>{topicLabels[topic]}</span>)}
-      </div>
-      <div class="source-links" aria-label="Source links">
-        <a class="source-link-primary" href={data.canonicalUrl} target="_blank" rel="noreferrer">Open on {hostName(data.canonicalUrl)} <span aria-hidden="true">↗</span></a>
-        {data.alternateUrls.map((url) => <a href={url} target="_blank" rel="noreferrer">Also on {hostName(url)} ↗</a>)}
-      </div>
+      {data.alternateUrls.length > 0 && (
+        <p class="alternate-sources">Alternate versions: {data.alternateUrls.map((url, index) => (
+          <><a href={url} target="_blank" rel="noreferrer">{hostName(url)} ↗</a>{index < data.alternateUrls.length - 1 ? ", " : ""}</>
+        ))}</p>
+      )}
     </div>
     <a class="preview-link" href={data.canonicalUrl} target="_blank" rel="noreferrer" aria-label={`Open ${data.title} on ${data.publisher}`}>
       <ResourcePreview resource={resource} large={featured} />

@@ -1,6 +1,6 @@
 ---
 import type { ResourceEntry } from "../lib/content";
-import { formatLabels, topicLabels } from "../lib/taxonomy";
+import { formatLabels } from "../lib/taxonomy";
 
 interface Props {
   resource: ResourceEntry;
@@ -32,7 +32,7 @@ const glyphs = {
   <span class="preview-grid-lines" aria-hidden="true"></span>
   <div class="preview-glass" aria-hidden="true">
     <span class="preview-overline">{data.publisher}</span>
-    <strong>{topicLabels[data.topics[0]]}</strong>
+    <strong>Engineering intelligence</strong>
     <span>{formatLabels[data.format]}</span>
   </div>
   <span class="preview-glyph" aria-hidden="true">{glyphs[data.format]}</span>
