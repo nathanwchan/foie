@@ -1,0 +1,24 @@
+{
+  "id": "xcode-mcp-field-notes",
+  "slug": "xcode-mcp-field-notes",
+  "canonicalUrl": "https://mastodon.social/@cocoawithlove/116043982055080183",
+  "alternateUrls": ["https://mastodon.social/@cocoawithlove/116016385948666874"],
+  "media": {
+    "type": "image",
+    "url": "https://files.mastodon.social/accounts/avatars/109/362/264/174/011/988/original/c5fdf12af1778db0.png",
+    "alt": "Matt Gallagher, author of field notes on Xcode's MCP tools"
+  },
+  "title": "Field Notes from Using Xcode’s MCP Tools",
+  "publisher": "Matt Gallagher",
+  "publisherUrl": "https://mastodon.social/@cocoawithlove",
+  "authors": [{ "name": "Matt Gallagher", "url": "https://mastodon.social/@cocoawithlove" }],
+  "publishedAt": "2026-02-10",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["xcode-tooling", "agent-workflows", "testing-evaluation"],
+  "summary": "Matt Gallagher’s early field notes identify concrete integration failures in Xcode’s MCP tools: schema incompatibility with OpenCode, repeated authorization in Claude Desktop, navigator paths diverging from disk paths, confusing tab identifiers, unreadable update diffs, and test-list output that can overwhelm context.",
+  "takeaway": "Add a smoke-test script for tool schema, authorization, path identity, diff readability, and test filtering before adopting an Xcode agent. Record unsupported calls so the agent avoids them.",
+  "availability": "available",
+  "relatedResourceIds": ["codex-coresimulator-agent-instructions"]
+}

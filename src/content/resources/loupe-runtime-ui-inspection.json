@@ -1,0 +1,24 @@
+{
+  "id": "loupe-runtime-ui-inspection",
+  "slug": "loupe-runtime-ui-inspection",
+  "canonicalUrl": "https://www.reddit.com/r/swift/comments/1u07h14/i_built_a_swift_cli_to_help_ai_agents_inspect/",
+  "alternateUrls": ["https://github.com/heoblitz/Loupe"],
+  "media": {
+    "type": "image",
+    "url": "https://i.redd.it/q2yg8t7x426h1.png",
+    "alt": "Loupe inspecting the native runtime structure of an Apple platform interface"
+  },
+  "title": "Give Agents Native UI Evidence Beyond Screenshots",
+  "publisher": "Loupe",
+  "publisherUrl": "https://github.com/heoblitz/Loupe",
+  "authors": [{ "name": "New_Leader_3644", "url": "https://www.reddit.com/user/New_Leader_3644/" }],
+  "publishedAt": "2026-06-08",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["visual-validation", "testing-evaluation", "xcode-tooling", "agent-workflows"],
+  "summary": "Loupe is a Swift command-line tool that exposes native view properties, accessibility structure, application state, traces, logs, hit testing, screenshots, and runtime probes to coding agents. Its author positions that app-side evidence as a complement to simulator-control tools, which can show a screen without explaining its runtime structure.",
+  "takeaway": "When a screenshot is ambiguous, capture the accessibility tree, native component properties, hit-test result, logs, and app state together. Ask the agent to cite that evidence in its diagnosis.",
+  "availability": "available",
+  "relatedResourceIds": ["sim-use-mobile-verification-loop", "sunday-swift-agent-verification"]
+}

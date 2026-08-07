@@ -1,0 +1,25 @@
+{
+  "id": "prokinetic-human-motion-tuning",
+  "slug": "prokinetic-human-motion-tuning",
+  "canonicalUrl": "https://x.com/iOSmumo/status/2085057470490132708",
+  "alternateUrls": [],
+  "media": {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2085057128763424768/vid/avc1/2672x1608/TF9af0WoKtIvy7f3.mp4?tag=29",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2085057128763424768/img/_Nci10_nXzM2lQW6.jpg",
+    "title": "ProKinetic renders agent-written motion and exposes parameters for human tuning"
+  },
+  "title": "AI Writes the Motion; a Human Tunes the Feel",
+  "publisher": "Mumo iOS Designer",
+  "publisherUrl": "https://x.com/iOSmumo",
+  "authors": [{ "name": "Mumo iOS Designer", "url": "https://x.com/iOSmumo" }],
+  "publishedAt": "2026-08-05",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["visual-validation", "human-in-the-loop", "agent-workflows"],
+  "summary": "Mumo describes a workflow where Claude Code or Codex generates native motion, ProKinetic renders it, and tunable values appear as live controls. A human adjusts timing and feel at native refresh rates, then exports the chosen parameters back to the agent and source files.",
+  "takeaway": "Expose spring, duration, delay, and damping values as live controls. Let the agent create the animation structure, but require a human to tune and approve the final motion on-device.",
+  "availability": "available",
+  "relatedResourceIds": ["propmotion-swiftui-agent-skill", "death-of-good-enough-ios-motion"]
+}

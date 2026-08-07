@@ -1,0 +1,24 @@
+{
+  "id": "death-of-good-enough-ios-motion",
+  "slug": "death-of-good-enough-ios-motion",
+  "canonicalUrl": "https://x.com/paularambles/status/2032124088890900669",
+  "alternateUrls": [],
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HDL0bt1bQAMBeBr.jpg",
+    "alt": "A production iOS animation built with Claude Code for Tolan"
+  },
+  "title": "The Death of “Good Enough” in iOS Motion Design",
+  "publisher": "Paula",
+  "publisherUrl": "https://x.com/paularambles",
+  "authors": [{ "name": "Paula", "url": "https://x.com/paularambles" }],
+  "publishedAt": "2026-03-12",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["visual-validation", "human-in-the-loop", "agent-workflows"],
+  "summary": "Paula gives a production account of using Claude Code to create a SpriteKit token celebration in minutes and an origami-like card-folding interaction in about an hour. The agent lowered the cost of exploring polished motion, while she supplied the product intent and iterated on the physical feel before shipping it in Tolan.",
+  "takeaway": "Time-box one ambitious interaction prototype with an agent, compare it with the simple fallback, and keep it only after a human reviews timing, interruption behavior, accessibility, and maintainability.",
+  "availability": "available",
+  "relatedResourceIds": ["propmotion-swiftui-agent-skill", "prokinetic-human-motion-tuning"]
+}

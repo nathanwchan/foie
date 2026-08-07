@@ -1,0 +1,24 @@
+{
+  "id": "sunday-swift-agent-verification",
+  "slug": "sunday-swift-agent-verification",
+  "canonicalUrl": "https://sundayswift.com/posts/how-our-agents-test-their-own-ios-changes/",
+  "alternateUrls": ["https://www.reddit.com/r/iOSProgramming/comments/1rz6h9y/how_i_got_an_ai_coding_agent_to_actually_respect/"],
+  "media": {
+    "type": "image",
+    "url": "https://sundayswift.com/og/how-our-agents-test-their-own-ios-changes.png",
+    "alt": "Sunday Swift article preview for an agent-driven iOS verification report"
+  },
+  "title": "How Agents Can Test Their Own iOS Changes",
+  "publisher": "Sunday Swift",
+  "publisherUrl": "https://sundayswift.com/",
+  "authors": [{ "name": "Hesham Salman", "url": "https://sundayswift.com/about/" }],
+  "publishedAt": "2026-03-19",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "article",
+  "topics": ["visual-validation", "testing-evaluation", "human-in-the-loop", "agent-workflows"],
+  "summary": "Sunday Swift documents a five-step verification skill: a human confirms success criteria, the agent builds and launches, inspects screenshots and the accessibility hierarchy, checks logs and accessibility, then produces a structured report with video evidence. The author explicitly limits it to observable screen state rather than claiming it replaces unit or end-to-end tests.",
+  "takeaway": "Before the agent builds, have it propose observable acceptance criteria for human approval. Require a report that maps every criterion to a screenshot, hierarchy evidence, logs, and a clear pass or fail.",
+  "availability": "available",
+  "relatedResourceIds": ["building-ios-apps-with-agents", "loupe-runtime-ui-inspection", "xcode-agent-swiftui-preview-audit"]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "cloud-agents-real-mac-xcode",
+  "slug": "cloud-agents-real-mac-xcode",
+  "canonicalUrl": "https://x.com/dabit3/status/2085483651769286677",
+  "alternateUrls": [],
+  "media": {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2085482241598111744/vid/avc1/1854x1080/NUBweNRuBXsMx8aa.mp4?tag=29",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2085482241598111744/img/_yMyJsrQEENG-uKF.jpg",
+    "title": "Nader Dabit demonstrates a cloud agent running on a real Mac with Xcode and iOS Simulator"
+  },
+  "title": "Give Cloud Agents a Real Mac with Xcode and iOS Simulator",
+  "publisher": "Nader Dabit",
+  "publisherUrl": "https://x.com/dabit3",
+  "authors": [{ "name": "Nader Dabit", "url": "https://x.com/dabit3" }],
+  "publishedAt": "2026-08-06",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["agent-workflows", "xcode-tooling", "testing-evaluation", "sdlc-automation"],
+  "summary": "Nader Dabit demonstrates provisioning a clean, real Mac environment for each cloud-agent session with a selected macOS and Xcode version. The recording shows how remote agents can reach the Apple-only build and simulator surface that Linux cloud workers lack.",
+  "takeaway": "Create a reproducible Mac runner image with pinned macOS and Xcode versions, then require each remote-agent task to build and run in a fresh instance before it can open a PR.",
+  "availability": "available",
+  "relatedResourceIds": ["mobile-agent-device-proof", "building-ios-apps-with-agents"]
+}

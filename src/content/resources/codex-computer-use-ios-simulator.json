@@ -1,0 +1,24 @@
+{
+  "id": "codex-computer-use-ios-simulator",
+  "slug": "codex-computer-use-ios-simulator",
+  "canonicalUrl": "https://x.com/hedderichpro/status/2084255112382308753",
+  "alternateUrls": [],
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HOzC2WBWgAA_IWv.jpg",
+    "alt": "Codex operating and visually reviewing an iPhone app in Simulator"
+  },
+  "title": "Codex Can Drive the Simulator, but It Still Needs a Design Process",
+  "publisher": "Malte Hedderich",
+  "publisherUrl": "https://x.com/hedderichpro",
+  "authors": [{ "name": "Malte Hedderich", "url": "https://x.com/hedderichpro" }],
+  "publishedAt": "2026-08-03",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["agent-workflows", "visual-validation", "human-in-the-loop"],
+  "summary": "Malte Hedderich reports that Codex can drive an iPhone Simulator, tap through flows, inspect screenshots, and rebuild when something breaks. His attempt at fully autonomous goal-driven construction was not good enough, so he returned to explicit specification, planning, task breakdown, and separate human-directed design work.",
+  "takeaway": "Keep simulator operation automated, but split product work into specification, plan, tasks, and implementation. Provide approved wireframes and colors before asking the coding agent to build UI.",
+  "availability": "available",
+  "relatedResourceIds": ["building-ios-apps-with-agents", "mobile-agent-device-proof"]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "sim-use-mobile-verification-loop",
+  "slug": "sim-use-mobile-verification-loop",
+  "canonicalUrl": "https://x.com/onevcat/status/2071500722324336659",
+  "alternateUrls": [],
+  "media": {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2071500589469675520/vid/avc1/1248x1110/n7565FLxcqv-trMQ.mp4?tag=28",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2071500589469675520/img/Z3Rrxt9wiAzUwjPJ.jpg",
+    "title": "sim-use exposes an iOS Simulator screen and interactions to a coding agent"
+  },
+  "title": "Close the Mobile Agent Loop with Structured Screen Access",
+  "publisher": "onevcat",
+  "publisherUrl": "https://x.com/onevcat",
+  "authors": [{ "name": "onevcat", "url": "https://x.com/onevcat" }],
+  "publishedAt": "2026-06-29",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["visual-validation", "testing-evaluation", "agent-workflows", "xcode-tooling"],
+  "summary": "onevcat introduces sim-use, a command-line tool that turns an iOS Simulator or Android screen into a compact representation an agent can understand and exposes commands for operating interface elements. The goal is to make verification part of the agent’s plan-code-verify-ship loop rather than a human-only handoff.",
+  "takeaway": "Give the agent both a structured accessibility snapshot and deterministic interaction commands. Test the loop on a known flow with one intentional UI failure before trusting autonomous verification.",
+  "availability": "available",
+  "relatedResourceIds": ["landseer-terminal-ios-simulator", "loupe-runtime-ui-inspection"]
+}

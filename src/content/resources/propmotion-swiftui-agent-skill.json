@@ -1,0 +1,25 @@
+{
+  "id": "propmotion-swiftui-agent-skill",
+  "slug": "propmotion-swiftui-agent-skill",
+  "canonicalUrl": "https://x.com/dembsky/status/2085334902644289936",
+  "alternateUrls": [],
+  "media": {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2085334553586020352/vid/avc1/2880x2160/k2SawxLxQtYf0iUo.mp4?tag=29",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2085334553586020352/img/ag8CHJSr9TYx8zoT.jpg",
+    "title": "PropMotion-generated 3D animation running in a SwiftUI app"
+  },
+  "title": "Turn Production SwiftUI Motion Knowledge into an Agent Skill",
+  "publisher": "Mateusz Dembek",
+  "publisherUrl": "https://x.com/dembsky",
+  "authors": [{ "name": "Mateusz Dembek", "url": "https://x.com/dembsky" }],
+  "publishedAt": "2026-08-06",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["agent-workflows", "visual-validation", "human-in-the-loop"],
+  "summary": "Mateusz Dembek presents PropMotion, a Claude Code skill distilled from the 3D animation work behind his shipped Gymscle app. It teaches procedural geometry, physics, lighting, haptics, scene chaining, and fixes for recurring SceneKit failures rather than asking the agent to rediscover them.",
+  "takeaway": "After shipping a difficult visual feature, extract the reusable implementation pattern and framework failure modes into a project skill, then test that skill on a fresh scene.",
+  "availability": "available",
+  "relatedResourceIds": ["prokinetic-human-motion-tuning", "death-of-good-enough-ios-motion"]
+}

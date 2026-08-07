@@ -1,0 +1,24 @@
+{
+  "id": "xcode-agent-swiftui-preview-audit",
+  "slug": "xcode-agent-swiftui-preview-audit",
+  "canonicalUrl": "https://mastodon.social/@cocoawithlove/116729412077463263",
+  "alternateUrls": [],
+  "media": {
+    "type": "image",
+    "url": "https://files.mastodon.social/accounts/avatars/109/362/264/174/011/988/original/c5fdf12af1778db0.png",
+    "alt": "Matt Gallagher, author of the SwiftUI Preview audit field note"
+  },
+  "title": "Use an Xcode Agent to Repair SwiftUI Preview Bitrot",
+  "publisher": "Matt Gallagher",
+  "publisherUrl": "https://mastodon.social/@cocoawithlove",
+  "authors": [{ "name": "Matt Gallagher", "url": "https://mastodon.social/@cocoawithlove" }],
+  "publishedAt": "2026-06-11",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["visual-validation", "sdlc-automation", "testing-evaluation"],
+  "summary": "Matt Gallagher describes using an Xcode agent to audit hundreds of SwiftUI Previews whose mock data and services had decayed after years of slow or unreliable preview builds. The agent turns a large, repetitive maintenance backlog into an opportunity to restore a useful visual-development surface.",
+  "takeaway": "Inventory every Preview target, repair stale mocks in small batches, and record the build result. Once healthy, run the same audit periodically so preview failures stop accumulating silently.",
+  "availability": "available",
+  "relatedResourceIds": ["sunday-swift-agent-verification"]
+}

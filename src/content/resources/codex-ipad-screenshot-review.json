@@ -1,0 +1,24 @@
+{
+  "id": "codex-ipad-screenshot-review",
+  "slug": "codex-ipad-screenshot-review",
+  "canonicalUrl": "https://iosdev.space/@matt1corey/116898653538451466",
+  "alternateUrls": [],
+  "media": {
+    "type": "image",
+    "url": "https://cdn.masto.host/iosdevspace/accounts/avatars/109/333/802/206/484/379/original/68c6336946fda062.png",
+    "alt": "Matt Corey, author of the Codex screenshot automation field note"
+  },
+  "title": "A 2.5-Hour Screenshot Run Still Needed Human Review",
+  "publisher": "Matt Corey",
+  "publisherUrl": "https://iosdev.space/@matt1corey",
+  "authors": [{ "name": "Matt Corey", "url": "https://iosdev.space/@matt1corey" }],
+  "publishedAt": "2026-07-11",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["visual-validation", "testing-evaluation", "human-in-the-loop"],
+  "summary": "Matt Corey reports that Codex completed an automated, UI-test-driven App Store screenshot run in two and a half hours, but every iPad capture showed the app windowed rather than full-screen. The automation completed its steps while missing a presentation constraint obvious during human review.",
+  "takeaway": "Add machine-checkable screenshot preconditions for device class, orientation, window mode, scale, and safe area. Review one sample per target before allowing a long batch to continue.",
+  "availability": "available",
+  "relatedResourceIds": ["mobile-agent-device-proof", "building-ios-apps-with-agents"]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "claude-code-guided-swift-review",
+  "slug": "claude-code-guided-swift-review",
+  "canonicalUrl": "https://m.objc.io/@chris/114816703490099604",
+  "alternateUrls": [],
+  "media": {
+    "type": "image",
+    "url": "https://objc.s3proxy.de/accounts/avatars/109/590/074/218/517/539/original/571af16e553623a0.jpg",
+    "alt": "Chris Eidhof, author of the Claude Code and Swift field note"
+  },
+  "title": "Claude Code Is Faster Only When Swift Expertise Stays in the Loop",
+  "publisher": "Chris Eidhof",
+  "publisherUrl": "https://m.objc.io/@chris",
+  "authors": [{ "name": "Chris Eidhof", "url": "https://m.objc.io/@chris" }],
+  "publishedAt": "2025-07-08",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["human-in-the-loop", "code-review", "agent-readable-architecture"],
+  "summary": "Chris Eidhof reports that Claude Code feels faster than writing everything by hand, even when he lets it modify carefully authored Swift. The speed does not remove the need for precise guidance and framework knowledge: his example is the agent inventing a custom type where SwiftUI’s existing UnitPoint is the appropriate abstraction.",
+  "takeaway": "During review, search for new wrappers, geometry types, and helpers. Require the agent to explain why an existing Swift or SwiftUI type cannot express the same intent before accepting one.",
+  "availability": "available",
+  "relatedResourceIds": ["agentic-development-product-bloat", "claude-code-ios-team-trust-boundary"]
+}

@@ -1,0 +1,24 @@
+{
+  "id": "agent-maintained-app-store-toolchain",
+  "slug": "agent-maintained-app-store-toolchain",
+  "canonicalUrl": "https://x.com/rudrank/status/2079000846730481701",
+  "alternateUrls": [],
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HNoYQDuaoAAyQKP.jpg",
+    "alt": "Slide for Rudrank Riyam's talk about agent-maintained developer tools"
+  },
+  "title": "A Developer Toolchain That Agents Help Maintain and Release",
+  "publisher": "Rudrank Riyam",
+  "publisherUrl": "https://x.com/rudrank",
+  "authors": [{ "name": "Rudrank Riyam", "url": "https://x.com/rudrank" }],
+  "publishedAt": "2026-07-20",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["sdlc-automation", "code-review", "testing-evaluation", "human-in-the-loop"],
+  "summary": "Rudrank Riyam describes evolving App Store Connect CLI into a tool whose agents triage issues and pull requests, implement fixes, audit those fixes, and cut releases. He also outlines a feedback loop where usage analytics identify points of agent friction and a separate verification agent checks improvements before release.",
+  "takeaway": "Start with one closed maintenance loop: convert a recurring support failure into an issue, let an agent propose the fix, require an independent audit, and release only after the existing checks pass.",
+  "availability": "available",
+  "relatedResourceIds": ["doordash-swift-testing-migration"]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "landseer-terminal-ios-simulator",
+  "slug": "landseer-terminal-ios-simulator",
+  "canonicalUrl": "https://x.com/LandseerEnga/status/2085101747392196664",
+  "alternateUrls": [],
+  "media": {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2085101701619691520/vid/avc1/1188x720/Q85ryevwSZzPhzQp.mp4?tag=14",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2085101701619691520/img/ApvSkbZJHuxJqlNC.jpg",
+    "title": "Claude operates an iOS Simulator from a terminal environment"
+  },
+  "title": "Put the iOS Simulator Inside the Agent’s Terminal Loop",
+  "publisher": "Landseer Enga",
+  "publisherUrl": "https://x.com/LandseerEnga",
+  "authors": [{ "name": "Landseer Enga", "url": "https://x.com/LandseerEnga" }],
+  "publishedAt": "2026-08-05",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["xcode-tooling", "agent-workflows", "visual-validation", "testing-evaluation"],
+  "summary": "Landseer Enga demonstrates an iOS Simulator exposed inside a terminal environment, with Claude tapping, editing, and testing an app. The demo targets the environment gap that otherwise leaves terminal-first agents able to edit Swift but unable to observe native behavior.",
+  "takeaway": "Evaluate simulator tooling with one full acceptance flow: launch, navigate, edit state, capture evidence, and detect a deliberate regression. Do not judge it from build success alone.",
+  "availability": "available",
+  "relatedResourceIds": ["sim-use-mobile-verification-loop", "mobile-agent-device-proof"]
+}

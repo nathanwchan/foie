@@ -1,0 +1,24 @@
+{
+  "id": "agentic-development-product-bloat",
+  "slug": "agentic-development-product-bloat",
+  "canonicalUrl": "https://x.com/DonnyWals/status/2079983594320380406",
+  "alternateUrls": [],
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/profile_images/2019657679883390976/gFQl9B7A_400x400.jpg",
+    "alt": "Donny Wals, author of the note on product bloat from agentic development"
+  },
+  "title": "When Cheap Feature Development Produces Bloated Apps",
+  "publisher": "Donny Wals",
+  "publisherUrl": "https://x.com/DonnyWals",
+  "authors": [{ "name": "Donny Wals", "url": "https://x.com/DonnyWals" }],
+  "publishedAt": "2026-07-22",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["human-in-the-loop", "agent-workflows"],
+  "summary": "Donny Wals argues that agentic development can make apps more bloated and less connected to user needs because adding features has become so inexpensive. The old scheduling question, whether an idea deserves weeks of work, is being replaced by whether it can be shipped in a day or two.",
+  "takeaway": "Add a product-value gate before agent implementation: name the user problem, success signal, and feature to remove or defer. Low implementation cost is not evidence that a feature belongs.",
+  "availability": "available",
+  "relatedResourceIds": ["claude-code-guided-swift-review"]
+}

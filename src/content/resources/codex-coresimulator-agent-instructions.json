@@ -1,0 +1,24 @@
+{
+  "id": "codex-coresimulator-agent-instructions",
+  "slug": "codex-coresimulator-agent-instructions",
+  "canonicalUrl": "https://x.com/macmixing/status/2085172524825141584",
+  "alternateUrls": [],
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/profile_images/1627911037545742336/8QwPGjJg_400x400.jpg",
+    "alt": "Dom Esposito, author of the Codex and CoreSimulator field note"
+  },
+  "title": "Codex, Sandboxes, and Exact Simulator Destinations",
+  "publisher": "Dom Esposito",
+  "publisherUrl": "https://x.com/macmixing",
+  "authors": [{ "name": "Dom Esposito", "url": "https://x.com/macmixing" }],
+  "publishedAt": "2026-08-06",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["xcode-tooling", "agent-workflows", "testing-evaluation"],
+  "summary": "Dom Esposito documents recurring Codex failures where sandboxed GitHub CLI and CoreSimulator access are misdiagnosed as missing authentication or unavailable devices. His repository instructions force explicit host-access decisions and an exact simulator destination discovered from xcodebuild.",
+  "takeaway": "Record the exact simulator-discovery command and known sandbox failure signatures in AGENTS.md. Grant host access narrowly for the affected build or test command, not as a blanket default.",
+  "availability": "available",
+  "relatedResourceIds": ["xcode-mcp-field-notes"]
+}

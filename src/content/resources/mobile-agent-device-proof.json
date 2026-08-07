@@ -1,0 +1,25 @@
+{
+  "id": "mobile-agent-device-proof",
+  "slug": "mobile-agent-device-proof",
+  "canonicalUrl": "https://x.com/anamhira/status/2085440679220851025",
+  "alternateUrls": [],
+  "media": {
+    "type": "video",
+    "url": "https://video.twimg.com/amplify_video/2085440662078726144/vid/avc1/844x720/jNLE_zA6IcajC4Rz.mp4?tag=14",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2085440662078726144/img/kP-6sgoOTAOuTzSE.jpg",
+    "title": "A cloud coding agent builds an iOS change, runs it on a device, and attaches video proof to a pull request"
+  },
+  "title": "Mobile Coding Agents That Prove Their Work",
+  "publisher": "Anam Hira",
+  "publisherUrl": "https://x.com/anamhira",
+  "authors": [{ "name": "Anam Hira", "url": "https://x.com/anamhira" }],
+  "publishedAt": "2026-08-06",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "social",
+  "topics": ["agent-workflows", "visual-validation", "testing-evaluation", "sdlc-automation"],
+  "summary": "Anam Hira shows a cloud coding agent building a mobile change, running it on a cloud device, recording the result, and putting the recording directly into its pull request. The workflow replaces a diff-only handoff with inspectable behavioral evidence.",
+  "takeaway": "Require a simulator or device recording on every agent-authored UI pull request. Make the recording a review artifact alongside the diff, logs, and automated test result.",
+  "availability": "available",
+  "relatedResourceIds": ["cloud-agents-real-mac-xcode", "building-ios-apps-with-agents"]
+}
