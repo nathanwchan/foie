@@ -1,0 +1,23 @@
+{
+  "id": "swiftui-expert-agent-skill",
+  "slug": "swiftui-expert-agent-skill",
+  "canonicalUrl": "https://github.com/AvdLee/SwiftUI-Agent-Skill",
+  "media": {
+    "type": "image",
+    "url": "https://opengraph.githubassets.com/1/AvdLee/SwiftUI-Agent-Skill",
+    "alt": "SwiftUI Expert Skill repository preview"
+  },
+  "title": "SwiftUI Expert Skill",
+  "publisher": "Antoine van der Lee",
+  "publisherUrl": "https://www.avanderlee.com/",
+  "authors": [{ "name": "Antoine van der Lee", "url": "https://github.com/AvdLee" }],
+  "publishedAt": "2026-01-21",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "repository",
+  "topics": ["agent-workflows", "agent-readable-architecture", "code-review", "testing-evaluation", "human-in-the-loop"],
+  "summary": "Antoine van der Lee distills SwiftUI state, composition, performance, accessibility, modern API, and Instruments trace guidance into progressively loaded agent references. An experienced team can use its trace tooling on one known hitch, then review the structured hang, main-thread, and SwiftUI invalidation evidence before accepting an agent-proposed fix.",
+  "takeaway": "Give the skill one known SwiftUI hitch and require a narrow Instruments capture; accept a fix only when the structured trace identifies the same main-thread or invalidation cause.",
+  "availability": "available",
+  "relatedResourceIds": ["stratos-progressive-api-design-skills", "propmotion-swiftui-agent-skill"]
+}

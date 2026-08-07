@@ -1,0 +1,23 @@
+{
+  "id": "stratos-progressive-api-design-skills",
+  "slug": "stratos-progressive-api-design-skills",
+  "canonicalUrl": "https://github.com/peterfriese/Stratos",
+  "media": {
+    "type": "image",
+    "url": "https://opengraph.githubassets.com/1/peterfriese/Stratos",
+    "alt": "Stratos AI agent skills repository preview"
+  },
+  "title": "Stratos: Progressive API Design Skills for Swift and SwiftUI",
+  "publisher": "Peter Friese",
+  "publisherUrl": "https://peterfriese.dev/",
+  "authors": [{ "name": "Peter Friese", "url": "https://github.com/peterfriese" }],
+  "publishedAt": "2026-05-12",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "repository",
+  "topics": ["agent-workflows", "agent-readable-architecture", "code-review", "human-in-the-loop"],
+  "summary": "Peter Friese packages progressive disclosure into separate skills for API architecture, reusable SwiftUI components, and Swift libraries, with its July update aligned to Xcode 27 guidance. An experienced team can run the core skill against one public component API, then reject convenience modifiers and defaults that hide scaling, concurrency, or availability costs.",
+  "takeaway": "Audit one reusable SwiftUI component with Stratos before adopting it broadly; keep the simple call site, then expose advanced behavior through explicit, composable types.",
+  "availability": "available",
+  "relatedResourceIds": ["swiftui-expert-agent-skill", "propmotion-swiftui-agent-skill"]
+}

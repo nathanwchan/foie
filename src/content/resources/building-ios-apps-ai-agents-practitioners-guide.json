@@ -1,0 +1,23 @@
+{
+  "id": "building-ios-apps-ai-agents-practitioners-guide",
+  "slug": "building-ios-apps-ai-agents-practitioners-guide",
+  "canonicalUrl": "https://blakecrosley.com/guides/ios-agent-development",
+  "media": {
+    "type": "image",
+    "url": "https://blakecrosley.com/og/guide/ios-agent-development.png",
+    "alt": "Building iOS Apps with AI Agents practitioner guide preview"
+  },
+  "title": "Building iOS Apps with AI Agents: The Practitioner's Guide",
+  "publisher": "Blake Crosley",
+  "publisherUrl": "https://blakecrosley.com/",
+  "authors": [{ "name": "Blake Crosley", "url": "https://blakecrosley.com/about" }],
+  "publishedAt": "2026-04-13",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "article",
+  "topics": ["agent-workflows", "xcode-tooling", "agent-readable-architecture", "testing-evaluation", "visual-validation", "human-in-the-loop"],
+  "summary": "Blake Crosley turns lessons from eight shipped iOS apps into a detailed agent workflow covering MCP build access, project context, hooks, testing, architecture, and failure boundaries. An experienced team can start by blocking agent writes to .pbxproj, documenting the exact scheme and simulator commands, and requiring structured build-and-test evidence before review.",
+  "takeaway": "Add one deterministic guard before expanding agent autonomy: block writes to .pbxproj and require the agent to return the exact build, test, and simulator evidence used to verify each change.",
+  "availability": "available",
+  "relatedResourceIds": ["building-ios-apps-with-agents", "claude-code-ios-team-trust-boundary", "state-of-agentic-ios-engineering-2026"]
+}
