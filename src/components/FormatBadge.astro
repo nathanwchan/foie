@@ -1,0 +1,77 @@
+---
+import type { ResourceEntry } from "../lib/content";
+import { formatLabels } from "../lib/taxonomy";
+import { AudioLines, BookOpenText, FileText, GitBranch, Play, ScrollText, Share2, Wrench } from "@lucide/astro";
+import {
+  siBluesky,
+  siFacebook,
+  siInstagram,
+  siMastodon,
+  siReddit,
+  siThreads,
+  siTiktok,
+  siX,
+  siYoutube,
+  type SimpleIcon
+} from "simple-icons";
+
+interface Props {
+  resource: ResourceEntry;
+}
+
+const { resource } = Astro.props;
+const { data } = resource;
+const formatIcons = {
+  article: FileText,
+  video: Play,
+  podcast: AudioLines,
+  paper: ScrollText,
+  documentation: BookOpenText,
+  repository: GitBranch,
+  tool: Wrench,
+  social: Share2
+};
+
+function socialSource(value: string): { label: string; platform: string; icon?: SimpleIcon } {
+  const url = new URL(value);
+  const host = url.hostname.toLowerCase().replace(/^www\./, "");
+
+  if (host === "x.com" || host === "twitter.com") return { label: "X", platform: "x", icon: siX };
+  if (host === "youtube.com" || host === "youtu.be") return { label: "YouTube", platform: "youtube", icon: siYoutube };
+  if (host === "reddit.com" || host.endsWith(".reddit.com")) return { label: "Reddit", platform: "reddit", icon: siReddit };
+  if (host === "bsky.app") return { label: "Bluesky", platform: "bluesky", icon: siBluesky };
+  if (host === "threads.net") return { label: "Threads", platform: "threads", icon: siThreads };
+  if (host === "instagram.com") return { label: "Instagram", platform: "instagram", icon: siInstagram };
+  if (host === "tiktok.com") return { label: "TikTok", platform: "tiktok", icon: siTiktok };
+  if (host === "facebook.com") return { label: "Facebook", platform: "facebook", icon: siFacebook };
+  if (host === "linkedin.com" || host.endsWith(".linkedin.com")) return { label: "LinkedIn", platform: "linkedin" };
+  if (url.pathname.startsWith("/@")) return { label: "Mastodon", platform: "mastodon", icon: siMastodon };
+
+  return { label: host, platform: "social" };
+}
+
+let label = formatLabels[data.format];
+let platform: string = data.format;
+let brandIcon: SimpleIcon | undefined;
+const FormatIcon = formatIcons[data.format];
+
+if (data.format === "video" && data.media.type === "youtube") {
+  label = "YouTube";
+  platform = "youtube";
+  brandIcon = siYoutube;
+} else if (data.format === "social") {
+  const source = socialSource(data.canonicalUrl);
+  label = source.label;
+  platform = source.platform;
+  brandIcon = source.icon;
+}
+---
+
+<span class={`format-icon format-${data.format} platform-${platform}`} aria-hidden="true">
+  {brandIcon ? (
+    <svg class="brand-icon" viewBox="0 0 24 24" focusable="false"><path d={brandIcon.path}></path></svg>
+  ) : (
+    <FormatIcon size={14} />
+  )}
+</span>
+<span>{label}</span>

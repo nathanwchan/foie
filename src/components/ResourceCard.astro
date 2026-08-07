@@ -1,7 +1,8 @@
 ---
 import type { ResourceEntry } from "../lib/content";
 import { displayDate, hostName } from "../lib/content";
-import { formatLabels, topicLabels } from "../lib/taxonomy";
+import { topicLabels } from "../lib/taxonomy";
+import FormatBadge from "./FormatBadge.astro";
 import ResourceMedia from "./ResourceMedia.astro";
 
 interface Props {
@@ -28,8 +29,7 @@ const year = sortDate.getUTCFullYear().toString();
   <div class="card-link">
     <div class="card-copy">
       <div class="card-topline">
-        <span class={`format-icon format-${data.format}`} aria-hidden="true">{formatLabels[data.format].slice(0, 1)}</span>
-        <span>{formatLabels[data.format]}</span>
+        <FormatBadge resource={resource} />
         <span class="dot">•</span>
         <time datetime={sortDate.toISOString()}>{displayDate(sortDate)}</time>
       </div>

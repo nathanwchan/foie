@@ -101,9 +101,18 @@ main { min-height: calc(100vh - 210px); }
 .card-link { display: grid; grid-template-columns: 34px minmax(0, 1fr) 300px; gap: 24px; align-items: start; padding: 30px 0; }
 .card-copy { min-width: 0; }
 .card-topline { display: flex; align-items: center; gap: 7px; color: var(--muted); font-size: 12px; font-weight: 620; }
-.format-icon { width: 23px; height: 23px; display: grid; place-items: center; border-radius: 7px; background: var(--blue-soft); color: var(--blue); font-size: 10px; font-weight: 780; }
+.format-icon { width: 23px; height: 23px; display: grid; flex: 0 0 auto; place-items: center; border-radius: 7px; background: var(--blue-soft); color: var(--blue); }
+.format-icon svg { width: 13px; height: 13px; fill: none; stroke: currentColor; }
+.format-icon svg path { vector-effect: non-scaling-stroke; }
+.format-icon svg.brand-icon { fill: currentColor; stroke: none; }
 .format-paper { color: var(--violet); background: color-mix(in srgb, var(--violet) 14%, transparent); }
 .format-video, .format-podcast { color: var(--orange); background: color-mix(in srgb, var(--orange) 14%, transparent); }
+.platform-youtube { color: #ff0033; background: color-mix(in srgb, #ff0033 12%, transparent); }
+.platform-x { color: var(--text); background: var(--surface-soft); }
+.platform-mastodon { color: #6364ff; background: color-mix(in srgb, #6364ff 14%, transparent); }
+.platform-reddit { color: #ff4500; background: color-mix(in srgb, #ff4500 12%, transparent); }
+.platform-bluesky { color: #1185fe; background: color-mix(in srgb, #1185fe 12%, transparent); }
+.platform-threads, .platform-instagram, .platform-tiktok, .platform-facebook { color: var(--text); background: var(--surface-soft); }
 .dot { opacity: 0.55; }
 .resource-card h3 { margin: 13px 0 9px; font-size: clamp(21px, 2.2vw, 29px); line-height: 1.08; letter-spacing: -0.038em; transition: color 160ms ease; }
 .resource-card:hover h3 { color: var(--blue); }
