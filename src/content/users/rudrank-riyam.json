@@ -1,0 +1,14 @@
+{
+  "id": "rudrank-riyam",
+  "name": "Rudrank Riyam",
+  "addedAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "profiles": [
+    { "platform": "website", "handle": "rudrank.com", "url": "https://rudrank.com/" },
+    { "platform": "x", "handle": "@rudrank", "url": "https://x.com/rudrank" },
+    { "platform": "bluesky", "handle": "@rudrank.bsky.social", "url": "https://bsky.app/profile/rudrank.bsky.social" },
+    { "platform": "github", "handle": "@rudrankriyam", "url": "https://github.com/rudrankriyam" },
+    { "platform": "linkedin", "handle": "/in/rudrank", "url": "https://www.linkedin.com/in/rudrank" },
+    { "platform": "youtube", "handle": "@rudrankriyamm", "url": "https://www.youtube.com/@rudrankriyamm" }
+  ]
+}

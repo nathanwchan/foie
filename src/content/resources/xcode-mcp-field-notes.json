@@ -19,5 +19,6 @@
   "summary": "Matt Gallagher’s early field notes identify concrete integration failures in Xcode’s MCP tools: schema incompatibility with OpenCode, repeated authorization in Claude Desktop, navigator paths diverging from disk paths, confusing tab identifiers, unreadable update diffs, and test-list output that can overwhelm context.",
   "takeaway": "Add a smoke-test script for tool schema, authorization, path identity, diff readability, and test filtering before adopting an Xcode agent. Record unsupported calls so the agent avoids them.",
   "availability": "available",
+  "userIds": ["matt-gallagher"],
   "relatedResourceIds": ["codex-coresimulator-agent-instructions"]
 }

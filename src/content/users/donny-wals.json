@@ -1,0 +1,16 @@
+{
+  "id": "donny-wals",
+  "name": "Donny Wals",
+  "addedAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "profiles": [
+    { "platform": "website", "handle": "donnywals.com", "url": "https://www.donnywals.com/" },
+    { "platform": "x", "handle": "@donnywals", "url": "https://x.com/donnywals" },
+    { "platform": "mastodon", "handle": "@donnywals@mastodon.social", "url": "https://mastodon.social/@donnywals" },
+    { "platform": "bluesky", "handle": "@donnywals.bsky.social", "url": "https://bsky.app/profile/donnywals.bsky.social" },
+    { "platform": "github", "handle": "@donnywals", "url": "https://github.com/donnywals" },
+    { "platform": "linkedin", "handle": "/in/donny-wals-33660014", "url": "https://www.linkedin.com/in/donny-wals-33660014" },
+    { "platform": "youtube", "handle": "Donny Wals", "url": "https://www.youtube.com/channel/UCCBE9yHihCjh0ga8IIDEBhw" },
+    { "platform": "instagram", "handle": "@donnywalsdev", "url": "https://www.instagram.com/donnywalsdev/" }
+  ]
+}

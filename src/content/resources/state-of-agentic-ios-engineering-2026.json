@@ -19,5 +19,6 @@
   "summary": "Thomas Ricouard surveys his rapidly changing 2025 workflow for agentic iOS engineering, arguing that AI-driven programming is shifting primary code editing away from Xcode and making continuous tool evaluation part of the job. He frames the article as a broad retrospective on the editors, models, workflows, and opinions that shaped a year of experimentation.",
   "takeaway": "Pilot one agent-first editing workflow outside Xcode, document the human review and verification steps that remain essential, and reassess the setup regularly as models and tools change.",
   "availability": "available",
+  "userIds": ["thomas-ricouard"],
   "relatedResourceIds": ["building-ios-apps-with-agents", "coding-agents-production-ios", "jp-simard-escaping-ide"]
 }

@@ -1,0 +1,15 @@
+{
+  "id": "antoine-van-der-lee",
+  "name": "Antoine van der Lee",
+  "addedAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "profiles": [
+    { "platform": "website", "handle": "avanderlee.com", "url": "https://www.avanderlee.com/" },
+    { "platform": "x", "handle": "@twannl", "url": "https://x.com/twannl" },
+    { "platform": "bluesky", "handle": "@avanderlee.com", "url": "https://bsky.app/profile/avanderlee.com" },
+    { "platform": "github", "handle": "@avdlee", "url": "https://github.com/avdlee" },
+    { "platform": "linkedin", "handle": "/in/ajvanderlee", "url": "https://www.linkedin.com/in/ajvanderlee" },
+    { "platform": "youtube", "handle": "@avanderlee", "url": "https://www.youtube.com/@avanderlee" },
+    { "platform": "instagram", "handle": "@swiftlee_", "url": "https://www.instagram.com/swiftlee_/" }
+  ]
+}

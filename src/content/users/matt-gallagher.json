@@ -1,0 +1,13 @@
+{
+  "id": "matt-gallagher",
+  "name": "Matt Gallagher",
+  "addedAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "profiles": [
+    { "platform": "website", "handle": "cocoawithlove.com", "url": "https://www.cocoawithlove.com/" },
+    { "platform": "x", "handle": "@cocoawithlove", "url": "https://x.com/cocoawithlove" },
+    { "platform": "mastodon", "handle": "@cocoawithlove@mastodon.social", "url": "https://mastodon.social/@cocoawithlove" },
+    { "platform": "bluesky", "handle": "@cocoawithlove.bsky.social", "url": "https://bsky.app/profile/cocoawithlove.bsky.social" },
+    { "platform": "github", "handle": "@mattgallagher", "url": "https://github.com/mattgallagher" }
+  ]
+}

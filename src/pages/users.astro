@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CollectionNav from "../components/CollectionNav.astro";
+import UserCard from "../components/UserCard.astro";
+import { getResources, getUsers } from "../lib/content";
+
+const users = await getUsers();
+const resources = await getResources();
+---
+
+<BaseLayout
+  title="Users"
+  description="A manually curated directory of people working at the intersection of AI and iOS engineering, with links to their profiles and related posts."
+  canonicalPath="/users"
+>
+  <section class="home-hero users-hero shell">
+    <div>
+      <h1 class="display" data-header-reveal-after>
+        <span class="display-line display-primary">The people shaping</span>
+        <span class="display-line gradient-text">what comes next</span>
+      </h1>
+      <p class="lede">
+        A manually curated directory of people working at the intersection of AI and iOS engineering.<br />
+        Follow their work and explore their posts in the collection.
+      </p>
+      <CollectionNav />
+    </div>
+  </section>
+
+  <section class="users-section shell" data-pagefind-body>
+    <div class="users-heading">
+      <p>{users.length} people</p>
+      <p>Alphabetical</p>
+    </div>
+    <div class="users-list">
+      {users.map((user) => (
+        <UserCard
+          user={user}
+          resources={resources.filter((resource) => resource.data.userIds.includes(user.data.id))}
+        />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

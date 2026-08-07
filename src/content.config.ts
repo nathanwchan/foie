@@ -3,6 +3,21 @@ import { z } from "astro/zod";
 import { glob } from "astro/loaders";
 import { availabilityStatuses, resourceFormats, topics } from "./lib/taxonomy";
 
+const contentIdSchema = z.string().regex(/^[a-z0-9-]+$/);
+const profilePlatforms = [
+  "website",
+  "x",
+  "mastodon",
+  "bluesky",
+  "github",
+  "linkedin",
+  "youtube",
+  "threads",
+  "medium",
+  "instagram",
+  "patreon"
+] as const;
+
 const authorSchema = z.object({
   name: z.string().min(1),
   url: z.url().optional()
@@ -37,8 +52,8 @@ const mediaSchema = z.discriminatedUnion("type", [
 const resources = defineCollection({
   loader: glob({ pattern: "**/*.json", base: "./src/content/resources" }),
   schema: z.object({
-    id: z.string().regex(/^[a-z0-9-]+$/),
-    slug: z.string().regex(/^[a-z0-9-]+$/),
+    id: contentIdSchema,
+    slug: contentIdSchema,
     canonicalUrl: z.url(),
     media: mediaSchema,
     title: z.string().min(8),
@@ -53,7 +68,8 @@ const resources = defineCollection({
     summary: z.string().min(120).max(640),
     takeaway: z.string().min(45).max(280),
     availability: z.enum(availabilityStatuses).default("available"),
-    relatedResourceIds: z.array(z.string()).default([])
+    relatedResourceIds: z.array(contentIdSchema).default([]),
+    userIds: z.array(contentIdSchema).default([])
   }).strict().superRefine((resource, context) => {
     const primaryAuthor = resource.authors[0]?.name;
     if (primaryAuthor && !resource.summary.startsWith(primaryAuthor)) {
@@ -100,4 +116,41 @@ const resources = defineCollection({
   })
 });
 
-export const collections = { resources };
+const users = defineCollection({
+  loader: glob({ pattern: "**/*.json", base: "./src/content/users" }),
+  schema: z.object({
+    id: contentIdSchema,
+    name: z.string().min(1),
+    addedAt: z.coerce.date(),
+    lastVerifiedAt: z.coerce.date(),
+    profiles: z.array(z.object({
+      platform: z.enum(profilePlatforms),
+      handle: z.string().min(1),
+      url: z.url()
+    }).strict()).min(1)
+  }).strict().superRefine((user, context) => {
+    const platforms = new Set<string>();
+    const urls = new Set<string>();
+    user.profiles.forEach((profile, index) => {
+      if (platforms.has(profile.platform)) {
+        context.addIssue({
+          code: "custom",
+          path: ["profiles", index, "platform"],
+          message: `Profile platform ${profile.platform} is duplicated`
+        });
+      }
+      platforms.add(profile.platform);
+
+      if (urls.has(profile.url)) {
+        context.addIssue({
+          code: "custom",
+          path: ["profiles", index, "url"],
+          message: "Profile URL is duplicated"
+        });
+      }
+      urls.add(profile.url);
+    });
+  })
+});
+
+export const collections = { resources, users };

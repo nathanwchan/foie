@@ -1,0 +1,13 @@
+---
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+const isUsers = Astro.url.pathname.startsWith("/users");
+---
+
+<nav class:list={["collection-nav", { "collection-nav-compact": compact }]} aria-label="Browse collection">
+  <a href="/" aria-current={!isUsers ? "page" : undefined}>Posts</a>
+  <a href="/users" aria-current={isUsers ? "page" : undefined}>Users</a>
+</nav>

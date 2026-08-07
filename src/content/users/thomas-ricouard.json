@@ -1,0 +1,16 @@
+{
+  "id": "thomas-ricouard",
+  "name": "Thomas Ricouard",
+  "addedAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "profiles": [
+    { "platform": "website", "handle": "dimillian.app", "url": "https://www.dimillian.app/" },
+    { "platform": "x", "handle": "@dimillian", "url": "https://x.com/dimillian" },
+    { "platform": "mastodon", "handle": "@dimillian@mastodon.social", "url": "https://mastodon.social/@dimillian" },
+    { "platform": "bluesky", "handle": "@dimillian.app", "url": "https://bsky.app/profile/dimillian.app" },
+    { "platform": "github", "handle": "@dimillian", "url": "https://github.com/dimillian" },
+    { "platform": "linkedin", "handle": "/in/dimillian", "url": "https://www.linkedin.com/in/dimillian" },
+    { "platform": "threads", "handle": "@dimillian", "url": "https://www.threads.net/@dimillian" },
+    { "platform": "medium", "handle": "@dimillian", "url": "https://dimillian.medium.com/" }
+  ]
+}

@@ -32,6 +32,7 @@ Read [references/content-contract.md](references/content-contract.md) before cha
 6. Assign only controlled format and topic values from the content contract.
 7. Add source-native media. Use an inspectable YouTube or first-party video when the chosen resource is a video or a video-recorded podcast. For an X post containing video, store the canonical post ID, its poster image, and the most stable directly playable MP4 variant available from X; verify that the URL accepts byte-range requests before publishing. The site must render a video-only native player rather than expanding the full X post. Otherwise use the chosen source's relevant Open Graph image or a directly relevant figure. Never generate a generic placeholder or use a companion URL merely to make the card look like a different format.
 8. Create one JSON file per accepted resource and update related-resource links where useful.
+9. Never discover or create user profiles during scheduled research. The Users collection is manually curated and changes only when the curator explicitly names people to add or update. A new resource may reference an existing curated user with `userIds` when the inspected source confirms the association.
 
 ## Publish the growing collection
 

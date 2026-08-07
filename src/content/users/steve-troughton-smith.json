@@ -1,0 +1,15 @@
+{
+  "id": "steve-troughton-smith",
+  "name": "Steve Troughton-Smith",
+  "addedAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "profiles": [
+    { "platform": "website", "handle": "highcaffeinecontent.com", "url": "https://www.highcaffeinecontent.com/" },
+    { "platform": "x", "handle": "@stroughtonsmith", "url": "https://x.com/stroughtonsmith" },
+    { "platform": "mastodon", "handle": "@stroughtonsmith@mastodon.social", "url": "https://mastodon.social/@stroughtonsmith" },
+    { "platform": "bluesky", "handle": "@stroughtonsmith.mastodon.social.ap.brid.gy", "url": "https://bsky.app/profile/stroughtonsmith.mastodon.social.ap.brid.gy" },
+    { "platform": "github", "handle": "@steventroughtonsmith", "url": "https://github.com/steventroughtonsmith" },
+    { "platform": "linkedin", "handle": "/in/steventroughtonsmith", "url": "https://www.linkedin.com/in/steventroughtonsmith" },
+    { "platform": "patreon", "handle": "@steventroughtonsmith", "url": "https://www.patreon.com/steventroughtonsmith" }
+  ]
+}

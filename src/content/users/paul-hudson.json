@@ -1,0 +1,14 @@
+{
+  "id": "paul-hudson",
+  "name": "Paul Hudson",
+  "addedAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "profiles": [
+    { "platform": "website", "handle": "hackingwithswift.com", "url": "https://www.hackingwithswift.com/" },
+    { "platform": "x", "handle": "@twostraws", "url": "https://x.com/twostraws" },
+    { "platform": "mastodon", "handle": "@twostraws@mastodon.social", "url": "https://mastodon.social/@twostraws" },
+    { "platform": "github", "handle": "@twostraws", "url": "https://github.com/twostraws" },
+    { "platform": "linkedin", "handle": "/in/twostraws", "url": "https://www.linkedin.com/in/twostraws" },
+    { "platform": "youtube", "handle": "@twostraws", "url": "https://www.youtube.com/@twostraws" }
+  ]
+}

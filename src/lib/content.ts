@@ -1,6 +1,7 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 
 export type ResourceEntry = CollectionEntry<"resources">;
+export type UserEntry = CollectionEntry<"users">;
 
 export async function getResources() {
   return (await getCollection("resources")).sort((a, b) => {
@@ -8,6 +9,10 @@ export async function getResources() {
     const bDate = b.data.publishedAt?.getTime() ?? b.data.discoveredAt.getTime();
     return bDate - aDate;
   });
+}
+
+export async function getUsers() {
+  return (await getCollection("users")).sort((a, b) => a.data.name.localeCompare(b.data.name));
 }
 
 export function displayDate(date: Date | null, options: Intl.DateTimeFormatOptions = {}) {

@@ -29,6 +29,7 @@
   "summary": "Antoine van der Lee presents a version-matched RocketSim CLI and Agent Skill that let coding agents inspect and operate Simulator, while RocketSim 16 adds a narrower set of repeatable actions for USB-connected devices. An iOS team can pilot one acceptance flow in Simulator, then move only supported checks—such as deep links, locales, or locations—to real hardware.",
   "takeaway": "Separate simulator and device capabilities explicitly, and require compact UI evidence plus actionable failures instead of treating compilation as verification.",
   "availability": "available",
+  "userIds": ["antoine-van-der-lee"],
   "relatedResourceIds": [
     "sim-use-mobile-verification-loop",
     "mobile-agent-device-proof",

@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import FilterBar from "../components/FilterBar.astro";
 import ResourceCard from "../components/ResourceCard.astro";
+import CollectionNav from "../components/CollectionNav.astro";
 import { getResources } from "../lib/content";
 import { execFileSync } from "node:child_process";
 
@@ -31,6 +32,7 @@ const updatedLabel = `${updatedDate} ${updatedTime}`;
         What it means to be an iOS engineer is changing in real time.<br />
         Follow the tools, ideas, and thought leaders defining what comes next.
       </p>
+      <CollectionNav />
     </div>
   </section>
 

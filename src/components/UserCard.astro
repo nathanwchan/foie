@@ -1,0 +1,47 @@
+---
+import type { ResourceEntry, UserEntry } from "../lib/content";
+import { displayDate } from "../lib/content";
+import { formatLabels } from "../lib/taxonomy";
+import ProfileLink from "./ProfileLink.astro";
+
+interface Props {
+  user: UserEntry;
+  resources: ResourceEntry[];
+}
+
+const { user, resources } = Astro.props;
+---
+
+<article class="user-card" id={user.data.id}>
+  <div class="user-card-header">
+    <h2>{user.data.name}</h2>
+    <div class="profile-links" aria-label={`${user.data.name} profiles`}>
+      {user.data.profiles.map((profile) => <ProfileLink profile={profile} />)}
+    </div>
+  </div>
+
+  <div class="user-posts">
+    <p class="user-posts-label">{resources.length === 1 ? "1 associated post" : `${resources.length} associated posts`}</p>
+    {resources.length > 0 ? (
+      <ul>
+        {resources.map((resource) => {
+          const sortDate = resource.data.publishedAt ?? resource.data.discoveredAt;
+          return (
+            <li>
+              <a href={resource.data.canonicalUrl} target="_blank" rel="noreferrer">
+                <span class="user-post-meta">
+                  <span>{formatLabels[resource.data.format]}</span>
+                  <span aria-hidden="true">•</span>
+                  <time datetime={sortDate.toISOString()}>{displayDate(sortDate)}</time>
+                </span>
+                <span class="user-post-title">{resource.data.title} <span aria-hidden="true">↗</span></span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
+    ) : (
+      <p class="user-posts-empty">No posts in the collection yet.</p>
+    )}
+  </div>
+</article>

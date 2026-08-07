@@ -4,6 +4,7 @@ import path from "node:path";
 export const allowedFormats = ["article", "video", "podcast", "paper", "documentation", "repository", "tool", "social"];
 export const allowedTopics = ["agent-workflows", "xcode-tooling", "agent-readable-architecture", "code-review", "testing-evaluation", "visual-validation", "sdlc-automation", "human-in-the-loop"];
 export const allowedMediaTypes = ["image", "youtube", "video", "x"];
+export const allowedProfilePlatforms = ["website", "x", "mastodon", "bluesky", "github", "linkedin", "youtube", "threads", "medium", "instagram", "patreon"];
 const trackingKeys = new Set(["fbclid", "gclid", "mc_cid", "mc_eid", "ref", "source"]);
 
 function isYouTubeUrl(value) {
@@ -35,6 +36,7 @@ function isDate(value) {
 export async function validateContent(rootDirectory) {
   const errors = [];
   const resources = await readJsonDirectory(path.join(rootDirectory, "src/content/resources"));
+  const users = await readJsonDirectory(path.join(rootDirectory, "src/content/users"));
   const ledger = JSON.parse(await fs.readFile(path.join(rootDirectory, "data/discovery-ledger.json"), "utf8"));
   const ids = new Map();
   const urls = new Map();
@@ -114,6 +116,42 @@ export async function validateContent(rootDirectory) {
     }
   }
 
+  const userById = new Map();
+  for (const { file, data } of users) {
+    const label = `user ${file}`;
+    if (data.id !== file.replace(/\.json$/, "")) errors.push(`${label}: filename must match id`);
+    if (userById.has(data.id)) errors.push(`${label}: duplicate id also used by ${userById.get(data.id)}`);
+    userById.set(data.id, file);
+    if (!data.name) errors.push(`${label}: missing name`);
+    if (!isDate(data.addedAt) || !isDate(data.lastVerifiedAt)) errors.push(`${label}: invalid date`);
+    if (!Array.isArray(data.profiles) || data.profiles.length === 0) errors.push(`${label}: at least one profile is required`);
+
+    const profilePlatforms = new Set();
+    const profileUrls = new Set();
+    for (const profile of data.profiles ?? []) {
+      if (!allowedProfilePlatforms.includes(profile.platform)) errors.push(`${label}: invalid profile platform ${profile.platform}`);
+      if (profilePlatforms.has(profile.platform)) errors.push(`${label}: duplicate profile platform ${profile.platform}`);
+      profilePlatforms.add(profile.platform);
+      if (!profile.handle) errors.push(`${label}: profile ${profile.platform} is missing a handle`);
+      try {
+        const normalized = canonicalizeUrl(profile.url);
+        if (profileUrls.has(normalized)) errors.push(`${label}: duplicate profile URL ${profile.url}`);
+        profileUrls.add(normalized);
+      } catch {
+        errors.push(`${label}: invalid profile URL ${profile.url}`);
+      }
+    }
+  }
+
+  for (const { file, data } of resources) {
+    const seenUserIds = new Set();
+    for (const userId of data.userIds ?? []) {
+      if (seenUserIds.has(userId)) errors.push(`resource ${file}: duplicate user ${userId}`);
+      seenUserIds.add(userId);
+      if (!userById.has(userId)) errors.push(`resource ${file}: unknown user ${userId}`);
+    }
+  }
+
   const ledgerUrls = new Map();
   const ledgerResourceIds = new Set();
   for (const [index, entry] of (ledger.entries ?? []).entries()) {
@@ -147,5 +185,5 @@ export async function validateContent(rootDirectory) {
     if (!ledgerResourceIds.has(resourceId)) errors.push(`resource ${resourceId}: missing accepted discovery-ledger entry`);
   }
 
-  return { errors, counts: { resources: resources.length, ledgerEntries: ledger.entries?.length ?? 0 } };
+  return { errors, counts: { resources: resources.length, users: users.length, ledgerEntries: ledger.entries?.length ?? 0 } };
 }

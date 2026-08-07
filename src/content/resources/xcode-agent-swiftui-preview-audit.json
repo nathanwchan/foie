@@ -19,5 +19,6 @@
   "summary": "Matt Gallagher describes using an Xcode agent to audit hundreds of SwiftUI Previews whose mock data and services had decayed after years of slow or unreliable preview builds. The agent turns a large, repetitive maintenance backlog into an opportunity to restore a useful visual-development surface.",
   "takeaway": "Inventory every Preview target, repair stale mocks in small batches, and record the build result. Once healthy, run the same audit periodically so preview failures stop accumulating silently.",
   "availability": "available",
+  "userIds": ["matt-gallagher"],
   "relatedResourceIds": ["sunday-swift-agent-verification"]
 }

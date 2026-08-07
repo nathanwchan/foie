@@ -1,0 +1,67 @@
+---
+import type { UserEntry } from "../lib/content";
+import { BriefcaseBusiness, Globe } from "@lucide/astro";
+import {
+  siBluesky,
+  siGithub,
+  siInstagram,
+  siMastodon,
+  siMedium,
+  siPatreon,
+  siThreads,
+  siX,
+  siYoutube,
+  type SimpleIcon
+} from "simple-icons";
+
+type Profile = UserEntry["data"]["profiles"][number];
+
+interface Props {
+  profile: Profile;
+}
+
+const { profile } = Astro.props;
+const labels: Record<Profile["platform"], string> = {
+  website: "Website",
+  x: "X",
+  mastodon: "Mastodon",
+  bluesky: "Bluesky",
+  github: "GitHub",
+  linkedin: "LinkedIn",
+  youtube: "YouTube",
+  threads: "Threads",
+  medium: "Medium",
+  instagram: "Instagram",
+  patreon: "Patreon"
+};
+const icons: Partial<Record<Profile["platform"], SimpleIcon>> = {
+  x: siX,
+  mastodon: siMastodon,
+  bluesky: siBluesky,
+  github: siGithub,
+  youtube: siYoutube,
+  threads: siThreads,
+  medium: siMedium,
+  instagram: siInstagram,
+  patreon: siPatreon
+};
+const icon = icons[profile.platform];
+const label = labels[profile.platform];
+---
+
+<a
+  class={`profile-link profile-${profile.platform}`}
+  href={profile.url}
+  target="_blank"
+  rel="noreferrer"
+  aria-label={`${label}: ${profile.handle}`}
+  title={`${label}: ${profile.handle}`}
+>
+  {icon ? (
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d={icon.path}></path></svg>
+  ) : profile.platform === "linkedin" ? (
+    <BriefcaseBusiness aria-hidden="true" />
+  ) : (
+    <Globe aria-hidden="true" />
+  )}
+</a>

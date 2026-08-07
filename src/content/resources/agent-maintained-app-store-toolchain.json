@@ -19,5 +19,6 @@
   "summary": "Rudrank Riyam describes evolving App Store Connect CLI into a tool whose agents triage issues and pull requests, implement fixes, audit those fixes, and cut releases. He also outlines a feedback loop where usage analytics identify points of agent friction and a separate verification agent checks improvements before release.",
   "takeaway": "Start with one closed maintenance loop: convert a recurring support failure into an issue, let an agent propose the fix, require an independent audit, and release only after the existing checks pass.",
   "availability": "available",
+  "userIds": ["rudrank-riyam"],
   "relatedResourceIds": ["doordash-swift-testing-migration"]
 }

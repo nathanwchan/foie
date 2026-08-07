@@ -31,12 +31,15 @@ The production build validates schemas, controlled vocabulary, canonical URL uni
 ## Content model
 
 - `src/content/resources/`: one JSON record per accepted source
+- `src/content/users/`: one manually curated JSON record per person, with verified public profile links
 - `data/discovery-ledger.json`: non-public audit trail for accepted, skipped, duplicate, and unavailable discoveries
 - `.agents/skills/curate-ios-engineering/`: the durable curation and publication workflow
 
 The scheduled Codex task invokes the repository-local skill instead of carrying a large duplicated prompt. Successful runs publish directly to `main`; no-change runs report without creating a commit.
 
 Resources are presented as complete feed cells rather than internal detail pages. Each resource selects one best canonical source; titles and preview art point to that destination. Equivalent mirrors remain private discovery-ledger aliases used only for deduplication.
+
+People are linked to posts through explicit `userIds` on resource records. The scheduled discovery workflow never adds people automatically; user records are created only through direct curator requests.
 
 ## Scope
 
