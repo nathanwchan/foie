@@ -11,7 +11,7 @@ interface Props {
 
 const {
   title = "Future of iOS Engineering",
-  description = "Signals, sources, and practical guidance for teams building iOS software with coding agents.",
+  description = "One place to follow the tools, workflows, and real-world lessons shaping AI-assisted iOS development.",
   canonicalPath = Astro.url.pathname
 } = Astro.props;
 const pageTitle = title === "Future of iOS Engineering" ? title : `${title} · Future of iOS Engineering`;
@@ -36,7 +36,7 @@ const socialImage = new URL("/og.png", Astro.site ?? Astro.url.origin);
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={socialImage} />
-    <meta property="og:image:alt" content="Future of iOS Engineering — The future of iOS work, decoded." />
+    <meta property="og:image:alt" content="Future of iOS Engineering — The future of iOS engineering, as it unfolds." />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content={socialImage} />
     <title>{pageTitle}</title>
