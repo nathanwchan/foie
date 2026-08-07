@@ -7,8 +7,6 @@ import { getResources } from "../lib/content";
 const resources = await getResources();
 const feed = resources;
 const initialTopic = Astro.url.searchParams.get("topic") ?? "";
-const publisherCount = new Set(resources.map((resource) => resource.data.publisher)).size;
-const formatCount = new Set(resources.map((resource) => resource.data.format)).size;
 ---
 
 <BaseLayout>
@@ -17,12 +15,6 @@ const formatCount = new Set(resources.map((resource) => resource.data.format)).s
       <p class="eyebrow">Intelligence for native software teams</p>
       <h1 class="display">The future of iOS work, <span class="gradient-text">decoded.</span></h1>
       <p class="lede">A bright, source-led feed for senior engineers building with agents—without losing the craft, judgment, and verification that make great apps.</p>
-    </div>
-    <div class="metric-rail" aria-label="Collection statistics">
-      <div class="metric"><strong>{resources.length}</strong><span>curated resources</span></div>
-      <div class="metric"><strong>{publisherCount}</strong><span>publishers and voices</span></div>
-      <div class="metric"><strong>{formatCount}</strong><span>source formats</span></div>
-      <div class="metric"><strong>Sunday</strong><span>automated collection refresh</span></div>
     </div>
   </section>
 
