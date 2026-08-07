@@ -28,6 +28,7 @@ const mediaSchema = z.discriminatedUnion("type", [
   z.object({
     type: z.literal("x"),
     postId: z.string().regex(/^\d{15,22}$/),
+    videoUrl: z.url(),
     posterUrl: z.url(),
     title: z.string().min(1).max(180)
   })
@@ -86,14 +87,14 @@ const resources = defineCollection({
       context.addIssue({
         code: "custom",
         path: ["media", "postId"],
-        message: "X embed postId must match the canonical X post URL"
+        message: "X video postId must match the canonical X post URL"
       });
     }
     if (resource.media.type === "video" && canonicalIsX) {
       context.addIssue({
         code: "custom",
         path: ["media", "type"],
-        message: "X video posts must use the official X embed media type"
+        message: "X video posts must use the X video media type"
       });
     }
   })

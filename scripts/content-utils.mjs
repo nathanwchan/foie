@@ -58,7 +58,7 @@ export async function validateContent(rootDirectory) {
       if (!data.media.url || !data.media.posterUrl || !data.media.title) errors.push(`${label}: video media requires url, posterUrl, and title`);
     }
     if (data.media?.type === "x") {
-      if (!/^\d{15,22}$/.test(data.media.postId ?? "") || !data.media.posterUrl || !data.media.title) errors.push(`${label}: X media requires a valid postId, posterUrl, and title`);
+      if (!/^\d{15,22}$/.test(data.media.postId ?? "") || !data.media.videoUrl || !data.media.posterUrl || !data.media.title) errors.push(`${label}: X media requires a valid postId, videoUrl, posterUrl, and title`);
       try {
         const canonicalUrl = new URL(data.canonicalUrl);
         const canonicalHost = canonicalUrl.hostname.toLowerCase().replace(/^www\./, "");
@@ -71,7 +71,7 @@ export async function validateContent(rootDirectory) {
     if (data.media?.type === "video") {
       try {
         const canonicalHost = new URL(data.canonicalUrl).hostname.toLowerCase().replace(/^www\./, "");
-        if (canonicalHost === "x.com" || canonicalHost === "twitter.com") errors.push(`${label}: X video posts must use official X embed media`);
+        if (canonicalHost === "x.com" || canonicalHost === "twitter.com") errors.push(`${label}: X video posts must use X video media`);
       } catch {
         // The canonical URL is reported by the URL validation below.
       }
@@ -83,7 +83,7 @@ export async function validateContent(rootDirectory) {
     } catch {
       // The canonical URL is reported by the URL validation below.
     }
-    for (const value of [data.media?.url, data.media?.posterUrl].filter(Boolean)) {
+    for (const value of [data.media?.url, data.media?.videoUrl, data.media?.posterUrl].filter(Boolean)) {
       try { new URL(value); } catch { errors.push(`${label}: invalid media URL ${value}`); }
     }
     if (!Array.isArray(data.topics) || data.topics.length === 0) errors.push(`${label}: at least one topic is required`);

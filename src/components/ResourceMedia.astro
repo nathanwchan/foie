@@ -28,19 +28,10 @@ const media = data.media;
     </video>
   )}
   {media.type === "x" && (
-    <button
-      class="x-video-trigger"
-      type="button"
-      data-x-video-trigger
-      data-x-url={data.canonicalUrl}
-      data-x-title={media.title}
-      aria-label={`Play ${media.title} from X`}
-    >
-      <img src={media.posterUrl} alt="" loading="lazy" decoding="async" />
-      <span class="x-video-play" aria-hidden="true">
-        <span></span>
-      </span>
-    </button>
+    <video controls preload="metadata" poster={media.posterUrl} playsinline aria-label={media.title}>
+      <source src={media.videoUrl} type="video/mp4" />
+      <a href={data.canonicalUrl} target="_blank" rel="noreferrer">Watch {data.title} on X</a>
+    </video>
   )}
   {media.type === "image" && (
     <a href={data.canonicalUrl} target="_blank" rel="noreferrer" aria-label={`Open ${data.title} on ${data.publisher}`}>
@@ -48,65 +39,3 @@ const media = data.media;
     </a>
   )}
 </div>
-
-<script>
-  interface XWidgetsWindow extends Window {
-    twttr?: { widgets?: { load: (element?: HTMLElement) => void } };
-  }
-
-  const xWindow = window as XWidgetsWindow;
-
-  function loadXWidgets() {
-    if (xWindow.twttr?.widgets) return Promise.resolve();
-
-    return new Promise<void>((resolve, reject) => {
-      const existing = document.querySelector<HTMLScriptElement>("script[data-x-widgets]");
-      if (existing) {
-        existing.addEventListener("load", () => resolve(), { once: true });
-        existing.addEventListener("error", () => reject(new Error("X embed failed to load")), { once: true });
-        return;
-      }
-
-      const script = document.createElement("script");
-      script.src = "https://platform.twitter.com/widgets.js";
-      script.async = true;
-      script.dataset.xWidgets = "true";
-      script.addEventListener("load", () => resolve(), { once: true });
-      script.addEventListener("error", () => reject(new Error("X embed failed to load")), { once: true });
-      document.head.append(script);
-    });
-  }
-
-  document.addEventListener("click", async (event) => {
-    if (!(event.target instanceof Element)) return;
-    const trigger = event.target.closest<HTMLButtonElement>("[data-x-video-trigger]");
-    if (!trigger) return;
-
-    const container = trigger.closest<HTMLElement>(".resource-media-x");
-    const url = trigger.dataset.xUrl;
-    if (!container || !url) return;
-
-    const embed = document.createElement("blockquote");
-    embed.className = "twitter-tweet";
-    embed.dataset.dnt = "true";
-    embed.dataset.conversation = "none";
-    embed.dataset.theme = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-
-    const fallback = document.createElement("a");
-    fallback.href = url;
-    fallback.target = "_blank";
-    fallback.rel = "noreferrer";
-    fallback.textContent = `Watch ${trigger.dataset.xTitle ?? "this video"} on X`;
-    embed.append(fallback);
-
-    container.classList.add("x-embed-active");
-    container.replaceChildren(embed);
-
-    try {
-      await loadXWidgets();
-      xWindow.twttr?.widgets?.load(container);
-    } catch {
-      container.classList.add("x-embed-unavailable");
-    }
-  });
-</script>
