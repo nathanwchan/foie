@@ -20,14 +20,6 @@ export const topics = [
   "human-in-the-loop"
 ] as const;
 
-export const evidenceTypes = [
-  "official",
-  "production-case-study",
-  "research",
-  "practitioner",
-  "community"
-] as const;
-
 export const availabilityStatuses = ["available", "temporarily-unavailable", "archived"] as const;
 
 export const formatLabels: Record<(typeof resourceFormats)[number], string> = {
@@ -50,12 +42,4 @@ export const topicLabels: Record<(typeof topics)[number], string> = {
   "visual-validation": "Visual validation",
   "sdlc-automation": "SDLC automation",
   "human-in-the-loop": "Human in the loop"
-};
-
-export const evidenceLabels: Record<(typeof evidenceTypes)[number], string> = {
-  official: "Official",
-  "production-case-study": "Production case study",
-  research: "Research",
-  practitioner: "Practitioner",
-  community: "Community signal"
 };

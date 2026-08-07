@@ -12,7 +12,6 @@
   "lastVerifiedAt": "2026-08-06",
   "format": "tool",
   "topics": ["xcode-tooling", "agent-workflows", "testing-evaluation", "visual-validation"],
-  "evidenceType": "practitioner",
   "summary": "XcodeBuildMCP is an open-source MCP server and CLI that gives coding agents structured access to Apple-platform build, test, simulator, device, logging, debugging, and UI-automation workflows. It turns the normally manual Xcode feedback loop into callable evidence an external agent can use to recover from errors.",
   "takeaway": "Use a structured build-and-simulator bridge so the agent can prove its work with compiler output, tests, screenshots, logs, and interactions before review.",
   "availability": "available",

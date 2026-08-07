@@ -12,7 +12,6 @@
   "lastVerifiedAt": "2026-08-06",
   "format": "article",
   "topics": ["sdlc-automation", "testing-evaluation", "agent-readable-architecture", "human-in-the-loop"],
-  "evidenceType": "production-case-study",
   "summary": "DoorDash’s iOS platform team encoded a repeatable XCTest-to-Swift-Testing migration in Cursor rules, connected build and test commands through SweetPad and MCP, and kept module ownership with individual teams. Reliability gates, including repeated clean runs, turned a broad migration into bounded work that agents could verify.",
   "takeaway": "For large migrations, encode the mechanical procedure and exact verification commands, then let domain owners review behavior rather than supervise every edit.",
   "availability": "available",

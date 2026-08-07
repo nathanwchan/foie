@@ -8,7 +8,6 @@ Required values are enforced in `src/content.config.ts`. Use these enums:
 
 - Format: `article`, `video`, `podcast`, `paper`, `documentation`, `repository`, `tool`, `social`
 - Topic: `agent-workflows`, `xcode-tooling`, `agent-readable-architecture`, `code-review`, `testing-evaluation`, `visual-validation`, `sdlc-automation`, `human-in-the-loop`
-- Evidence: `official`, `production-case-study`, `research`, `practitioner`, `community`
 - Availability: `available`, `temporarily-unavailable`, `archived`
 
 Use ISO `YYYY-MM-DD` dates. Set `publishedAt` to `null` only when the original source exposes no reliable date. Set `discoveredAt` and `lastVerifiedAt` to the current run date.

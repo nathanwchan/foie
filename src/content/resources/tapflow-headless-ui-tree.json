@@ -12,7 +12,6 @@
   "lastVerifiedAt": "2026-08-06",
   "format": "repository",
   "topics": ["visual-validation", "testing-evaluation", "xcode-tooling", "agent-workflows"],
-  "evidenceType": "practitioner",
   "summary": "This merged TapFlow change replaces a Simulator-window-dependent accessibility path with a resident XCUITest runner that serves the foreground app’s accessibility tree over loopback HTTP. It makes headless UI inspection deterministic and aligns automated agent interactions with the same coordinate space used for taps.",
   "takeaway": "Expose accessibility state as structured, repeatable evidence so an agent can verify interface behavior without depending on a visible Simulator window.",
   "availability": "available",

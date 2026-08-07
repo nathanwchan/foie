@@ -12,7 +12,6 @@
   "lastVerifiedAt": "2026-08-06",
   "format": "paper",
   "topics": ["testing-evaluation", "agent-workflows", "human-in-the-loop"],
-  "evidenceType": "research",
   "summary": "SWE-Bench Mobile evaluates 22 agent-model configurations on realistic tasks drawn from a production mixed Swift and Objective-C codebase, including multimodal requirements and comprehensive tests. The best configuration solved only 12 percent of tasks, and the same model varied by as much as sixfold across agent harnesses.",
   "takeaway": "Build an internal iOS task benchmark and evaluate the complete harness—not only the model—before granting broader autonomy on production work.",
   "availability": "available",

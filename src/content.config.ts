@@ -1,7 +1,7 @@
 import { defineCollection } from "astro:content";
 import { z } from "astro/zod";
 import { glob } from "astro/loaders";
-import { availabilityStatuses, evidenceTypes, resourceFormats, topics } from "./lib/taxonomy";
+import { availabilityStatuses, resourceFormats, topics } from "./lib/taxonomy";
 
 const authorSchema = z.object({
   name: z.string().min(1),
@@ -24,7 +24,6 @@ const resources = defineCollection({
     lastVerifiedAt: z.coerce.date(),
     format: z.enum(resourceFormats),
     topics: z.array(z.enum(topics)).min(1),
-    evidenceType: z.enum(evidenceTypes),
     summary: z.string().min(120).max(640),
     takeaway: z.string().min(45).max(280),
     availability: z.enum(availabilityStatuses).default("available"),

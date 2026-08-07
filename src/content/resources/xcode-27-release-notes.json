@@ -12,7 +12,6 @@
   "lastVerifiedAt": "2026-08-06",
   "format": "documentation",
   "topics": ["xcode-tooling", "agent-workflows", "visual-validation", "human-in-the-loop"],
-  "evidenceType": "official",
   "summary": "Apple’s technical release notes document Xcode’s evolution into an agent-capable development environment, including richer tools for coding agents, diagnostics, previews, debugger access, extensibility, and controlled project access. They are the primary source for the concrete platform surface available to iOS teams.",
   "takeaway": "Treat Xcode’s agent interfaces as platform infrastructure: track each release, then update team workflows only against capabilities Apple actually ships.",
   "availability": "available",

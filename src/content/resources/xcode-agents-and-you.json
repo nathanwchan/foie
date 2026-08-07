@@ -12,7 +12,6 @@
   "lastVerifiedAt": "2026-08-06",
   "format": "video",
   "topics": ["xcode-tooling", "agent-workflows", "visual-validation", "human-in-the-loop"],
-  "evidenceType": "official",
   "summary": "This WWDC session walks through agent-assisted work inside Xcode from exploring an unfamiliar project through building, refining, and orchestrating tasks. Apple frames the coding assistant as an adaptable collaborator that can use project context while keeping the developer engaged in creative and consequential decisions.",
   "takeaway": "Use Apple’s workflow model as a baseline for deciding which project context, previews, and review checkpoints your own agent setup must expose.",
   "availability": "available",

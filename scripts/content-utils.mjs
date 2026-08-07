@@ -3,7 +3,6 @@ import path from "node:path";
 
 export const allowedFormats = ["article", "video", "podcast", "paper", "documentation", "repository", "tool", "social"];
 export const allowedTopics = ["agent-workflows", "xcode-tooling", "agent-readable-architecture", "code-review", "testing-evaluation", "visual-validation", "sdlc-automation", "human-in-the-loop"];
-export const allowedEvidence = ["official", "production-case-study", "research", "practitioner", "community"];
 const trackingKeys = new Set(["fbclid", "gclid", "mc_cid", "mc_eid", "ref", "source"]);
 
 export function canonicalizeUrl(value) {
@@ -41,13 +40,12 @@ export async function validateContent(rootDirectory) {
 
   for (const { file, data } of resources) {
     const label = `resource ${file}`;
-    for (const key of ["id", "slug", "canonicalUrl", "title", "publisher", "format", "evidenceType", "summary", "takeaway", "availability"]) if (!data[key]) errors.push(`${label}: missing ${key}`);
+    for (const key of ["id", "slug", "canonicalUrl", "title", "publisher", "format", "summary", "takeaway", "availability"]) if (!data[key]) errors.push(`${label}: missing ${key}`);
     if (data.id !== file.replace(/\.json$/, "")) errors.push(`${label}: filename must match id`);
     if (data.id !== data.slug) errors.push(`${label}: id and slug must match`);
     if (ids.has(data.id)) errors.push(`${label}: duplicate id also used by ${ids.get(data.id)}`);
     ids.set(data.id, file);
     if (!allowedFormats.includes(data.format)) errors.push(`${label}: invalid format ${data.format}`);
-    if (!allowedEvidence.includes(data.evidenceType)) errors.push(`${label}: invalid evidence type ${data.evidenceType}`);
     if (!Array.isArray(data.topics) || data.topics.length === 0) errors.push(`${label}: at least one topic is required`);
     for (const topic of data.topics ?? []) if (!allowedTopics.includes(topic)) errors.push(`${label}: invalid topic ${topic}`);
     if ((data.summary?.length ?? 0) < 120 || data.summary.length > 640) errors.push(`${label}: summary must be 120–640 characters`);

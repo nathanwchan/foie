@@ -12,7 +12,6 @@
   "lastVerifiedAt": "2026-08-06",
   "format": "podcast",
   "topics": ["agent-workflows", "agent-readable-architecture", "human-in-the-loop", "sdlc-automation"],
-  "evidenceType": "practitioner",
   "summary": "JP Simard connects his history in Swift tooling and mobile infrastructure with Ramp’s small native teams and emerging cross-platform agent workflows. The conversation argues for architecting a feature once and using shared domain context to produce distinct native implementations instead of forcing a single cross-platform codebase.",
   "takeaway": "Give agents architecture and product intent as the shared layer, then preserve platform-native implementations and review them with engineers who understand each ecosystem.",
   "availability": "available",

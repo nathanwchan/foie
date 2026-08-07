@@ -27,8 +27,7 @@ for (const resource of resources) {
     meta: { title: resource.title, slug: resource.slug },
     filters: {
       topic: resource.topics,
-      format: [resource.format],
-      evidence: [resource.evidenceType]
+      format: [resource.format]
     }
   });
 

@@ -28,7 +28,7 @@ Read [references/content-contract.md](references/content-contract.md) before cha
 2. Merge equivalent recordings or podcast mirrors into `alternateUrls`. Keep distinct companion articles, transcripts, tools, and papers as related resources.
 3. Verify title, publisher, author, original publication date, and availability from the source. Use a null publication date only when the source does not expose one.
 4. Write a source-grounded summary of two or three sentences and one specific action an experienced iOS team can take. Preserve source uncertainty and avoid unsupported claims.
-5. Assign only controlled format, topic, and evidence values from the content contract.
+5. Assign only controlled format and topic values from the content contract.
 6. Create one JSON file per accepted resource and update related-resource links where useful.
 
 ## Publish the weekly signal

@@ -1,11 +1,10 @@
 ---
 import type { ResourceEntry } from "../lib/content";
-import { evidenceLabels, formatLabels, topicLabels } from "../lib/taxonomy";
+import { formatLabels, topicLabels } from "../lib/taxonomy";
 
 interface Props { resources: ResourceEntry[] }
 const { resources } = Astro.props;
 const formats = [...new Set(resources.map((item) => item.data.format))].sort();
-const evidence = [...new Set(resources.map((item) => item.data.evidenceType))].sort();
 const publishers = [...new Set(resources.map((item) => item.data.publisher))].sort();
 const years = [...new Set(resources.map((item) => (item.data.publishedAt ?? item.data.discoveredAt).getUTCFullYear()))].sort((a, b) => b - a);
 const topics = [...new Set(resources.flatMap((item) => item.data.topics))].sort();
@@ -27,9 +26,6 @@ const topics = [...new Set(resources.flatMap((item) => item.data.topics))].sort(
     <label>Format
       <select id="format-filter"><option value="">All formats</option>{formats.map((format) => <option value={format}>{formatLabels[format]}</option>)}</select>
     </label>
-    <label>Evidence
-      <select id="evidence-filter"><option value="">All evidence</option>{evidence.map((item) => <option value={item}>{evidenceLabels[item]}</option>)}</select>
-    </label>
     <label>Publisher
       <select id="publisher-filter"><option value="">All publishers</option>{publishers.map((publisher) => <option value={publisher}>{publisher}</option>)}</select>
     </label>
@@ -45,7 +41,7 @@ const topics = [...new Set(resources.flatMap((item) => item.data.topics))].sort(
 
 <script>
   const search = document.querySelector<HTMLInputElement>("#resource-search");
-  const controls = ["topic", "format", "evidence", "publisher", "year"].map((key) => document.querySelector<HTMLSelectElement>(`#${key}-filter`));
+  const controls = ["topic", "format", "publisher", "year"].map((key) => document.querySelector<HTMLSelectElement>(`#${key}-filter`));
   const cards = [...document.querySelectorAll<HTMLElement>("[data-resource-card]")];
   const count = document.querySelector<HTMLElement>("#result-count");
   const empty = document.querySelector<HTMLElement>("#empty-state");
@@ -82,7 +78,6 @@ const topics = [...new Set(resources.flatMap((item) => item.data.topics))].sort(
       const matches = textMatch
         && (!values.topic || card.dataset.topics?.split(" ").includes(values.topic))
         && (!values.format || card.dataset.format === values.format)
-        && (!values.evidence || card.dataset.evidence === values.evidence)
         && (!values.publisher || card.dataset.publisher === values.publisher)
         && (!values.year || card.dataset.year === values.year);
       card.hidden = !matches;

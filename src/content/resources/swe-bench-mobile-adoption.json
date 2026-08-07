@@ -12,7 +12,6 @@
   "lastVerifiedAt": "2026-08-06",
   "format": "paper",
   "topics": ["testing-evaluation", "code-review", "sdlc-automation"],
-  "evidenceType": "research",
   "summary": "This empirical study analyzes 2,901 agent-authored pull requests across 193 verified open-source Android and iOS repositories. It reports lower adoption and acceptance on iOS than Android, with routine feature, fix, and UI tasks accepted more readily than structural refactors and build changes.",
   "takeaway": "Start measuring agent performance by task category; routine, bounded changes deserve different automation and review policies than build-system or structural work.",
   "availability": "available",
