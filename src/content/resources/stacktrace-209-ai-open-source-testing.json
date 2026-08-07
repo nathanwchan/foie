@@ -1,0 +1,23 @@
+{
+  "id": "stacktrace-209-ai-open-source-testing",
+  "slug": "stacktrace-209-ai-open-source-testing",
+  "canonicalUrl": "https://stacktracepodcast.fm/episodes/209",
+  "media": {
+    "type": "image",
+    "url": "https://stacktracepodcast.fm/images/artwork.png",
+    "alt": "Stacktrace podcast artwork"
+  },
+  "title": "Stacktrace 209: “False positives or positive negatives”",
+  "publisher": "Stacktrace",
+  "publisherUrl": "https://stacktracepodcast.fm/",
+  "authors": [{ "name": "John Sundell", "url": "https://www.swiftbysundell.com/" }, { "name": "Gui Rambo", "url": "https://rambo.codes/" }],
+  "publishedAt": "2026-07-31",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "podcast",
+  "topics": ["agent-workflows", "testing-evaluation", "human-in-the-loop"],
+  "summary": "John Sundell and Gui Rambo examine the tradeoffs of using AI assistants and agents in open-source work, then compare how unit testing on Apple platforms has evolved through XCTest and Swift Testing. An iOS team can use the discussion to define where agent-generated contributions require maintainer review and which behaviors must remain protected by tests.",
+  "takeaway": "Pair an explicit policy for AI-assisted open-source contributions with tests that protect observable behavior, keeping maintainers accountable for every accepted change.",
+  "availability": "available",
+  "relatedResourceIds": ["adversarial-unit-test-sweep", "doordash-swift-testing-migration", "agentic-development-product-bloat"]
+}

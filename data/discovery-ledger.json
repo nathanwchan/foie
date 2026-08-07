@@ -2,6 +2,8 @@
   "version": 1,
   "updatedAt": "2026-08-07",
   "entries": [
+    { "canonicalUrl": "https://stacktracepodcast.fm/episodes/209", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "stacktrace-209-ai-open-source-testing" },
+    { "canonicalUrl": "https://simonbs.dev/posts/put-your-coding-agents-in-your-pocket", "aliases": ["https://simonbs.dev/posts/put-your-coding-agents-in-your-pocket/"], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "coding-agents-in-your-pocket" },
     { "canonicalUrl": "https://x.com/rudrank/status/2035891494079594683", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "local-xcode-testflight-release-loop" },
     { "canonicalUrl": "https://aiosdispatch.com/posts/aios-dispatch-15", "aliases": ["https://www.aiosdispatch.com/posts/aios-dispatch-15"], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "codex-testflight-two-minutes" },
     { "canonicalUrl": "https://hachyderm.io/@jpsim/116029519306818091", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "agent-driven-ios-tech-debt-migration" },

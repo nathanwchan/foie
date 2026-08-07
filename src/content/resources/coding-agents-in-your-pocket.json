@@ -1,0 +1,23 @@
+{
+  "id": "coding-agents-in-your-pocket",
+  "slug": "coding-agents-in-your-pocket",
+  "canonicalUrl": "https://simonbs.dev/posts/put-your-coding-agents-in-your-pocket",
+  "media": {
+    "type": "image",
+    "url": "https://simonbs.dev/images/posts/put-your-coding-agents-in-your-pocket/social-media.png",
+    "alt": "Put Your Coding Agents in Your Pocket article cover"
+  },
+  "title": "Put Your Coding Agents in Your Pocket",
+  "publisher": "Simon B. Støvring",
+  "publisherUrl": "https://simonbs.dev/",
+  "authors": [{ "name": "Simon B. Støvring", "url": "https://simonbs.dev/" }],
+  "publishedAt": "2026-04-24",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": ["agent-workflows", "human-in-the-loop", "sdlc-automation"],
+  "summary": "Simon B. Støvring documents a vendor-neutral way to supervise Codex, Claude Code, and other terminal agents from an iPhone: Tailscale secures access to the Mac, tmux preserves sessions, an SSH client resumes them, and push notifications signal when human input is needed. An iOS team can adopt the same pattern while limiting remote login and keeping approvals with the developer.",
+  "takeaway": "Keep agents running in persistent Mac sessions, notify the developer only when attention is needed, and secure mobile supervision behind account-limited remote access and a private network.",
+  "availability": "available",
+  "relatedResourceIds": ["agentic-ios-delivery-pipeline", "flowdeck-agent-build-run-ios", "agent-maintained-app-store-toolchain"]
+}
