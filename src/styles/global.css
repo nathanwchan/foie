@@ -86,7 +86,7 @@ main { min-height: calc(100vh - 210px); }
 .button-primary { background: var(--blue); color: #fff; box-shadow: 0 12px 28px rgba(0, 113, 227, 0.2); }
 .button-secondary { background: var(--surface); border-color: var(--line); }
 
-.feed-section { padding: 18px 0 100px; }
+.feed-section { padding: 18px 0 48px; }
 .feed-layout { display: block; }
 .feed-main { min-width: 0; }
 .feed-heading { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--line-strong); }
@@ -159,7 +159,7 @@ input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid 
 .resource-grid .card-copy { grid-row: 2; }
 .resource-grid .resource-card h3 { font-size: 23px; }
 
-.site-footer { padding: 52px 0; border-top: 1px solid var(--line); }
+.site-footer { padding: 34px 0; border-top: 1px solid var(--line); }
 .footer-inner { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
 .footer-brand { display: grid; grid-template-columns: 32px minmax(0, 1fr); grid-template-rows: auto auto; column-gap: 12px; }
 .footer-mark { width: 32px; height: 32px; display: block; grid-column: 1; grid-row: 1; align-self: center; border-radius: 10px; box-shadow: 0 8px 22px rgba(42, 124, 255, 0.2); }
