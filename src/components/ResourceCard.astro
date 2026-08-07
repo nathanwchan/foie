@@ -29,6 +29,7 @@ const summaryAfterAuthor = data.summary.slice(primaryAuthor.name.length);
   data-topics={data.topics.join(" ")}
   data-search={`${data.title} ${data.publisher} ${data.authors.map((author) => author.name).join(" ")} ${data.summary} ${data.takeaway} ${data.topics.map((topic) => topicLabels[topic]).join(" ")}`.toLowerCase()}
 >
+  <span class="new-badge" data-new-badge hidden>New</span>
   <div class="card-link">
     <div class="card-copy">
       <div class="card-topline">
