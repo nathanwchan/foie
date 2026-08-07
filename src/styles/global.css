@@ -75,7 +75,9 @@ main { min-height: calc(100vh - 210px); }
 .eyebrow { margin: 0 0 14px; color: var(--blue); font-size: 12px; font-weight: 760; letter-spacing: 0.11em; text-transform: uppercase; }
 .home-hero { padding: 78px 0 18px; }
 .home-hero > div:first-child { max-width: 980px; }
-.display { max-width: 950px; margin: 0; font-size: clamp(48px, 6.7vw, 88px); line-height: 0.98; letter-spacing: -0.066em; font-weight: 730; }
+.display { max-width: none; margin: 0; font-size: clamp(40px, 5.45vw, 74px); line-height: 0.98; letter-spacing: -0.066em; font-weight: 730; }
+.display-line { display: block; }
+.display-primary { white-space: nowrap; }
 .gradient-text { color: transparent; background: linear-gradient(95deg, #0071e3 8%, #4f9dff 45%, #7758f6 90%); background-clip: text; -webkit-background-clip: text; }
 .lede { max-width: 760px; margin: 24px 0 0; color: var(--muted); font-size: clamp(19px, 2vw, 24px); line-height: 1.42; letter-spacing: -0.022em; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 30px; }
@@ -156,6 +158,8 @@ input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid 
 @media (max-width: 620px) {
   :root { --shell: min(100% - 28px, 1240px); }
   .wordmark-text { max-width: 128px; font-size: 13px; line-height: 1.05; }
+  .display { font-size: clamp(42px, 13vw, 64px); }
+  .display-primary { white-space: normal; }
   .home-hero { padding: 54px 0 16px; }
   .section { padding: 58px 0; }
   .feed-section { padding-top: 16px; }
