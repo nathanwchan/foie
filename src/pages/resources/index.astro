@@ -17,7 +17,7 @@ const initialTopic = Astro.url.searchParams.get("topic") ?? "";
   </section>
   <section class="section-tight shell">
     <FilterBar resources={resources} />
-    <div class="library-feed" id="resource-results">
+    <div class="library-feed" id="resource-results" data-pagefind-body>
       {resources.map((resource, index) => <ResourceCard resource={resource} rank={index + 1} featured={index === 0} />)}
     </div>
     <div id="empty-state" class="empty-state" hidden>

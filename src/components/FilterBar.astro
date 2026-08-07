@@ -64,9 +64,9 @@ const topics = [...new Set(resources.flatMap((item) => item.data.topics))].sort(
       const pagefindPath = "/pagefind/pagefind.js";
       const pagefind = await import(/* @vite-ignore */ pagefindPath);
       const response = await pagefind.search(value);
-      const results = await Promise.all(response.results.map((result: { data: () => Promise<{ url: string }> }) => result.data()));
+      const results = await Promise.all(response.results.map((result: { data: () => Promise<{ url: string; meta?: { slug?: string } }> }) => result.data()));
       if (sequence !== searchSequence) return;
-      pagefindMatches = new Set(results.map((result) => result.url.match(/\/resources\/([^/]+)\//)?.[1]).filter(Boolean));
+      pagefindMatches = new Set(results.map((result) => result.meta?.slug ?? result.url.match(/#resource-([^/]+)$/)?.[1]).filter(Boolean));
     } catch {
       pagefindMatches = null;
     }

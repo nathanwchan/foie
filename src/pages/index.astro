@@ -13,7 +13,7 @@ const highlighted = latest.data.highlightedResourceIds.map((id) => byId.get(id))
   const bDate = b?.data.publishedAt ?? b?.data.discoveredAt;
   return (bDate?.getTime() ?? 0) - (aDate?.getTime() ?? 0);
 });
-const feed = resources.slice(0, 9);
+const feed = resources;
 const publisherCount = new Set(resources.map((resource) => resource.data.publisher)).size;
 const formatCount = new Set(resources.map((resource) => resource.data.format)).size;
 const topicCounts = Object.entries(
@@ -63,7 +63,7 @@ const topicCounts = Object.entries(
           <p class="sidebar-label">This week’s picks</p>
           <ol class="pick-list">
             {highlighted.map((resource) => resource && (
-              <li><a href={`/resources/${resource.data.slug}/`}><span>{resource.data.publisher}</span>{resource.data.title}</a></li>
+              <li><a href={resource.data.canonicalUrl} target="_blank" rel="noreferrer"><span>{resource.data.publisher}</span>{resource.data.title}</a></li>
             ))}
           </ol>
         </section>

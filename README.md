@@ -37,6 +37,8 @@ The production build validates schemas, controlled vocabulary, URL uniqueness, a
 
 The scheduled Codex task invokes the repository-local skill instead of carrying a large duplicated prompt. Successful runs publish directly to `main`; no-change runs report without creating a commit.
 
+Resources are presented as complete feed cells rather than internal detail pages. Titles, preview art, and source buttons link directly to the canonical source or its alternate versions.
+
 ## Scope
 
 The project covers engineering workflows: agentic development, Xcode tooling, architecture, code review, testing, evaluation, visual validation, SDLC automation, and human-in-the-loop team practices. App-facing AI features are out of scope unless the source directly addresses their effect on the engineering process.
