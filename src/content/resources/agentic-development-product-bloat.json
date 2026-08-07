@@ -19,5 +19,5 @@
   "summary": "Donny Wals argues that agentic development can make apps more bloated and less connected to user needs because adding features has become so inexpensive. The old scheduling question, whether an idea deserves weeks of work, is being replaced by whether it can be shipped in a day or two.",
   "takeaway": "Add a product-value gate before agent implementation: name the user problem, success signal, and feature to remove or defer. Low implementation cost is not evidence that a feature belongs.",
   "availability": "available",
-  "relatedResourceIds": ["claude-code-guided-swift-review"]
+  "relatedResourceIds": []
 }

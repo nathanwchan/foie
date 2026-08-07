@@ -19,5 +19,5 @@
   "summary": "Oleh Veheria separates machine-checkable iOS work such as module scaffolding, test generation, and repetitive migrations from decisions that stay human, including architecture, concurrency, dependencies, and releases. He argues that fast Swift Package Manager build loops and an explicitly measured review process matter more than initial agent setup.",
   "takeaway": "Write a two-column trust boundary for the team. Give agents only work whose intent and correctness are machine-checkable; baseline review-cycle time before rollout and measure it again after one week.",
   "availability": "available",
-  "relatedResourceIds": ["doordash-swift-testing-migration", "claude-code-guided-swift-review"]
+  "relatedResourceIds": ["doordash-swift-testing-migration"]
 }
