@@ -24,6 +24,12 @@ const mediaSchema = z.discriminatedUnion("type", [
     url: z.url(),
     posterUrl: z.url(),
     title: z.string().min(1).max(180)
+  }),
+  z.object({
+    type: z.literal("x"),
+    postId: z.string().regex(/^\d{15,22}$/),
+    posterUrl: z.url(),
+    title: z.string().min(1).max(180)
   })
 ]);
 
@@ -71,6 +77,23 @@ const resources = defineCollection({
         code: "custom",
         path: ["canonicalUrl"],
         message: "A YouTube video resource must use its YouTube URL as canonicalUrl"
+      });
+    }
+
+    const canonicalIsX = canonicalHost === "x.com" || canonicalHost === "twitter.com";
+    const canonicalPostId = new URL(resource.canonicalUrl).pathname.match(/\/status\/(\d+)/)?.[1];
+    if (resource.media.type === "x" && (!canonicalIsX || canonicalPostId !== resource.media.postId)) {
+      context.addIssue({
+        code: "custom",
+        path: ["media", "postId"],
+        message: "X embed postId must match the canonical X post URL"
+      });
+    }
+    if (resource.media.type === "video" && canonicalIsX) {
+      context.addIssue({
+        code: "custom",
+        path: ["media", "type"],
+        message: "X video posts must use the official X embed media type"
       });
     }
   })

@@ -3,8 +3,8 @@
   "slug": "mobile-agent-device-proof",
   "canonicalUrl": "https://x.com/anamhira/status/2085440679220851025",
   "media": {
-    "type": "video",
-    "url": "https://video.twimg.com/amplify_video/2085440662078726144/vid/avc1/844x720/jNLE_zA6IcajC4Rz.mp4?tag=14",
+    "type": "x",
+    "postId": "2085440679220851025",
     "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2085440662078726144/img/kP-6sgoOTAOuTzSE.jpg",
     "title": "A cloud coding agent builds an iOS change, runs it on a device, and attaches video proof to a pull request"
   },

@@ -3,7 +3,7 @@ import path from "node:path";
 
 export const allowedFormats = ["article", "video", "podcast", "paper", "documentation", "repository", "tool", "social"];
 export const allowedTopics = ["agent-workflows", "xcode-tooling", "agent-readable-architecture", "code-review", "testing-evaluation", "visual-validation", "sdlc-automation", "human-in-the-loop"];
-export const allowedMediaTypes = ["image", "youtube", "video"];
+export const allowedMediaTypes = ["image", "youtube", "video", "x"];
 const trackingKeys = new Set(["fbclid", "gclid", "mc_cid", "mc_eid", "ref", "source"]);
 
 function isYouTubeUrl(value) {
@@ -56,6 +56,25 @@ export async function validateContent(rootDirectory) {
     }
     if (data.media?.type === "video") {
       if (!data.media.url || !data.media.posterUrl || !data.media.title) errors.push(`${label}: video media requires url, posterUrl, and title`);
+    }
+    if (data.media?.type === "x") {
+      if (!/^\d{15,22}$/.test(data.media.postId ?? "") || !data.media.posterUrl || !data.media.title) errors.push(`${label}: X media requires a valid postId, posterUrl, and title`);
+      try {
+        const canonicalUrl = new URL(data.canonicalUrl);
+        const canonicalHost = canonicalUrl.hostname.toLowerCase().replace(/^www\./, "");
+        const canonicalPostId = canonicalUrl.pathname.match(/\/status\/(\d+)/)?.[1];
+        if ((canonicalHost !== "x.com" && canonicalHost !== "twitter.com") || canonicalPostId !== data.media.postId) errors.push(`${label}: X media postId must match canonicalUrl`);
+      } catch {
+        // The canonical URL is reported by the URL validation below.
+      }
+    }
+    if (data.media?.type === "video") {
+      try {
+        const canonicalHost = new URL(data.canonicalUrl).hostname.toLowerCase().replace(/^www\./, "");
+        if (canonicalHost === "x.com" || canonicalHost === "twitter.com") errors.push(`${label}: X video posts must use official X embed media`);
+      } catch {
+        // The canonical URL is reported by the URL validation below.
+      }
     }
     try {
       const canonicalIsYouTube = isYouTubeUrl(data.canonicalUrl);

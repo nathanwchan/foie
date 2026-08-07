@@ -3,8 +3,8 @@
   "slug": "sim-use-mobile-verification-loop",
   "canonicalUrl": "https://x.com/onevcat/status/2071500722324336659",
   "media": {
-    "type": "video",
-    "url": "https://video.twimg.com/amplify_video/2071500589469675520/vid/avc1/1248x1110/n7565FLxcqv-trMQ.mp4?tag=28",
+    "type": "x",
+    "postId": "2071500722324336659",
     "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2071500589469675520/img/Z3Rrxt9wiAzUwjPJ.jpg",
     "title": "sim-use exposes an iOS Simulator screen and interactions to a coding agent"
   },

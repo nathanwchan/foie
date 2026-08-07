@@ -3,8 +3,8 @@
   "slug": "prokinetic-human-motion-tuning",
   "canonicalUrl": "https://x.com/iOSmumo/status/2085057470490132708",
   "media": {
-    "type": "video",
-    "url": "https://video.twimg.com/amplify_video/2085057128763424768/vid/avc1/2672x1608/TF9af0WoKtIvy7f3.mp4?tag=29",
+    "type": "x",
+    "postId": "2085057470490132708",
     "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2085057128763424768/img/_Nci10_nXzM2lQW6.jpg",
     "title": "ProKinetic renders agent-written motion and exposes parameters for human tuning"
   },

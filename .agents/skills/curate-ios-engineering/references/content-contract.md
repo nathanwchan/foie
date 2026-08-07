@@ -16,6 +16,7 @@ Every resource requires a `media` object:
 
 - Use `{ "type": "youtube", "videoId": "…", "title": "…" }` when an inspectable YouTube recording is the chosen canonical source, or when the canonical source is the first-party page for the same video-recorded podcast.
 - Use `{ "type": "video", "url": "…", "posterUrl": "…", "title": "…" }` for a stable first-party MP4.
+- Use `{ "type": "x", "postId": "…", "posterUrl": "…", "title": "…" }` for an X post containing video. The ID must match the canonical X status URL. The site loads X's official privacy-enhanced embed only after the visitor selects Play; never publish a raw `video.twimg.com` URL.
 - Otherwise use `{ "type": "image", "url": "…", "alt": "…" }` with a source-owned Open Graph image or directly relevant source figure.
 
 Every public resource has exactly one destination in `canonicalUrl`; `alternateUrls` is not supported. If equivalent versions exist, select the best canonical destination by completeness, originality, stability, inspectability, and match to the resource's primary format. Store the remaining URLs only as aliases on the resource's private discovery-ledger entry so later runs can detect duplicates. The `format` value and visible source badge must describe the chosen canonical URL.

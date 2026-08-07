@@ -124,10 +124,21 @@ main { min-height: calc(100vh - 210px); }
 .card-takeaway p { margin: 0; color: var(--text); font-size: 13px; line-height: 1.45; }
 .card-media { min-width: 0; margin-top: 34px; }
 .resource-media { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: #050506; box-shadow: 0 14px 34px rgba(25, 43, 74, 0.12); }
-.resource-media > a, .resource-media iframe, .resource-media video, .resource-media img { display: block; width: 100%; height: 100%; border: 0; }
+.resource-media > a, .resource-media iframe, .resource-media video, .resource-media img, .x-video-trigger { display: block; width: 100%; height: 100%; border: 0; }
 .resource-media iframe, .resource-media video { background: #000; }
 .resource-media img { object-fit: cover; transition: transform 220ms ease; }
 .resource-media-image:hover img { transform: scale(1.025); }
+.x-video-trigger { position: relative; padding: 0; overflow: hidden; background: #050506; color: #fff; text-align: left; }
+.x-video-trigger:hover img { transform: scale(1.025); }
+.x-video-trigger:focus-visible { outline: 3px solid color-mix(in srgb, var(--blue) 55%, transparent); outline-offset: -3px; }
+.x-video-play { position: absolute; inset: 50% auto auto 50%; width: 54px; height: 54px; display: grid; place-items: center; border-radius: 50%; background: rgba(10, 12, 18, 0.78); box-shadow: 0 8px 26px rgba(0, 0, 0, 0.28); backdrop-filter: blur(12px); transform: translate(-50%, -50%); transition: transform 160ms ease, background 160ms ease; }
+.x-video-play span { width: 0; height: 0; margin-left: 4px; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-left: 13px solid #fff; }
+.x-video-trigger:hover .x-video-play { background: #101114; transform: translate(-50%, -50%) scale(1.06); }
+.resource-media-x.x-embed-active { aspect-ratio: auto; min-height: 210px; overflow: visible; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.resource-media-x.x-embed-active iframe { height: auto; min-height: 210px; background: transparent; }
+.resource-media-x .twitter-tweet { width: 100% !important; margin: 0 !important; }
+.resource-media-x.x-embed-unavailable { display: grid; place-items: center; min-height: 210px; padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface-soft); }
+.resource-media-x.x-embed-unavailable a { color: var(--blue); font-weight: 680; text-align: center; }
 
 .filter-panel { position: relative; z-index: 5; margin-bottom: 22px; }
 .filter-label { margin: 0 0 7px; color: var(--muted); font-size: 10px; font-weight: 720; letter-spacing: 0.06em; text-transform: uppercase; }
