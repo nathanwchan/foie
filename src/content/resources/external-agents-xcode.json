@@ -1,0 +1,20 @@
+{
+  "id": "external-agents-xcode",
+  "slug": "external-agents-xcode",
+  "canonicalUrl": "https://developer.apple.com/documentation/xcode/giving-external-agents-access-to-xcode",
+  "alternateUrls": [],
+  "title": "Giving External Agents Access to Xcode",
+  "publisher": "Apple Developer",
+  "publisherUrl": "https://developer.apple.com/",
+  "authors": [{ "name": "Apple" }],
+  "publishedAt": "2026-06-02",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "documentation",
+  "topics": ["xcode-tooling", "agent-workflows", "human-in-the-loop"],
+  "evidenceType": "official",
+  "summary": "Apple’s setup documentation describes the supported bridge for allowing external coding agents to use Xcode’s project-aware capabilities. It is the authoritative starting point for connecting non-Xcode clients while keeping permissions and developer control inside Apple’s tooling boundary.",
+  "takeaway": "Prefer Apple’s documented access path when integrating external agents, and make its permission prompts and availability constraints explicit in team workflows.",
+  "availability": "available",
+  "relatedResourceIds": ["xcode-27-release-notes", "xcode-agents-and-you", "xcodebuildmcp"]
+}

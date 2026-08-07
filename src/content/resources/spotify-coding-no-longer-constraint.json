@@ -1,0 +1,20 @@
+{
+  "id": "spotify-coding-no-longer-constraint",
+  "slug": "spotify-coding-no-longer-constraint",
+  "canonicalUrl": "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
+  "alternateUrls": [],
+  "title": "Coding Is No Longer the Constraint",
+  "publisher": "Spotify Engineering",
+  "publisherUrl": "https://engineering.atspotify.com/",
+  "authors": [{ "name": "Spotify Engineering" }],
+  "publishedAt": "2026-06-03",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "article",
+  "topics": ["sdlc-automation", "agent-readable-architecture", "code-review", "human-in-the-loop"],
+  "evidenceType": "production-case-study",
+  "summary": "Spotify describes how its background agent Honk, internal developer portal, standardized technology choices, and automated guardrails support large-scale agent work. Faster implementation shifted the bottleneck toward review and decisions, with the organization reporting substantially more pull requests to evaluate.",
+  "takeaway": "Standardize repositories and expose ownership, documentation, and guardrails to agents before increasing autonomy; otherwise review becomes the new scaling failure.",
+  "availability": "available",
+  "relatedResourceIds": ["spotify-agentic-development", "ramp-background-agent"]
+}

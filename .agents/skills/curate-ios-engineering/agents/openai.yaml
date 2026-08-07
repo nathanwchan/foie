@@ -1,0 +1,4 @@
+interface:
+  display_name: "Curate iOS Engineering"
+  short_description: "Research and publish iOS agent signals"
+  default_prompt: "Use $curate-ios-engineering to research and publish this week’s high-signal iOS engineering resources."

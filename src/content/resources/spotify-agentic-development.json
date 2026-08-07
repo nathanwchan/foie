@@ -1,0 +1,20 @@
+{
+  "id": "spotify-agentic-development",
+  "slug": "spotify-agentic-development",
+  "canonicalUrl": "https://engineering.atspotify.com/2026/4/anthropic-agentic-development",
+  "alternateUrls": ["https://www.youtube.com/watch?v=fHDGQHr_agg"],
+  "title": "Let’s Talk Agentic Development: Spotify × Anthropic",
+  "publisher": "Spotify Engineering",
+  "publisherUrl": "https://engineering.atspotify.com/",
+  "authors": [{ "name": "Spotify Engineering" }, { "name": "Anthropic" }],
+  "publishedAt": "2026-04-06",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "video",
+  "topics": ["agent-workflows", "code-review", "sdlc-automation", "human-in-the-loop"],
+  "evidenceType": "production-case-study",
+  "summary": "Leaders from Spotify and Anthropic discuss background agents, context engineering, feedback loops, governance, and accountability as agent-generated output grows. They emphasize outcome ownership and describe the next frontier as agents participating across maintenance, deletion, and the full software lifecycle rather than only creating features.",
+  "takeaway": "Define accountable human owners and outcome-based gates before expanding agents from code generation into long-lived maintenance and lifecycle work.",
+  "availability": "available",
+  "relatedResourceIds": ["spotify-coding-no-longer-constraint", "ramp-background-agent"]
+}

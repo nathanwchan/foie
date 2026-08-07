@@ -1,0 +1,20 @@
+{
+  "id": "xcode-27-release-notes",
+  "slug": "xcode-27-release-notes",
+  "canonicalUrl": "https://developer.apple.com/documentation/xcode-release-notes/xcode-27-release-notes",
+  "alternateUrls": [],
+  "title": "Xcode 27 Release Notes",
+  "publisher": "Apple Developer",
+  "publisherUrl": "https://developer.apple.com/",
+  "authors": [{ "name": "Apple" }],
+  "publishedAt": "2026-08-04",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "documentation",
+  "topics": ["xcode-tooling", "agent-workflows", "visual-validation", "human-in-the-loop"],
+  "evidenceType": "official",
+  "summary": "Apple’s technical release notes document Xcode’s evolution into an agent-capable development environment, including richer tools for coding agents, diagnostics, previews, debugger access, extensibility, and controlled project access. They are the primary source for the concrete platform surface available to iOS teams.",
+  "takeaway": "Treat Xcode’s agent interfaces as platform infrastructure: track each release, then update team workflows only against capabilities Apple actually ships.",
+  "availability": "available",
+  "relatedResourceIds": ["xcode-agents-and-you", "external-agents-xcode"]
+}

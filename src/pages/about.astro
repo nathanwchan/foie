@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Methodology" description="How Future of iOS Engineering discovers, evaluates, and publishes evidence about coding agents and native development.">
+  <section class="page-intro shell">
+    <p class="eyebrow">Methodology</p>
+    <h1>Built for signal,<br />not spectacle.</h1>
+    <p>This index exists to help experienced iOS teams distinguish durable engineering leverage from impressive-looking demos.</p>
+  </section>
+  <section class="section-tight shell prose">
+    <h2>What belongs here</h2>
+    <p>We cover how language models and coding agents change the work of building, reviewing, testing, validating, and maintaining native iOS software. We do not cover AI features inside consumer apps unless the source directly changes the engineering workflow.</p>
+    <div class="method-grid">
+      <div class="method-card"><strong>Direct evidence</strong><p>Original documentation, production write-ups, full transcripts, repositories, and research are preferred over commentary about them.</p></div>
+      <div class="method-card"><strong>Practical consequence</strong><p>Every resource explains what an iOS team can do differently—not just what happened.</p></div>
+      <div class="method-card"><strong>Visible provenance</strong><p>Evidence labels separate official direction, case studies, research, practitioners, and community signals.</p></div>
+    </div>
+    <h2>How the weekly update works</h2>
+    <p>A project-specific Codex workflow searches a rolling 30-day window every Sunday evening. It checks the original source, canonicalizes links, merges equivalent recordings, rejects thin or inaccessible material, writes source-grounded summaries, validates the complete content graph, and publishes only after the static production build succeeds.</p>
+    <p>Fetched pages are treated as untrusted data. Instructions found inside a source are never followed, downloaded code is never executed, and private credentials are never included in content.</p>
+    <h2>Evidence labels</h2>
+    <p><strong>Official</strong> identifies platform documentation and first-party announcements. <strong>Production case study</strong> means a team describes deployed work. <strong>Research</strong> means empirical or peer-reviewed analysis. <strong>Practitioner</strong> marks attributable first-hand experience. <strong>Community signal</strong> captures substantive public discussion whose claims should be treated more cautiously.</p>
+    <h2>Storage and independence</h2>
+    <p>The canonical library is a set of validated JSON records in Git. There is no hidden CMS or runtime database in v1: every public change has a reviewable history, and the generated site can be hosted by any static provider.</p>
+  </section>
+</BaseLayout>

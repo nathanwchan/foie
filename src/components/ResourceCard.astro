@@ -1,0 +1,46 @@
+---
+import type { ResourceEntry } from "../lib/content";
+import { displayDate } from "../lib/content";
+import { evidenceLabels, formatLabels, topicLabels } from "../lib/taxonomy";
+
+interface Props {
+  resource: ResourceEntry;
+  featured?: boolean;
+}
+
+const { resource, featured = false } = Astro.props;
+const { data } = resource;
+const sortDate = data.publishedAt ?? data.discoveredAt;
+const year = sortDate.getUTCFullYear().toString();
+---
+
+<article
+  class:list={["resource-card", featured && "resource-card-featured"]}
+  data-resource-card
+  data-slug={data.slug}
+  data-format={data.format}
+  data-evidence={data.evidenceType}
+  data-publisher={data.publisher}
+  data-year={year}
+  data-topics={data.topics.join(" ")}
+  data-search={`${data.title} ${data.publisher} ${data.authors.map((author) => author.name).join(" ")} ${data.summary} ${data.takeaway} ${data.topics.map((topic) => topicLabels[topic]).join(" ")}`.toLowerCase()}
+>
+  <a class="card-link" href={`/resources/${data.slug}/`} aria-label={`Read about ${data.title}`}>
+    <div class="card-topline">
+      <span class={`format-icon format-${data.format}`} aria-hidden="true">{formatLabels[data.format].slice(0, 1)}</span>
+      <span>{formatLabels[data.format]}</span>
+      <span class="dot">•</span>
+      <time datetime={sortDate.toISOString()}>{displayDate(sortDate)}</time>
+    </div>
+    <h3>{data.title}</h3>
+    <p class="card-summary">{data.summary}</p>
+    <div class="card-meta">
+      <span class={`evidence evidence-${data.evidenceType}`}>{evidenceLabels[data.evidenceType]}</span>
+      <span class="publisher">{data.publisher}</span>
+    </div>
+    <div class="topic-row" aria-label="Topics">
+      {data.topics.slice(0, 3).map((topic) => <span>{topicLabels[topic]}</span>)}
+    </div>
+    <span class="card-arrow" aria-hidden="true">↗</span>
+  </a>
+</article>

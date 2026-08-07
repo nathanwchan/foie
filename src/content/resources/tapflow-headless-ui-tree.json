@@ -1,0 +1,20 @@
+{
+  "id": "tapflow-headless-ui-tree",
+  "slug": "tapflow-headless-ui-tree",
+  "canonicalUrl": "https://github.com/jo-duchan/tapflow/pull/380",
+  "alternateUrls": [],
+  "title": "Read the iOS UI Tree with a Resident XCUITest Runner",
+  "publisher": "TapFlow",
+  "publisherUrl": "https://github.com/jo-duchan/tapflow",
+  "authors": [{ "name": "Jo Duchan", "url": "https://github.com/jo-duchan" }],
+  "publishedAt": "2026-07-08",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "repository",
+  "topics": ["visual-validation", "testing-evaluation", "xcode-tooling", "agent-workflows"],
+  "evidenceType": "practitioner",
+  "summary": "This merged TapFlow change replaces a Simulator-window-dependent accessibility path with a resident XCUITest runner that serves the foreground app’s accessibility tree over loopback HTTP. It makes headless UI inspection deterministic and aligns automated agent interactions with the same coordinate space used for taps.",
+  "takeaway": "Expose accessibility state as structured, repeatable evidence so an agent can verify interface behavior without depending on a visible Simulator window.",
+  "availability": "available",
+  "relatedResourceIds": ["xcodebuildmcp", "building-ios-apps-with-agents"]
+}

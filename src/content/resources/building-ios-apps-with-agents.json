@@ -1,0 +1,20 @@
+{
+  "id": "building-ios-apps-with-agents",
+  "slug": "building-ios-apps-with-agents",
+  "canonicalUrl": "https://vivqu.com/blog/2026/05/24/building-ios-apps-with-agents/",
+  "alternateUrls": ["https://www.youtube.com/watch?v=S1kUmkygP8E"],
+  "title": "Building iOS Apps with Agents",
+  "publisher": "Vivian Qu",
+  "publisherUrl": "https://vivqu.com/",
+  "authors": [{ "name": "Vivian Qu", "url": "https://vivqu.com/" }],
+  "publishedAt": "2026-05-24",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "video",
+  "topics": ["agent-workflows", "visual-validation", "testing-evaluation", "xcode-tooling", "human-in-the-loop"],
+  "evidenceType": "practitioner",
+  "summary": "Meta iOS engineer Vivian Qu explains why mobile agents struggle with proprietary toolchains, fragmented device targets, incomplete platform context, and slow verification. Her central prescription is a scoped plan plus a build-run-inspect loop that gives the agent simulator, interaction, screenshot, and test evidence.",
+  "takeaway": "Make self-verification the first agent capability you invest in; constrain devices and OS support until that loop is reliable enough to expose mistakes.",
+  "availability": "available",
+  "relatedResourceIds": ["xcodebuildmcp", "swe-bench-mobile", "tapflow-headless-ui-tree"]
+}

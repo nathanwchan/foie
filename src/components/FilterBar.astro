@@ -1,0 +1,110 @@
+---
+import type { ResourceEntry } from "../lib/content";
+import { evidenceLabels, formatLabels, topicLabels } from "../lib/taxonomy";
+
+interface Props { resources: ResourceEntry[] }
+const { resources } = Astro.props;
+const formats = [...new Set(resources.map((item) => item.data.format))].sort();
+const evidence = [...new Set(resources.map((item) => item.data.evidenceType))].sort();
+const publishers = [...new Set(resources.map((item) => item.data.publisher))].sort();
+const years = [...new Set(resources.map((item) => (item.data.publishedAt ?? item.data.discoveredAt).getUTCFullYear()))].sort((a, b) => b - a);
+const topics = [...new Set(resources.flatMap((item) => item.data.topics))].sort();
+---
+
+<section class="filter-panel" aria-label="Filter resources">
+  <div class="search-field">
+    <label for="resource-search">Search the signal</label>
+    <div class="search-input-wrap">
+      <span aria-hidden="true">⌕</span>
+      <input id="resource-search" type="search" placeholder="Agents, Xcode, evaluation…" autocomplete="off" />
+      <kbd>⌘ K</kbd>
+    </div>
+  </div>
+  <div class="filter-grid">
+    <label>Topic
+      <select id="topic-filter"><option value="">All topics</option>{topics.map((topic) => <option value={topic}>{topicLabels[topic]}</option>)}</select>
+    </label>
+    <label>Format
+      <select id="format-filter"><option value="">All formats</option>{formats.map((format) => <option value={format}>{formatLabels[format]}</option>)}</select>
+    </label>
+    <label>Evidence
+      <select id="evidence-filter"><option value="">All evidence</option>{evidence.map((item) => <option value={item}>{evidenceLabels[item]}</option>)}</select>
+    </label>
+    <label>Publisher
+      <select id="publisher-filter"><option value="">All publishers</option>{publishers.map((publisher) => <option value={publisher}>{publisher}</option>)}</select>
+    </label>
+    <label>Year
+      <select id="year-filter"><option value="">All years</option>{years.map((year) => <option value={year}>{year}</option>)}</select>
+    </label>
+  </div>
+  <div class="filter-status" aria-live="polite">
+    <p><strong id="result-count">{resources.length}</strong> resources, newest first</p>
+    <button id="clear-filters" class="text-button" type="button">Clear filters</button>
+  </div>
+</section>
+
+<script>
+  const search = document.querySelector<HTMLInputElement>("#resource-search");
+  const controls = ["topic", "format", "evidence", "publisher", "year"].map((key) => document.querySelector<HTMLSelectElement>(`#${key}-filter`));
+  const cards = [...document.querySelectorAll<HTMLElement>("[data-resource-card]")];
+  const count = document.querySelector<HTMLElement>("#result-count");
+  const empty = document.querySelector<HTMLElement>("#empty-state");
+  let pagefindMatches: Set<string> | null = null;
+  let searchSequence = 0;
+
+  async function queryPagefind(value: string) {
+    const sequence = ++searchSequence;
+    if (value.length < 2) {
+      pagefindMatches = null;
+      applyFilters();
+      return;
+    }
+    try {
+      // Pagefind is created after the Astro build. Development falls back to card text.
+      const pagefindPath = "/pagefind/pagefind.js";
+      const pagefind = await import(/* @vite-ignore */ pagefindPath);
+      const response = await pagefind.search(value);
+      const results = await Promise.all(response.results.map((result: { data: () => Promise<{ url: string }> }) => result.data()));
+      if (sequence !== searchSequence) return;
+      pagefindMatches = new Set(results.map((result) => result.url.match(/\/resources\/([^/]+)\//)?.[1]).filter(Boolean));
+    } catch {
+      pagefindMatches = null;
+    }
+    applyFilters();
+  }
+
+  function applyFilters() {
+    const query = search?.value.trim().toLowerCase() ?? "";
+    const values = Object.fromEntries(controls.map((control) => [control?.id.replace("-filter", ""), control?.value ?? ""]));
+    let visible = 0;
+    cards.forEach((card) => {
+      const textMatch = !query || pagefindMatches?.has(card.dataset.slug ?? "") || (!pagefindMatches && card.dataset.search?.includes(query));
+      const matches = textMatch
+        && (!values.topic || card.dataset.topics?.split(" ").includes(values.topic))
+        && (!values.format || card.dataset.format === values.format)
+        && (!values.evidence || card.dataset.evidence === values.evidence)
+        && (!values.publisher || card.dataset.publisher === values.publisher)
+        && (!values.year || card.dataset.year === values.year);
+      card.hidden = !matches;
+      if (matches) visible += 1;
+    });
+    if (count) count.textContent = String(visible);
+    if (empty) empty.hidden = visible !== 0;
+  }
+
+  search?.addEventListener("input", () => queryPagefind(search.value.trim()));
+  controls.forEach((control) => control?.addEventListener("change", applyFilters));
+  document.querySelector("#clear-filters")?.addEventListener("click", () => {
+    if (search) search.value = "";
+    controls.forEach((control) => { if (control) control.value = ""; });
+    pagefindMatches = null;
+    applyFilters();
+    search?.focus();
+  });
+  document.addEventListener("keydown", (event) => {
+    if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
+      event.preventDefault();
+      search?.focus();
+    }
+  });
+</script>

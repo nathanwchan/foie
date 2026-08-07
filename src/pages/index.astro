@@ -1,0 +1,87 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ResourceCard from "../components/ResourceCard.astro";
+import { displayDate, getResources, getUpdates, resourceMap } from "../lib/content";
+import { topicLabels } from "../lib/taxonomy";
+
+const resources = await getResources();
+const updates = await getUpdates();
+const latest = updates[0];
+const byId = resourceMap(resources);
+const highlighted = latest.data.highlightedResourceIds.map((id) => byId.get(id)).filter(Boolean);
+const recent = resources.filter((resource) => !latest.data.highlightedResourceIds.includes(resource.data.id)).slice(0, 6);
+const publisherCount = new Set(resources.map((resource) => resource.data.publisher)).size;
+const formatCount = new Set(resources.map((resource) => resource.data.format)).size;
+const topicCounts = Object.entries(
+  resources.flatMap((resource) => resource.data.topics).reduce<Record<string, number>>((counts, topic) => {
+    counts[topic] = (counts[topic] ?? 0) + 1;
+    return counts;
+  }, {})
+).sort(([, a], [, b]) => b - a).slice(0, 8);
+---
+
+<BaseLayout>
+  <section class="section shell">
+    <p class="eyebrow">Intelligence for native software teams</p>
+    <h1 class="display">Building iOS at the speed of <span class="gradient-text">agents.</span></h1>
+    <p class="lede">A curated signal for senior iOS engineers navigating coding agents, verification loops, platform tooling, and the new shape of high-quality software work.</p>
+    <div class="hero-actions">
+      <a class="button button-primary" href="/resources/">Explore the library <span aria-hidden="true">→</span></a>
+      <a class="button button-secondary" href={`/updates/${latest.data.id}/`}>Read this week’s signal</a>
+    </div>
+    <div class="metric-rail" aria-label="Library statistics">
+      <div class="metric"><strong>{resources.length}</strong><span>curated resources</span></div>
+      <div class="metric"><strong>{publisherCount}</strong><span>publishers and voices</span></div>
+      <div class="metric"><strong>{formatCount}</strong><span>source formats</span></div>
+      <div class="metric"><strong>Weekly</strong><span>Sunday evening refresh</span></div>
+    </div>
+  </section>
+
+  <section class="section-tight shell">
+    <article class="signal-panel">
+      <div class="signal-date"><span class="live-dot" aria-hidden="true"></span> Latest signal · <time datetime={latest.data.date.toISOString()}>{displayDate(latest.data.date)}</time></div>
+      <h2>{latest.data.headline}</h2>
+      <p>{latest.data.synthesis}</p>
+      <div class="signal-topics">
+        {latest.data.emergingTopics.map((topic) => <span>{topicLabels[topic]}</span>)}
+      </div>
+      <div class="hero-actions"><a class="button button-secondary" href={`/updates/${latest.data.id}/`}>Open the full update <span aria-hidden="true">→</span></a></div>
+    </article>
+  </section>
+
+  <section class="section shell">
+    <div class="section-heading">
+      <div><p class="eyebrow">Start here</p><h2>The strongest signals</h2></div>
+      <a class="section-link" href="/resources/">View everything →</a>
+    </div>
+    <div class="resource-grid">
+      {highlighted.map((resource) => resource && <ResourceCard resource={resource} featured />)}
+    </div>
+  </section>
+
+  <section class="section-tight shell">
+    <div class="section-heading">
+      <div><p class="eyebrow">The landscape</p><h2>What teams are working through</h2></div>
+      <p>Eight recurring concerns connect the tools, practices, and evidence in the library.</p>
+    </div>
+    <div class="topic-board">
+      {topicCounts.map(([topic, count], index) => (
+        <a class="topic-tile" href={`/resources/?topic=${topic}`}>
+          <span class="topic-number">0{index + 1}</span>
+          <h3>{topicLabels[topic as keyof typeof topicLabels]}</h3>
+          <p>{count} {count === 1 ? "signal" : "signals"} in the current index</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section shell">
+    <div class="section-heading">
+      <div><p class="eyebrow">Chronological index</p><h2>Newest additions</h2></div>
+      <p>Ordered by original publication date, newest first. Discovery date is used only when the source date is unavailable.</p>
+    </div>
+    <div class="resource-grid">
+      {recent.map((resource) => <ResourceCard resource={resource} />)}
+    </div>
+  </section>
+</BaseLayout>

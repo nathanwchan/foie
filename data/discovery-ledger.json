@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-06",
+  "entries": [
+    { "canonicalUrl": "https://developer.apple.com/documentation/xcode-release-notes/xcode-27-release-notes", "aliases": [], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "accepted", "resourceId": "xcode-27-release-notes" },
+    { "canonicalUrl": "https://github.com/jo-duchan/tapflow/pull/380", "aliases": [], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "accepted", "resourceId": "tapflow-headless-ui-tree" },
+    { "canonicalUrl": "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint", "aliases": [], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "accepted", "resourceId": "spotify-coding-no-longer-constraint" },
+    { "canonicalUrl": "https://developer.apple.com/videos/play/wwdc2026/259", "aliases": [], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "accepted", "resourceId": "xcode-agents-and-you" },
+    { "canonicalUrl": "https://developer.apple.com/documentation/xcode/giving-external-agents-access-to-xcode", "aliases": [], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "accepted", "resourceId": "external-agents-xcode" },
+    { "canonicalUrl": "https://vivqu.com/blog/2026/05/24/building-ios-apps-with-agents", "aliases": ["https://www.youtube.com/watch?v=S1kUmkygP8E"], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "accepted", "resourceId": "building-ios-apps-with-agents" },
+    { "canonicalUrl": "https://careersatdoordash.com/blog/doordash-using-cursor-to-accelerate-migration-to-swift-testing", "aliases": [], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "accepted", "resourceId": "doordash-swift-testing-migration" },
+    { "canonicalUrl": "https://bitdrift.io/podcast/beyond-the-noise/episode-13", "aliases": ["https://www.youtube.com/watch?v=I7VkfNTBLck"], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "accepted", "resourceId": "jp-simard-escaping-ide" },
+    { "canonicalUrl": "https://engineering.atspotify.com/2026/4/anthropic-agentic-development", "aliases": ["https://www.youtube.com/watch?v=fHDGQHr_agg"], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "accepted", "resourceId": "spotify-agentic-development" },
+    { "canonicalUrl": "https://arxiv.org/abs/2602.12144", "aliases": [], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "accepted", "resourceId": "swe-bench-mobile-adoption" },
+    { "canonicalUrl": "https://arxiv.org/abs/2602.09540", "aliases": ["https://swebenchmobile.com"], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "accepted", "resourceId": "swe-bench-mobile" },
+    { "canonicalUrl": "https://engineering.ramp.com/post/why-we-built-our-background-agent", "aliases": ["https://www.youtube.com/watch?v=ii9E5z8Gsrc"], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "accepted", "resourceId": "ramp-background-agent" },
+    { "canonicalUrl": "https://github.com/getsentry/XcodeBuildMCP", "aliases": ["https://www.xcodebuildmcp.com"], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "accepted", "resourceId": "xcodebuildmcp" },
+    { "canonicalUrl": "https://engineering.ramp.com/post/apple-intelligence-receipt-matching", "aliases": [], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "skipped", "reason": "outside-scope: AI product feature rather than AI-enabled engineering workflow" },
+    { "canonicalUrl": "https://x.com/pfernan95dev/status/2085400864898855015", "aliases": [], "firstSeenAt": "2026-08-06", "lastSeenAt": "2026-08-06", "status": "skipped", "reason": "thin-source: useful discovery framing but insufficient original material for a summary and takeaway" }
+  ]
+}

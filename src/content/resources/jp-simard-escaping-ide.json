@@ -1,0 +1,20 @@
+{
+  "id": "jp-simard-escaping-ide",
+  "slug": "jp-simard-escaping-ide",
+  "canonicalUrl": "https://bitdrift.io/podcast/beyond-the-noise/episode-13",
+  "alternateUrls": ["https://www.youtube.com/watch?v=I7VkfNTBLck"],
+  "title": "JP Simard on Swift, Open Source, and Escaping the IDE",
+  "publisher": "Beyond the Noise",
+  "publisherUrl": "https://bitdrift.io/podcast/beyond-the-noise",
+  "authors": [{ "name": "JP Simard", "url": "https://github.com/jpsim" }, { "name": "Matt Klein" }],
+  "publishedAt": "2026-04-21",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "podcast",
+  "topics": ["agent-workflows", "agent-readable-architecture", "human-in-the-loop", "sdlc-automation"],
+  "evidenceType": "practitioner",
+  "summary": "JP Simard connects his history in Swift tooling and mobile infrastructure with Ramp’s small native teams and emerging cross-platform agent workflows. The conversation argues for architecting a feature once and using shared domain context to produce distinct native implementations instead of forcing a single cross-platform codebase.",
+  "takeaway": "Give agents architecture and product intent as the shared layer, then preserve platform-native implementations and review them with engineers who understand each ecosystem.",
+  "availability": "available",
+  "relatedResourceIds": ["building-ios-apps-with-agents", "ramp-background-agent"]
+}
