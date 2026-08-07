@@ -1,0 +1,37 @@
+{
+  "id": "rocketsim-16-physical-devices-ai-agents",
+  "slug": "rocketsim-16-physical-devices-ai-agents",
+  "canonicalUrl": "https://www.rocketsim.app/blog/rocketsim-16-physical-devices-ai-agents/",
+  "media": {
+    "type": "image",
+    "url": "https://www.rocketsim.app/_astro/physical-device-location-simulation.CrvYc_9b.webp",
+    "alt": "RocketSim running location simulation beside an app on a connected physical iPhone"
+  },
+  "title": "RocketSim 16: Physical Devices and AI Agents",
+  "publisher": "RocketSim",
+  "publisherUrl": "https://www.rocketsim.app/",
+  "authors": [
+    {
+      "name": "Antoine van der Lee",
+      "url": "https://www.avanderlee.com/"
+    }
+  ],
+  "publishedAt": "2026-07-30",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "testing-evaluation",
+    "visual-validation"
+  ],
+  "summary": "Antoine van der Lee presents a version-matched RocketSim CLI and Agent Skill that let coding agents inspect and operate Simulator, while RocketSim 16 adds a narrower set of repeatable actions for USB-connected devices. An iOS team can pilot one acceptance flow in Simulator, then move only supported checks—such as deep links, locales, or locations—to real hardware.",
+  "takeaway": "Separate simulator and device capabilities explicitly, and require compact UI evidence plus actionable failures instead of treating compilation as verification.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "sim-use-mobile-verification-loop",
+    "mobile-agent-device-proof",
+    "xcode-mcp-field-notes"
+  ]
+}

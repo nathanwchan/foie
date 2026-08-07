@@ -1,0 +1,36 @@
+{
+  "id": "introducing-macos-cloud-agents",
+  "slug": "introducing-macos-cloud-agents",
+  "canonicalUrl": "https://www.youtube.com/watch?v=p20jZmHBu8E",
+  "media": {
+    "type": "youtube",
+    "videoId": "p20jZmHBu8E",
+    "title": "Introducing macOS Cloud Agents"
+  },
+  "title": "Introducing macOS Cloud Agents",
+  "publisher": "Cognition",
+  "publisherUrl": "https://www.youtube.com/@Cognition-Labs",
+  "authors": [
+    {
+      "name": "Cognition",
+      "url": "https://www.youtube.com/@Cognition-Labs"
+    }
+  ],
+  "publishedAt": "2026-08-06",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "video",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "testing-evaluation",
+    "sdlc-automation"
+  ],
+  "summary": "Cognition demonstrates connecting Devin to a Namespace macOS blueprint, selecting macOS and Xcode versions, and asking the agent to create, build, launch, and play a native iOS game in Simulator. A team evaluating remote agents can reproduce the demo with a pinned cloud-Mac image and retain the build and runtime evidence.",
+  "takeaway": "Give remote agents a reproducible Mac image with pinned Xcode, then require them to launch and exercise the app in Simulator before reporting success.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "cloud-agents-real-mac-xcode",
+    "mobile-agent-device-proof"
+  ]
+}

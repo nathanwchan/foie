@@ -1,0 +1,37 @@
+{
+  "id": "agentic-coding-ios-developers",
+  "slug": "agentic-coding-ios-developers",
+  "canonicalUrl": "https://www.youtube.com/watch?v=YQwKZNMfgA4",
+  "media": {
+    "type": "youtube",
+    "videoId": "YQwKZNMfgA4",
+    "title": "Agentic coding for iOS developers"
+  },
+  "title": "Agentic coding for iOS developers",
+  "publisher": "Salmon Team",
+  "publisherUrl": "https://www.youtube.com/@meet-SalmonTeam",
+  "authors": [
+    {
+      "name": "Artem Novichkov",
+      "url": "https://www.youtube.com/watch?v=YQwKZNMfgA4"
+    }
+  ],
+  "publishedAt": "2026-07-21",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "video",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Artem Novichkov describes using agents on production iOS work at Salmon, with repository instructions, Apple documentation, build and simulator tools, and Jira, Figma, and backend context. An experienced team can begin by documenting one feature's constraints, giving the agent an executable validation loop, and keeping the developer accountable for every resulting bug.",
+  "takeaway": "Treat context, tools, and integrations as one system: supply the requirement and design sources, then require a build, simulator check, and human code review.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "coding-agents-production-ios",
+    "building-ios-apps-with-agents",
+    "jp-simard-escaping-ide"
+  ]
+}
