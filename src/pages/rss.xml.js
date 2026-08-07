@@ -1,17 +1,17 @@
 import rss from "@astrojs/rss";
-import { getUpdates } from "../lib/content";
+import { getResources } from "../lib/content";
 
 export async function GET(context) {
-  const updates = await getUpdates();
+  const resources = await getResources();
   return rss({
     title: "Future of iOS Engineering",
-    description: "Weekly signals about coding agents and native iOS engineering.",
+    description: "Curated resources about coding agents and native iOS engineering.",
     site: context.site ?? "http://localhost:4321",
-    items: updates.map((update) => ({
-      title: update.data.headline,
-      description: update.data.synthesis,
-      pubDate: update.data.date,
-      link: `/updates/${update.data.id}/`
+    items: resources.map((resource) => ({
+      title: resource.data.title,
+      description: `${resource.data.summary} Practical takeaway: ${resource.data.takeaway}`,
+      pubDate: resource.data.publishedAt ?? resource.data.discoveredAt,
+      link: `/#resource-${resource.data.slug}`
     })),
     customData: "<language>en-us</language>"
   });

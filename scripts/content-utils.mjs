@@ -27,14 +27,9 @@ function isDate(value) {
   return typeof value === "string" && !Number.isNaN(Date.parse(value));
 }
 
-function resourceTimestamp(resource) {
-  return Date.parse(resource.publishedAt ?? resource.discoveredAt);
-}
-
 export async function validateContent(rootDirectory) {
   const errors = [];
   const resources = await readJsonDirectory(path.join(rootDirectory, "src/content/resources"));
-  const updates = await readJsonDirectory(path.join(rootDirectory, "src/content/updates"));
   const ledger = JSON.parse(await fs.readFile(path.join(rootDirectory, "data/discovery-ledger.json"), "utf8"));
   const ids = new Map();
   const urls = new Map();
@@ -85,18 +80,6 @@ export async function validateContent(rootDirectory) {
     }
   }
 
-  for (const { file, data } of updates) {
-    const label = `update ${file}`;
-    if (data.id !== file.replace(/\.json$/, "")) errors.push(`${label}: filename must match id`);
-    if (!isDate(data.date)) errors.push(`${label}: invalid date`);
-    if (!Array.isArray(data.resourceIds) || data.resourceIds.length === 0) errors.push(`${label}: resources are required`);
-    for (const id of data.resourceIds ?? []) if (!resourceById.has(id)) errors.push(`${label}: unknown resource ${id}`);
-    if (!Array.isArray(data.highlightedResourceIds) || data.highlightedResourceIds.length < 3 || data.highlightedResourceIds.length > 5) errors.push(`${label}: 3–5 highlights are required`);
-    for (const id of data.highlightedResourceIds ?? []) if (!data.resourceIds.includes(id)) errors.push(`${label}: highlighted resource ${id} is not in resourceIds`);
-    const ordered = (data.resourceIds ?? []).map((id) => resourceById.get(id)).filter(Boolean);
-    for (let index = 1; index < ordered.length; index += 1) if (resourceTimestamp(ordered[index - 1]) < resourceTimestamp(ordered[index])) errors.push(`${label}: resourceIds must be newest first (${ordered[index - 1].id} precedes ${ordered[index].id})`);
-  }
-
   const ledgerUrls = new Map();
   for (const [index, entry] of (ledger.entries ?? []).entries()) {
     const label = `ledger entry ${index + 1}`;
@@ -111,5 +94,5 @@ export async function validateContent(rootDirectory) {
     if (entry.status === "skipped" && !entry.reason) errors.push(`${label}: skipped entries require a reason`);
   }
 
-  return { errors, counts: { resources: resources.length, updates: updates.length, ledgerEntries: ledger.entries?.length ?? 0 } };
+  return { errors, counts: { resources: resources.length, ledgerEntries: ledger.entries?.length ?? 0 } };
 }

@@ -51,17 +51,4 @@ const resources = defineCollection({
   })
 });
 
-const updates = defineCollection({
-  loader: glob({ pattern: "**/*.json", base: "./src/content/updates" }),
-  schema: z.object({
-    id: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
-    date: z.coerce.date(),
-    headline: z.string().min(12),
-    synthesis: z.string().min(180).max(1400),
-    resourceIds: z.array(z.string()).min(1),
-    highlightedResourceIds: z.array(z.string()).min(3).max(5),
-    emergingTopics: z.array(z.enum(topics)).min(1)
-  })
-});
-
-export const collections = { resources, updates };
+export const collections = { resources };

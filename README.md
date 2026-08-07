@@ -1,14 +1,14 @@
 # Future of iOS Engineering
 
-A static intelligence dashboard tracking how LLMs and coding agents are changing iOS software development. Resources and weekly updates are ordered newest-first, backed by inspectable sources, and stored as schema-validated files in Git.
+A static intelligence dashboard tracking how LLMs and coding agents are changing iOS software development. The growing resource collection is ordered newest-first, backed by inspectable sources, and stored as schema-validated files in Git.
 
 ## Stack
 
 - Astro and TypeScript
-- Astro content collections for resource and update contracts
+- Astro content collections for the resource contract
 - Pagefind for static full-text search and filters
 - RSS and sitemap generation
-- A repository-local Codex curation skill for weekly research and publishing
+- A repository-local Codex curation skill for scheduled research and publishing
 
 ## Local development
 
@@ -26,14 +26,13 @@ npm run check
 npm run build
 ```
 
-The production build validates schemas, controlled vocabulary, URL uniqueness, alternate-version relationships, weekly-update references, discovery-ledger coverage, and strict newest-first chronology before Astro and Pagefind run.
+The production build validates schemas, controlled vocabulary, URL uniqueness, alternate-version relationships, and discovery-ledger coverage before Astro and Pagefind run.
 
 ## Content model
 
 - `src/content/resources/`: one JSON record per accepted source
-- `src/content/updates/`: dated weekly syntheses and resource references
 - `data/discovery-ledger.json`: non-public audit trail for accepted, skipped, duplicate, and unavailable discoveries
-- `.agents/skills/curate-ios-engineering/`: the durable weekly curation and publication workflow
+- `.agents/skills/curate-ios-engineering/`: the durable curation and publication workflow
 
 The scheduled Codex task invokes the repository-local skill instead of carrying a large duplicated prompt. Successful runs publish directly to `main`; no-change runs report without creating a commit.
 

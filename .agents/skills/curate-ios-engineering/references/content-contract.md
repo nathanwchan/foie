@@ -22,10 +22,6 @@ Never generate placeholder art. Prefer entry-specific media over generic publish
 
 Summaries must be 120–640 characters. Takeaways must be 45–280 characters. Write original prose grounded only in the inspected source.
 
-## Weekly updates
-
-Store updates in `src/content/updates/YYYY-MM-DD.json`. `resourceIds` must be ordered newest-to-oldest by `publishedAt`, then `discoveredAt`. Select three to five IDs from that list for `highlightedResourceIds`.
-
 ## Discovery ledger
 
 Maintain `data/discovery-ledger.json` as the non-public audit trail. Each entry contains a normalized canonical URL, aliases, first and last seen dates, status, and either an accepted `resourceId` or a concise skip reason. Do not delete previous skipped entries merely because the source appears in a later search.
@@ -34,4 +30,4 @@ Use `status: "skipped"` with a reason beginning `editorial-exclusion:` when the 
 
 ## Required validation
 
-Run `npm run check` and `npm run build`. The build invokes deterministic checks for duplicate URLs, invalid relationships, missing weekly references, invalid enum values, summary bounds, and chronological ordering.
+Run `npm run check` and `npm run build`. The build invokes deterministic checks for duplicate URLs, invalid relationships, invalid enum values, summary bounds, and discovery-ledger coverage.

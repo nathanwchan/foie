@@ -22,7 +22,7 @@ const formatCount = new Set(resources.map((resource) => resource.data.format)).s
       <div class="metric"><strong>{resources.length}</strong><span>curated resources</span></div>
       <div class="metric"><strong>{publisherCount}</strong><span>publishers and voices</span></div>
       <div class="metric"><strong>{formatCount}</strong><span>source formats</span></div>
-      <div class="metric"><strong>Weekly</strong><span>Sunday evening refresh</span></div>
+      <div class="metric"><strong>Sunday</strong><span>automated collection refresh</span></div>
     </div>
   </section>
 
@@ -33,8 +33,8 @@ const formatCount = new Set(resources.map((resource) => resource.data.format)).s
           <div><h2>Latest signals</h2></div>
         </div>
         <FilterBar resources={resources} />
-        <div class="feed-list" id="resource-results" data-pagefind-body>
-          {feed.map((resource, index) => <ResourceCard resource={resource} rank={index + 1} />)}
+        <div class="feed-list resource-grid" id="resource-results" data-pagefind-body>
+          {feed.map((resource) => <ResourceCard resource={resource} />)}
         </div>
         <div id="empty-state" class="empty-state" hidden>
           <h2>No signals match those filters.</h2>

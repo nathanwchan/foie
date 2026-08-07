@@ -6,10 +6,9 @@ import ResourceMedia from "./ResourceMedia.astro";
 
 interface Props {
   resource: ResourceEntry;
-  rank?: number;
 }
 
-const { resource, rank } = Astro.props;
+const { resource } = Astro.props;
 const { data } = resource;
 const sortDate = data.publishedAt ?? data.discoveredAt;
 const year = sortDate.getUTCFullYear().toString();
@@ -27,7 +26,6 @@ const year = sortDate.getUTCFullYear().toString();
   data-search={`${data.title} ${data.publisher} ${data.authors.map((author) => author.name).join(" ")} ${data.summary} ${data.takeaway} ${data.topics.map((topic) => topicLabels[topic]).join(" ")}`.toLowerCase()}
 >
   <div class="card-link">
-    {rank && <span class="feed-rank" aria-label={`Number ${rank}`}>{String(rank).padStart(2, "0")}</span>}
     <div class="card-copy">
       <div class="card-topline">
         <span class={`format-icon format-${data.format}`} aria-hidden="true">{formatLabels[data.format].slice(0, 1)}</span>
