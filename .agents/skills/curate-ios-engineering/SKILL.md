@@ -5,7 +5,7 @@ description: Research, evaluate, enrich, validate, and publish the weekly Future
 
 # Curate Future of iOS Engineering
 
-Read [references/content-contract.md](references/content-contract.md) before changing content.
+Read [references/content-contract.md](references/content-contract.md) before changing content. Read [references/social-discovery.md](references/social-discovery.md) before every research run.
 
 ## Prepare safely
 
@@ -15,7 +15,7 @@ Read [references/content-contract.md](references/content-contract.md) before cha
 
 ## Research the rolling window
 
-1. Search the previous 30 days across Apple documentation and videos, engineering blogs, papers, GitHub, conference talks, YouTube, podcasts, Hacker News, Reddit, X, Mastodon, LinkedIn, and other public sources.
+1. Search the previous 30 days across Apple documentation and videos, engineering blogs, papers, GitHub, conference talks, YouTube, podcasts, Hacker News, Reddit, X, Mastodon, LinkedIn, and other public sources. Use the direct-source procedures in the social discovery reference; a general web search is not a substitute for the X or Mastodon passes.
 2. Focus on AI-assisted engineering workflows for native iOS: agent tooling, Xcode access, architecture, review, tests, evaluation, simulator or device verification, migrations, maintenance, and human accountability.
 3. Exclude AI-powered app features unless the source directly changes how the app is engineered.
 4. Apply a high-signal threshold but no numerical publication cap.
