@@ -7,18 +7,18 @@ const { resources } = Astro.props;
 const keywords = ["Agents", "Xcode", "Testing", "SwiftUI"];
 ---
 
-<section class="filter-panel" aria-label="Search resources">
+<section class="filter-panel" aria-label="Search posts">
   <p class="filter-label">Search the collection</p>
   <div class="filter-row">
     <div class="search-input-wrap">
       <Search class="search-icon" size={20} stroke-width={2.2} aria-hidden="true" />
-      <input id="resource-search" type="search" placeholder="Search resources" autocomplete="off" aria-label="Search resources" />
+      <input id="resource-search" type="search" placeholder="Search posts" autocomplete="off" aria-label="Search posts" />
     </div>
     <div class="keyword-chips" aria-label="Common searches">
       {keywords.map((keyword) => <button class="keyword-chip" type="button" data-keyword={keyword} aria-pressed="false">{keyword}</button>)}
     </div>
   </div>
-  <p class="filter-status" aria-live="polite"><strong id="result-count">{resources.length}</strong> resources</p>
+  <p class="filter-status" aria-live="polite"><strong id="result-count">{resources.length}</strong> posts</p>
 </section>
 
 <script>
