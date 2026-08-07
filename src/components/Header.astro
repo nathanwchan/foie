@@ -1,4 +1,4 @@
-<header class="site-header">
+<header class="site-header" data-site-header>
   <div class="header-inner shell">
     <a class="wordmark" href="/" aria-label="The Future of iOS Engineering home">
       <img class="wordmark-mark" src="/brand-mark.png" alt="" width="32" height="32" />
@@ -6,3 +6,29 @@
     </a>
   </div>
 </header>
+
+<script>
+  const header = document.querySelector<HTMLElement>("[data-site-header]");
+  const title = document.querySelector<HTMLElement>("[data-header-reveal-after]");
+
+  if (header) {
+    const setVisible = (visible: boolean) => {
+      header.classList.toggle("is-visible", visible);
+      header.toggleAttribute("inert", !visible);
+      header.setAttribute("aria-hidden", String(!visible));
+    };
+
+    if (!title) {
+      setVisible(true);
+    } else {
+      const update = () => setVisible(title.getBoundingClientRect().bottom <= 20);
+      const observer = new IntersectionObserver(update, {
+        rootMargin: "-20px 0px 0px 0px",
+        threshold: 0
+      });
+
+      observer.observe(title);
+      update();
+    }
+  }
+</script>
