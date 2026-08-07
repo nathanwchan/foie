@@ -74,12 +74,12 @@ main { min-height: calc(100vh - 210px); }
 .section { padding: 82px 0; }
 .eyebrow { margin: 0 0 14px; color: var(--blue); font-size: 12px; font-weight: 760; letter-spacing: 0.11em; text-transform: uppercase; }
 .home-hero { padding: 44px 0 18px; }
-.home-hero > div:first-child { max-width: 980px; }
+.home-hero > div:first-child { max-width: none; }
 .display { max-width: none; margin: 0; font-size: clamp(40px, 5.45vw, 74px); line-height: 0.98; letter-spacing: -0.066em; font-weight: 730; }
 .display-line { display: block; }
 .display-primary { white-space: nowrap; }
 .gradient-text { color: transparent; background: linear-gradient(95deg, #0071e3 8%, #4f9dff 45%, #7758f6 90%); background-clip: text; -webkit-background-clip: text; }
-.lede { max-width: 760px; margin: 24px 0 0; color: var(--muted); font-size: clamp(19px, 2vw, 24px); line-height: 1.42; letter-spacing: -0.022em; }
+.lede { max-width: none; margin: 24px 0 0; color: var(--muted); font-size: clamp(19px, 2vw, 24px); line-height: 1.42; letter-spacing: -0.022em; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 30px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; padding: 0 19px; border: 1px solid transparent; border-radius: 999px; font-weight: 650; font-size: 15px; transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease; }
 .button:hover { transform: translateY(-2px); }
