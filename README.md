@@ -26,7 +26,7 @@ npm run check
 npm run build
 ```
 
-The production build validates schemas, controlled vocabulary, URL uniqueness, alternate-version relationships, and discovery-ledger coverage before Astro and Pagefind run.
+The production build validates schemas, controlled vocabulary, canonical URL uniqueness, and discovery-ledger coverage before Astro and Pagefind run.
 
 ## Content model
 
@@ -36,7 +36,7 @@ The production build validates schemas, controlled vocabulary, URL uniqueness, a
 
 The scheduled Codex task invokes the repository-local skill instead of carrying a large duplicated prompt. Successful runs publish directly to `main`; no-change runs report without creating a commit.
 
-Resources are presented as complete feed cells rather than internal detail pages. Titles, preview art, and source buttons link directly to the canonical source or its alternate versions.
+Resources are presented as complete feed cells rather than internal detail pages. Each resource selects one best canonical source; titles and preview art point to that destination. Equivalent mirrors remain private discovery-ledger aliases used only for deduplication.
 
 ## Scope
 

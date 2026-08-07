@@ -2,11 +2,10 @@
   "id": "building-ios-apps-with-agents",
   "slug": "building-ios-apps-with-agents",
   "canonicalUrl": "https://vivqu.com/blog/2026/05/24/building-ios-apps-with-agents/",
-  "alternateUrls": ["https://www.youtube.com/watch?v=S1kUmkygP8E"],
   "media": {
-    "type": "youtube",
-    "videoId": "S1kUmkygP8E",
-    "title": "Building iOS Apps with Agents by Vivian Qu"
+    "type": "image",
+    "url": "https://vivqu.com/assets/img/posts/building-ios-apps-agents/cover-slide.png",
+    "alt": "Building iOS Apps with Agents presentation cover by Vivian Qu"
   },
   "title": "Building iOS Apps with Agents",
   "publisher": "Vivian Qu",
@@ -15,7 +14,7 @@
   "publishedAt": "2026-05-24",
   "discoveredAt": "2026-08-06",
   "lastVerifiedAt": "2026-08-06",
-  "format": "video",
+  "format": "article",
   "topics": ["agent-workflows", "visual-validation", "testing-evaluation", "xcode-tooling", "human-in-the-loop"],
   "summary": "Vivian Qu, a Meta iOS engineer, explains why mobile agents struggle with proprietary toolchains, fragmented device targets, incomplete platform context, and slow verification. Her central prescription is a scoped plan plus a build-run-inspect loop that gives the agent simulator, interaction, screenshot, and test evidence.",
   "takeaway": "Start with one simulator device and OS pair. Give the agent commands to build, launch, interact, capture screenshots, and rerun tests; require that evidence in every PR before expanding the device matrix.",

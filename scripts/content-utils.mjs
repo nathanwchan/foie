@@ -6,6 +6,11 @@ export const allowedTopics = ["agent-workflows", "xcode-tooling", "agent-readabl
 export const allowedMediaTypes = ["image", "youtube", "video"];
 const trackingKeys = new Set(["fbclid", "gclid", "mc_cid", "mc_eid", "ref", "source"]);
 
+function isYouTubeUrl(value) {
+  const host = new URL(value).hostname.toLowerCase().replace(/^www\./, "");
+  return host === "youtube.com" || host === "youtu.be";
+}
+
 export function canonicalizeUrl(value) {
   const url = new URL(value);
   url.hash = "";
@@ -52,6 +57,13 @@ export async function validateContent(rootDirectory) {
     if (data.media?.type === "video") {
       if (!data.media.url || !data.media.posterUrl || !data.media.title) errors.push(`${label}: video media requires url, posterUrl, and title`);
     }
+    try {
+      const canonicalIsYouTube = isYouTubeUrl(data.canonicalUrl);
+      if (canonicalIsYouTube && data.format !== "video") errors.push(`${label}: a YouTube canonical URL must use video format`);
+      if (data.format === "video" && data.media?.type === "youtube" && !canonicalIsYouTube) errors.push(`${label}: a YouTube video resource must use its YouTube URL as canonicalUrl`);
+    } catch {
+      // The canonical URL is reported by the URL validation below.
+    }
     for (const value of [data.media?.url, data.media?.posterUrl].filter(Boolean)) {
       try { new URL(value); } catch { errors.push(`${label}: invalid media URL ${value}`); }
     }
@@ -63,7 +75,8 @@ export async function validateContent(rootDirectory) {
     if (!Array.isArray(data.authors) || data.authors.length === 0 || data.authors.some((author) => !author.name)) errors.push(`${label}: at least one named author is required`);
     const primaryAuthor = data.authors?.[0]?.name;
     if (primaryAuthor && !data.summary.startsWith(primaryAuthor)) errors.push(`${label}: summary must begin with primary author ${primaryAuthor}`);
-    for (const value of [data.canonicalUrl, ...(data.alternateUrls ?? [])]) {
+    if ("alternateUrls" in data) errors.push(`${label}: alternateUrls is deprecated; publish exactly one canonicalUrl`);
+    for (const value of [data.canonicalUrl]) {
       try {
         const normalized = canonicalizeUrl(value);
         if (urls.has(normalized)) errors.push(`${label}: URL duplicates ${urls.get(normalized)}`);
@@ -83,6 +96,7 @@ export async function validateContent(rootDirectory) {
   }
 
   const ledgerUrls = new Map();
+  const ledgerResourceIds = new Set();
   for (const [index, entry] of (ledger.entries ?? []).entries()) {
     const label = `ledger entry ${index + 1}`;
     try {
@@ -92,8 +106,26 @@ export async function validateContent(rootDirectory) {
     } catch {
       errors.push(`${label}: invalid canonical URL`);
     }
-    if (entry.status === "accepted" && !resourceById.has(entry.resourceId)) errors.push(`${label}: accepted resource ${entry.resourceId} does not exist`);
+    if (entry.status === "accepted") {
+      const resource = resourceById.get(entry.resourceId);
+      if (!resource) {
+        errors.push(`${label}: accepted resource ${entry.resourceId} does not exist`);
+      } else {
+        ledgerResourceIds.add(entry.resourceId);
+        try {
+          if (canonicalizeUrl(entry.canonicalUrl) !== canonicalizeUrl(resource.canonicalUrl)) {
+            errors.push(`${label}: canonical URL must match resource ${entry.resourceId}`);
+          }
+        } catch {
+          // Invalid URLs are reported by their respective validation paths.
+        }
+      }
+    }
     if (entry.status === "skipped" && !entry.reason) errors.push(`${label}: skipped entries require a reason`);
+  }
+
+  for (const resourceId of resourceById.keys()) {
+    if (!ledgerResourceIds.has(resourceId)) errors.push(`resource ${resourceId}: missing accepted discovery-ledger entry`);
   }
 
   return { errors, counts: { resources: resources.length, ledgerEntries: ledger.entries?.length ?? 0 } };

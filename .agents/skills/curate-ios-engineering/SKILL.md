@@ -24,13 +24,13 @@ Read [references/content-contract.md](references/content-contract.md) before cha
 
 ## Normalize and enrich
 
-1. Remove tracking parameters and fragments. Compare normalized canonical and alternate URLs against the ledger and every resource file.
+1. Remove tracking parameters and fragments. Compare every candidate URL against resource canonical URLs plus canonical URLs and aliases in the private discovery ledger.
 2. Treat any skipped ledger entry whose reason begins with `editorial-exclusion:` as a permanent curator decision. Never reevaluate or republish it unless the curator explicitly approves that exact source again.
-3. Merge equivalent recordings or podcast mirrors into `alternateUrls`. Keep distinct companion articles, transcripts, tools, and papers as related resources.
+3. Publish exactly one `canonicalUrl` per resource. When several versions exist, choose the most complete, original, stable, and directly inspectable destination. Prefer the author or publisher's first-party page when it contains the full material or transcript; choose the direct YouTube, podcast, paper, repository, or social URL when that is the primary artifact or the first-party page is less complete. The resource `format` must describe this chosen URL. Keep equivalent mirrors only as private ledger aliases for deduplication; never add them to a resource or render them publicly. Keep materially distinct companions as separate related resources when each independently meets the publication threshold.
 4. Verify title, publisher, author, original publication date, and availability from the source. Use a null publication date only when the source does not expose one.
 5. Write a source-grounded summary of two or three sentences that begins with the exact name in `authors[0].name`, followed by one specific action an experienced iOS team can take. Preserve source uncertainty and avoid unsupported claims.
 6. Assign only controlled format and topic values from the content contract.
-7. Add source-native media. Use an inspectable YouTube or first-party video when the resource has one, including equivalent podcast or article recordings. Otherwise use the source's relevant Open Graph image or a directly relevant figure. Never generate a generic placeholder.
+7. Add source-native media. Use an inspectable YouTube or first-party video when the chosen resource is a video or a video-recorded podcast. Otherwise use the chosen source's relevant Open Graph image or a directly relevant figure. Never generate a generic placeholder or use a companion URL merely to make the card look like a different format.
 8. Create one JSON file per accepted resource and update related-resource links where useful.
 
 ## Publish the growing collection

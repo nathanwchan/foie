@@ -33,7 +33,6 @@ const resources = defineCollection({
     id: z.string().regex(/^[a-z0-9-]+$/),
     slug: z.string().regex(/^[a-z0-9-]+$/),
     canonicalUrl: z.url(),
-    alternateUrls: z.array(z.url()).default([]),
     media: mediaSchema,
     title: z.string().min(8),
     publisher: z.string().min(1),
@@ -48,13 +47,30 @@ const resources = defineCollection({
     takeaway: z.string().min(45).max(280),
     availability: z.enum(availabilityStatuses).default("available"),
     relatedResourceIds: z.array(z.string()).default([])
-  }).superRefine((resource, context) => {
+  }).strict().superRefine((resource, context) => {
     const primaryAuthor = resource.authors[0]?.name;
     if (primaryAuthor && !resource.summary.startsWith(primaryAuthor)) {
       context.addIssue({
         code: "custom",
         path: ["summary"],
         message: "Summary must begin with the primary author's exact name"
+      });
+    }
+
+    const canonicalHost = new URL(resource.canonicalUrl).hostname.toLowerCase().replace(/^www\./, "");
+    const canonicalIsYouTube = canonicalHost === "youtube.com" || canonicalHost === "youtu.be";
+    if (canonicalIsYouTube && resource.format !== "video") {
+      context.addIssue({
+        code: "custom",
+        path: ["format"],
+        message: "A YouTube canonical URL must use video format"
+      });
+    }
+    if (resource.format === "video" && resource.media.type === "youtube" && !canonicalIsYouTube) {
+      context.addIssue({
+        code: "custom",
+        path: ["canonicalUrl"],
+        message: "A YouTube video resource must use its YouTube URL as canonicalUrl"
       });
     }
   })

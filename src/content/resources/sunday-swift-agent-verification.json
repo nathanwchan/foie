@@ -2,7 +2,6 @@
   "id": "sunday-swift-agent-verification",
   "slug": "sunday-swift-agent-verification",
   "canonicalUrl": "https://sundayswift.com/posts/how-our-agents-test-their-own-ios-changes/",
-  "alternateUrls": ["https://www.reddit.com/r/iOSProgramming/comments/1rz6h9y/how_i_got_an_ai_coding_agent_to_actually_respect/"],
   "media": {
     "type": "image",
     "url": "https://sundayswift.com/og/how-our-agents-test-their-own-ios-changes.png",

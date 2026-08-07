@@ -1,6 +1,6 @@
 ---
 import type { ResourceEntry } from "../lib/content";
-import { displayDate, hostName } from "../lib/content";
+import { displayDate } from "../lib/content";
 import { topicLabels } from "../lib/taxonomy";
 import FormatBadge from "./FormatBadge.astro";
 import ResourceMedia from "./ResourceMedia.astro";
@@ -42,11 +42,6 @@ const summaryAfterAuthor = data.summary.slice(primaryAuthor.name.length);
         <strong>Practical takeaway</strong>
         <p>{data.takeaway}</p>
       </div>
-      {data.alternateUrls.length > 0 && (
-        <p class="alternate-sources">Alternate versions: {data.alternateUrls.map((url, index) => (
-          <><a href={url} target="_blank" rel="noreferrer">{hostName(url)} ↗</a>{index < data.alternateUrls.length - 1 ? ", " : ""}</>
-        ))}</p>
-      )}
     </div>
     {data.media && (
       <div class="card-media">

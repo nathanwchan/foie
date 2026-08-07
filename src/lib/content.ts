@@ -20,7 +20,3 @@ export function displayDate(date: Date | null, options: Intl.DateTimeFormatOptio
     ...options
   }).format(date);
 }
-
-export function hostName(url: string) {
-  return new URL(url).hostname.replace(/^www\./, "");
-}

@@ -122,8 +122,6 @@ main { min-height: calc(100vh - 210px); }
 .card-takeaway { margin-top: 16px; padding: 15px 17px; border: 1px solid color-mix(in srgb, var(--blue) 18%, var(--line)); border-radius: 15px; background: var(--blue-soft); }
 .card-takeaway strong { display: block; margin-bottom: 5px; color: var(--blue); font-size: 10px; font-weight: 760; letter-spacing: .07em; text-transform: uppercase; }
 .card-takeaway p { margin: 0; color: var(--text); font-size: 13px; line-height: 1.45; }
-.alternate-sources { margin: 14px 0 0; color: var(--muted); font-size: 11px; }
-.alternate-sources a { color: var(--blue); font-weight: 680; }
 .card-media { min-width: 0; margin-top: 34px; }
 .resource-media { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: #050506; box-shadow: 0 14px 34px rgba(25, 43, 74, 0.12); }
 .resource-media > a, .resource-media iframe, .resource-media video, .resource-media img { display: block; width: 100%; height: 100%; border: 0; }

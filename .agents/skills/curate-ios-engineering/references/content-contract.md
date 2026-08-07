@@ -14,11 +14,13 @@ Use ISO `YYYY-MM-DD` dates. Set `publishedAt` to `null` only when the original s
 
 Every resource requires a `media` object:
 
-- Use `{ "type": "youtube", "videoId": "…", "title": "…" }` when an inspectable YouTube recording is the canonical source or an equivalent alternate version.
+- Use `{ "type": "youtube", "videoId": "…", "title": "…" }` when an inspectable YouTube recording is the chosen canonical source, or when the canonical source is the first-party page for the same video-recorded podcast.
 - Use `{ "type": "video", "url": "…", "posterUrl": "…", "title": "…" }` for a stable first-party MP4.
 - Otherwise use `{ "type": "image", "url": "…", "alt": "…" }` with a source-owned Open Graph image or directly relevant source figure.
 
-Never generate placeholder art. Prefer entry-specific media over generic publisher branding, and add any equivalent public recording page to `alternateUrls`.
+Every public resource has exactly one destination in `canonicalUrl`; `alternateUrls` is not supported. If equivalent versions exist, select the best canonical destination by completeness, originality, stability, inspectability, and match to the resource's primary format. Store the remaining URLs only as aliases on the resource's private discovery-ledger entry so later runs can detect duplicates. The `format` value and visible source badge must describe the chosen canonical URL.
+
+Never generate placeholder art. Prefer entry-specific media from the chosen source over generic publisher branding. Do not use a companion or mirror solely to supply a more visually prominent preview.
 
 Summaries must be 120–640 characters and begin with the exact name in `authors[0].name`. The card links that opening name to the author's profile URL, falling back to the canonical source when no profile is available. Takeaways must be 45–280 characters. Write original prose grounded only in the inspected source.
 
