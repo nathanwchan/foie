@@ -163,7 +163,7 @@ input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid 
 
 .users-section { padding: 8px 0 60px; }
 .users-list { display: grid; }
-.user-card { padding: 32px 0; border-bottom: 1px solid var(--line); }
+.user-card { padding: 32px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 88px; }
 .user-card-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .user-identity { display: flex; min-width: 0; align-items: center; gap: 16px; }
 .user-avatar { width: 64px; height: 64px; flex: 0 0 auto; border: 1px solid var(--line); border-radius: 50%; background: var(--surface-soft); object-fit: cover; box-shadow: 0 8px 22px rgba(10, 15, 28, 0.1); }
