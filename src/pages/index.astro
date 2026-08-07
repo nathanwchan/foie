@@ -56,22 +56,15 @@ const updatedLabel = `${updatedDate} ${updatedTime}`;
 
 <script>
   const updated = document.querySelector<HTMLElement>("[data-last-updated]");
-  const seenResourcesStorageKey = "foie:seen-resource-slugs:v1";
+  // v2 replaces the original key, whose first-run baseline incorrectly marked every post as seen.
+  const seenResourcesStorageKey = "foie:seen-resource-slugs:v2";
 
   function initializeNewResourceBadges() {
     const cards = Array.from(document.querySelectorAll<HTMLElement>("[data-resource-card]"));
-    const currentSlugs = cards.flatMap((card) => card.dataset.slug ? [card.dataset.slug] : []);
 
     try {
       const storedSlugs = window.localStorage.getItem(seenResourcesStorageKey);
-
-      // A first-time visitor starts with the current archive as their baseline.
-      if (storedSlugs === null) {
-        window.localStorage.setItem(seenResourcesStorageKey, JSON.stringify(currentSlugs));
-        return;
-      }
-
-      const parsedSlugs: unknown = JSON.parse(storedSlugs);
+      const parsedSlugs: unknown = storedSlugs === null ? [] : JSON.parse(storedSlugs);
       const seenSlugs = new Set(Array.isArray(parsedSlugs) ? parsedSlugs.filter((slug): slug is string => typeof slug === "string") : []);
       const unseenCards = cards.filter((card) => {
         const slug = card.dataset.slug;
