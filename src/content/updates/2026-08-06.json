@@ -1,28 +1,19 @@
 {
   "id": "2026-08-06",
   "date": "2026-08-06",
-  "headline": "The iOS agent stack is becoming measurable",
-  "synthesis": "The strongest signal is not a new model but a maturing system around it. Apple is exposing more of Xcode to agents, practitioners are making simulator and accessibility state machine-readable, and production teams are encoding migrations as bounded, verifiable workflows. At the same time, mobile-specific research shows that success remains low and highly dependent on the agent harness. The practical frontier is therefore verification: teams that can make build, test, run, inspect, and review fast and deterministic can delegate more without lowering their quality bar.",
+  "headline": "Verification—not code generation—is the iOS constraint",
+  "synthesis": "The remaining sources converge on a tighter signal: iOS agents become useful only when teams bound the task and make verification explicit. Vivian Qu centers a build-run-inspect loop; DoorDash shows how exact migration rules and repeated clean test runs turn a large change into reviewable work; SWE-Bench Mobile shows that harness design can change results dramatically while overall success remains low. JP Simard adds an architectural boundary: share product intent across platforms, but preserve native implementations and native ownership. The practical priority is therefore to improve the agent’s environment, evidence, and review loop before expanding autonomy.",
   "resourceIds": [
-    "xcode-27-release-notes",
-    "tapflow-headless-ui-tree",
-    "spotify-coding-no-longer-constraint",
-    "xcode-agents-and-you",
-    "external-agents-xcode",
     "building-ios-apps-with-agents",
     "doordash-swift-testing-migration",
     "jp-simard-escaping-ide",
-    "spotify-agentic-development",
-    "swe-bench-mobile-adoption",
-    "swe-bench-mobile",
-    "ramp-background-agent",
-    "xcodebuildmcp"
-  ],
-  "highlightedResourceIds": [
-    "xcode-27-release-notes",
-    "building-ios-apps-with-agents",
-    "doordash-swift-testing-migration",
     "swe-bench-mobile"
   ],
-  "emergingTopics": ["xcode-tooling", "testing-evaluation", "visual-validation", "agent-readable-architecture"]
+  "highlightedResourceIds": [
+    "building-ios-apps-with-agents",
+    "doordash-swift-testing-migration",
+    "jp-simard-escaping-ide",
+    "swe-bench-mobile"
+  ],
+  "emergingTopics": ["testing-evaluation", "agent-workflows", "human-in-the-loop", "agent-readable-architecture"]
 }

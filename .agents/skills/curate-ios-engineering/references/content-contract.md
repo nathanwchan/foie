@@ -30,6 +30,8 @@ Store updates in `src/content/updates/YYYY-MM-DD.json`. `resourceIds` must be or
 
 Maintain `data/discovery-ledger.json` as the non-public audit trail. Each entry contains a normalized canonical URL, aliases, first and last seen dates, status, and either an accepted `resourceId` or a concise skip reason. Do not delete previous skipped entries merely because the source appears in a later search.
 
+Use `status: "skipped"` with a reason beginning `editorial-exclusion:` when the curator removes a source. This is a permanent denylist decision: scheduled curation must not reevaluate or republish the source unless the curator explicitly reverses it.
+
 ## Required validation
 
 Run `npm run check` and `npm run build`. The build invokes deterministic checks for duplicate URLs, invalid relationships, missing weekly references, invalid enum values, summary bounds, and chronological ordering.
