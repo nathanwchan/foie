@@ -28,10 +28,15 @@ const media = data.media;
     </video>
   )}
   {media.type === "x" && (
-    <video controls preload="metadata" poster={media.posterUrl} playsinline aria-label={media.title}>
-      <source src={media.videoUrl} type="video/mp4" />
-      <a href={data.canonicalUrl} target="_blank" rel="noreferrer">Watch {data.title} on X</a>
-    </video>
+    <div class="x-native-player" data-x-native-player>
+      <video preload="metadata" poster={media.posterUrl} playsinline aria-label={media.title}>
+        <source src={media.videoUrl} type="video/mp4" />
+        <a href={data.canonicalUrl} target="_blank" rel="noreferrer">Watch {data.title} on X</a>
+      </video>
+      <button class="x-video-trigger" type="button" data-x-video-trigger aria-label={`Play ${media.title}`}>
+        <span class="x-video-play" aria-hidden="true"><span></span></span>
+      </button>
+    </div>
   )}
   {media.type === "image" && (
     <a href={data.canonicalUrl} target="_blank" rel="noreferrer" aria-label={`Open ${data.title} on ${data.publisher}`}>
@@ -39,3 +44,25 @@ const media = data.media;
     </a>
   )}
 </div>
+
+<script>
+  document.addEventListener("click", async (event) => {
+    if (!(event.target instanceof Element)) return;
+    const trigger = event.target.closest<HTMLButtonElement>("[data-x-video-trigger]");
+    if (!trigger) return;
+
+    const player = trigger.closest<HTMLElement>("[data-x-native-player]");
+    const video = player?.querySelector<HTMLVideoElement>("video");
+    if (!player || !video) return;
+
+    video.controls = true;
+    trigger.hidden = true;
+    try {
+      await video.play();
+    } catch {
+      player.classList.add("x-video-unavailable");
+      trigger.hidden = false;
+      trigger.setAttribute("aria-label", "Video unavailable; open the source on X");
+    }
+  });
+</script>
