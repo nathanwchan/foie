@@ -12,6 +12,14 @@ Required values are enforced in `src/content.config.ts`. Use these enums:
 
 Use ISO `YYYY-MM-DD` dates. Set `publishedAt` to `null` only when the original source exposes no reliable date. Set `discoveredAt` and `lastVerifiedAt` to the current run date.
 
+Every resource requires a `media` object:
+
+- Use `{ "type": "youtube", "videoId": "…", "title": "…" }` when an inspectable YouTube recording is the canonical source or an equivalent alternate version.
+- Use `{ "type": "video", "url": "…", "posterUrl": "…", "title": "…" }` for a stable first-party MP4.
+- Otherwise use `{ "type": "image", "url": "…", "alt": "…" }` with a source-owned Open Graph image or directly relevant source figure.
+
+Never generate placeholder art. Prefer entry-specific media over generic publisher branding, and add any equivalent public recording page to `alternateUrls`.
+
 Summaries must be 120–640 characters. Takeaways must be 45–280 characters. Write original prose grounded only in the inspected source.
 
 ## Weekly updates

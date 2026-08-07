@@ -3,6 +3,11 @@
   "slug": "jp-simard-escaping-ide",
   "canonicalUrl": "https://bitdrift.io/podcast/beyond-the-noise/episode-13",
   "alternateUrls": ["https://www.youtube.com/watch?v=I7VkfNTBLck"],
+  "media": {
+    "type": "youtube",
+    "videoId": "I7VkfNTBLck",
+    "title": "JP Simard on Swift, Open Source, and Escaping the IDE"
+  },
   "title": "JP Simard on Swift, Open Source, and Escaping the IDE",
   "publisher": "Beyond the Noise",
   "publisherUrl": "https://bitdrift.io/podcast/beyond-the-noise",

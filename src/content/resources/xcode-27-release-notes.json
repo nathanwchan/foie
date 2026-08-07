@@ -3,6 +3,11 @@
   "slug": "xcode-27-release-notes",
   "canonicalUrl": "https://developer.apple.com/documentation/xcode-release-notes/xcode-27-release-notes",
   "alternateUrls": [],
+  "media": {
+    "type": "image",
+    "url": "https://docs.developer.apple.com/tutorials/developer-og.jpg",
+    "alt": "Apple Developer documentation preview"
+  },
   "title": "Xcode 27 Release Notes",
   "publisher": "Apple Developer",
   "publisherUrl": "https://developer.apple.com/",

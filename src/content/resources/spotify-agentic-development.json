@@ -3,6 +3,11 @@
   "slug": "spotify-agentic-development",
   "canonicalUrl": "https://engineering.atspotify.com/2026/4/anthropic-agentic-development",
   "alternateUrls": ["https://www.youtube.com/watch?v=fHDGQHr_agg"],
+  "media": {
+    "type": "youtube",
+    "videoId": "fHDGQHr_agg",
+    "title": "Let's Talk Agentic Development: Spotify and Anthropic"
+  },
   "title": "Let’s Talk Agentic Development: Spotify × Anthropic",
   "publisher": "Spotify Engineering",
   "publisherUrl": "https://engineering.atspotify.com/",

@@ -3,6 +3,11 @@
   "slug": "swe-bench-mobile-adoption",
   "canonicalUrl": "https://arxiv.org/abs/2602.12144",
   "alternateUrls": [],
+  "media": {
+    "type": "image",
+    "url": "https://arxiv.org/html/2602.12144/x1.png",
+    "alt": "Chart from the study of AI coding-agent adoption in open-source Android and iOS projects"
+  },
   "title": "Adoption of AI Coding Agents in Open-Source Android and iOS Development",
   "publisher": "arXiv",
   "publisherUrl": "https://arxiv.org/",

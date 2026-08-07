@@ -29,7 +29,8 @@ Read [references/content-contract.md](references/content-contract.md) before cha
 3. Verify title, publisher, author, original publication date, and availability from the source. Use a null publication date only when the source does not expose one.
 4. Write a source-grounded summary of two or three sentences and one specific action an experienced iOS team can take. Preserve source uncertainty and avoid unsupported claims.
 5. Assign only controlled format and topic values from the content contract.
-6. Create one JSON file per accepted resource and update related-resource links where useful.
+6. Add source-native media. Use an inspectable YouTube or first-party video when the resource has one, including equivalent podcast or article recordings. Otherwise use the source's relevant Open Graph image or a directly relevant figure. Never generate a generic placeholder.
+7. Create one JSON file per accepted resource and update related-resource links where useful.
 
 ## Publish the weekly signal
 

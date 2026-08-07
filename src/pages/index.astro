@@ -47,7 +47,7 @@ const topicCounts = Object.entries(
           <a class="section-link" href="/resources/">View full library →</a>
         </div>
         <div class="feed-list">
-          {feed.map((resource, index) => <ResourceCard resource={resource} rank={index + 1} featured={index === 0} />)}
+          {feed.map((resource, index) => <ResourceCard resource={resource} rank={index + 1} />)}
         </div>
       </div>
 

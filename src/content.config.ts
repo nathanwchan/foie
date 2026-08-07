@@ -8,6 +8,25 @@ const authorSchema = z.object({
   url: z.url().optional()
 });
 
+const mediaSchema = z.discriminatedUnion("type", [
+  z.object({
+    type: z.literal("image"),
+    url: z.url(),
+    alt: z.string().min(1).max(180)
+  }),
+  z.object({
+    type: z.literal("youtube"),
+    videoId: z.string().regex(/^[A-Za-z0-9_-]{11}$/),
+    title: z.string().min(1).max(180)
+  }),
+  z.object({
+    type: z.literal("video"),
+    url: z.url(),
+    posterUrl: z.url(),
+    title: z.string().min(1).max(180)
+  })
+]);
+
 const resources = defineCollection({
   loader: glob({ pattern: "**/*.json", base: "./src/content/resources" }),
   schema: z.object({
@@ -15,6 +34,7 @@ const resources = defineCollection({
     slug: z.string().regex(/^[a-z0-9-]+$/),
     canonicalUrl: z.url(),
     alternateUrls: z.array(z.url()).default([]),
+    media: mediaSchema,
     title: z.string().min(8),
     publisher: z.string().min(1),
     publisherUrl: z.url().optional(),

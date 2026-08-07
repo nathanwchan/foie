@@ -3,6 +3,12 @@
   "slug": "xcode-agents-and-you",
   "canonicalUrl": "https://developer.apple.com/videos/play/wwdc2026/259/",
   "alternateUrls": [],
+  "media": {
+    "type": "video",
+    "url": "https://devstreaming-cdn.apple.com/videos/wwdc/2026/259/4/f4d40bb5-32db-418f-8a6e-396c77044afb/downloads/wwdc2026-259_hd.mp4",
+    "posterUrl": "https://devimages-cdn.apple.com/wwdc-services/images/9B2E82C5-4DDF-4B9A-9459-328D8E297696/10782/10782_wide_250x141_2x.jpg",
+    "title": "Xcode, Agents, and You from WWDC26"
+  },
   "title": "Xcode, Agents, and You",
   "publisher": "Apple Developer",
   "publisherUrl": "https://developer.apple.com/",

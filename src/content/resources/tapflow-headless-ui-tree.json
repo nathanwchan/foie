@@ -3,6 +3,11 @@
   "slug": "tapflow-headless-ui-tree",
   "canonicalUrl": "https://github.com/jo-duchan/tapflow/pull/380",
   "alternateUrls": [],
+  "media": {
+    "type": "image",
+    "url": "https://opengraph.githubassets.com/5efc0fed20a75b05419824dd26fc2f14ef9c91a15d5a9601562d197662a181c5/jo-duchan/tapflow/pull/380",
+    "alt": "GitHub preview for TapFlow's headless iOS UI-tree pull request"
+  },
   "title": "Read the iOS UI Tree with a Resident XCUITest Runner",
   "publisher": "TapFlow",
   "publisherUrl": "https://github.com/jo-duchan/tapflow",

@@ -3,6 +3,11 @@
   "slug": "ramp-background-agent",
   "canonicalUrl": "https://engineering.ramp.com/post/why-we-built-our-background-agent",
   "alternateUrls": ["https://www.youtube.com/watch?v=ii9E5z8Gsrc"],
+  "media": {
+    "type": "youtube",
+    "videoId": "ii9E5z8Gsrc",
+    "title": "Why Ramp Built Its Own Background Agent"
+  },
   "title": "Why We Built Our Own Background Agent",
   "publisher": "Ramp Builders",
   "publisherUrl": "https://engineering.ramp.com/",

@@ -3,6 +3,11 @@
   "slug": "building-ios-apps-with-agents",
   "canonicalUrl": "https://vivqu.com/blog/2026/05/24/building-ios-apps-with-agents/",
   "alternateUrls": ["https://www.youtube.com/watch?v=S1kUmkygP8E"],
+  "media": {
+    "type": "youtube",
+    "videoId": "S1kUmkygP8E",
+    "title": "Building iOS Apps with Agents by Vivian Qu"
+  },
   "title": "Building iOS Apps with Agents",
   "publisher": "Vivian Qu",
   "publisherUrl": "https://vivqu.com/",

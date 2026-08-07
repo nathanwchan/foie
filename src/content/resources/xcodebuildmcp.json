@@ -3,6 +3,11 @@
   "slug": "xcodebuildmcp",
   "canonicalUrl": "https://github.com/getsentry/XcodeBuildMCP",
   "alternateUrls": ["https://www.xcodebuildmcp.com/"],
+  "media": {
+    "type": "image",
+    "url": "https://repository-images.githubusercontent.com/945551361/67baf59d-23e0-49de-b2c1-39c25b2e9a7f",
+    "alt": "XcodeBuildMCP repository preview"
+  },
   "title": "XcodeBuildMCP",
   "publisher": "Sentry",
   "publisherUrl": "https://github.com/getsentry",

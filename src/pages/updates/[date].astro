@@ -27,6 +27,6 @@ const included = update.data.resourceIds.map((id) => byId.get(id)).filter(Boolea
   </article>
   <section class="section-tight shell">
     <div class="section-heading"><div><p class="eyebrow">In this edition</p><h2>Newest to oldest</h2></div></div>
-    <div class="resource-grid">{included.map((resource) => resource && <ResourceCard resource={resource} featured={update.data.highlightedResourceIds.includes(resource.data.id)} />)}</div>
+    <div class="resource-grid">{included.map((resource) => resource && <ResourceCard resource={resource} />)}</div>
   </section>
 </BaseLayout>

@@ -1,0 +1,35 @@
+---
+import type { ResourceEntry } from "../lib/content";
+
+interface Props {
+  resource: ResourceEntry;
+}
+
+const { resource } = Astro.props;
+const { data } = resource;
+const media = data.media;
+---
+
+<div class:list={["resource-media", `resource-media-${media.type}`]}>
+  {media.type === "youtube" && (
+    <iframe
+      src={`https://www.youtube-nocookie.com/embed/${media.videoId}?rel=0`}
+      title={media.title}
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  )}
+  {media.type === "video" && (
+    <video controls preload="none" poster={media.posterUrl} aria-label={media.title}>
+      <source src={media.url} type="video/mp4" />
+      <a href={data.canonicalUrl} target="_blank" rel="noreferrer">Watch {data.title} at the source</a>
+    </video>
+  )}
+  {media.type === "image" && (
+    <a href={data.canonicalUrl} target="_blank" rel="noreferrer" aria-label={`Open ${data.title} on ${data.publisher}`}>
+      <img src={media.url} alt={media.alt} loading="lazy" decoding="async" />
+    </a>
+  )}
+</div>

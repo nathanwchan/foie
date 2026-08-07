@@ -2,7 +2,12 @@
   "id": "spotify-coding-no-longer-constraint",
   "slug": "spotify-coding-no-longer-constraint",
   "canonicalUrl": "https://engineering.atspotify.com/2026/6/code-with-claude-coding-is-no-longer-the-constraint",
-  "alternateUrls": [],
+  "alternateUrls": ["https://www.youtube.com/watch?v=zFslvuvYifQ"],
+  "media": {
+    "type": "youtube",
+    "videoId": "zFslvuvYifQ",
+    "title": "Coding Is No Longer the Constraint by Spotify Engineering"
+  },
   "title": "Coding Is No Longer the Constraint",
   "publisher": "Spotify Engineering",
   "publisherUrl": "https://engineering.atspotify.com/",

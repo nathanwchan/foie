@@ -3,6 +3,11 @@
   "slug": "doordash-swift-testing-migration",
   "canonicalUrl": "https://careersatdoordash.com/blog/doordash-using-cursor-to-accelerate-migration-to-swift-testing/",
   "alternateUrls": [],
+  "media": {
+    "type": "image",
+    "url": "https://opengraph.githubassets.com/1/maatheusgois-dd/bazel-ios-swiftui-template",
+    "alt": "Preview of the example Bazel and Swift project linked from DoorDash's Swift Testing migration article"
+  },
   "title": "Using Cursor to Accelerate Migration to Swift Testing",
   "publisher": "DoorDash",
   "publisherUrl": "https://careersatdoordash.com/engineering/",
