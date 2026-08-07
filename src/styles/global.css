@@ -121,14 +121,8 @@ main { min-height: calc(100vh - 210px); }
 .card-takeaway { margin-top: 16px; padding: 15px 17px; border: 1px solid color-mix(in srgb, var(--blue) 18%, var(--line)); border-radius: 15px; background: var(--blue-soft); }
 .card-takeaway strong { display: block; margin-bottom: 5px; color: var(--blue); font-size: 10px; font-weight: 760; letter-spacing: .07em; text-transform: uppercase; }
 .card-takeaway p { margin: 0; color: var(--text); font-size: 13px; line-height: 1.45; }
-.card-authors { margin: 14px 0 0; color: var(--muted); font-size: 12px; }
-.card-authors a, .publisher a { color: var(--blue); }
-.card-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-top: 18px; font-size: 12px; }
-.evidence { padding: 5px 8px; border-radius: 8px; color: var(--blue); background: var(--blue-soft); font-weight: 680; }
-.evidence-research { color: var(--violet); background: color-mix(in srgb, var(--violet) 13%, transparent); }
-.evidence-practitioner { color: var(--mint); background: color-mix(in srgb, var(--mint) 13%, transparent); }
-.evidence-community { color: var(--orange); background: color-mix(in srgb, var(--orange) 13%, transparent); }
-.publisher, .verified, .availability { color: var(--muted); }
+.card-byline { margin: 14px 0 0; color: var(--muted); font-size: 12px; }
+.card-byline a { color: var(--blue); font-weight: 680; }
 .alternate-sources { margin: 14px 0 0; color: var(--muted); font-size: 11px; }
 .alternate-sources a { color: var(--blue); font-weight: 680; }
 .preview-link { display: block; min-width: 0; }

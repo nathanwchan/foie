@@ -1,7 +1,7 @@
 ---
 import type { ResourceEntry } from "../lib/content";
 import { displayDate, hostName } from "../lib/content";
-import { evidenceLabels, formatLabels, topicLabels } from "../lib/taxonomy";
+import { formatLabels, topicLabels } from "../lib/taxonomy";
 import ResourcePreview from "./ResourcePreview.astro";
 
 interface Props {
@@ -43,15 +43,7 @@ const year = sortDate.getUTCFullYear().toString();
         <strong>Practical takeaway</strong>
         <p>{data.takeaway}</p>
       </div>
-      <p class="card-authors">By {data.authors.map((author, index) => (
-        <>{author.url ? <a href={author.url} target="_blank" rel="noreferrer">{author.name}</a> : author.name}{index < data.authors.length - 1 ? ", " : ""}</>
-      ))}</p>
-      <div class="card-meta">
-        <span class={`evidence evidence-${data.evidenceType}`}>{evidenceLabels[data.evidenceType]}</span>
-        <span class="publisher">{data.publisherUrl ? <a href={data.publisherUrl} target="_blank" rel="noreferrer">{data.publisher}</a> : data.publisher}</span>
-        <span class="verified">Verified {displayDate(data.lastVerifiedAt)}</span>
-        {data.availability !== "available" && <span class="availability">{data.availability}</span>}
-      </div>
+      <p class="card-byline">By <a href={data.publisherUrl ?? data.canonicalUrl} target="_blank" rel="noreferrer">{data.publisher}</a></p>
       {data.alternateUrls.length > 0 && (
         <p class="alternate-sources">Alternate versions: {data.alternateUrls.map((url, index) => (
           <><a href={url} target="_blank" rel="noreferrer">{hostName(url)} ↗</a>{index < data.alternateUrls.length - 1 ? ", " : ""}</>
