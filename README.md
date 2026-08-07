@@ -7,7 +7,7 @@ A static intelligence dashboard tracking how LLMs and coding agents are changing
 - Astro and TypeScript
 - Astro content collections for the resource contract
 - Pagefind for static full-text search and filters
-- RSS and sitemap generation
+- Sitemap generation
 - A repository-local Codex curation skill for scheduled research and publishing
 
 ## Local development
@@ -17,7 +17,7 @@ npm install
 npm run dev
 ```
 
-Set `SITE_URL` in the deployment environment so canonical links, RSS, and the sitemap use the production origin. See `.env.example`.
+Set `SITE_URL` in the deployment environment so canonical links and the sitemap use the production origin. See `.env.example`.
 
 ## Publishing gates
 
