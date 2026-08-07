@@ -168,6 +168,8 @@ input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid 
 .users-list { display: grid; }
 .user-card { padding: 32px 0; border-bottom: 1px solid var(--line); }
 .user-card-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.user-identity { display: flex; min-width: 0; align-items: center; gap: 16px; }
+.user-avatar { width: 64px; height: 64px; flex: 0 0 auto; border: 1px solid var(--line); border-radius: 50%; background: var(--surface-soft); object-fit: cover; box-shadow: 0 8px 22px rgba(10, 15, 28, 0.1); }
 .user-card h2 { margin: 0; font-size: clamp(25px, 3vw, 36px); line-height: 1.05; letter-spacing: -0.04em; }
 .profile-links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
 .profile-link { width: 38px; height: 38px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--muted); transition: color 160ms ease, border-color 160ms ease, background 160ms ease, transform 160ms ease; }
@@ -226,6 +228,8 @@ input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid 
   .card-summary { -webkit-line-clamp: 4; }
   .resource-grid { grid-template-columns: 1fr; }
   .user-card-header { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .user-identity { gap: 14px; }
+  .user-avatar { width: 56px; height: 56px; }
   .profile-links { justify-content: flex-start; }
   .user-posts li a { grid-template-columns: 1fr; gap: 3px; }
   .footer-inner { align-items: start; flex-direction: column; }

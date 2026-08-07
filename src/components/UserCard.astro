@@ -14,7 +14,18 @@ const { user, resources } = Astro.props;
 
 <article class="user-card" id={user.data.id}>
   <div class="user-card-header">
-    <h2>{user.data.name}</h2>
+    <div class="user-identity">
+      <img
+        class="user-avatar"
+        src={user.data.avatar.url}
+        alt=""
+        width="64"
+        height="64"
+        loading="lazy"
+        decoding="async"
+      />
+      <h2>{user.data.name}</h2>
+    </div>
     <div class="profile-links" aria-label={`${user.data.name} profiles`}>
       {user.data.profiles.map((profile) => <ProfileLink profile={profile} />)}
     </div>

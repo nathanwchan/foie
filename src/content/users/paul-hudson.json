@@ -3,6 +3,10 @@
   "name": "Paul Hudson",
   "addedAt": "2026-08-07",
   "lastVerifiedAt": "2026-08-07",
+  "avatar": {
+    "url": "https://files.mastodon.social/accounts/avatars/000/413/899/original/b4b55495ddda94a9.jpeg",
+    "sourceProfileUrl": "https://mastodon.social/@twostraws"
+  },
   "profiles": [
     { "platform": "website", "handle": "hackingwithswift.com", "url": "https://www.hackingwithswift.com/" },
     { "platform": "x", "handle": "@twostraws", "url": "https://x.com/twostraws" },

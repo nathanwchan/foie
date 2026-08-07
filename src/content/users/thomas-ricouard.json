@@ -3,6 +3,10 @@
   "name": "Thomas Ricouard",
   "addedAt": "2026-08-07",
   "lastVerifiedAt": "2026-08-07",
+  "avatar": {
+    "url": "https://files.mastodon.social/accounts/avatars/109/523/208/135/675/669/original/d82e3552dcf90a2c.jpeg",
+    "sourceProfileUrl": "https://mastodon.social/@dimillian"
+  },
   "profiles": [
     { "platform": "website", "handle": "dimillian.app", "url": "https://www.dimillian.app/" },
     { "platform": "x", "handle": "@dimillian", "url": "https://x.com/dimillian" },

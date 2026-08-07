@@ -3,6 +3,10 @@
   "name": "Antoine van der Lee",
   "addedAt": "2026-08-07",
   "lastVerifiedAt": "2026-08-07",
+  "avatar": {
+    "url": "https://avatars.githubusercontent.com/u/4329185?v=4",
+    "sourceProfileUrl": "https://github.com/avdlee"
+  },
   "profiles": [
     { "platform": "website", "handle": "avanderlee.com", "url": "https://www.avanderlee.com/" },
     { "platform": "x", "handle": "@twannl", "url": "https://x.com/twannl" },

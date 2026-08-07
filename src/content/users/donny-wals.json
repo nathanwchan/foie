@@ -3,6 +3,10 @@
   "name": "Donny Wals",
   "addedAt": "2026-08-07",
   "lastVerifiedAt": "2026-08-07",
+  "avatar": {
+    "url": "https://files.mastodon.social/accounts/avatars/109/244/610/643/515/244/original/d4bbc88e5c0c36d5.png",
+    "sourceProfileUrl": "https://mastodon.social/@donnywals"
+  },
   "profiles": [
     { "platform": "website", "handle": "donnywals.com", "url": "https://www.donnywals.com/" },
     { "platform": "x", "handle": "@donnywals", "url": "https://x.com/donnywals" },

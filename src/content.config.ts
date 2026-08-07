@@ -123,6 +123,10 @@ const users = defineCollection({
     name: z.string().min(1),
     addedAt: z.coerce.date(),
     lastVerifiedAt: z.coerce.date(),
+    avatar: z.object({
+      url: z.url(),
+      sourceProfileUrl: z.url()
+    }).strict(),
     profiles: z.array(z.object({
       platform: z.enum(profilePlatforms),
       handle: z.string().min(1),
@@ -150,6 +154,14 @@ const users = defineCollection({
       }
       urls.add(profile.url);
     });
+
+    if (!urls.has(user.avatar.sourceProfileUrl)) {
+      context.addIssue({
+        code: "custom",
+        path: ["avatar", "sourceProfileUrl"],
+        message: "Avatar source must match one of the user's verified profiles"
+      });
+    }
   })
 });
 

@@ -3,6 +3,10 @@
   "name": "Rudrank Riyam",
   "addedAt": "2026-08-07",
   "lastVerifiedAt": "2026-08-07",
+  "avatar": {
+    "url": "https://avatars.githubusercontent.com/u/30552772?v=4",
+    "sourceProfileUrl": "https://github.com/rudrankriyam"
+  },
   "profiles": [
     { "platform": "website", "handle": "rudrank.com", "url": "https://rudrank.com/" },
     { "platform": "x", "handle": "@rudrank", "url": "https://x.com/rudrank" },

@@ -3,6 +3,10 @@
   "name": "Matt Gallagher",
   "addedAt": "2026-08-07",
   "lastVerifiedAt": "2026-08-07",
+  "avatar": {
+    "url": "https://files.mastodon.social/accounts/avatars/109/362/264/174/011/988/original/c5fdf12af1778db0.png",
+    "sourceProfileUrl": "https://mastodon.social/@cocoawithlove"
+  },
   "profiles": [
     { "platform": "website", "handle": "cocoawithlove.com", "url": "https://www.cocoawithlove.com/" },
     { "platform": "x", "handle": "@cocoawithlove", "url": "https://x.com/cocoawithlove" },

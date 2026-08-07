@@ -124,6 +124,11 @@ export async function validateContent(rootDirectory) {
     userById.set(data.id, file);
     if (!data.name) errors.push(`${label}: missing name`);
     if (!isDate(data.addedAt) || !isDate(data.lastVerifiedAt)) errors.push(`${label}: invalid date`);
+    if (!data.avatar?.url || !data.avatar?.sourceProfileUrl) errors.push(`${label}: avatar requires url and sourceProfileUrl`);
+    for (const [key, value] of [["avatar URL", data.avatar?.url], ["avatar source profile URL", data.avatar?.sourceProfileUrl]]) {
+      if (!value) continue;
+      try { new URL(value); } catch { errors.push(`${label}: invalid ${key} ${value}`); }
+    }
     if (!Array.isArray(data.profiles) || data.profiles.length === 0) errors.push(`${label}: at least one profile is required`);
 
     const profilePlatforms = new Set();
@@ -139,6 +144,14 @@ export async function validateContent(rootDirectory) {
         profileUrls.add(normalized);
       } catch {
         errors.push(`${label}: invalid profile URL ${profile.url}`);
+      }
+    }
+    if (data.avatar?.sourceProfileUrl) {
+      try {
+        const avatarSource = canonicalizeUrl(data.avatar.sourceProfileUrl);
+        if (!profileUrls.has(avatarSource)) errors.push(`${label}: avatar source must match a verified profile URL`);
+      } catch {
+        // The invalid avatar source URL is reported above.
       }
     }
   }

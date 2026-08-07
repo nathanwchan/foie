@@ -31,7 +31,7 @@ The production build validates schemas, controlled vocabulary, canonical URL uni
 ## Content model
 
 - `src/content/resources/`: one JSON record per accepted source
-- `src/content/users/`: one manually curated JSON record per person, with verified public profile links
+- `src/content/users/`: one manually curated JSON record per person, with a verified-profile avatar and public profile links
 - `data/discovery-ledger.json`: non-public audit trail for accepted, skipped, duplicate, and unavailable discoveries
 - `.agents/skills/curate-ios-engineering/`: the durable curation and publication workflow
 
