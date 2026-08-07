@@ -4,7 +4,7 @@ import type { ResourceEntry } from "../lib/content";
 
 interface Props { resources: ResourceEntry[] }
 const { resources } = Astro.props;
-const keywords = ["Agents", "Xcode", "Testing", "SwiftUI"];
+const keywords = ["Codex", "Claude", "Agents", "Xcode", "Testing", "SwiftUI"];
 ---
 
 <section class="filter-panel" aria-label="Search posts">
@@ -30,9 +30,14 @@ const keywords = ["Agents", "Xcode", "Testing", "SwiftUI"];
   let pagefindMatches: Set<string> | null = null;
   let searchSequence = 0;
 
+  function termsFrom(value: string) {
+    return value.split(",").map((term) => term.trim()).filter(Boolean);
+  }
+
   async function queryPagefind(value: string) {
     const sequence = ++searchSequence;
-    if (value.length < 2) {
+    const terms = termsFrom(value).filter((term) => term.length >= 2);
+    if (terms.length === 0) {
       pagefindMatches = null;
       applyFilters();
       return;
@@ -41,10 +46,11 @@ const keywords = ["Agents", "Xcode", "Testing", "SwiftUI"];
       // Pagefind is created after the Astro build. Development falls back to card text.
       const pagefindPath = "/pagefind/pagefind.js";
       const pagefind = await import(/* @vite-ignore */ pagefindPath);
-      const response = await pagefind.search(value);
-      const results = await Promise.all(response.results.map((result: { data: () => Promise<{ url: string; meta?: { slug?: string } }> }) => result.data()));
+      const responses = await Promise.all(terms.map((term) => pagefind.search(term)));
+      const results = await Promise.all(responses.flatMap((response) => response.results).map((result: { data: () => Promise<{ url: string; meta?: { slug?: string } }> }) => result.data()));
       if (sequence !== searchSequence) return;
-      pagefindMatches = new Set(results.map((result) => result.meta?.slug ?? result.url.match(/#resource-([^/]+)$/)?.[1]).filter(Boolean));
+      const slugs = results.map((result) => result.meta?.slug ?? result.url.match(/#resource-([^/]+)$/)?.[1]).filter((slug): slug is string => Boolean(slug));
+      pagefindMatches = new Set(slugs);
     } catch {
       pagefindMatches = null;
     }
@@ -52,23 +58,28 @@ const keywords = ["Agents", "Xcode", "Testing", "SwiftUI"];
   }
 
   function applyFilters() {
-    const query = search?.value.trim().toLowerCase() ?? "";
+    const terms = termsFrom(search?.value ?? "").map((term) => term.toLowerCase());
     let visible = 0;
     cards.forEach((card) => {
-      const textMatch = !query || pagefindMatches?.has(card.dataset.slug ?? "") || (!pagefindMatches && card.dataset.search?.includes(query));
+      const textMatch = terms.length === 0 || pagefindMatches?.has(card.dataset.slug ?? "") || (!pagefindMatches && terms.some((term) => card.dataset.search?.includes(term)));
       card.hidden = !textMatch;
       if (textMatch) visible += 1;
     });
     if (count) count.textContent = String(visible);
     if (empty) empty.hidden = visible !== 0;
-    chips.forEach((chip) => chip.setAttribute("aria-pressed", String(chip.dataset.keyword?.toLowerCase() === query)));
+    const selected = new Set(terms);
+    chips.forEach((chip) => chip.setAttribute("aria-pressed", String(selected.has(chip.dataset.keyword?.toLowerCase() ?? ""))));
   }
 
   search?.addEventListener("input", () => queryPagefind(search.value.trim()));
   chips.forEach((chip) => chip.addEventListener("click", () => {
     if (!search) return;
     const keyword = chip.dataset.keyword ?? "";
-    search.value = search.value.trim().toLowerCase() === keyword.toLowerCase() ? "" : keyword;
+    const terms = termsFrom(search.value);
+    const selectedIndex = terms.findIndex((term) => term.toLowerCase() === keyword.toLowerCase());
+    if (selectedIndex >= 0) terms.splice(selectedIndex, 1);
+    else terms.push(keyword);
+    search.value = terms.join(",");
     queryPagefind(search.value);
   }));
   document.addEventListener("keydown", (event) => {
