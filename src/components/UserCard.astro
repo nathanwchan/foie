@@ -1,7 +1,7 @@
 ---
 import type { ResourceEntry, UserEntry } from "../lib/content";
 import { displayDate } from "../lib/content";
-import { formatLabels } from "../lib/taxonomy";
+import FormatBadge from "./FormatBadge.astro";
 import ProfileLink from "./ProfileLink.astro";
 
 interface Props {
@@ -30,7 +30,7 @@ const { user, resources } = Astro.props;
             <li>
               <a href={resource.data.canonicalUrl} target="_blank" rel="noreferrer">
                 <span class="user-post-meta">
-                  <span>{formatLabels[resource.data.format]}</span>
+                  <FormatBadge resource={resource} />
                   <span aria-hidden="true">•</span>
                   <time datetime={sortDate.toISOString()}>{displayDate(sortDate)}</time>
                 </span>

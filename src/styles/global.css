@@ -161,7 +161,6 @@ input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid 
 .filter-status { margin: 9px 0 0; color: var(--subtle); font-size: 11px; }
 .empty-state { padding: 70px 20px; text-align: center; color: var(--muted); }
 
-.users-hero { padding-bottom: 38px; }
 .users-section { padding: 8px 0 60px; }
 .users-heading { display: flex; align-items: center; justify-content: space-between; padding-bottom: 12px; border-bottom: 1px solid var(--line-strong); }
 .users-heading p { margin: 0; color: var(--muted); font-size: 12px; font-weight: 720; letter-spacing: 0.06em; text-transform: uppercase; }
@@ -186,7 +185,7 @@ input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid 
 .user-posts li a { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 24px; align-items: baseline; padding: 12px 0; }
 .user-posts li a:hover .user-post-title { color: var(--blue); }
 .user-post-meta { display: flex; align-items: center; gap: 7px; color: var(--subtle); font-size: 11px; }
-.user-post-meta > span:first-child { color: var(--muted); font-weight: 680; }
+.user-post-meta > .format-icon + span:not([aria-hidden]) { color: var(--muted); font-weight: 680; }
 .user-post-title { font-size: 15px; font-weight: 650; transition: color 160ms ease; }
 .user-posts-empty { margin: 0; color: var(--muted); font-size: 14px; }
 
