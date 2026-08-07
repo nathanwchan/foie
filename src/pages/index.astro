@@ -1,27 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ResourceCard from "../components/ResourceCard.astro";
-import { displayDate, getResources, getUpdates, resourceMap } from "../lib/content";
-import { topicLabels } from "../lib/taxonomy";
+import { getResources } from "../lib/content";
 
 const resources = await getResources();
-const updates = await getUpdates();
-const latest = updates[0];
-const byId = resourceMap(resources);
-const highlighted = latest.data.highlightedResourceIds.map((id) => byId.get(id)).filter(Boolean).sort((a, b) => {
-  const aDate = a?.data.publishedAt ?? a?.data.discoveredAt;
-  const bDate = b?.data.publishedAt ?? b?.data.discoveredAt;
-  return (bDate?.getTime() ?? 0) - (aDate?.getTime() ?? 0);
-});
 const feed = resources;
 const publisherCount = new Set(resources.map((resource) => resource.data.publisher)).size;
 const formatCount = new Set(resources.map((resource) => resource.data.format)).size;
-const topicCounts = Object.entries(
-  resources.flatMap((resource) => resource.data.topics).reduce<Record<string, number>>((counts, topic) => {
-    counts[topic] = (counts[topic] ?? 0) + 1;
-    return counts;
-  }, {})
-).sort(([, a], [, b]) => b - a).slice(0, 8);
 ---
 
 <BaseLayout>
@@ -50,33 +35,6 @@ const topicCounts = Object.entries(
           {feed.map((resource, index) => <ResourceCard resource={resource} rank={index + 1} />)}
         </div>
       </div>
-
-      <aside class="feed-sidebar" aria-label="Weekly intelligence summary">
-        <article class="signal-panel">
-          <div class="signal-date"><span class="live-dot" aria-hidden="true"></span> Weekly signal · <time datetime={latest.data.date.toISOString()}>{displayDate(latest.data.date)}</time></div>
-          <h2>{latest.data.headline}</h2>
-          <p>{latest.data.synthesis}</p>
-          <a class="sidebar-link" href={`/updates/${latest.data.id}/`}>Read the synthesis <span aria-hidden="true">→</span></a>
-        </article>
-
-        <section class="sidebar-card">
-          <p class="sidebar-label">This week’s picks</p>
-          <ol class="pick-list">
-            {highlighted.map((resource) => resource && (
-              <li><a href={resource.data.canonicalUrl} target="_blank" rel="noreferrer"><span>{resource.data.publisher}</span>{resource.data.title}</a></li>
-            ))}
-          </ol>
-        </section>
-
-        <section class="sidebar-card">
-          <p class="sidebar-label">Emerging topics</p>
-          <div class="topic-stack">
-            {topicCounts.map(([topic, count]) => (
-              <a href={`/resources/?topic=${topic}`}><span>{topicLabels[topic as keyof typeof topicLabels]}</span><strong>{count}</strong></a>
-            ))}
-          </div>
-        </section>
-      </aside>
     </div>
   </section>
 </BaseLayout>
