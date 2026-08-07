@@ -21,7 +21,7 @@ for (const resource of resources) {
   ].join(" ");
 
   const result = await index.addCustomRecord({
-    url: `/resources/#resource-${resource.slug}`,
+    url: `/#resource-${resource.slug}`,
     content,
     language: "en",
     meta: { title: resource.title, slug: resource.slug },

@@ -1,10 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import FilterBar from "../components/FilterBar.astro";
 import ResourceCard from "../components/ResourceCard.astro";
 import { getResources } from "../lib/content";
 
 const resources = await getResources();
 const feed = resources;
+const initialTopic = Astro.url.searchParams.get("topic") ?? "";
 const publisherCount = new Set(resources.map((resource) => resource.data.publisher)).size;
 const formatCount = new Set(resources.map((resource) => resource.data.format)).size;
 ---
@@ -16,7 +18,7 @@ const formatCount = new Set(resources.map((resource) => resource.data.format)).s
       <h1 class="display">The future of iOS work, <span class="gradient-text">decoded.</span></h1>
       <p class="lede">A bright, source-led feed for senior engineers building with agents—without losing the craft, judgment, and verification that make great apps.</p>
     </div>
-    <div class="metric-rail" aria-label="Library statistics">
+    <div class="metric-rail" aria-label="Collection statistics">
       <div class="metric"><strong>{resources.length}</strong><span>curated resources</span></div>
       <div class="metric"><strong>{publisherCount}</strong><span>publishers and voices</span></div>
       <div class="metric"><strong>{formatCount}</strong><span>source formats</span></div>
@@ -29,12 +31,26 @@ const formatCount = new Set(resources.map((resource) => resource.data.format)).s
       <div class="feed-main">
         <div class="feed-heading">
           <div><h2>Latest signals</h2></div>
-          <a class="section-link" href="/resources/">View full library →</a>
         </div>
-        <div class="feed-list">
+        <FilterBar resources={resources} />
+        <div class="feed-list" id="resource-results" data-pagefind-body>
           {feed.map((resource, index) => <ResourceCard resource={resource} rank={index + 1} />)}
+        </div>
+        <div id="empty-state" class="empty-state" hidden>
+          <h2>No signals match those filters.</h2>
+          <p>Try a broader topic or clear the current search.</p>
         </div>
       </div>
     </div>
   </section>
 </BaseLayout>
+
+<script is:inline define:vars={{ initialTopic }}>
+  if (initialTopic) {
+    const topic = document.querySelector("#topic-filter");
+    if (topic) {
+      topic.value = initialTopic;
+      topic.dispatchEvent(new Event("change"));
+    }
+  }
+</script>
