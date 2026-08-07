@@ -69,7 +69,7 @@ img { max-width: 100%; }
 .site-header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--bg) 84%, transparent); backdrop-filter: saturate(180%) blur(24px); }
 .header-inner { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .wordmark { display: inline-flex; align-items: center; gap: 11px; font-weight: 680; letter-spacing: -0.025em; }
-.wordmark-mark { width: 32px; height: 32px; display: grid; place-items: center; border-radius: 10px; color: #fff; background: linear-gradient(145deg, #0f8dff, #6265f6); box-shadow: 0 8px 22px rgba(42, 124, 255, 0.28); font-size: 15px; }
+.wordmark-mark { width: 32px; height: 32px; display: block; border-radius: 10px; box-shadow: 0 8px 22px rgba(42, 124, 255, 0.28); }
 main { min-height: calc(100vh - 210px); }
 .section { padding: 82px 0; }
 .eyebrow { margin: 0 0 14px; color: var(--blue); font-size: 12px; font-weight: 760; letter-spacing: 0.11em; text-transform: uppercase; }
