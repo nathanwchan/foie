@@ -73,7 +73,7 @@ img { max-width: 100%; }
 main { min-height: calc(100vh - 210px); }
 .section { padding: 82px 0; }
 .eyebrow { margin: 0 0 14px; color: var(--blue); font-size: 12px; font-weight: 760; letter-spacing: 0.11em; text-transform: uppercase; }
-.home-hero { padding: 78px 0 46px; }
+.home-hero { padding: 78px 0 18px; }
 .home-hero > div:first-child { max-width: 980px; }
 .display { max-width: 950px; margin: 0; font-size: clamp(48px, 6.7vw, 88px); line-height: 0.98; letter-spacing: -0.066em; font-weight: 730; }
 .gradient-text { color: transparent; background: linear-gradient(95deg, #0071e3 8%, #4f9dff 45%, #7758f6 90%); background-clip: text; -webkit-background-clip: text; }
@@ -84,7 +84,7 @@ main { min-height: calc(100vh - 210px); }
 .button-primary { background: var(--blue); color: #fff; box-shadow: 0 12px 28px rgba(0, 113, 227, 0.2); }
 .button-secondary { background: var(--surface); border-color: var(--line); }
 
-.feed-section { padding: 42px 0 100px; }
+.feed-section { padding: 18px 0 100px; }
 .feed-layout { display: block; }
 .feed-main { min-width: 0; }
 .feed-heading { display: flex; justify-content: space-between; align-items: center; gap: 24px; padding-bottom: 12px; border-bottom: 1px solid var(--line-strong); }
@@ -130,6 +130,8 @@ main { min-height: calc(100vh - 210px); }
 .keyword-chip { min-height: 34px; padding: 0 13px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--muted); font-size: 12px; font-weight: 620; }
 .keyword-chip:hover, .keyword-chip[aria-pressed="true"] { border-color: color-mix(in srgb, var(--blue) 36%, var(--line)); background: var(--blue-soft); color: var(--blue); }
 input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid color-mix(in srgb, var(--blue) 38%, transparent); outline-offset: 2px; }
+.search-input-wrap:focus-within { border-color: var(--line-strong); }
+.search-input-wrap input:focus-visible { outline: none; }
 .filter-status { margin: 9px 0 0; color: var(--subtle); font-size: 11px; }
 .empty-state { padding: 70px 20px; text-align: center; color: var(--muted); }
 
@@ -154,9 +156,9 @@ input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid 
 @media (max-width: 620px) {
   :root { --shell: min(100% - 28px, 1240px); }
   .wordmark-text { max-width: 128px; font-size: 13px; line-height: 1.05; }
-  .home-hero { padding: 54px 0 30px; }
+  .home-hero { padding: 54px 0 16px; }
   .section { padding: 58px 0; }
-  .feed-section { padding-top: 28px; }
+  .feed-section { padding-top: 16px; }
   .feed-heading { align-items: start; flex-direction: column; }
   .last-updated { text-align: left; }
   .filter-row { align-items: stretch; flex-direction: column; }
