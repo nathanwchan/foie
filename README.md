@@ -39,7 +39,7 @@ The scheduled Codex task invokes the repository-local skill instead of carrying 
 
 Resources are presented as complete feed cells rather than internal detail pages. Each resource selects one best canonical source; titles and preview art point to that destination. Equivalent mirrors remain private discovery-ledger aliases used only for deduplication.
 
-People are linked to posts through explicit `userIds` on resource records. The scheduled discovery workflow never adds people automatically; user records are created only through direct curator requests.
+People are linked to posts through explicit `userIds` on resource records. Every stored user and verified profile is a priority seed for a dedicated scheduled-discovery pass, without replacing broad internet research or lowering the content threshold. The workflow never adds or modifies people automatically; user records change only through direct curator requests.
 
 ## Scope
 

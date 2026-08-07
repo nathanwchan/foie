@@ -39,7 +39,7 @@ Use `status: "skipped"` with a reason beginning `editorial-exclusion:` when the 
 
 Store manually curated people in `src/content/users/<id>.json`. The filename and `id` must match and use lowercase hyphen-case. Each record contains the person's name, added and last-verified dates, an avatar selected from a verified profile, and one or more verified public profiles with a controlled platform, display handle, and canonical URL. Store both the direct avatar image URL and its `sourceProfileUrl`; the source must match one of the record's verified profile URLs.
 
-Connect resources to people with explicit `userIds` on the resource record. Do not infer published relationships from author-name matching at render time. Scheduled resource discovery must never create users; add or update user records only in response to an explicit curator request. It may link a new resource to an existing user when the inspected source confirms authorship or participation.
+Connect resources to people with explicit `userIds` on the resource record. Do not infer published relationships from author-name matching at render time. Scheduled resource discovery must never create or modify users; add or update user records only in response to an explicit curator request. Every stored user and verified profile is a priority discovery seed for scheduled research, but that prominence never changes resource eligibility or the evidence threshold. The scheduled run may link a new resource to an existing user when the inspected source confirms authorship or participation.
 
 ## Required validation
 
