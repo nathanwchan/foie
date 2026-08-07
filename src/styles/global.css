@@ -71,7 +71,7 @@ html.js .site-header { opacity: 0; pointer-events: none; transform: translateY(c
 html.js .site-header.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0) scale(1); }
 .header-inner { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .wordmark { display: inline-flex; align-items: center; gap: 11px; font-weight: 680; letter-spacing: -0.025em; }
-.wordmark-mark { width: 32px; height: 32px; display: block; border-radius: 10px; box-shadow: 0 8px 22px rgba(42, 124, 255, 0.28); }
+.wordmark-mark { width: 40px; height: 40px; display: block; border-radius: 12px; box-shadow: 0 8px 22px rgba(42, 124, 255, 0.28); }
 main { min-height: calc(100vh - 210px); }
 .section { padding: 82px 0; }
 .eyebrow { margin: 0 0 14px; color: var(--blue); font-size: 12px; font-weight: 760; letter-spacing: 0.11em; text-transform: uppercase; }
@@ -163,11 +163,11 @@ input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid 
 
 .site-footer { padding: 34px 0; border-top: 1px solid var(--line); }
 .footer-inner { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
-.footer-brand { display: grid; grid-template-columns: 32px minmax(0, 1fr); grid-template-rows: auto auto; column-gap: 12px; }
-.footer-mark { width: 32px; height: 32px; display: block; grid-column: 1; grid-row: 1; align-self: center; border-radius: 10px; box-shadow: 0 8px 22px rgba(42, 124, 255, 0.2); }
+.footer-brand { display: grid; grid-template-columns: 40px minmax(0, 1fr); grid-template-rows: auto auto; column-gap: 12px; }
+.footer-mark { width: 40px; height: 40px; display: block; grid-column: 1; grid-row: 1; align-self: center; border-radius: 12px; box-shadow: 0 8px 22px rgba(42, 124, 255, 0.2); }
 .footer-title { align-self: center; margin: 0; font-weight: 690; letter-spacing: -0.02em; }
 .footer-title, .footer-note { grid-column: 2; }
-.footer-note { margin: -2px 0 0; color: var(--muted); font-size: 13px; }
+.footer-note { margin: -6px 0 0; color: var(--muted); font-size: 13px; }
 .footer-note a { color: var(--blue); font-weight: 650; }
 .footer-note a:hover { text-decoration: underline; text-underline-offset: 2px; }
 @media (max-width: 820px) {
