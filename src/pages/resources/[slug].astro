@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import ResourceCard from "../../components/ResourceCard.astro";
+import ResourcePreview from "../../components/ResourcePreview.astro";
 import { displayDate, getResources, hostName } from "../../lib/content";
 import { evidenceLabels, formatLabels, topicLabels } from "../../lib/taxonomy";
 
@@ -35,6 +36,7 @@ const sortDate = data.publishedAt ?? data.discoveredAt;
       <p class="detail-authors">By {data.authors.map((author, index) => (
         <>{author.url ? <a href={author.url} target="_blank" rel="noreferrer">{author.name}</a> : author.name}{index < data.authors.length - 1 ? ", " : ""}</>
       ))} · {data.publisher}</p>
+      <ResourcePreview resource={resource} large />
       {data.topics.map((topic) => <span hidden data-pagefind-filter={`topic:${topicLabels[topic]}`}>{topicLabels[topic]}</span>)}
       <span hidden data-pagefind-filter={`evidence:${evidenceLabels[data.evidenceType]}`}></span>
       <span hidden data-pagefind-filter={`format:${formatLabels[data.format]}`}></span>

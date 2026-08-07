@@ -1,0 +1,39 @@
+---
+import type { ResourceEntry } from "../lib/content";
+import { formatLabels, topicLabels } from "../lib/taxonomy";
+
+interface Props {
+  resource: ResourceEntry;
+  large?: boolean;
+}
+
+const { resource, large = false } = Astro.props;
+const { data } = resource;
+const tone = [...data.slug].reduce((sum, character) => sum + character.charCodeAt(0), 0) % 5;
+const glyphs = {
+  article: "Aa",
+  video: "▶",
+  podcast: "◉",
+  paper: "∑",
+  documentation: "{}",
+  repository: "⌘",
+  tool: "✦",
+  social: "↗"
+};
+---
+
+<div
+  class:list={["resource-preview", large && "resource-preview-large", `preview-tone-${tone}`]}
+  role="img"
+  aria-label={`Editorial preview for ${data.title}`}
+>
+  <span class="preview-glow preview-glow-one" aria-hidden="true"></span>
+  <span class="preview-glow preview-glow-two" aria-hidden="true"></span>
+  <span class="preview-grid-lines" aria-hidden="true"></span>
+  <div class="preview-glass" aria-hidden="true">
+    <span class="preview-overline">{data.publisher}</span>
+    <strong>{topicLabels[data.topics[0]]}</strong>
+    <span>{formatLabels[data.format]}</span>
+  </div>
+  <span class="preview-glyph" aria-hidden="true">{glyphs[data.format]}</span>
+</div>

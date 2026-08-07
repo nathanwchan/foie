@@ -17,8 +17,8 @@ const initialTopic = Astro.url.searchParams.get("topic") ?? "";
   </section>
   <section class="section-tight shell">
     <FilterBar resources={resources} />
-    <div class="resource-grid" id="resource-results">
-      {resources.map((resource) => <ResourceCard resource={resource} />)}
+    <div class="library-feed" id="resource-results">
+      {resources.map((resource, index) => <ResourceCard resource={resource} rank={index + 1} featured={index === 0} />)}
     </div>
     <div id="empty-state" class="empty-state" hidden>
       <h2>No signals match those filters.</h2>

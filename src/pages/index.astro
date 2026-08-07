@@ -8,8 +8,12 @@ const resources = await getResources();
 const updates = await getUpdates();
 const latest = updates[0];
 const byId = resourceMap(resources);
-const highlighted = latest.data.highlightedResourceIds.map((id) => byId.get(id)).filter(Boolean);
-const recent = resources.filter((resource) => !latest.data.highlightedResourceIds.includes(resource.data.id)).slice(0, 6);
+const highlighted = latest.data.highlightedResourceIds.map((id) => byId.get(id)).filter(Boolean).sort((a, b) => {
+  const aDate = a?.data.publishedAt ?? a?.data.discoveredAt;
+  const bDate = b?.data.publishedAt ?? b?.data.discoveredAt;
+  return (bDate?.getTime() ?? 0) - (aDate?.getTime() ?? 0);
+});
+const feed = resources.slice(0, 9);
 const publisherCount = new Set(resources.map((resource) => resource.data.publisher)).size;
 const formatCount = new Set(resources.map((resource) => resource.data.format)).size;
 const topicCounts = Object.entries(
@@ -21,13 +25,11 @@ const topicCounts = Object.entries(
 ---
 
 <BaseLayout>
-  <section class="section shell">
-    <p class="eyebrow">Intelligence for native software teams</p>
-    <h1 class="display">Building iOS at the speed of <span class="gradient-text">agents.</span></h1>
-    <p class="lede">A curated signal for senior iOS engineers navigating coding agents, verification loops, platform tooling, and the new shape of high-quality software work.</p>
-    <div class="hero-actions">
-      <a class="button button-primary" href="/resources/">Explore the library <span aria-hidden="true">→</span></a>
-      <a class="button button-secondary" href={`/updates/${latest.data.id}/`}>Read this week’s signal</a>
+  <section class="home-hero shell">
+    <div>
+      <p class="eyebrow">Intelligence for native software teams</p>
+      <h1 class="display">The future of iOS work, <span class="gradient-text">decoded.</span></h1>
+      <p class="lede">A bright, evidence-led feed for senior engineers building with agents—without losing the craft, judgment, and verification that make great apps.</p>
     </div>
     <div class="metric-rail" aria-label="Library statistics">
       <div class="metric"><strong>{resources.length}</strong><span>curated resources</span></div>
@@ -37,51 +39,44 @@ const topicCounts = Object.entries(
     </div>
   </section>
 
-  <section class="section-tight shell">
-    <article class="signal-panel">
-      <div class="signal-date"><span class="live-dot" aria-hidden="true"></span> Latest signal · <time datetime={latest.data.date.toISOString()}>{displayDate(latest.data.date)}</time></div>
-      <h2>{latest.data.headline}</h2>
-      <p>{latest.data.synthesis}</p>
-      <div class="signal-topics">
-        {latest.data.emergingTopics.map((topic) => <span>{topicLabels[topic]}</span>)}
+  <section class="feed-section shell">
+    <div class="feed-layout">
+      <div class="feed-main">
+        <div class="feed-heading">
+          <div><p class="eyebrow">Chronological intelligence</p><h2>Latest signals</h2></div>
+          <a class="section-link" href="/resources/">View full library →</a>
+        </div>
+        <div class="feed-list">
+          {feed.map((resource, index) => <ResourceCard resource={resource} rank={index + 1} featured={index === 0} />)}
+        </div>
       </div>
-      <div class="hero-actions"><a class="button button-secondary" href={`/updates/${latest.data.id}/`}>Open the full update <span aria-hidden="true">→</span></a></div>
-    </article>
-  </section>
 
-  <section class="section shell">
-    <div class="section-heading">
-      <div><p class="eyebrow">Start here</p><h2>The strongest signals</h2></div>
-      <a class="section-link" href="/resources/">View everything →</a>
-    </div>
-    <div class="resource-grid">
-      {highlighted.map((resource) => resource && <ResourceCard resource={resource} featured />)}
-    </div>
-  </section>
+      <aside class="feed-sidebar" aria-label="Weekly intelligence summary">
+        <article class="signal-panel">
+          <div class="signal-date"><span class="live-dot" aria-hidden="true"></span> Weekly signal · <time datetime={latest.data.date.toISOString()}>{displayDate(latest.data.date)}</time></div>
+          <h2>{latest.data.headline}</h2>
+          <p>{latest.data.synthesis}</p>
+          <a class="sidebar-link" href={`/updates/${latest.data.id}/`}>Read the synthesis <span aria-hidden="true">→</span></a>
+        </article>
 
-  <section class="section-tight shell">
-    <div class="section-heading">
-      <div><p class="eyebrow">The landscape</p><h2>What teams are working through</h2></div>
-      <p>Eight recurring concerns connect the tools, practices, and evidence in the library.</p>
-    </div>
-    <div class="topic-board">
-      {topicCounts.map(([topic, count], index) => (
-        <a class="topic-tile" href={`/resources/?topic=${topic}`}>
-          <span class="topic-number">0{index + 1}</span>
-          <h3>{topicLabels[topic as keyof typeof topicLabels]}</h3>
-          <p>{count} {count === 1 ? "signal" : "signals"} in the current index</p>
-        </a>
-      ))}
-    </div>
-  </section>
+        <section class="sidebar-card">
+          <p class="sidebar-label">This week’s picks</p>
+          <ol class="pick-list">
+            {highlighted.map((resource) => resource && (
+              <li><a href={`/resources/${resource.data.slug}/`}><span>{resource.data.publisher}</span>{resource.data.title}</a></li>
+            ))}
+          </ol>
+        </section>
 
-  <section class="section shell">
-    <div class="section-heading">
-      <div><p class="eyebrow">Chronological index</p><h2>Newest additions</h2></div>
-      <p>Ordered by original publication date, newest first. Discovery date is used only when the source date is unavailable.</p>
-    </div>
-    <div class="resource-grid">
-      {recent.map((resource) => <ResourceCard resource={resource} />)}
+        <section class="sidebar-card">
+          <p class="sidebar-label">Emerging topics</p>
+          <div class="topic-stack">
+            {topicCounts.map(([topic, count]) => (
+              <a href={`/resources/?topic=${topic}`}><span>{topicLabels[topic as keyof typeof topicLabels]}</span><strong>{count}</strong></a>
+            ))}
+          </div>
+        </section>
+      </aside>
     </div>
   </section>
 </BaseLayout>
