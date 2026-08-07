@@ -32,7 +32,6 @@ const { user, resources } = Astro.props;
   </div>
 
   <div class="user-posts">
-    <p class="user-posts-label">{resources.length === 1 ? "1 associated post" : `${resources.length} associated posts`}</p>
     {resources.length > 0 ? (
       <ul>
         {resources.map((resource) => {

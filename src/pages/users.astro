@@ -6,6 +6,15 @@ import { getResources, getUsers } from "../lib/content";
 
 const users = await getUsers();
 const resources = await getResources();
+const usersWithResources = users
+  .map((user) => ({
+    user,
+    resources: resources.filter((resource) => resource.data.userIds.includes(user.data.id))
+  }))
+  .sort((left, right) =>
+    right.resources.length - left.resources.length
+    || left.user.data.name.localeCompare(right.user.data.name)
+  );
 ---
 
 <BaseLayout
@@ -18,13 +27,13 @@ const resources = await getResources();
   <section class="users-section shell" data-pagefind-body>
     <div class="users-heading">
       <p>{users.length} people</p>
-      <p>Alphabetical</p>
+      <p>Most posts first</p>
     </div>
     <div class="users-list">
-      {users.map((user) => (
+      {usersWithResources.map(({ user, resources }) => (
         <UserCard
           user={user}
-          resources={resources.filter((resource) => resource.data.userIds.includes(user.data.id))}
+          resources={resources}
         />
       ))}
     </div>

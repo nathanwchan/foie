@@ -181,7 +181,6 @@ input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid 
 .profile-bluesky { color: #1185fe; }
 .profile-youtube { color: #ff0033; }
 .user-posts { margin-top: 24px; }
-.user-posts-label { margin: 0 0 8px; color: var(--subtle); font-size: 11px; font-weight: 720; letter-spacing: 0.06em; text-transform: uppercase; }
 .user-posts ul { margin: 0; padding: 0; list-style: none; }
 .user-posts li + li { border-top: 1px solid var(--line); }
 .user-posts li a { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 24px; align-items: baseline; padding: 12px 0; }
