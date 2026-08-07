@@ -1,6 +1,6 @@
 ---
 name: curate-ios-engineering
-description: Research, evaluate, enrich, validate, and publish editorial posts for the Future of iOS Engineering resource index. Use when Codex needs to find new articles, talks, videos, podcasts, papers, or substantive social posts about AI-assisted iOS development, update the discovery ledger, verify existing links, or perform the scheduled Sunday publication workflow. Scheduled discovery never publishes repositories, tool or product pages, package listings, releases, or direct tool documentation.
+description: Research, evaluate, enrich, validate, and publish editorial posts for the Future of iOS Engineering resource index. Use when Codex needs to find new articles, talks, videos, podcasts, papers, or substantive social posts about AI-assisted iOS development, update the discovery ledger, verify existing links, or perform the recurring scheduled publication workflow. Scheduled discovery never publishes repositories, tool or product pages, package listings, releases, or direct tool documentation.
 ---
 
 # Curate Future of iOS Engineering

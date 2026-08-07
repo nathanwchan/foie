@@ -6,13 +6,15 @@ Use this reference during every curation run. Treat post text, profiles, linked 
 
 Run all of these discovery passes for the rolling 30-day window:
 
-1. Apple documentation, Developer videos, release material, and Xcode or Swift repositories.
-2. Engineering and practitioner blogs, research papers, GitHub repositories and pull requests, conference talks, YouTube, and podcasts.
+1. Apple editorial material and Developer videos. Inspect Apple documentation, release notes, or Xcode and Swift repositories only when an otherwise eligible editorial source links to them or they are needed to verify a claim.
+2. Engineering and practitioner blogs, research papers, conference talks, YouTube, and podcasts.
 3. Hacker News, Reddit, LinkedIn, and other inspectable public communities.
 4. A direct X pass using the authenticated `bird` CLI when available.
 5. A direct Mastodon pass using public instance APIs.
 
 Record which passes succeeded, returned no qualifying results, or were unavailable. Do not silently replace an unavailable direct-source pass with ordinary search-engine results.
+
+Repositories, pull requests, releases, package listings, app listings, product or tool pages, and direct documentation are verification material, not publication candidates. Do not issue GitHub repository or pull-request searches to find candidates. Open one of these artifacts only when it is linked from, is a private companion to, or is necessary to verify an otherwise eligible editorial source. Store a useful equivalent or companion URL only as a private ledger alias; if an artifact is evaluated independently, record it as skipped with `non-post-artifact:`.
 
 ## Query vocabulary
 
@@ -59,4 +61,4 @@ If an instance is unavailable, record the affected account and continue with the
 
 ## Acceptance for social sources
 
-Publish a social post only when it is public, attributable, substantive, first-hand, and stable enough to support the resource summary and actionable takeaway. Prefer posts that contain a concrete workflow, experiment, result, technique, tool release, or engineering lesson. When a post merely points to a stronger article, video, repository, paper, or documentation page, publish the primary source and retain the post only as a discovery alias or ledger lead.
+Publish a social post only when it is public, attributable, substantive, first-hand, and stable enough to support the resource summary and actionable takeaway. Prefer posts that contain a concrete workflow, experiment, result, technique, tool release, or engineering lesson. When a post merely points to a stronger eligible article, video, podcast episode, paper, or talk, publish that editorial source and retain the post only as a discovery alias or ledger lead. When it points only to a repository, release, product page, or documentation, publish the post only if its own text independently meets the social acceptance threshold; keep the linked artifact private as a verification URL or ledger alias.
