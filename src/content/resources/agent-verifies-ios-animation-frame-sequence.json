@@ -1,0 +1,39 @@
+{
+  "id": "agent-verifies-ios-animation-frame-sequence",
+  "slug": "agent-verifies-ios-animation-frame-sequence",
+  "canonicalUrl": "https://x.com/afterxleep/status/2065312907106406717",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HKl3I5MaEAAHUAn.jpg",
+    "alt": "A vertical contact sheet showing sequential frames of an iOS animation"
+  },
+  "title": "Give an Agent a Contact Sheet to Verify Animation",
+  "publisher": "Daniel Bernal",
+  "publisherUrl": "https://x.com/afterxleep",
+  "authors": [
+    {
+      "name": "Daniel Bernal",
+      "url": "https://x.com/afterxleep"
+    }
+  ],
+  "publishedAt": "2026-06-12",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "social",
+  "topics": [
+    "visual-validation",
+    "testing-evaluation",
+    "agent-workflows"
+  ],
+  "summary": "Daniel Bernal demonstrates capturing an iOS animation as a sequence of frames and assembling them into a contact sheet an agent can inspect. An iOS team can use the same artifact to make timing, continuity, and intermediate visual states reviewable instead of asking a model to infer motion from one screenshot.",
+  "takeaway": "Convert important animations into ordered frame sheets so agents and reviewers can inspect intermediate states, not just the first and final screen.",
+  "availability": "available",
+  "userIds": [
+    "daniel-bernal"
+  ],
+  "relatedResourceIds": [
+    "prokinetic-human-motion-tuning",
+    "propmotion-swiftui-agent-skill",
+    "death-of-good-enough-ios-motion"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "accessibility-identifiers-agent-ui-accuracy",
+  "slug": "accessibility-identifiers-agent-ui-accuracy",
+  "canonicalUrl": "https://x.com/afterxleep/status/2038498207567585289",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/profile_images/1616888075401023488/L94ZKzjO_400x400.jpg",
+    "alt": "Daniel Bernal, author of the accessibility identifier workflow"
+  },
+  "title": "Accessibility Identifiers Make Agent UI Control Exact",
+  "publisher": "Daniel Bernal",
+  "publisherUrl": "https://x.com/afterxleep",
+  "authors": [
+    {
+      "name": "Daniel Bernal",
+      "url": "https://x.com/afterxleep"
+    }
+  ],
+  "publishedAt": "2026-03-30",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "social",
+  "topics": [
+    "agent-readable-architecture",
+    "visual-validation",
+    "testing-evaluation",
+    "agent-workflows"
+  ],
+  "summary": "Daniel Bernal reports adding accessibility identifiers to every view so his agent could address interface elements by stable IDs instead of inferred pixel coordinates, moving its UI control from approximate to exact. An iOS team can make identifiers part of view completion and validate that agent-operated flows resolve them deterministically.",
+  "takeaway": "Treat accessibility identifiers as agent-facing interface contracts and require new views to expose stable IDs before automated UI work begins.",
+  "availability": "available",
+  "userIds": [
+    "daniel-bernal"
+  ],
+  "relatedResourceIds": [
+    "autonomous-ios-ui-testing-claude-code",
+    "sim-use-mobile-verification-loop",
+    "six-months-building-ios-without-xcode"
+  ]
+}

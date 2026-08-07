@@ -1,0 +1,42 @@
+{
+  "id": "agent-builds-ios-app-xcodebuildmcp",
+  "slug": "agent-builds-ios-app-xcodebuildmcp",
+  "canonicalUrl": "https://x.com/camsoft2000/status/2080582300337668450",
+  "media": {
+    "type": "x",
+    "postId": "2080582300337668450",
+    "videoUrl": "https://video.twimg.com/amplify_video/2080581782852808704/vid/avc1/2272x1390/Rq2QcRaWJyY2HCT7.mp4?tag=29",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2080581782852808704/img/_eJUYfT_x2rR3Wzk.jpg",
+    "title": "An agent builds, debugs, and checks an iOS weather app"
+  },
+  "title": "Build and Debug an iOS App Through an Agent",
+  "publisher": "Cameron Cooke",
+  "publisherUrl": "https://x.com/camsoft2000",
+  "authors": [
+    {
+      "name": "Cameron Cooke",
+      "url": "https://x.com/camsoft2000"
+    }
+  ],
+  "publishedAt": "2026-07-24",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "testing-evaluation",
+    "visual-validation"
+  ],
+  "summary": "Cameron Cooke shows an agent using XcodeBuildMCP to add weather-alert controls, rebuild the app, diagnose a logic error, and visually check the resulting interface on an iPhone. An iOS team can pilot the same loop on a bounded feature and require build, runtime, and UI evidence before accepting the change.",
+  "takeaway": "Give an agent one bounded feature, then require it to build, launch, debug, and visually verify the result rather than stopping at generated Swift code.",
+  "availability": "available",
+  "userIds": [
+    "cameron-cooke"
+  ],
+  "relatedResourceIds": [
+    "xcodebuildmcp-ios-debug-workshop",
+    "ai-agents-control-ios-simulator",
+    "token-efficient-xcode-simulator-automation"
+  ]
+}

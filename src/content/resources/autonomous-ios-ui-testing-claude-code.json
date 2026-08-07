@@ -1,0 +1,41 @@
+{
+  "id": "autonomous-ios-ui-testing-claude-code",
+  "slug": "autonomous-ios-ui-testing-claude-code",
+  "canonicalUrl": "https://flowdeck.studio/blog/2026/04/08/autonomous-ios-ui-testing-with-claude-code/",
+  "media": {
+    "type": "image",
+    "url": "https://flowdeck.studio/assets/images/og/autonomous-ios-ui-testing-with-claude-code.png",
+    "alt": "Autonomous iOS UI testing with Claude Code article cover"
+  },
+  "title": "Autonomous iOS UI Testing with Claude Code",
+  "publisher": "FlowDeck",
+  "publisherUrl": "https://flowdeck.studio/blog/",
+  "authors": [
+    {
+      "name": "Daniel Bernal",
+      "url": "https://danielbernal.co/"
+    }
+  ],
+  "publishedAt": "2026-04-08",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "Daniel Bernal walks through a one-prompt exploratory QA run in which Claude Code captured every screen, navigated core flows, found and fixed an index bug, retested it, and reported UX observations. An iOS team can reserve this loop for exploratory end-to-end validation while retaining unit tests and critical XCUITest coverage.",
+  "takeaway": "Use autonomous UI exploration to find state, edge-case, and UX failures, but keep deterministic tests for critical regression paths and review the agent’s report.",
+  "availability": "available",
+  "userIds": [
+    "daniel-bernal"
+  ],
+  "relatedResourceIds": [
+    "accessibility-identifiers-agent-ui-accuracy",
+    "codex-ios-scroll-performance-automation",
+    "six-months-building-ios-without-xcode",
+    "ai-agents-control-ios-simulator"
+  ]
+}

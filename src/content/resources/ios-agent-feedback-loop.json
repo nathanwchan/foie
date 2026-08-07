@@ -1,0 +1,40 @@
+{
+  "id": "ios-agent-feedback-loop",
+  "slug": "ios-agent-feedback-loop",
+  "canonicalUrl": "https://flowdeck.studio/blog/2026/05/05/why-your-ai-agent-keeps-failing-at-ios-development/",
+  "media": {
+    "type": "image",
+    "url": "https://flowdeck.studio/assets/images/og/why-your-ai-agent-keeps-failing-at-ios-development.png",
+    "alt": "Why AI agents fail at iOS development article cover"
+  },
+  "title": "Why AI Agents Fail at iOS Development",
+  "publisher": "FlowDeck",
+  "publisherUrl": "https://flowdeck.studio/blog/",
+  "authors": [
+    {
+      "name": "Daniel Bernal",
+      "url": "https://danielbernal.co/"
+    }
+  ],
+  "publishedAt": "2026-05-05",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "testing-evaluation",
+    "agent-readable-architecture"
+  ],
+  "summary": "Daniel Bernal argues that agents fail on native iOS projects less because of model capability than because Apple’s CLI tools expose noisy builds, fragmented device control, limited visual state, and hard-to-filter logs. An iOS team can provide structured build and test events, Simulator accessibility state, and scoped logs before evaluating model upgrades.",
+  "takeaway": "Fix the feedback loop before changing models: provide structured builds and tests, visible Simulator state, and logs scoped to the app under test.",
+  "availability": "available",
+  "userIds": [
+    "daniel-bernal"
+  ],
+  "relatedResourceIds": [
+    "token-efficient-flowdeck-build-output",
+    "autonomous-ios-ui-testing-claude-code",
+    "six-months-building-ios-without-xcode"
+  ]
+}

@@ -2,6 +2,13 @@
   "version": 1,
   "updatedAt": "2026-08-07",
   "entries": [
+    { "canonicalUrl": "https://x.com/camsoft2000/status/2080582300337668450", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "agent-builds-ios-app-xcodebuildmcp" },
+    { "canonicalUrl": "https://x.com/afterxleep/status/2075655850862260628", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "codex-ios-scroll-performance-automation" },
+    { "canonicalUrl": "https://x.com/afterxleep/status/2065312907106406717", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "agent-verifies-ios-animation-frame-sequence" },
+    { "canonicalUrl": "https://x.com/camsoft2000/status/2054463184715595886", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "xcode-mcp-xcodebuildmcp-complementary-roles" },
+    { "canonicalUrl": "https://flowdeck.studio/blog/2026/05/05/why-your-ai-agent-keeps-failing-at-ios-development/", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "ios-agent-feedback-loop" },
+    { "canonicalUrl": "https://flowdeck.studio/blog/2026/04/08/autonomous-ios-ui-testing-with-claude-code/", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "autonomous-ios-ui-testing-claude-code" },
+    { "canonicalUrl": "https://x.com/afterxleep/status/2038498207567585289", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "accessibility-identifiers-agent-ui-accuracy" },
     { "canonicalUrl": "https://x.com/afterxleep/status/2085403759933333793", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "token-efficient-flowdeck-build-output" },
     { "canonicalUrl": "https://www.youtube.com/watch?v=cmPLV9S7eaU", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "xcodebuildmcp-ios-debug-workshop" },
     { "canonicalUrl": "https://x.com/afterxleep/status/2024072154082386081", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "six-months-building-ios-without-xcode" },

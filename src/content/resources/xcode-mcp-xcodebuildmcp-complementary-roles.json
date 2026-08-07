@@ -1,0 +1,40 @@
+{
+  "id": "xcode-mcp-xcodebuildmcp-complementary-roles",
+  "slug": "xcode-mcp-xcodebuildmcp-complementary-roles",
+  "canonicalUrl": "https://x.com/camsoft2000/status/2054463184715595886",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/profile_images/1615804232103333888/AOzAdR0i_400x400.jpg",
+    "alt": "Cameron Cooke, creator of XcodeBuildMCP"
+  },
+  "title": "Xcode MCP and XcodeBuildMCP Cover Different Parts of the Loop",
+  "publisher": "Cameron Cooke",
+  "publisherUrl": "https://x.com/camsoft2000",
+  "authors": [
+    {
+      "name": "Cameron Cooke",
+      "url": "https://x.com/camsoft2000"
+    }
+  ],
+  "publishedAt": "2026-05-13",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "social",
+  "topics": [
+    "xcode-tooling",
+    "agent-workflows",
+    "testing-evaluation",
+    "visual-validation"
+  ],
+  "summary": "Cameron Cooke distinguishes Xcode MCP’s IDE-facing documentation, preview, and navigator capabilities from XcodeBuildMCP’s runtime automation, debugging, simulator management, and UI control. An iOS team can map each integration to the stage it serves and combine them only where the workflow needs both layers.",
+  "takeaway": "Separate coding-time IDE assistance from build-and-runtime automation, then give agents only the integrations required to close the specific development loop.",
+  "availability": "available",
+  "userIds": [
+    "cameron-cooke"
+  ],
+  "relatedResourceIds": [
+    "xcodebuildmcp-ios-debug-workshop",
+    "hidden-xcode-ai-documentation",
+    "ai-agents-control-ios-simulator"
+  ]
+}

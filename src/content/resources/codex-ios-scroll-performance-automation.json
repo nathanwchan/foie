@@ -1,0 +1,42 @@
+{
+  "id": "codex-ios-scroll-performance-automation",
+  "slug": "codex-ios-scroll-performance-automation",
+  "canonicalUrl": "https://x.com/afterxleep/status/2075655850862260628",
+  "media": {
+    "type": "x",
+    "postId": "2075655850862260628",
+    "videoUrl": "https://video.twimg.com/amplify_video/2075655798269857792/vid/avc1/720x1280/Vg4ZkwdChmBw0K7p.mp4?tag=14",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2075655798269857792/img/gnYcVCAfmHWocD8D.jpg",
+    "title": "Codex runs scroll-performance UI automation on an iPhone"
+  },
+  "title": "Codex Runs an iOS Scroll-Performance Check",
+  "publisher": "Daniel Bernal",
+  "publisherUrl": "https://x.com/afterxleep",
+  "authors": [
+    {
+      "name": "Daniel Bernal",
+      "url": "https://x.com/afterxleep"
+    }
+  ],
+  "publishedAt": "2026-07-10",
+  "discoveredAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "format": "social",
+  "topics": [
+    "testing-evaluation",
+    "visual-validation",
+    "agent-workflows",
+    "xcode-tooling"
+  ],
+  "summary": "Daniel Bernal shows Codex running a scroll-performance UI automation pass while the app repeatedly scrolls on a connected iPhone and the agent monitors the run. An iOS team can turn one performance-sensitive scrolling path into a repeatable agent-operated check and preserve the measured result for review.",
+  "takeaway": "Automate a representative scrolling path on a real target, capture its performance result, and make that evidence part of the agent’s completion criteria.",
+  "availability": "available",
+  "userIds": [
+    "daniel-bernal"
+  ],
+  "relatedResourceIds": [
+    "ai-generated-swift-instruments-performance",
+    "autonomous-ios-ui-testing-claude-code",
+    "ai-agents-control-ios-simulator"
+  ]
+}
