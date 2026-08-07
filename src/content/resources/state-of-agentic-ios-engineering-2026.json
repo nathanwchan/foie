@@ -1,0 +1,23 @@
+{
+  "id": "state-of-agentic-ios-engineering-2026",
+  "slug": "state-of-agentic-ios-engineering-2026",
+  "canonicalUrl": "https://dimillian.medium.com/the-state-of-agentic-ios-engineering-in-2026-c5f0cbaa7b34",
+  "media": {
+    "type": "image",
+    "url": "https://miro.medium.com/v2/resize:fit:1200/1*6U7A_0DCB_YReRif1kV0Xw.png",
+    "alt": "Cover image for The State of Agentic iOS Engineering in 2026 by Thomas Ricouard"
+  },
+  "title": "The State of Agentic iOS Engineering in 2026",
+  "publisher": "Thomas Ricouard",
+  "publisherUrl": "https://dimillian.medium.com/",
+  "authors": [{ "name": "Thomas Ricouard", "url": "https://dimillian.medium.com/" }],
+  "publishedAt": "2026-01-01",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "article",
+  "topics": ["agent-workflows", "xcode-tooling", "human-in-the-loop"],
+  "summary": "Thomas Ricouard surveys his rapidly changing 2025 workflow for agentic iOS engineering, arguing that AI-driven programming is shifting primary code editing away from Xcode and making continuous tool evaluation part of the job. He frames the article as a broad retrospective on the editors, models, workflows, and opinions that shaped a year of experimentation.",
+  "takeaway": "Pilot one agent-first editing workflow outside Xcode, document the human review and verification steps that remain essential, and reassess the setup regularly as models and tools change.",
+  "availability": "available",
+  "relatedResourceIds": ["building-ios-apps-with-agents", "jp-simard-escaping-ide"]
+}
