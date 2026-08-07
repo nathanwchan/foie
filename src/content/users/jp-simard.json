@@ -1,0 +1,17 @@
+{
+  "id": "jp-simard",
+  "name": "JP Simard",
+  "addedAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "avatar": {
+    "url": "https://media.hachyderm.io/accounts/avatars/109/526/552/375/178/309/original/6eb3d15cbe2fcc35.jpeg",
+    "sourceProfileUrl": "https://hachyderm.io/@jpsim"
+  },
+  "profiles": [
+    { "platform": "website", "handle": "jpsim.com", "url": "https://www.jpsim.com/" },
+    { "platform": "x", "handle": "@simjp", "url": "https://x.com/simjp" },
+    { "platform": "mastodon", "handle": "@jpsim@hachyderm.io", "url": "https://hachyderm.io/@jpsim" },
+    { "platform": "github", "handle": "@jpsim", "url": "https://github.com/jpsim" },
+    { "platform": "linkedin", "handle": "/in/jpsim", "url": "https://www.linkedin.com/in/jpsim" }
+  ]
+}

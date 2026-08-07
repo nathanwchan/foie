@@ -19,5 +19,6 @@
   "summary": "JP Simard connects his history in Swift tooling and mobile infrastructure with Ramp’s small native teams and emerging cross-platform agent workflows. The conversation argues for architecting a feature once and using shared domain context to produce distinct native implementations instead of forcing a single cross-platform codebase.",
   "takeaway": "For the next cross-platform feature, write one platform-neutral brief covering behavior and domain rules, then have iOS and Android agents produce separate native implementations reviewed by each platform owner.",
   "availability": "available",
+  "userIds": ["jp-simard"],
   "relatedResourceIds": ["building-ios-apps-with-agents", "state-of-agentic-ios-engineering-2026"]
 }

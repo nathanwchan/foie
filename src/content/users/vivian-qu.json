@@ -1,0 +1,17 @@
+{
+  "id": "vivian-qu",
+  "name": "Vivian Qu",
+  "addedAt": "2026-08-07",
+  "lastVerifiedAt": "2026-08-07",
+  "avatar": {
+    "url": "https://avatars.githubusercontent.com/u/1455838?v=4",
+    "sourceProfileUrl": "https://github.com/vivqu"
+  },
+  "profiles": [
+    { "platform": "website", "handle": "vivqu.com", "url": "https://vivqu.com/" },
+    { "platform": "github", "handle": "@vivqu", "url": "https://github.com/vivqu" },
+    { "platform": "linkedin", "handle": "/in/vivqu", "url": "https://www.linkedin.com/in/vivqu" },
+    { "platform": "threads", "handle": "@skwishum", "url": "https://www.threads.com/@skwishum" },
+    { "platform": "instagram", "handle": "@vivquplants", "url": "https://www.instagram.com/vivquplants/" }
+  ]
+}
