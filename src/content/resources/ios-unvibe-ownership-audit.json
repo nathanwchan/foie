@@ -1,0 +1,37 @@
+{
+  "id": "ios-unvibe-ownership-audit",
+  "slug": "ios-unvibe-ownership-audit",
+  "canonicalUrl": "https://github.com/sachinkmr57/ios-unvibe",
+  "media": {
+    "type": "image",
+    "url": "https://opengraph.githubassets.com/1/sachinkmr57/ios-unvibe",
+    "alt": "ios-unvibe repository preview"
+  },
+  "title": "Audit Whether Accept-All Coding Has Cost You Ownership",
+  "publisher": "Sachin Kumar",
+  "publisherUrl": "https://github.com/sachinkmr57",
+  "authors": [
+    {
+      "name": "Sachin Kumar",
+      "url": "https://github.com/sachinkmr57"
+    }
+  ],
+  "publishedAt": "2026-07-26",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "repository",
+  "topics": [
+    "agent-workflows",
+    "agent-readable-architecture",
+    "code-review",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Sachin Kumar packages a read-only audit for Swift projects that looks for ownership-loss signals such as massive views, security shortcuts, migration theater, low-value tests, and suspicious git churn. It requires file, line, or commit evidence for every finding and produces a scored reclaim plan without modifying the code. A lead can run it before a broad cleanup and manually verify the highest-severity evidence.",
+  "takeaway": "Run the audit before a broad AI-led cleanup, then manually inspect its three highest-severity findings and commit evidence; use the result to choose a narrow stabilization boundary, not an automatic rewrite.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "claude-code-ios-team-trust-boundary",
+    "agentic-development-product-bloat"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "agent-drivable-ios-fixture-contract",
+  "slug": "agent-drivable-ios-fixture-contract",
+  "canonicalUrl": "https://medium.com/@er.rajatlakhina/claude-code-drives-the-ios-simulator-now-it-still-cant-get-past-your-login-screen-feac4dba5466",
+  "media": {
+    "type": "image",
+    "url": "https://cdn-images-1.medium.com/max/1024/1*lIs4Y1dE0YqD_i6ZqSkwJA.png",
+    "alt": "Diagram of a deterministic, screenshot-safe launch-state contract for agent-driven iOS apps"
+  },
+  "title": "Make the iOS App Reachable, Repeatable, and Safe for an Agent",
+  "publisher": "Rajat S. Lakhina",
+  "publisherUrl": "https://medium.com/@er.rajatlakhina",
+  "authors": [
+    {
+      "name": "Rajat S. Lakhina",
+      "url": "https://medium.com/@er.rajatlakhina"
+    }
+  ],
+  "publishedAt": "2026-08-03",
+  "discoveredAt": "2026-08-06",
+  "lastVerifiedAt": "2026-08-06",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "Rajat S. Lakhina argues that simulator access is useful only when an app exposes a named, deterministic, and screenshot-safe launch state. His companion Swift package models frozen clocks, seeded fixtures, explicit scenario failures, and a pre-render safety audit, while candidly noting that its demo was not exercised in Simulator during the repository session. A team can pilot one debug-only scenario before opening broader app flows to an agent.",
+  "takeaway": "Add one debug-only launch scenario with seeded data and a frozen clock; reject unknown or screenshot-unsafe fixtures before the app renders, then verify the contract in your own Simulator loop.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "sunday-swift-agent-verification",
+    "codex-ipad-screenshot-review"
+  ]
+}
