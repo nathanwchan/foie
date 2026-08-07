@@ -1,4 +1,5 @@
 ---
+import { Search } from "@lucide/astro";
 import type { ResourceEntry } from "../lib/content";
 
 interface Props { resources: ResourceEntry[] }
@@ -10,7 +11,7 @@ const keywords = ["Agents", "Xcode", "Testing", "SwiftUI"];
   <p class="filter-label">Search the collection</p>
   <div class="filter-row">
     <div class="search-input-wrap">
-      <span aria-hidden="true">⌕</span>
+      <Search class="search-icon" size={20} stroke-width={2.2} aria-hidden="true" />
       <input id="resource-search" type="search" placeholder="Search resources" autocomplete="off" aria-label="Search resources" />
     </div>
     <div class="keyword-chips" aria-label="Common searches">
