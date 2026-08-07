@@ -35,7 +35,7 @@ The production build validates schemas, controlled vocabulary, canonical URL uni
 - `data/discovery-ledger.json`: non-public audit trail for accepted, skipped, duplicate, and unavailable discoveries
 - `.agents/skills/curate-ios-engineering/`: the durable curation and publication workflow
 
-The scheduled Codex task invokes the repository-local skill instead of carrying a large duplicated prompt. Successful runs publish directly to `main`; no-change runs report without creating a commit.
+The scheduled Codex task invokes the repository-local skill instead of carrying a large duplicated prompt. Both Wednesday and Sunday runs use a rolling 7-day discovery window. Successful runs publish directly to `main`; no-change runs report without creating a commit.
 
 Resources are presented as complete feed cells rather than internal detail pages. Each resource selects one best canonical source; titles and preview art point to that destination. Equivalent mirrors remain private discovery-ledger aliases used only for deduplication.
 

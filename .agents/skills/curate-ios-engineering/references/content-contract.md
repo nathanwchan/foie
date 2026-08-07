@@ -31,9 +31,11 @@ Summaries must be 120–640 characters and begin with the exact name in `authors
 
 ## Discovery ledger
 
-Maintain `data/discovery-ledger.json` as the non-public audit trail. Each entry contains a normalized canonical URL, aliases, first and last seen dates, status, and either an accepted `resourceId` or a concise skip reason. Do not delete previous skipped entries merely because the source appears in a later search.
+Maintain `data/discovery-ledger.json` as the non-public audit trail. Each entry contains a normalized canonical URL, aliases, first and last seen dates, status, and either an accepted `resourceId` or a concise skip reason. `lastSeenAt` is the most recent date the source was substantively inspected; do not change it for a URL filtered before inspection as an accepted duplicate, known alias, permanent editorial exclusion, or ordinary skip still inside its 30-day cooldown. Do not delete previous skipped entries merely because the source appears in a later search.
 
 Use `status: "skipped"` with a reason beginning `editorial-exclusion:` when the curator removes a source. This is a permanent denylist decision: scheduled curation must not reevaluate or republish the source unless the curator explicitly reverses it.
+
+For other skipped entries, wait 30 days after `lastSeenAt` before reopening the same canonical URL unless a result provides concrete evidence that the source materially changed or became accessible, or points to a distinct eligible editorial companion. This cooldown suppresses repetitive analysis without converting ordinary skips into permanent exclusions.
 
 ## User files
 
