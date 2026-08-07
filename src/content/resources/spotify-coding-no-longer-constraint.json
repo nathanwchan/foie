@@ -18,7 +18,7 @@
   "format": "article",
   "topics": ["sdlc-automation", "agent-readable-architecture", "code-review", "human-in-the-loop"],
   "summary": "Spotify describes how its background agent Honk, internal developer portal, standardized technology choices, and automated guardrails support large-scale agent work. Faster implementation shifted the bottleneck toward review and decisions, with the organization reporting substantially more pull requests to evaluate.",
-  "takeaway": "Standardize repositories and expose ownership, documentation, and guardrails to agents before increasing autonomy; otherwise review becomes the new scaling failure.",
+  "takeaway": "Before adding background agents, make one repository self-serve: add explicit ownership, current setup docs, standard build commands, and automated PR checks. Then track review wait time as agent output grows.",
   "availability": "available",
   "relatedResourceIds": ["spotify-agentic-development", "ramp-background-agent"]
 }

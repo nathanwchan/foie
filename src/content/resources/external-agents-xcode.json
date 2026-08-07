@@ -18,7 +18,7 @@
   "format": "documentation",
   "topics": ["xcode-tooling", "agent-workflows", "human-in-the-loop"],
   "summary": "Apple’s setup documentation describes the supported bridge for allowing external coding agents to use Xcode’s project-aware capabilities. It is the authoritative starting point for connecting non-Xcode clients while keeping permissions and developer control inside Apple’s tooling boundary.",
-  "takeaway": "Prefer Apple’s documented access path when integrating external agents, and make its permission prompts and availability constraints explicit in team workflows.",
+  "takeaway": "Enable Apple’s documented external-agent access on one test project first. Record every permission prompt and availability constraint in team onboarding before allowing the integration on production repositories.",
   "availability": "available",
   "relatedResourceIds": ["xcode-27-release-notes", "xcode-agents-and-you", "xcodebuildmcp"]
 }

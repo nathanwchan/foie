@@ -19,7 +19,7 @@
   "format": "video",
   "topics": ["xcode-tooling", "agent-workflows", "visual-validation", "human-in-the-loop"],
   "summary": "This WWDC session walks through agent-assisted work inside Xcode from exploring an unfamiliar project through building, refining, and orchestrating tasks. Apple frames the coding assistant as an adaptable collaborator that can use project context while keeping the developer engaged in creative and consequential decisions.",
-  "takeaway": "Use Apple’s workflow model as a baseline for deciding which project context, previews, and review checkpoints your own agent setup must expose.",
+  "takeaway": "Create a team task template with the goal, relevant files, constraints, build target, required preview or test evidence, and human review checkpoints; use it for the next five agent-assisted changes.",
   "availability": "available",
   "relatedResourceIds": ["xcode-27-release-notes", "external-agents-xcode", "building-ios-apps-with-agents"]
 }

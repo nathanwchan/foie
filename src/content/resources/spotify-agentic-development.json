@@ -18,7 +18,7 @@
   "format": "video",
   "topics": ["agent-workflows", "code-review", "sdlc-automation", "human-in-the-loop"],
   "summary": "Leaders from Spotify and Anthropic discuss background agents, context engineering, feedback loops, governance, and accountability as agent-generated output grows. They emphasize outcome ownership and describe the next frontier as agents participating across maintenance, deletion, and the full software lifecycle rather than only creating features.",
-  "takeaway": "Define accountable human owners and outcome-based gates before expanding agents from code generation into long-lived maintenance and lifecycle work.",
+  "takeaway": "Assign a named human owner to every agent task and define the acceptance evidence up front—tests, screenshots, performance checks, or deletion criteria—before using agents for ongoing maintenance.",
   "availability": "available",
   "relatedResourceIds": ["spotify-coding-no-longer-constraint", "ramp-background-agent"]
 }
