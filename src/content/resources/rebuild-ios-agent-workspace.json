@@ -1,0 +1,37 @@
+{
+  "id": "rebuild-ios-agent-workspace",
+  "slug": "rebuild-ios-agent-workspace",
+  "canonicalUrl": "https://www.reddit.com/r/AskVibecoders/comments/1vicsmi/comment/p2d6sjo/",
+  "media": {
+    "type": "image",
+    "url": "https://styles.redditmedia.com/t5_coxfc/styles/profileIcon_sgahok7u8x8h1.jpg?width=256&height=256&crop=256:256,smart&s=f1d393110b66e5e278c24d8f8a828dc0139fe8d6",
+    "alt": "ekzess, author of the iOS agent-workspace recovery playbook"
+  },
+  "title": "Rebuild the Agent Workspace Before Switching Models",
+  "publisher": "Reddit / r/AskVibecoders",
+  "publisherUrl": "https://www.reddit.com/r/AskVibecoders/",
+  "authors": [
+    {
+      "name": "ekzess",
+      "url": "https://www.reddit.com/user/ekzess/"
+    }
+  ],
+  "publishedAt": "2026-08-07",
+  "discoveredAt": "2026-08-09",
+  "lastVerifiedAt": "2026-08-09",
+  "format": "social",
+  "topics": [
+    "agent-readable-architecture",
+    "agent-workflows",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "ekzess lays out a recovery plan for an overgrown iOS agent workspace: freeze the repository, map conflicting instructions, establish one authority hierarchy, separate project truth from reusable skills, and define acceptance before implementation. An iOS team can apply the same read-only archaeology before consolidating its agent context.",
+  "takeaway": "Inventory instructions before deleting them, keep each project fact in one authoritative home, cap agent spawning, and map each change class to explicit build, test, UI, accessibility, performance, and device checks.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "building-ios-apps-with-agents",
+    "coding-agents-production-ios",
+    "agentic-coding-ios-developers"
+  ]
+}
