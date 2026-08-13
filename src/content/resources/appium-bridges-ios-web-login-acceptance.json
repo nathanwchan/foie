@@ -1,0 +1,38 @@
+{
+  "id": "appium-bridges-ios-web-login-acceptance",
+  "slug": "appium-bridges-ios-web-login-acceptance",
+  "canonicalUrl": "https://x.com/atimisMoon/status/2087562679305269506",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/profile_images/1817103115143061504/SfY9ZGbC_200x200.jpg",
+    "alt": "MarvinInSwift profile image"
+  },
+  "title": "Bridge Web Login Gaps in Agent-Run iOS Acceptance Tests",
+  "publisher": "MarvinInSwift",
+  "publisherUrl": "https://x.com/atimisMoon",
+  "authors": [
+    {
+      "name": "MarvinInSwift",
+      "url": "https://x.com/atimisMoon"
+    }
+  ],
+  "publishedAt": "2026-08-12",
+  "discoveredAt": "2026-08-12",
+  "lastVerifiedAt": "2026-08-12",
+  "format": "social",
+  "topics": [
+    "testing-evaluation",
+    "agent-workflows",
+    "xcode-tooling",
+    "visual-validation"
+  ],
+  "summary": "MarvinInSwift describes an iOS acceptance workflow that stalled when XcodeBuildMCP reached a web-based login it could not manipulate. He added Appium for DOM-aware entry and submission, then returned control to XcodeBuildMCP so the agent could navigate the native target screen, execute the Jira specification, and produce an acceptance report.",
+  "takeaway": "Model hybrid authentication as an explicit tool handoff: use DOM-aware automation for the web login, then return to simulator-native controls for the app journey and evidence report.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "agent-drivable-ios-fixture-contract",
+    "autonomous-ios-ui-testing-claude-code",
+    "mobile-agent-device-proof"
+  ],
+  "userIds": []
+}

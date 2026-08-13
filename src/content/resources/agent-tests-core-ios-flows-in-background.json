@@ -1,0 +1,42 @@
+{
+  "id": "agent-tests-core-ios-flows-in-background",
+  "slug": "agent-tests-core-ios-flows-in-background",
+  "canonicalUrl": "https://x.com/afterxleep/status/2087434722880418051",
+  "media": {
+    "type": "x",
+    "postId": "2087434722880418051",
+    "videoUrl": "https://video.twimg.com/amplify_video/2087434662004293633/vid/avc1/1280x720/V9mY6BJCp4z4URAf.mp4?tag=14",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2087434662004293633/img/3MIwQ5hPLEnD7lWG.jpg",
+    "title": "A FlowDeck agent exercises an app's core user flows"
+  },
+  "title": "Let an Agent Exercise Core iOS Flows While You Work",
+  "publisher": "Daniel Bernal",
+  "publisherUrl": "https://x.com/afterxleep",
+  "authors": [
+    {
+      "name": "Daniel Bernal",
+      "url": "https://x.com/afterxleep"
+    }
+  ],
+  "publishedAt": "2026-08-12",
+  "discoveredAt": "2026-08-12",
+  "lastVerifiedAt": "2026-08-12",
+  "format": "social",
+  "topics": [
+    "testing-evaluation",
+    "agent-workflows",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "Daniel Bernal reports replacing fragile UI-test authoring for core app journeys with a FlowDeck agent that operates the app and checks those flows while he works elsewhere. The pattern complements unit coverage with delegated, observable end-to-end exercise rather than treating a successful build as proof that the experience works.",
+  "takeaway": "Keep deterministic unit tests for logic, then give an agent a small set of named core journeys to exercise independently and require observable evidence before accepting the run.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "autonomous-ios-ui-testing-claude-code",
+    "flowdeck-agent-build-run-ios",
+    "mobile-agent-device-proof"
+  ],
+  "userIds": [
+    "daniel-bernal"
+  ]
+}
