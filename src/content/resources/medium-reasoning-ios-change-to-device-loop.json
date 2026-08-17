@@ -1,0 +1,37 @@
+{
+  "id": "medium-reasoning-ios-change-to-device-loop",
+  "slug": "medium-reasoning-ios-change-to-device-loop",
+  "canonicalUrl": "https://x.com/techSage/status/2088367740142662126",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HPtfY3WXIAEUOvB.jpg",
+    "alt": "An iOS app update completed by Codex with asset, signing, Simulator, test, and device-build work"
+  },
+  "title": "Benchmark a Medium-Reasoning Agent on a Full iOS Delivery Loop",
+  "publisher": "techsage",
+  "publisherUrl": "https://x.com/techSage",
+  "authors": [
+    {
+      "name": "techsage",
+      "url": "https://x.com/techSage"
+    }
+  ],
+  "publishedAt": "2026-08-14",
+  "discoveredAt": "2026-08-16",
+  "lastVerifiedAt": "2026-08-16",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "visual-validation",
+    "sdlc-automation"
+  ],
+  "summary": "techsage reports using a medium-reasoning Codex run to prepare app icons, add an in-app selector, update signing for sharing extensions, run tests with Simulator computer use, and build to a physical iPhone in 15 minutes. An iOS team can benchmark a representative end-to-end task before defaulting every change to its most expensive reasoning tier.",
+  "takeaway": "Benchmark model tiers on a change spanning assets, UI, signing, automated tests, Simulator verification, and a device build before reserving maximum reasoning for every task.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "mobile-agent-device-proof",
+    "codex-computer-use-ios-simulator",
+    "local-xcode-testflight-release-loop"
+  ]
+}

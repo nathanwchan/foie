@@ -1,0 +1,38 @@
+{
+  "id": "redact-network-logs-before-ai-review",
+  "slug": "redact-network-logs-before-ai-review",
+  "canonicalUrl": "https://x.com/twannl/status/2088610416179962068",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HPw8GvJXwAEL6dq.jpg",
+    "alt": "RocketSim preparing a network request and response for an AI assistant with sensitive values redacted"
+  },
+  "title": "Redact Network Logs Before Sharing Them with an AI Assistant",
+  "publisher": "Antoine van der Lee",
+  "publisherUrl": "https://x.com/twannl",
+  "authors": [
+    {
+      "name": "Antoine van der Lee",
+      "url": "https://x.com/twannl"
+    }
+  ],
+  "publishedAt": "2026-08-15",
+  "discoveredAt": "2026-08-16",
+  "lastVerifiedAt": "2026-08-16",
+  "format": "social",
+  "topics": [
+    "xcode-tooling",
+    "agent-workflows",
+    "human-in-the-loop"
+  ],
+  "summary": "Antoine van der Lee explains that RocketSim prepares network requests and responses for an AI assistant only after redacting sensitive values from the export. An iOS team can make that sanitization a required boundary before captured traffic enters an external conversation.",
+  "takeaway": "Put redaction in the network-log export path, then require a human to review the sanitized prompt before any captured request or response is shared with an AI assistant.",
+  "availability": "available",
+  "userIds": [
+    "antoine-van-der-lee"
+  ],
+  "relatedResourceIds": [
+    "claude-code-ios-team-trust-boundary",
+    "token-efficient-flowdeck-build-output"
+  ]
+}
