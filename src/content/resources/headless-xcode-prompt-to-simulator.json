@@ -1,0 +1,39 @@
+{
+  "id": "headless-xcode-prompt-to-simulator",
+  "slug": "headless-xcode-prompt-to-simulator",
+  "canonicalUrl": "https://artemnovichkov.com/blog/headless-xcode-from-prompt-to-simulator-with-mcp",
+  "media": {
+    "type": "image",
+    "url": "https://artemnovichkov.com/images/headless-xcode-from-prompt-to-simulator-with-mcp/cover.png",
+    "alt": "Headless Xcode MCP workflow from prompt through SwiftUI previews and iPhone Simulator verification"
+  },
+  "title": "Headless Xcode: From Prompt to Simulator with MCP",
+  "publisher": "Artem Novichkov",
+  "publisherUrl": "https://artemnovichkov.com/",
+  "authors": [
+    {
+      "name": "Artem Novichkov",
+      "url": "https://artemnovichkov.com/"
+    }
+  ],
+  "publishedAt": "2026-08-13",
+  "discoveredAt": "2026-08-19",
+  "lastVerifiedAt": "2026-08-19",
+  "format": "article",
+  "topics": [
+    "xcode-tooling",
+    "agent-workflows",
+    "visual-validation",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Artem Novichkov demonstrates a headless Xcode 27 beta workflow in which Claude creates a SwiftUI project, renders named preview states, drives an iPhone simulator through accessibility metadata, and checks OSLog evidence without keeping the Xcode UI open. An iOS team can pin the beta per repository, retain individual agent and folder approvals, and require both visual and state-change proof before accepting a run.",
+  "takeaway": "Keep headless Xcode configuration and exported Apple skills in the repository, approve agents and folders individually, then pair simulator screenshots with accessibility data and OSLog evidence for acceptance.",
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "xcode-mcp-field-notes",
+    "codex-computer-use-ios-simulator",
+    "agent-tests-core-ios-flows-in-background"
+  ]
+}
