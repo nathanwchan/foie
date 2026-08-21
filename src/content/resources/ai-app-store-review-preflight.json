@@ -1,0 +1,39 @@
+{
+  "id": "ai-app-store-review-preflight",
+  "slug": "ai-app-store-review-preflight",
+  "canonicalUrl": "https://x.com/rork/status/2090488947788955863",
+  "media": {
+    "type": "x",
+    "postId": "2090488947788955863",
+    "videoUrl": "https://video.twimg.com/amplify_video/2090486171004452864/vid/avc1/1920x1080/8I7pyx_UV8U5_Ox-.mp4?tag=29",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2090486171004452864/img/QOk_pL28_FZ8y86z.jpg",
+    "title": "Rork's AI App Store Reviewer predicts likely rejection issues before submission"
+  },
+  "title": "Run an AI App Store Review Before Submission",
+  "publisher": "Rork",
+  "publisherUrl": "https://x.com/rork",
+  "authors": [
+    {
+      "name": "Rork",
+      "url": "https://x.com/rork"
+    }
+  ],
+  "publishedAt": "2026-08-20",
+  "discoveredAt": "2026-08-20",
+  "lastVerifiedAt": "2026-08-20",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "sdlc-automation",
+    "human-in-the-loop"
+  ],
+  "summary": "Rork introduces an AI App Store Reviewer that predicts likely App Store rejections and fixes underlying issues before submission, reporting 87% accuracy on the company's internal benchmark. An iOS team can run this as a preflight check while treating its score as an unverified vendor claim and preserving human review.",
+  "takeaway": "Add an automated App Store policy preflight before submission, but keep its findings advisory until a reviewer confirms each proposed fix against current Apple guidance and the app's actual behavior.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "codex-testflight-two-minutes",
+    "agent-maintained-app-store-toolchain",
+    "codex-ipad-screenshot-review"
+  ]
+}

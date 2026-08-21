@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19",
+  "updatedAt": "2026-08-20",
   "entries": [
     { "canonicalUrl": "https://x.com/camsoft2000/status/2080582300337668450", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "agent-builds-ios-app-xcodebuildmcp" },
     { "canonicalUrl": "https://x.com/afterxleep/status/2075655850862260628", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "codex-ios-scroll-performance-automation" },
@@ -196,6 +196,7 @@
     { "canonicalUrl": "https://x.com/exceedsystem/status/2088458180552757725", "aliases": [], "firstSeenAt": "2026-08-19", "lastSeenAt": "2026-08-19", "status": "skipped", "reason": "thin-source: simulator-screenshot and store-upload claim provides no implementation detail, media, or validation outcome" },
     { "canonicalUrl": "https://x.com/claude_news/status/2090216353223294986", "aliases": [], "firstSeenAt": "2026-08-19", "lastSeenAt": "2026-08-19", "status": "skipped", "reason": "secondary-unverified: summary of a claimed iOS workflow does not link to an attributable first-hand source" },
     { "canonicalUrl": "https://www.reddit.com/r/ClaudeWorkflows/comments/1vmyqol/workflow_optimizing_ios_app_development_with/", "aliases": [], "firstSeenAt": "2026-08-19", "lastSeenAt": "2026-08-19", "status": "skipped", "reason": "secondary-unverified: automatically generated workflow summary is not an attributable first-hand engineering account" },
-    { "canonicalUrl": "https://x.com/grabbou/status/2090182120362909958", "aliases": [], "firstSeenAt": "2026-08-19", "lastSeenAt": "2026-08-19", "status": "skipped", "reason": "product-announcement: agent-device integration announcement provides no applied native iOS workflow or evaluated outcome" }
+    { "canonicalUrl": "https://x.com/grabbou/status/2090182120362909958", "aliases": [], "firstSeenAt": "2026-08-19", "lastSeenAt": "2026-08-19", "status": "skipped", "reason": "product-announcement: agent-device integration announcement provides no applied native iOS workflow or evaluated outcome" },
+    { "canonicalUrl": "https://x.com/rork/status/2090488947788955863", "aliases": [], "firstSeenAt": "2026-08-20", "lastSeenAt": "2026-08-20", "status": "accepted", "resourceId": "ai-app-store-review-preflight" }
   ]
 }
