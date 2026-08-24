@@ -1,0 +1,38 @@
+{
+  "id": "agentic-ios-harness-beyond-code",
+  "slug": "agentic-ios-harness-beyond-code",
+  "canonicalUrl": "https://note.com/prime_nemu8747/n/ndc9c3d2ad46c",
+  "media": {
+    "type": "image",
+    "url": "https://assets.st-note.com/production/uploads/images/306300636/rectangle_large_type_2_d264dd26f7221f0509dc07bb27584636.png?fit=bounds&quality=85&width=1280",
+    "alt": "Diagram and screenshots from soracolor's Codex and Claude Code iOS development harness"
+  },
+  "title": "Build an iOS Development Harness Beyond the Code",
+  "publisher": "note",
+  "publisherUrl": "https://note.com/prime_nemu8747",
+  "authors": [
+    {
+      "name": "soracolor",
+      "url": "https://note.com/prime_nemu8747"
+    }
+  ],
+  "publishedAt": "2026-08-23",
+  "discoveredAt": "2026-08-23",
+  "lastVerifiedAt": "2026-08-23",
+  "format": "article",
+  "topics": [
+    "agent-readable-architecture",
+    "agent-workflows",
+    "testing-evaluation",
+    "sdlc-automation",
+    "human-in-the-loop"
+  ],
+  "summary": "soracolor describes turning repeated Codex and Claude Code corrections into a repository-governed iOS delivery harness with worktrees, restartable progress records, self-hosted Mac runners, staged instructions, and explicit human stops before external writes. An iOS team can encode the same boundaries in checks and state rather than relying on conversational reminders.",
+  "takeaway": "Put non-negotiable stops and resumable state in the repository, serialize external writes, and let agents prepare App Store work while a person retains merge, submission, privacy, and release decisions.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "rebuild-ios-agent-workspace",
+    "agentic-ios-delivery-pipeline",
+    "codex-testflight-two-minutes"
+  ]
+}

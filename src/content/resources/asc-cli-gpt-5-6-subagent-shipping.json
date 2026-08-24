@@ -1,0 +1,41 @@
+{
+  "id": "asc-cli-gpt-5-6-subagent-shipping",
+  "slug": "asc-cli-gpt-5-6-subagent-shipping",
+  "canonicalUrl": "https://www.youtube.com/watch?v=6SaSbGabOO0",
+  "media": {
+    "type": "youtube",
+    "videoId": "6SaSbGabOO0",
+    "title": "Shipping features in ASC CLI with GPT 5.6 Sol and Subagents"
+  },
+  "title": "Shipping Features in ASC CLI with GPT 5.6 Sol and Subagents",
+  "publisher": "Rudrank Riyam",
+  "publisherUrl": "https://www.youtube.com/@rudrankriyamm",
+  "authors": [
+    {
+      "name": "Rudrank Riyam",
+      "url": "https://rudrank.com/"
+    }
+  ],
+  "publishedAt": "2026-08-21",
+  "discoveredAt": "2026-08-23",
+  "lastVerifiedAt": "2026-08-23",
+  "format": "video",
+  "topics": [
+    "agent-workflows",
+    "code-review",
+    "testing-evaluation",
+    "sdlc-automation",
+    "human-in-the-loop"
+  ],
+  "summary": "Rudrank Riyam walks through an overnight Codex goal that delegated 99 Apple Ads operations across subagents, opened unmerged pull requests, tested against live credentials, and still required twelve hours because naming and API boundaries were decided late. An iOS team can front-load those decisions and retain explicit review and release gates.",
+  "takeaway": "Define names and API boundaries before dispatch, keep agent pull requests unmerged, verify real API behavior deliberately, and reserve the final release decision for a human reviewer.",
+  "availability": "available",
+  "userIds": [
+    "rudrank-riyam"
+  ],
+  "relatedResourceIds": [
+    "sols-work-shipping-gpt-5-6-sol",
+    "agent-maintained-app-store-toolchain",
+    "agentic-ios-delivery-pipeline"
+  ]
+}

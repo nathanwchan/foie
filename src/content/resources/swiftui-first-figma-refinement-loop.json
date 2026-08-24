@@ -1,0 +1,36 @@
+{
+  "id": "swiftui-first-figma-refinement-loop",
+  "slug": "swiftui-first-figma-refinement-loop",
+  "canonicalUrl": "https://x.com/froessell/status/2089721517135348096",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HQAupQFX0AAZcN2.jpg",
+    "alt": "Frederik's device-first SwiftUI and Figma design refinement workflow"
+  },
+  "title": "Prototype in SwiftUI Before Refining in Figma",
+  "publisher": "Frederik",
+  "publisherUrl": "https://x.com/froessell",
+  "authors": [
+    {
+      "name": "Frederik",
+      "url": "https://x.com/froessell"
+    }
+  ],
+  "publishedAt": "2026-08-18",
+  "discoveredAt": "2026-08-23",
+  "lastVerifiedAt": "2026-08-23",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "Frederik reverses the conventional small-app design sequence: Codex builds a SwiftUI MVP, he uses it on an iPhone to identify friction, Codex recreates the working screens in Figma, and he refines them before sending the changes back to SwiftUI. An iOS team can use the running product as the first design critique surface.",
+  "takeaway": "For a bounded feature, build the smallest native flow first, use it on-device, refine the proven interaction in Figma, and only then ask the agent to carry the approved design back into SwiftUI.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "codex-computer-use-ios-simulator",
+    "death-of-good-enough-ios-motion",
+    "mobile-agent-device-proof"
+  ]
+}
