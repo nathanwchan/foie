@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-23",
+  "updatedAt": "2026-08-25",
   "entries": [
     { "canonicalUrl": "https://x.com/camsoft2000/status/2080582300337668450", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "agent-builds-ios-app-xcodebuildmcp" },
     { "canonicalUrl": "https://x.com/afterxleep/status/2075655850862260628", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "codex-ios-scroll-performance-automation" },
@@ -219,6 +219,7 @@
     { "canonicalUrl": "https://x.com/ccc7_chacha/status/2091461512229704123", "aliases": [], "firstSeenAt": "2026-08-23", "lastSeenAt": "2026-08-23", "status": "skipped", "reason": "thin-source: app-launch trailer names Claude and Figma but does not document an engineering workflow or validation result" },
     { "canonicalUrl": "https://x.com/rudrank/status/2091478706569269471", "aliases": ["https://bsky.app/profile/rudrank.bsky.social/post/3mtqmpivmgr2o", "https://github.com/rorkai/App-Store-Connect-CLI"], "firstSeenAt": "2026-08-23", "lastSeenAt": "2026-08-23", "status": "skipped", "reason": "product-announcement: detailed release thread enumerates CLI capabilities but does not report an independently evaluated native iOS project outcome" },
     { "canonicalUrl": "https://arxiv.org/abs/2608.20195", "aliases": [], "firstSeenAt": "2026-08-23", "lastSeenAt": "2026-08-23", "status": "skipped", "reason": "outside-scope: empirical study concerns agent-facing documentation across general software repositories rather than native iOS engineering" },
-    { "canonicalUrl": "https://arxiv.org/abs/2608.18645", "aliases": [], "firstSeenAt": "2026-08-23", "lastSeenAt": "2026-08-23", "status": "skipped", "reason": "outside-scope: test-generation study evaluates Python, Java, and C++ rather than Swift or native iOS projects" }
+    { "canonicalUrl": "https://arxiv.org/abs/2608.18645", "aliases": [], "firstSeenAt": "2026-08-23", "lastSeenAt": "2026-08-23", "status": "skipped", "reason": "outside-scope: test-generation study evaluates Python, Java, and C++ rather than Swift or native iOS projects" },
+    { "canonicalUrl": "https://x.com/kacperkapusciak/status/2091908832662372712", "aliases": [], "firstSeenAt": "2026-08-25", "lastSeenAt": "2026-08-25", "status": "accepted", "resourceId": "claude-code-app-store-screenshot-generator" }
   ]
 }

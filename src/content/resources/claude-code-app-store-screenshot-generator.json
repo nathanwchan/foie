@@ -1,0 +1,40 @@
+{
+  "id": "claude-code-app-store-screenshot-generator",
+  "slug": "claude-code-app-store-screenshot-generator",
+  "canonicalUrl": "https://x.com/kacperkapusciak/status/2091908832662372712",
+  "media": {
+    "type": "x",
+    "postId": "2091908832662372712",
+    "videoUrl": "https://video.twimg.com/amplify_video/2091905774318419968/vid/avc1/1154x720/NesfyM8fH4QPbqVI.mp4?tag=14",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2091905774318419968/img/ggyz8IG9qE_VQ7lK.jpg",
+    "title": "Claude Code explores an iOS app and generates App Store screenshots and a recording"
+  },
+  "title": "Let Claude Code Generate App Store Screenshots",
+  "publisher": "Kacper Kapuściak",
+  "publisherUrl": "https://x.com/kacperkapusciak",
+  "authors": [
+    {
+      "name": "Kacper Kapuściak",
+      "url": "https://x.com/kacperkapusciak"
+    }
+  ],
+  "publishedAt": "2026-08-24",
+  "discoveredAt": "2026-08-25",
+  "lastVerifiedAt": "2026-08-25",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "visual-validation",
+    "testing-evaluation",
+    "sdlc-automation",
+    "human-in-the-loop"
+  ],
+  "summary": "Kacper Kapuściak demonstrates an AI App Store screenshot generator for Claude Code that uses Argent to explore an iOS app, capture recordings and screenshots, and export upload-ready assets. An iOS team can automate the capture pass while requiring a reviewer to verify device framing, app state, copy, and store compliance before upload.",
+  "takeaway": "Give the agent deterministic launch states and a required device matrix, then review every exported screenshot for framing, content, localization, and App Store requirements before upload.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "codex-ipad-screenshot-review",
+    "building-ios-apps-with-agents",
+    "agent-drivable-ios-fixture-contract"
+  ]
+}
