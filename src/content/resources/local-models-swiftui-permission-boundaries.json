@@ -1,0 +1,41 @@
+{
+  "id": "local-models-swiftui-permission-boundaries",
+  "slug": "local-models-swiftui-permission-boundaries",
+  "canonicalUrl": "https://podcast.phillycocoa.org/episodes/118-even-llms-hate-jira-with-bill-atkins",
+  "media": {
+    "type": "image",
+    "url": "https://d3t3ozftmdmh3i.cloudfront.net/production/podcast_uploaded_nologo/18379522/18379522-1634602404801-6b15364a7077f.jpg",
+    "alt": "Side Project Spotlight podcast artwork"
+  },
+  "title": "Even LLMs Hate Jira with Bill Atkins",
+  "publisher": "Side Project Spotlight",
+  "publisherUrl": "https://podcast.phillycocoa.org/",
+  "authors": [
+    {
+      "name": "Bill Atkins",
+      "url": "https://www.stylebookapp.com/"
+    },
+    {
+      "name": "Philly CocoaHeads",
+      "url": "https://phillycocoa.org/"
+    }
+  ],
+  "publishedAt": "2026-08-24",
+  "discoveredAt": "2026-08-30",
+  "lastVerifiedAt": "2026-08-30",
+  "format": "podcast",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Bill Atkins explains how he moved repetitive UIKit and SwiftUI maintenance onto a 24 GB Mac mini running OpenCode, Ollama, and Gemma so Stylebook's proprietary source stays local. An iOS team can route bounded migrations, tests, macros, and crash utilities to local models while requiring explicit permission for anything beyond safe reads.",
+  "takeaway": "Start local agents with small mechanical Swift tasks, restrict writes and external actions behind permission gates, and compare resource use against cloud models before expanding their role.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "claude-code-ios-team-trust-boundary",
+    "building-ios-apps-with-agents",
+    "month-with-openai-codex"
+  ]
+}

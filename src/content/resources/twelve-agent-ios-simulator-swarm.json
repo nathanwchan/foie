@@ -1,0 +1,38 @@
+{
+  "id": "twelve-agent-ios-simulator-swarm",
+  "slug": "twelve-agent-ios-simulator-swarm",
+  "canonicalUrl": "https://www.reddit.com/r/ClaudeAI/comments/1w1khpc/claude_code_drives_12_ios_simulators/",
+  "media": {
+    "type": "video",
+    "url": "https://v.redd.it/7g5wi573xamh1/CMAF_1080.mp4?source=fallback",
+    "posterUrl": "https://external-preview.redd.it/aWVoeGFsYjN4YW1oMZodU22unTpD_7OjGrxw_97kM2-F21gM7Qy8uXqqCU8F.png?format=pjpg&auto=webp&s=018a118e0f000bd1d770a7eb77159815de556864",
+    "title": "Twelve Claude Code agents drive separate iOS simulators in parallel"
+  },
+  "title": "Run Twelve iOS Simulator Agents in Parallel",
+  "publisher": "Reddit / r/ClaudeAI",
+  "publisherUrl": "https://www.reddit.com/r/ClaudeAI/",
+  "authors": [
+    {
+      "name": "interlap",
+      "url": "https://www.reddit.com/user/interlap/"
+    }
+  ],
+  "publishedAt": "2026-08-29",
+  "discoveredAt": "2026-08-30",
+  "lastVerifiedAt": "2026-08-30",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "testing-evaluation",
+    "visual-validation"
+  ],
+  "summary": "interlap reports running twelve Claude Code agents, each with its own iOS Simulator, on a 16 GB M1 Pro after stripping unnecessary simulator services; two agents recovered from bad assumptions and completed the task. An iOS team can use the experiment to size isolated simulator workers before scaling parallel QA.",
+  "takeaway": "Benchmark one isolated simulator worker first, require screenshots and completed-task evidence, then increase concurrency while watching memory, swap, simulator state, and recovery behavior.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "agent-tests-core-ios-flows-in-background",
+    "autonomous-ios-ui-testing-claude-code",
+    "token-efficient-xcode-simulator-automation"
+  ]
+}
