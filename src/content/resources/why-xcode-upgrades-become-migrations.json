@@ -1,0 +1,37 @@
+{
+  "id": "why-xcode-upgrades-become-migrations",
+  "slug": "why-xcode-upgrades-become-migrations",
+  "canonicalUrl": "https://www.linkedin.com/pulse/why-xcode-upgrades-become-migrations-amit-kumar-bufrc",
+  "media": {
+    "type": "image",
+    "url": "https://media.licdn.com/dms/image/v2/D5612AQEv0GZRayeBXQ/article-cover_image-shrink_720_1280/B56aBPQ5MzJQAU-/0/1788036230646?e=2147483647&v=beta&t=XIH2TKaqkt2P3ev0Z5nyJ5PPBzvNXhg4aOheYv5TruU",
+    "alt": "Why Xcode Upgrades Become Migrations article cover"
+  },
+  "title": "Why Xcode Upgrades Become Migrations",
+  "publisher": "Modern iOS Engineering",
+  "publisherUrl": "https://www.linkedin.com/newsletters/modern-ios-engineering-7499269334318571520/",
+  "authors": [
+    {
+      "name": "Amit Kumar",
+      "url": "https://www.linkedin.com/in/amitnw"
+    }
+  ],
+  "publishedAt": "2026-08-29",
+  "discoveredAt": "2026-09-01",
+  "lastVerifiedAt": "2026-09-01",
+  "format": "article",
+  "topics": [
+    "sdlc-automation",
+    "xcode-tooling",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Amit Kumar uses Tinder's Xcode 26 case study to show that AI-assisted migrations work when teams first turn compiler, test, snapshot, and tooling failures into bounded buckets, then constrain and validate each patch. An iOS team can pair reproducible builds and target-aware tests with focused human review instead of handing an agent an open-ended upgrade.",
+  "takeaway": "Before assigning an Xcode upgrade to an agent, bucket failures by target and subsystem, provide local constraints, and require affected-target builds, tests, snapshots, and owner review for every patch.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "doordash-swift-testing-migration",
+    "agent-driven-ios-tech-debt-migration",
+    "codex-mastodon-ios-tuist-migration"
+  ]
+}

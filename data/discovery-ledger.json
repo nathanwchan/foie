@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-26",
+  "updatedAt": "2026-09-01",
   "entries": [
     { "canonicalUrl": "https://x.com/camsoft2000/status/2080582300337668450", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "agent-builds-ios-app-xcodebuildmcp" },
     { "canonicalUrl": "https://x.com/afterxleep/status/2075655850862260628", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "codex-ios-scroll-performance-automation" },
@@ -262,6 +262,7 @@
     { "canonicalUrl": "https://x.com/giginet/status/2093154368443056614", "aliases": ["https://x.com/giginet/status/2093153043512709241"], "firstSeenAt": "2026-08-30", "lastSeenAt": "2026-08-30", "status": "skipped", "reason": "product-announcement: AgentHub launch promotes Xcode agent configuration without an applied native iOS workflow or result" },
     { "canonicalUrl": "https://x.com/emadgnia/status/2093587184049615120", "aliases": [], "firstSeenAt": "2026-08-30", "lastSeenAt": "2026-08-30", "status": "skipped", "reason": "thin-source: observation about headless Xcode MCP contains no first-hand implementation or validation evidence" },
     { "canonicalUrl": "https://bsky.app/profile/rudrank.bsky.social/post/3mtz5rtgdio2z", "aliases": [], "firstSeenAt": "2026-08-30", "lastSeenAt": "2026-08-30", "status": "skipped", "reason": "thin-source: overnight ASC CLI subagent update names the model split but does not report the resulting changes, review, or validation evidence" },
-    { "canonicalUrl": "https://www.reddit.com/r/ClaudeWorkflows/comments/1w23pf7/workflow_workflow_enable_ai_agents_to_drive_and/", "aliases": [], "firstSeenAt": "2026-08-30", "lastSeenAt": "2026-08-30", "status": "skipped", "reason": "secondary-unverified: generated workflow summary restates the simulator-fleet post rather than providing an attributable first-hand account" }
+    { "canonicalUrl": "https://www.reddit.com/r/ClaudeWorkflows/comments/1w23pf7/workflow_workflow_enable_ai_agents_to_drive_and/", "aliases": [], "firstSeenAt": "2026-08-30", "lastSeenAt": "2026-08-30", "status": "skipped", "reason": "secondary-unverified: generated workflow summary restates the simulator-fleet post rather than providing an attributable first-hand account" },
+    { "canonicalUrl": "https://www.linkedin.com/pulse/why-xcode-upgrades-become-migrations-amit-kumar-bufrc", "aliases": [], "firstSeenAt": "2026-09-01", "lastSeenAt": "2026-09-01", "status": "accepted", "resourceId": "why-xcode-upgrades-become-migrations" }
   ]
 }

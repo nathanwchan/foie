@@ -16,6 +16,7 @@ Run all of these discovery passes within the rolling 7-day window:
 4. A dedicated curated-user pass covering every record and every stored profile in `src/content/users/`.
 5. A direct X pass using the authenticated `bird` CLI when available.
 6. A direct Mastodon pass using public instance APIs.
+7. A dedicated watched-source pass covering the [Modern iOS Engineering newsletter archive](https://www.linkedin.com/newsletters/modern-ios-engineering-7499269334318571520/). Inspect every new edition in the active window and evaluate only material at the intersection of native iOS engineering and AI-assisted engineering under the normal evidence and eligibility rules.
 
 Record which passes succeeded, returned no qualifying results, or were unavailable. Do not silently replace an unavailable direct-source pass with ordinary search-engine results.
 
