@@ -1,0 +1,39 @@
+{
+  "id": "ai-generated-3d-metal-performance",
+  "slug": "ai-generated-3d-metal-performance",
+  "canonicalUrl": "https://x.com/anshuc/status/2069277649655243140",
+  "media": {
+    "type": "x",
+    "postId": "2069277649655243140",
+    "videoUrl": "https://video.twimg.com/amplify_video/2069276621698465792/vid/avc1/2160x2160/uXYO_ckMHJRVME_j.mp4?tag=28",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2069276621698465792/img/7_y1PzRYfzBgLDJ6.jpg",
+    "title": "AI-generated 3D food assets rendered in a native iOS calorie tracker"
+  },
+  "title": "Take AI-Generated 3D Assets from 10 to 120 FPS with Metal",
+  "publisher": "Anshu Chimala",
+  "publisherUrl": "https://x.com/anshuc",
+  "authors": [
+    {
+      "name": "Anshu Chimala",
+      "url": "https://x.com/anshuc"
+    }
+  ],
+  "publishedAt": "2026-06-23",
+  "discoveredAt": "2026-09-01",
+  "lastVerifiedAt": "2026-09-01",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "agent-readable-architecture",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Anshu Chimala explains an AI-assisted pipeline that turns generated food images into groomed Gaussian splats for a native iOS calorie tracker. He reports replacing separate MTKViews with one full-screen CAMetalLayer and optimizing point sorting to raise performance from roughly 10 to 120 FPS; an iOS team can profile asset generation and rendering as one system before choosing its view architecture.",
+  "takeaway": "Profile generated assets on-device early; if separate render views create unacceptable overhead, test a shared Metal layer and measure culling, sorting, memory, and frame rate together.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "agent-pivots-swiftui-to-uikit",
+    "fable-ios-frame-level-visual-verification",
+    "ai-generated-swift-instruments-performance"
+  ]
+}

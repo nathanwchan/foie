@@ -1,0 +1,39 @@
+{
+  "id": "fable-ios-frame-level-visual-verification",
+  "slug": "fable-ios-frame-level-visual-verification",
+  "canonicalUrl": "https://x.com/anshuc/status/2064828802824597584",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HKe-g7xbUAAaVpV.jpg",
+    "alt": "An AI-built native iOS calorie tracker with generated food imagery"
+  },
+  "title": "Building a Beautiful iOS App with 3 Claude Fable Prompts",
+  "publisher": "Anshu Chimala",
+  "publisherUrl": "https://x.com/anshuc",
+  "authors": [
+    {
+      "name": "Anshu Chimala",
+      "url": "https://x.com/anshuc"
+    }
+  ],
+  "publishedAt": "2026-06-10",
+  "discoveredAt": "2026-09-01",
+  "lastVerifiedAt": "2026-09-01",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "testing-evaluation",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "Anshu Chimala describes starting a native calorie tracker in an empty folder with Claude Code and Fable, then directing the agent to operate Simulator, record interactions, extract frames, and inspect pixel differences while polishing transitions. An iOS team can set frame-level visual acceptance criteria and require inspection artifacts before approving custom motion.",
+  "takeaway": "Tell the agent to operate Simulator and verify every transition frame by frame, then require recordings, extracted frames, and pixel-level inspection evidence before approving polished motion.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "ai-world-class-designer-workflow",
+    "agent-verifies-ios-animation-frame-sequence",
+    "agent-pivots-swiftui-to-uikit",
+    "ai-generated-3d-metal-performance"
+  ]
+}

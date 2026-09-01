@@ -1,0 +1,39 @@
+{
+  "id": "agent-pivots-swiftui-to-uikit",
+  "slug": "agent-pivots-swiftui-to-uikit",
+  "canonicalUrl": "https://x.com/anshuc/status/2068799316135936045",
+  "media": {
+    "type": "x",
+    "postId": "2068799316135936045",
+    "videoUrl": "https://video.twimg.com/amplify_video/2068797939485642752/vid/avc1/2160x2160/pd0nw5cCYHO2uZes.mp4?tag=28",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2068797939485642752/img/TAhb-9oqXfZ9eP5s.jpg",
+    "title": "A gesture-driven calorie-tracker transition rebuilt in UIKit after a difficult SwiftUI implementation"
+  },
+  "title": "When an Agent Pivots an iOS Transition from SwiftUI to UIKit",
+  "publisher": "Anshu Chimala",
+  "publisherUrl": "https://x.com/anshuc",
+  "authors": [
+    {
+      "name": "Anshu Chimala",
+      "url": "https://x.com/anshuc"
+    }
+  ],
+  "publishedAt": "2026-06-21",
+  "discoveredAt": "2026-09-01",
+  "lastVerifiedAt": "2026-09-01",
+  "format": "social",
+  "topics": [
+    "agent-readable-architecture",
+    "agent-workflows",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "Anshu Chimala recounts how an agent's gesture-driven SwiftUI transition accumulated preference keys, geometry readers, custom layout, and visible handoff defects before being rewritten in UIKit. An iOS team can treat repeated Simulator failures as a signal to reconsider the UI architecture instead of layering on more agent-generated workarounds.",
+  "takeaway": "When a custom SwiftUI interaction keeps producing visual handoff defects, stop adding workarounds and test whether a more explicit UIKit architecture gives the agent clearer control.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "fable-ios-frame-level-visual-verification",
+    "ai-generated-3d-metal-performance",
+    "ios-agent-feedback-loop"
+  ]
+}
