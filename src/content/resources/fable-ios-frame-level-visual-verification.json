@@ -30,6 +30,9 @@
   "summary": "Anshu Chimala describes starting a native calorie tracker in an empty folder with Claude Code and Fable, then directing the agent to operate Simulator, record interactions, extract frames, and inspect pixel differences while polishing transitions. An iOS team can set frame-level visual acceptance criteria and require inspection artifacts before approving custom motion.",
   "takeaway": "Tell the agent to operate Simulator and verify every transition frame by frame, then require recordings, extracted frames, and pixel-level inspection evidence before approving polished motion.",
   "availability": "available",
+  "userIds": [
+    "anshu-chimala"
+  ],
   "relatedResourceIds": [
     "ai-world-class-designer-workflow",
     "agent-verifies-ios-animation-frame-sequence",

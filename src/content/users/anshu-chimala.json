@@ -1,0 +1,16 @@
+{
+  "id": "anshu-chimala",
+  "name": "Anshu Chimala",
+  "addedAt": "2026-09-01",
+  "lastVerifiedAt": "2026-09-01",
+  "avatar": {
+    "url": "https://pbs.twimg.com/profile_images/2062938542280712192/gds8Qtn8_400x400.jpg",
+    "sourceProfileUrl": "https://x.com/anshuc"
+  },
+  "profiles": [
+    { "platform": "website", "handle": "anshu.dev", "url": "https://anshu.dev/" },
+    { "platform": "x", "handle": "@anshuc", "url": "https://x.com/anshuc" },
+    { "platform": "github", "handle": "@achimala", "url": "https://github.com/achimala" },
+    { "platform": "linkedin", "handle": "/in/achimala", "url": "https://www.linkedin.com/in/achimala" }
+  ]
+}

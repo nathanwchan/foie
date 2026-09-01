@@ -28,6 +28,9 @@
   "summary": "Anshu Chimala presents a discover-define-deliver workflow for escaping generic AI design with divergent seeds, fresh-context critic agents, visual baselines, generated media, and human simplification. An iOS team can give a separate critic screenshots and a fixed rubric, then require the implementer to cross a visual threshold before a designer removes excess and restores native conventions.",
   "takeaway": "Separate visual criticism from implementation: score screenshots against a stable rubric, iterate to a threshold, then have a designer simplify the result and restore native iOS conventions.",
   "availability": "available",
+  "userIds": [
+    "anshu-chimala"
+  ],
   "relatedResourceIds": [
     "fable-ios-frame-level-visual-verification",
     "swiftui-first-figma-refinement-loop",

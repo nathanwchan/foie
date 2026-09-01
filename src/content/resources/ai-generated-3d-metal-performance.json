@@ -31,6 +31,9 @@
   "summary": "Anshu Chimala explains an AI-assisted pipeline that turns generated food images into groomed Gaussian splats for a native iOS calorie tracker. He reports replacing separate MTKViews with one full-screen CAMetalLayer and optimizing point sorting to raise performance from roughly 10 to 120 FPS; an iOS team can profile asset generation and rendering as one system before choosing its view architecture.",
   "takeaway": "Profile generated assets on-device early; if separate render views create unacceptable overhead, test a shared Metal layer and measure culling, sorting, memory, and frame rate together.",
   "availability": "available",
+  "userIds": [
+    "anshu-chimala"
+  ],
   "relatedResourceIds": [
     "agent-pivots-swiftui-to-uikit",
     "fable-ios-frame-level-visual-verification",

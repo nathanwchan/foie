@@ -31,6 +31,9 @@
   "summary": "Anshu Chimala recounts how an agent's gesture-driven SwiftUI transition accumulated preference keys, geometry readers, custom layout, and visible handoff defects before being rewritten in UIKit. An iOS team can treat repeated Simulator failures as a signal to reconsider the UI architecture instead of layering on more agent-generated workarounds.",
   "takeaway": "When a custom SwiftUI interaction keeps producing visual handoff defects, stop adding workarounds and test whether a more explicit UIKit architecture gives the agent clearer control.",
   "availability": "available",
+  "userIds": [
+    "anshu-chimala"
+  ],
   "relatedResourceIds": [
     "fable-ios-frame-level-visual-verification",
     "ai-generated-3d-metal-performance",
