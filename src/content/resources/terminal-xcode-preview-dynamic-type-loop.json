@@ -1,0 +1,38 @@
+{
+  "id": "terminal-xcode-preview-dynamic-type-loop",
+  "slug": "terminal-xcode-preview-dynamic-type-loop",
+  "canonicalUrl": "https://x.com/manuel_kehl/status/2094349081954902430",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HRCfTUdXwAAXhBq.jpg",
+    "alt": "A terminal agent inspecting an Xcode preview across a matrix of Dynamic Type sizes"
+  },
+  "title": "Render Xcode Previews in the Terminal Across Dynamic Type Sizes",
+  "publisher": "Manuel Kehl",
+  "publisherUrl": "https://x.com/manuel_kehl",
+  "authors": [
+    {
+      "name": "Manuel Kehl",
+      "url": "https://x.com/manuel_kehl"
+    }
+  ],
+  "publishedAt": "2026-08-31",
+  "discoveredAt": "2026-09-02",
+  "lastVerifiedAt": "2026-09-02",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "testing-evaluation",
+    "visual-validation"
+  ],
+  "summary": "Manuel Kehl shows an agent rendering Xcode previews through MCP directly inside a Kitty-compatible terminal, then inspecting a matrix of Dynamic Type sizes while polishing the interface. An iOS team can shorten its accessibility feedback loop by putting representative preview variants beside the agent's reasoning instead of reviewing one simulator state at a time.",
+  "takeaway": "Render a representative Dynamic Type matrix during every visual iteration so the agent can compare accessibility variants in one place before a human approves the UI change.",
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "headless-xcode-prompt-to-simulator",
+    "fable-ios-frame-level-visual-verification",
+    "agent-verifies-ios-animation-frame-sequence"
+  ]
+}

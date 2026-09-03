@@ -1,0 +1,39 @@
+{
+  "id": "visual-authoring-layer-for-agent-built-ios-game",
+  "slug": "visual-authoring-layer-for-agent-built-ios-game",
+  "canonicalUrl": "https://x.com/Zickoxcool/status/2093154899512963485",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HQxhR9hXsAARZe4.jpg",
+    "alt": "A visual map editor for a Swift and Metal game showing paths, enemies, gates, and geometry validation"
+  },
+  "title": "Build a Visual Authoring Layer for Agent-Edited Game Geometry",
+  "publisher": "Matias Villagrán",
+  "publisherUrl": "https://x.com/Zickoxcool",
+  "authors": [
+    {
+      "name": "Matias Villagrán",
+      "url": "https://x.com/Zickoxcool"
+    }
+  ],
+  "publishedAt": "2026-08-28",
+  "discoveredAt": "2026-09-02",
+  "lastVerifiedAt": "2026-09-02",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "agent-readable-architecture",
+    "testing-evaluation",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "Matias Villagrán explains how repeated Swift edits, builds, and screenshots made small geometry changes in a native SwiftUI and Metal game take hours and heavy token use. He and Codex instead built a visual authoring layer over the real runtime assets that validates routes, widths, gates, enemies, and checkpoints, then exports structured JSON the agent can consume directly.",
+  "takeaway": "When agents repeatedly reconstruct spatial state from code and screenshots, expose the real runtime model in a visual editor and export validated structured data as the new source of truth.",
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "prokinetic-human-motion-tuning",
+    "ai-generated-3d-metal-performance",
+    "death-of-good-enough-ios-motion"
+  ]
+}
