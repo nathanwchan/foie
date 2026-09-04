@@ -1,6 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Analytics from "@vercel/analytics/astro";
 import "../styles/global.css";
 
 interface Props {
@@ -45,6 +46,7 @@ const socialImage = new URL("/og.png", Astro.site ?? Astro.url.origin);
     <script is:inline>
       document.documentElement.classList.add("js");
     </script>
+    <Analytics />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
