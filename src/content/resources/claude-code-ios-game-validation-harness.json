@@ -1,0 +1,39 @@
+{
+  "id": "claude-code-ios-game-validation-harness",
+  "slug": "claude-code-ios-game-validation-harness",
+  "canonicalUrl": "https://www.reddit.com/r/aigamedev/comments/1w5dr1j/shipped_my_first_ios_game_claude_code_wrote_the/",
+  "media": {
+    "type": "image",
+    "url": "https://i.redd.it/raqes3g5l4nh1.gif",
+    "alt": "Gameplay from BOY1, an iOS game built with Claude Code"
+  },
+  "title": "Ship an AI-Built iOS Game with Solver and Snapshot Gates",
+  "publisher": "OkSun790",
+  "publisherUrl": "https://www.reddit.com/user/OkSun790/",
+  "authors": [
+    {
+      "name": "OkSun790",
+      "url": "https://www.reddit.com/user/OkSun790/"
+    }
+  ],
+  "publishedAt": "2026-09-02",
+  "discoveredAt": "2026-09-06",
+  "lastVerifiedAt": "2026-09-06",
+  "format": "social",
+  "topics": [
+    "agent-readable-architecture",
+    "testing-evaluation",
+    "visual-validation",
+    "sdlc-automation",
+    "human-in-the-loop"
+  ],
+  "summary": "OkSun790 describes shipping a Claude Code-assisted iOS game by treating CLAUDE.md as durable project memory, preserving artist-replaceable tile hooks, and validating every level with a headless solver and snapshot runner. An iOS team can encode design decisions, gameplay invariants, and export repairs so each agent session resumes from evidence instead of rediscovering the build.",
+  "takeaway": "Store approved design rules as project memory, gate every level with a solver, render reproducible snapshots, and script away export changes that would otherwise break signing.",
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "agentic-ios-harness-beyond-code",
+    "agent-maintained-app-store-toolchain",
+    "adversarial-unit-test-sweep"
+  ]
+}

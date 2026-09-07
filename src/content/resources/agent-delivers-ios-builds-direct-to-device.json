@@ -1,0 +1,39 @@
+{
+  "id": "agent-delivers-ios-builds-direct-to-device",
+  "slug": "agent-delivers-ios-builds-direct-to-device",
+  "canonicalUrl": "https://www.reddit.com/r/iOSProgramming/comments/1w5bvia/i_wanted_ai_coding_agent_to_send_builds_straight/",
+  "media": {
+    "type": "image",
+    "url": "https://preview.redd.it/z2mwozql94nh1.png?width=1200&format=png&auto=webp&s=804fbf334bf6aa465ccb6a547bbb50713bb19a7e",
+    "alt": "Remote iOS build installation workflow showing a direct device link"
+  },
+  "title": "Send Agent-Built iOS Builds Straight to an iPhone",
+  "publisher": "iCodesign",
+  "publisherUrl": "https://www.reddit.com/user/iCodesign/",
+  "authors": [
+    {
+      "name": "iCodesign",
+      "url": "https://www.reddit.com/user/iCodesign/"
+    }
+  ],
+  "publishedAt": "2026-09-02",
+  "discoveredAt": "2026-09-06",
+  "lastVerifiedAt": "2026-09-06",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "testing-evaluation",
+    "sdlc-automation",
+    "human-in-the-loop"
+  ],
+  "summary": "iCodesign demonstrates a remote iOS feedback loop in which a coding agent packages a completed build, returns a link or QR code, and installs it on an iPhone without a TestFlight upload or processing delay. An iOS team can reserve this path for trusted internal devices and use it to test agent changes on hardware before entering the release pipeline.",
+  "takeaway": "Close the remote-agent loop on trusted hardware with a direct install link, while keeping signing controls and App Store distribution as separate release gates.",
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "local-xcode-testflight-release-loop",
+    "codex-testflight-two-minutes",
+    "coding-agents-in-your-pocket"
+  ]
+}
