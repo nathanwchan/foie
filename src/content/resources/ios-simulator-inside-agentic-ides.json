@@ -1,0 +1,41 @@
+{
+  "id": "ios-simulator-inside-agentic-ides",
+  "slug": "ios-simulator-inside-agentic-ides",
+  "canonicalUrl": "https://www.avanderlee.com/ai-development/the-ios-simulator-inside-cursor-claude-code-and-codex/",
+  "media": {
+    "type": "image",
+    "url": "https://www.avanderlee.com/wp-content/uploads/2026/09/ios_simulator_cursor_claude_codex-scaled.png",
+    "alt": "The iOS Simulator running inside an agentic coding workspace"
+  },
+  "title": "The iOS Simulator Inside Cursor, Claude Code, and Codex",
+  "publisher": "SwiftLee",
+  "publisherUrl": "https://www.avanderlee.com/",
+  "authors": [
+    {
+      "name": "Antoine van der Lee",
+      "url": "https://www.avanderlee.com/"
+    }
+  ],
+  "publishedAt": "2026-09-07",
+  "discoveredAt": "2026-09-09",
+  "lastVerifiedAt": "2026-09-09",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "visual-validation",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Antoine van der Lee shows how RocketSim 17 streams the iOS Simulator into Cursor, Claude Code, or Codex so an agent can navigate the app while the developer watches. Accessibility hierarchy, browser-side element selection, screenshots, and worktree-aware sessions keep implementation, visual review, and feedback in one context.",
+  "takeaway": "Keep the Simulator visible beside the agent, identify controls through accessibility data, and turn each visual observation into immediate, contextual feedback before accepting the change.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "rocketsim-16-physical-devices-ai-agents",
+    "xcode-agent-swiftui-preview-audit",
+    "ios-agent-feedback-loop"
+  ],
+  "userIds": [
+    "antoine-van-der-lee"
+  ]
+}

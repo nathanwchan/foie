@@ -1,0 +1,40 @@
+{
+  "id": "mobile-agent-loop-plan-verify-pr",
+  "slug": "mobile-agent-loop-plan-verify-pr",
+  "canonicalUrl": "https://zenn.dev/tellernovel_inc/articles/57b223dd4b8f5d",
+  "media": {
+    "type": "image",
+    "url": "https://static.zenn.studio/user-upload/1b9c25d17ba9-20260908.png",
+    "alt": "Agent-produced iOS and Android validation screenshots arranged for pull request review"
+  },
+  "title": "Running the Mobile Agent Loop from Planning Through Pull Request",
+  "publisher": "Teller Novel Tech Blog",
+  "publisherUrl": "https://zenn.dev/p/tellernovel_inc",
+  "authors": [
+    {
+      "name": "kazutoyo@TellerNovel",
+      "url": "https://zenn.dev/kazutoyo"
+    }
+  ],
+  "publishedAt": "2026-09-08",
+  "discoveredAt": "2026-09-09",
+  "lastVerifiedAt": "2026-09-09",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "agent-readable-architecture",
+    "testing-evaluation",
+    "visual-validation",
+    "sdlc-automation",
+    "human-in-the-loop"
+  ],
+  "summary": "kazutoyo@TellerNovel documents a React Native workflow that takes an agent from an agreed plan through implementation, tests, iOS Simulator and Android Emulator checks, and a screenshot-backed pull request. Pure logic, Storybook states, lint rules, named accessibility targets, and replayable agent-device traces make failures deterministic enough for the agent to diagnose and recheck.",
+  "takeaway": "Make one feature agent-verifiable end to end: separate pure logic and UI states, name interactive elements, save failed device flows for replay, and reserve physical-device feel for human review.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "accessibility-identifiers-agent-ui-accuracy",
+    "ios-agent-feedback-loop",
+    "agent-tests-core-ios-flows-in-background"
+  ],
+  "userIds": []
+}
