@@ -1,0 +1,26 @@
+{
+  "id": "shopify-native-agent-architecture",
+  "slug": "shopify-native-agent-architecture",
+  "canonicalUrl": "https://shopify.engineering/back-to-native",
+  "media": {
+    "type": "image",
+    "url": "https://cdn.shopify.com/b/shopify-brochure2-assets/74f109ae9b0c3034a78a3b63294ae2e6.png",
+    "alt": "Shopify's migration from React Native to native mobile development"
+  },
+  "title": "Native is now the future of mobile at Shopify",
+  "publisher": "Shopify Engineering",
+  "publisherUrl": "https://shopify.engineering/",
+  "authors": [
+    { "name": "Mustafa Ali", "url": "https://shopify.engineering/authors/mustafa-ali" }
+  ],
+  "publishedAt": "2026-09-10",
+  "discoveredAt": "2026-09-13",
+  "lastVerifiedAt": "2026-09-13",
+  "format": "article",
+  "topics": ["agent-readable-architecture", "agent-workflows", "code-review", "testing-evaluation", "human-in-the-loop"],
+  "summary": "Mustafa Ali explains how Shopify couples native migration with Helix checkpoints that require tests, visual review, two adversarial reviewers, and human approval before each commit. The team also separates business logic from UI and exposes it through a headless CLI for faster agent feedback; an iOS team can pilot that architecture on one flow before expanding autonomous work.",
+  "takeaway": "Expose one business flow through a headless CLI, then gate each agent migration checkpoint on behavior tests, visual parity, adversarial review, and human approval before committing.",
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": ["shop-app-agent-migration-parity", "agent-drivable-ios-fixture-contract", "mobile-development-age-ai"]
+}

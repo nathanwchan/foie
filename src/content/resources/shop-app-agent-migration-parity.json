@@ -1,0 +1,28 @@
+{
+  "id": "shop-app-agent-migration-parity",
+  "slug": "shop-app-agent-migration-parity",
+  "canonicalUrl": "https://shopify.engineering/shop-app-migration",
+  "media": {
+    "type": "image",
+    "url": "https://cdn.shopify.com/b/shopify-brochure2-assets/d0618264ddbc9cec26cc2981b27cde95.png",
+    "alt": "Shopify's engineering case study of the Shop app migration to Swift and Kotlin"
+  },
+  "title": "Migrating Shop app from React Native to native",
+  "publisher": "Shopify Engineering",
+  "publisherUrl": "https://shopify.engineering/",
+  "authors": [
+    { "name": "Max Da Silva", "url": "https://shopify.engineering/authors/max-da-silva" },
+    { "name": "Jason Kim", "url": "https://shopify.engineering/authors/jason-kim" },
+    { "name": "Quique Fagoaga", "url": "https://shopify.engineering/authors/quique-fagoaga" }
+  ],
+  "publishedAt": "2026-09-10",
+  "discoveredAt": "2026-09-13",
+  "lastVerifiedAt": "2026-09-13",
+  "format": "article",
+  "topics": ["agent-workflows", "testing-evaluation", "visual-validation", "sdlc-automation", "human-in-the-loop"],
+  "summary": "Max Da Silva, Jason Kim, and Quique Fagoaga report rebuilding Shop in Swift and Kotlin in 12 weeks using reviewed migration plans and live app feedback. Plan approvals were tied to content hashes, while named checkpoints compared screenshots and analytics events; an iOS team can apply those checks to preserve sign-in, navigation, and event semantics during a rewrite.",
+  "takeaway": "Bind approval to the exact migration plan, compare screenshots and event payloads at named checkpoints, and verify user-state continuity before releasing an agent-assisted rewrite.",
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": ["shopify-native-agent-architecture", "codex-mastodon-ios-tuist-migration", "doordash-swift-testing-migration"]
+}
