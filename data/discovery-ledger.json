@@ -1,7 +1,8 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-13",
+  "updatedAt": "2026-09-15",
   "entries": [
+    { "canonicalUrl": "https://devin.ai/blog/devin-gets-a-mac", "aliases": [], "firstSeenAt": "2026-09-15", "lastSeenAt": "2026-09-15", "status": "accepted", "resourceId": "devin-gets-a-mac" },
     { "canonicalUrl": "https://x.com/camsoft2000/status/2080582300337668450", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "agent-builds-ios-app-xcodebuildmcp" },
     { "canonicalUrl": "https://x.com/afterxleep/status/2075655850862260628", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "codex-ios-scroll-performance-automation" },
     { "canonicalUrl": "https://x.com/afterxleep/status/2065312907106406717", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "agent-verifies-ios-animation-frame-sequence" },

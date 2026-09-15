@@ -1,0 +1,38 @@
+{
+  "id": "devin-gets-a-mac",
+  "slug": "devin-gets-a-mac",
+  "canonicalUrl": "https://devin.ai/blog/devin-gets-a-mac",
+  "media": {
+    "type": "image",
+    "url": "https://devin.ai/images/blog/devin-gets-a-mac/select-mac.gif",
+    "alt": "Selecting macOS as the virtual environment for a Devin cloud session"
+  },
+  "title": "Bringing macOS to Devin",
+  "publisher": "Cognition",
+  "publisherUrl": "https://cognition.com/",
+  "authors": [
+    {
+      "name": "Cognition",
+      "url": "https://cognition.com/"
+    }
+  ],
+  "publishedAt": "2026-09-15",
+  "discoveredAt": "2026-09-15",
+  "lastVerifiedAt": "2026-09-15",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "testing-evaluation",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "Cognition explains how Devin's cloud Mac workspaces combine persistent snapshots, network controls, prepared Xcode environments, and live Simulator access. Devin uses accessibility references to operate native controls and screenshots to check what the tree cannot expose; an iOS team can apply this loop to verify state restoration across pause, quit, and relaunch.",
+  "takeaway": "Require agents to exercise pause, quit, and relaunch paths, re-read accessibility state after each action, and inspect screenshots for visual or gameplay state missing from the tree.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "introducing-macos-cloud-agents",
+    "cloud-agents-real-mac-xcode"
+  ],
+  "userIds": []
+}
