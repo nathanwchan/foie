@@ -1,0 +1,26 @@
+{
+  "id": "jev-axe-ios-simulator-control",
+  "slug": "jev-axe-ios-simulator-control",
+  "canonicalUrl": "https://x.com/camsoft2000/status/2100648648434434298",
+  "media": {
+    "type": "x",
+    "postId": "2100648648434434298",
+    "videoUrl": "https://video.twimg.com/amplify_video/2100648485695451136/vid/avc1/2728x1868/gkIBTIA1Ae5sL5jq.mp4?tag=29",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2100648485695451136/img/kZ4JFKvjuPY7i6iz.jpg",
+    "title": "Jev and AXe navigate Calendar and create an event in the iOS Simulator"
+  },
+  "title": "Control the iOS Simulator with Jev and AXe",
+  "publisher": "Cameron Cooke",
+  "publisherUrl": "https://x.com/camsoft2000",
+  "authors": [{ "name": "Cameron Cooke", "url": "https://x.com/camsoft2000" }],
+  "publishedAt": "2026-09-17",
+  "discoveredAt": "2026-09-17",
+  "lastVerifiedAt": "2026-09-17",
+  "format": "social",
+  "topics": ["agent-workflows", "xcode-tooling", "testing-evaluation"],
+  "summary": "Cameron Cooke demonstrates TypeSafe AI's Jev paired with AXe to navigate Calendar and create an event in the iOS Simulator from a natural-language prompt. The demo reports 11.6 seconds, six actions, no screenshots, and an estimated $0.0013 cost; Cooke describes the integration as a prototype with bugs and rough edges. An iOS team can use this experiment to define a bounded UI automation benchmark that measures latency, cost, and the resulting app state.",
+  "takeaway": "Benchmark one repeatable Simulator task with explicit checks of the final app state, and measure total runtime and cost before drawing conclusions from the prototype's reported speed.",
+  "availability": "available",
+  "userIds": ["cameron-cooke"],
+  "relatedResourceIds": ["agent-builds-ios-app-xcodebuildmcp", "token-efficient-xcode-simulator-automation"]
+}

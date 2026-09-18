@@ -1,7 +1,8 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-17",
   "entries": [
+    { "canonicalUrl": "https://x.com/camsoft2000/status/2100648648434434298", "aliases": ["https://x.com/camsoft2000/status/2100675440004289011", "https://x.com/camsoft2000/status/2100675790102753746"], "firstSeenAt": "2026-09-17", "lastSeenAt": "2026-09-17", "status": "accepted", "resourceId": "jev-axe-ios-simulator-control" },
     { "canonicalUrl": "https://devin.ai/blog/devin-gets-a-mac", "aliases": [], "firstSeenAt": "2026-09-15", "lastSeenAt": "2026-09-15", "status": "accepted", "resourceId": "devin-gets-a-mac" },
     { "canonicalUrl": "https://x.com/camsoft2000/status/2080582300337668450", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "agent-builds-ios-app-xcodebuildmcp" },
     { "canonicalUrl": "https://x.com/afterxleep/status/2075655850862260628", "aliases": [], "firstSeenAt": "2026-08-07", "lastSeenAt": "2026-08-07", "status": "accepted", "resourceId": "codex-ios-scroll-performance-automation" },
