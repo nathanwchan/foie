@@ -1,0 +1,37 @@
+{
+  "id": "paul-hudson-codex-vs-claude-app-development",
+  "slug": "paul-hudson-codex-vs-claude-app-development",
+  "canonicalUrl": "https://x.com/twostraws/status/2101317950787432483",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HSkYJ2wXkAAolSK.jpg",
+    "alt": "Cover image for Paul Hudson's Codex vs Claude for app development"
+  },
+  "title": "Codex vs Claude for app development",
+  "publisher": "Paul Hudson",
+  "publisherUrl": "https://x.com/twostraws",
+  "authors": [
+    {
+      "name": "Paul Hudson",
+      "url": "https://www.hackingwithswift.com/"
+    }
+  ],
+  "publishedAt": "2026-09-19",
+  "discoveredAt": "2026-09-19",
+  "lastVerifiedAt": "2026-09-19",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "code-review",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Paul Hudson compares Codex and Claude through his own Apple-platform development work, favoring Codex for thorough implementation and accessibility while finding Claude useful for design ideas and debugging. He also reports overengineering and instruction-following problems; an iOS team can adopt his briefing process by having the agent question assumptions before committing a detailed plan to source control.",
+  "takeaway": "Before implementation, have the agent ask clarifying questions, resolve gaps in the brief, and save the agreed plan in source control; explicitly request adversarial review where it can catch meaningful problems.",
+  "availability": "available",
+  "userIds": ["paul-hudson"],
+  "relatedResourceIds": [
+    "adversarial-unit-test-sweep",
+    "swiftui-agent-skill-paul-hudson"
+  ]
+}
