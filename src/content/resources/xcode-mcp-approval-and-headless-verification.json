@@ -1,0 +1,36 @@
+{
+  "id": "xcode-mcp-approval-and-headless-verification",
+  "slug": "xcode-mcp-approval-and-headless-verification",
+  "canonicalUrl": "https://www.keremcanyesildag.com/blog/xcode-27-mcp-codex/",
+  "media": {
+    "type": "image",
+    "url": "https://www.keremcanyesildag.com/blog/xcode-27-mcp-codex/opengraph-image/",
+    "alt": "Connect Codex to Xcode 27 with MCP article preview"
+  },
+  "title": "Connect Codex to Xcode 27 with MCP",
+  "publisher": "Keremcan Yesildag",
+  "publisherUrl": "https://www.keremcanyesildag.com/",
+  "authors": [
+    {
+      "name": "Keremcan Yesildag",
+      "url": "https://www.keremcanyesildag.com/"
+    }
+  ],
+  "publishedAt": "2026-09-15",
+  "discoveredAt": "2026-09-20",
+  "lastVerifiedAt": "2026-09-20",
+  "format": "article",
+  "topics": [
+    "xcode-tooling",
+    "agent-workflows",
+    "human-in-the-loop"
+  ],
+  "summary": "Keremcan Yesildag separates Codex registration, Xcode external-agent access, headless permissions, and project approval while diagnosing an MCP bridge that reports disabled access. His walkthrough verifies the connection with scheme discovery and a focused documentation query before asking the agent to edit a project.",
+  "takeaway": "Verify project approval and read-only MCP queries independently before debugging code changes; a registered bridge alone does not establish working Xcode access.",
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "headless-xcode-prompt-to-simulator",
+    "xcode-mcp-xcodebuildmcp-complementary-roles"
+  ]
+}

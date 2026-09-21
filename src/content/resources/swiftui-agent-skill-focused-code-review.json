@@ -1,0 +1,38 @@
+{
+  "id": "swiftui-agent-skill-focused-code-review",
+  "slug": "swiftui-agent-skill-focused-code-review",
+  "canonicalUrl": "https://www.avanderlee.com/ai-development/swiftui-agent-skill-build-better-views-with-ai/",
+  "media": {
+    "type": "image",
+    "url": "https://www.avanderlee.com/wp-content/smush-webp/2026/02/swiftui_agent_skill_cursor-1024x179.png.webp",
+    "alt": "SwiftUI Agent Skill selected in Cursor for a focused code review"
+  },
+  "title": "SwiftUI Agent Skill: Install and use with AI coding tools",
+  "publisher": "SwiftLee",
+  "publisherUrl": "https://www.avanderlee.com/",
+  "authors": [
+    {
+      "name": "Antoine van der Lee",
+      "url": "https://www.avanderlee.com/"
+    }
+  ],
+  "publishedAt": "2026-09-14",
+  "discoveredAt": "2026-09-20",
+  "lastVerifiedAt": "2026-09-20",
+  "format": "article",
+  "topics": [
+    "code-review",
+    "agent-workflows",
+    "human-in-the-loop"
+  ],
+  "summary": "Antoine van der Lee demonstrates a focused SwiftUI review that exposes nested scroll containers and duplicated selection synchronization between a view and its view model. He explains how a compact skill routes agents to relevant references, giving teams concrete findings to inspect instead of treating generated SwiftUI as already reviewed.",
+  "takeaway": "Ask agents to review scroll ownership and state synchronization explicitly, then verify each proposed change against the actual view hierarchy and source of truth.",
+  "availability": "available",
+  "userIds": [
+    "antoine-van-der-lee"
+  ],
+  "relatedResourceIds": [
+    "swiftui-expert-agent-skill",
+    "swiftui-agent-skill-paul-hudson"
+  ]
+}
