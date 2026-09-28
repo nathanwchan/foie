@@ -1,0 +1,38 @@
+{
+  "discoveredAt": "2026-09-27",
+  "lastVerifiedAt": "2026-09-27",
+  "availability": "available",
+  "id": "iphone-duo-agent-review-and-simulator-transitions",
+  "slug": "iphone-duo-agent-review-and-simulator-transitions",
+  "canonicalUrl": "https://www.avanderlee.com/swiftui/iphone-duo-simulator/",
+  "title": "iPhone Duo Simulator: Testing and optimizing your SwiftUI app",
+  "publisher": "SwiftLee",
+  "publisherUrl": "https://www.avanderlee.com/",
+  "authors": [
+    {
+      "name": "Antoine van der Lee",
+      "url": "https://www.avanderlee.com/"
+    }
+  ],
+  "publishedAt": "2026-09-22",
+  "format": "article",
+  "topics": [
+    "code-review",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "Antoine van der Lee pairs a screen-by-screen SwiftUI agent audit with simulator checks for compact and regular layouts, folding, rotation, and preserved navigation state. His migration example replaces a cramped onboarding layout with an arranged view, while keeping agent suggestions subject to transition testing and real-device checks.",
+  "takeaway": "Review one screen at a time with explicit layout and state constraints, then test folding, rotation, keyboard, and navigation transitions before accepting the migration.",
+  "media": {
+    "type": "image",
+    "url": "https://www.avanderlee.com/wp-content/smush-webp/2026/09/iPhone-Duo-Before-After-1024x628.jpg.webp",
+    "alt": "iPhone Duo onboarding design before and after using an arranged view"
+  },
+  "userIds": [
+    "antoine-van-der-lee"
+  ],
+  "relatedResourceIds": [
+    "swiftui-agent-skill-focused-code-review",
+    "ios-simulator-inside-agentic-ides"
+  ]
+}
