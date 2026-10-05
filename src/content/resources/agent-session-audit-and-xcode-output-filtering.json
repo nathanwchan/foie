@@ -1,0 +1,34 @@
+{
+  "id": "agent-session-audit-and-xcode-output-filtering",
+  "canonicalUrl": "https://www.avanderlee.com/ai-development/reduce-token-usage-claude-code-codex-cursor/",
+  "title": "How to reduce token usage in Claude Code, Codex, and Cursor",
+  "publisher": "SwiftLee",
+  "publisherUrl": "https://www.avanderlee.com/",
+  "authors": [
+    {
+      "name": "Antoine van der Lee",
+      "url": "https://www.avanderlee.com/"
+    }
+  ],
+  "publishedAt": "2026-09-28",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling"
+  ],
+  "summary": "Antoine van der Lee audits 1,674 agent sessions and identifies repeated context reads, duplicate skill loads, and unfiltered build output as major token costs. His measured Xcode-log example preserves warnings and test results while shrinking output; an iOS team can audit its own transcripts, scope instructions, and filter build logs before expanding agent usage.",
+  "takeaway": "Measure context and build-log costs in your own sessions, scope instructions to the task, and filter Xcode output while preserving diagnostics and test outcomes.",
+  "media": {
+    "type": "image",
+    "url": "https://www.avanderlee.com/wp-content/smush-webp/2026/09/reduce_token_usage_claude_cursor_codex-1024x222.png.webp",
+    "alt": "Author’s comparison of raw and filtered Xcode build output for clean and incremental builds"
+  },
+  "userIds": [
+    "antoine-van-der-lee"
+  ],
+  "relatedResourceIds": [],
+  "slug": "agent-session-audit-and-xcode-output-filtering",
+  "discoveredAt": "2026-10-04",
+  "lastVerifiedAt": "2026-10-04",
+  "availability": "available"
+}
