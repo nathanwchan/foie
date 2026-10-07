@@ -1,0 +1,35 @@
+{
+  "id": "ai-changes-the-math-on-native-mobile",
+  "slug": "ai-changes-the-math-on-native-mobile",
+  "canonicalUrl": "https://kgalligan.com/blog/ai-changes-the-math-on-native-mobile/",
+  "title": "AI Changes the Math on Native Mobile",
+  "publisher": "Kevin Galligan",
+  "publisherUrl": "https://kgalligan.com/",
+  "authors": [
+    {
+      "name": "Kevin Galligan",
+      "url": "https://kgalligan.com/"
+    }
+  ],
+  "publishedAt": "2026-09-10",
+  "discoveredAt": "2026-10-07",
+  "lastVerifiedAt": "2026-10-07",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Kevin Galligan argues that an existing native implementation can serve as a detailed specification for an agent building the same feature on the other platform, changing the tradeoffs between native and shared codebases. He describes Parive’s parity analysis and reports a largely automated Swift app port, while stressing project context, verification, and platform specialists. An iOS team can pilot one feature across platforms and verify edge cases, error states, and analytics alignment before expanding the approach.",
+  "takeaway": "Use the working implementation as the specification for a small cross-platform port, maintain target-platform guidance, and verify behavior and parity before expanding the workflow.",
+  "media": {
+    "type": "image",
+    "url": "https://parive.ai/blog/you-ship-faster-you-drift-faster/social-card-2x.png",
+    "alt": "Wikipedia iOS and Android comparison from Parive, the parity-analysis tool discussed in the article"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "parive-native-platform-drift-analysis"
+  ]
+}
