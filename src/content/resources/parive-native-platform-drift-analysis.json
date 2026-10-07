@@ -1,0 +1,32 @@
+{
+  "id": "parive-native-platform-drift-analysis",
+  "slug": "parive-native-platform-drift-analysis",
+  "canonicalUrl": "https://parive.ai/blog/you-ship-faster-you-drift-faster",
+  "title": "You ship faster. You drift faster.",
+  "publisher": "Parive",
+  "publisherUrl": "https://parive.ai/",
+  "authors": [
+    {
+      "name": "Ntive Labs, Inc.",
+      "url": "https://www.linkedin.com/company/ntivelabs"
+    }
+  ],
+  "publishedAt": "2026-07-15",
+  "discoveredAt": "2026-10-07",
+  "lastVerifiedAt": "2026-10-07",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Ntive Labs, Inc. presents Parive’s source-traceable comparison of native iOS and Android behavior, using Wikipedia’s apps to distinguish intentional divergence from overlooked parity gaps. The public preview is a frozen analysis snapshot; planning and implementation agents are shown only in private demos. An iOS team can review the evidence behind each difference and approve a repair plan before accepting code and parity tests.",
+  "takeaway": "Classify platform differences as intentional, pending, or accidental, verify each finding against source, and approve a repair plan before reviewing the resulting code and parity tests.",
+  "media": {
+    "type": "image",
+    "url": "https://parive.ai/blog/you-ship-faster-you-drift-faster/social-card-2x.png",
+    "alt": "Parive comparison view of Wikipedia’s iOS and Android apps"
+  },
+  "availability": "available",
+  "userIds": []
+}
