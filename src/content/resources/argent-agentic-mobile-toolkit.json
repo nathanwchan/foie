@@ -1,0 +1,36 @@
+{
+  "id": "argent-agentic-mobile-toolkit",
+  "slug": "argent-agentic-mobile-toolkit",
+  "canonicalUrl": "https://argent.swmansion.com/",
+  "title": "Argent: agentic toolkit for controlling, debugging, and profiling iOS apps",
+  "publisher": "Software Mansion",
+  "publisherUrl": "https://swmansion.com/",
+  "authors": [
+    {
+      "name": "Software Mansion",
+      "url": "https://swmansion.com/"
+    }
+  ],
+  "publishedAt": null,
+  "discoveredAt": "2026-10-07",
+  "lastVerifiedAt": "2026-10-07",
+  "format": "tool",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "testing-evaluation",
+    "visual-validation"
+  ],
+  "summary": "Software Mansion presents Argent, a toolkit that connects coding agents to mobile apps so they can navigate the UI, inspect runtime state and network requests, and profile performance in the same development session. An iOS team can give its agent a reproducible simulator flow, require screenshots and diagnostic evidence, and review the verified result before accepting a change.",
+  "takeaway": "Give the agent a reproducible simulator flow and require screenshots, logs, and profiling evidence before a reviewer accepts its changes.",
+  "media": {
+    "type": "image",
+    "url": "https://argent.swmansion.com/argent-og.png",
+    "alt": "Argent project overview image from its official homepage"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "claude-code-app-store-screenshot-generator"
+  ]
+}
