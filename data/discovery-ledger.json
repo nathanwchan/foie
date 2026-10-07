@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-05",
+  "updatedAt": "2026-10-07",
   "entries": [
     {"canonicalUrl": "https://www.keremcanyesildag.com/blog/xcode-27-mcp-codex/", "aliases": ["https://x.com/keremdzan/status/2099875893497733620"], "firstSeenAt": "2026-09-20", "lastSeenAt": "2026-09-20", "status": "accepted", "resourceId": "xcode-mcp-approval-and-headless-verification"},
     {"canonicalUrl": "https://www.avanderlee.com/ai-development/swiftui-agent-skill-build-better-views-with-ai/", "aliases": ["https://x.com/twannl/status/2099482830354960440", "https://x.com/twannl/status/2099831370818138601", "https://x.com/twannl/status/2100574018675912776", "https://x.com/twannl/status/2100976644106211714", "https://bsky.app/profile/avanderlee.com/post/3mvu7cygi3o2s"], "firstSeenAt": "2026-09-20", "lastSeenAt": "2026-09-20", "status": "accepted", "resourceId": "swiftui-agent-skill-focused-code-review"},
@@ -793,6 +793,7 @@
     {"canonicalUrl": "https://colincornaby.me/2026/10/open-source-is-social-and-llm-generated-prs-are-antisocial", "aliases": [], "firstSeenAt": "2026-10-04", "lastSeenAt": "2026-10-04", "status": "skipped", "reason": "outside-scope: open-source contributor essay does not establish a native iOS engineering workflow."},
     {"canonicalUrl": "https://aitechinsights.net/posts/engineering-native-ios-applications-for-iphone-duo-via-agent/", "aliases": [], "firstSeenAt": "2026-10-04", "lastSeenAt": "2026-10-04", "status": "skipped", "reason": "thin-source: inspected native-app narrative has no identifiable byline, attributable primary recording, or inspectable evidence for its asserted outcome."},
     {"canonicalUrl": "https://www.reddit.com/r/AppBuilding/comments/1wv552h/30_years_of_development_time_for_first_ios_app/", "aliases": [], "firstSeenAt": "2026-10-04", "lastSeenAt": "2026-10-04", "status": "skipped", "reason": "incomplete-work: first-hand post requests starting advice; no completed or exercised native iOS workflow is documented."},
-    {"canonicalUrl": "https://www.reddit.com/r/ClaudeWorkflows/comments/1wx3li8/workflow_endtoend_mobile_app_development/", "aliases": [], "firstSeenAt": "2026-10-04", "lastSeenAt": "2026-10-04", "status": "skipped", "reason": "secondary-summary: automatically generated workflow roundup is not first-hand and lacks concrete native implementation or validation detail."}
+    {"canonicalUrl": "https://www.reddit.com/r/ClaudeWorkflows/comments/1wx3li8/workflow_endtoend_mobile_app_development/", "aliases": [], "firstSeenAt": "2026-10-04", "lastSeenAt": "2026-10-04", "status": "skipped", "reason": "secondary-summary: automatically generated workflow roundup is not first-hand and lacks concrete native implementation or validation detail."},
+    {"canonicalUrl": "https://x.com/JoshuaSWarren/status/2107570814036111783", "aliases": ["https://github.com/joshuaswarren/omarchy-apple-dev", "https://x.com/JoshuaSWarren/status/2107570817907167706", "https://x.com/JoshuaSWarren/status/2107581323074551958", "https://x.com/JoshuaSWarren/status/2107597680524271632", "https://x.com/JoshuaSWarren/status/2107611464047493334"], "firstSeenAt": "2026-10-07", "lastSeenAt": "2026-10-07", "status": "accepted", "resourceId": "omarchy-linux-ios-build-deploy-and-debug"}
   ]
 }

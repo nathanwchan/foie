@@ -1,0 +1,32 @@
+{
+  "id": "omarchy-linux-ios-build-deploy-and-debug",
+  "slug": "omarchy-linux-ios-build-deploy-and-debug",
+  "canonicalUrl": "https://x.com/JoshuaSWarren/status/2107570814036111783",
+  "title": "Build, deploy, and debug a native iOS app from Omarchy Linux",
+  "publisher": "X",
+  "publisherUrl": "https://x.com/",
+  "authors": [
+    {
+      "name": "Joshua Warren",
+      "url": "https://x.com/JoshuaSWarren"
+    }
+  ],
+  "publishedAt": "2026-10-06",
+  "discoveredAt": "2026-10-07",
+  "lastVerifiedAt": "2026-10-07",
+  "availability": "available",
+  "format": "social",
+  "topics": [
+    "xcode-tooling",
+    "testing-evaluation"
+  ],
+  "summary": "Joshua Warren reports building an iPhone app on Omarchy Linux, submitting it to the App Store, installing it over USB, and reaching a debugger breakpoint. His thread clarifies that the run used a Dell laptop and that simulator support and full Xcode parity remain unfinished. An iOS team evaluating this path can first match Swift to the extracted Apple SDK, then verify build, signing, device launch, and debugging on a small app.",
+  "takeaway": "Prove the build, signing, USB install, and debugger loop on a small native app before migrating a project; keep simulator coverage separate from the reported device workflow.",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/card_img/2105455388208582656/77GveJ1S?format=jpg&name=orig",
+    "alt": "Native link preview in Joshua Warren’s post for his omarchy-apple-dev toolchain"
+  },
+  "userIds": [],
+  "relatedResourceIds": []
+}
