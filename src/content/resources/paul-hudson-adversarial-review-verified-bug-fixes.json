@@ -1,0 +1,39 @@
+{
+  "id": "paul-hudson-adversarial-review-verified-bug-fixes",
+  "slug": "paul-hudson-adversarial-review-verified-bug-fixes",
+  "canonicalUrl": "https://x.com/twostraws/status/2108180654982586413",
+  "title": "Adversarial agent review with human-verified reproduction and regression tests",
+  "publisher": "Paul Hudson",
+  "publisherUrl": "https://x.com/twostraws",
+  "authors": [
+    {
+      "name": "Paul Hudson",
+      "url": "https://www.hackingwithswift.com/"
+    }
+  ],
+  "publishedAt": "2026-10-08",
+  "discoveredAt": "2026-10-08",
+  "lastVerifiedAt": "2026-10-08",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "code-review",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Paul Hudson shares a three-stage Codex workflow: use subagents for adversarial review, double-check their findings, then present reproduction steps for human verification. For bugs the reviewer confirms, require a failing regression test before fixing and rerunning it; Hudson reports 43 findings so far, with two he disputed.",
+  "takeaway": "Separate bug discovery from repair: verify reproduction steps yourself, then require a failing regression test and a passing rerun for each confirmed fix.",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/profile_images/1544366852423426049/QkCxDxMJ_400x400.jpg",
+    "alt": "Paul Hudson’s public X profile portrait; the original post contains no attached media"
+  },
+  "availability": "available",
+  "userIds": [
+    "paul-hudson"
+  ],
+  "relatedResourceIds": [
+    "paul-hudson-codex-vs-claude-app-development",
+    "adversarial-unit-test-sweep"
+  ]
+}

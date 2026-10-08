@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07",
+  "updatedAt": "2026-10-08",
   "entries": [
     {"canonicalUrl": "https://www.keremcanyesildag.com/blog/xcode-27-mcp-codex/", "aliases": ["https://x.com/keremdzan/status/2099875893497733620"], "firstSeenAt": "2026-09-20", "lastSeenAt": "2026-09-20", "status": "accepted", "resourceId": "xcode-mcp-approval-and-headless-verification"},
     {"canonicalUrl": "https://www.avanderlee.com/ai-development/swiftui-agent-skill-build-better-views-with-ai/", "aliases": ["https://x.com/twannl/status/2099482830354960440", "https://x.com/twannl/status/2099831370818138601", "https://x.com/twannl/status/2100574018675912776", "https://x.com/twannl/status/2100976644106211714", "https://bsky.app/profile/avanderlee.com/post/3mvu7cygi3o2s"], "firstSeenAt": "2026-09-20", "lastSeenAt": "2026-09-20", "status": "accepted", "resourceId": "swiftui-agent-skill-focused-code-review"},
@@ -797,6 +797,7 @@
     {"canonicalUrl": "https://x.com/JoshuaSWarren/status/2107570814036111783", "aliases": ["https://github.com/joshuaswarren/omarchy-apple-dev", "https://x.com/JoshuaSWarren/status/2107570817907167706", "https://x.com/JoshuaSWarren/status/2107581323074551958", "https://x.com/JoshuaSWarren/status/2107597680524271632", "https://x.com/JoshuaSWarren/status/2107611464047493334"], "firstSeenAt": "2026-10-07", "lastSeenAt": "2026-10-07", "status": "accepted", "resourceId": "omarchy-linux-ios-build-deploy-and-debug"},
     {"canonicalUrl": "https://argent.swmansion.com/", "aliases": [], "firstSeenAt": "2026-10-07", "lastSeenAt": "2026-10-07", "status": "accepted", "resourceId": "argent-agentic-mobile-toolkit"},
     {"canonicalUrl": "https://parive.ai/blog/you-ship-faster-you-drift-faster", "aliases": ["https://parive.ai/blog/you-ship-faster-you-drift-faster/"], "firstSeenAt": "2026-10-07", "lastSeenAt": "2026-10-07", "status": "accepted", "resourceId": "parive-native-platform-drift-analysis"},
-    {"canonicalUrl": "https://kgalligan.com/blog/ai-changes-the-math-on-native-mobile/", "aliases": ["https://kgalligan.com/blog/ai-changes-the-math-on-native-mobile"], "firstSeenAt": "2026-10-07", "lastSeenAt": "2026-10-07", "status": "accepted", "resourceId": "ai-changes-the-math-on-native-mobile"}
+    {"canonicalUrl": "https://kgalligan.com/blog/ai-changes-the-math-on-native-mobile/", "aliases": ["https://kgalligan.com/blog/ai-changes-the-math-on-native-mobile"], "firstSeenAt": "2026-10-07", "lastSeenAt": "2026-10-07", "status": "accepted", "resourceId": "ai-changes-the-math-on-native-mobile"},
+    {"canonicalUrl": "https://x.com/twostraws/status/2108180654982586413", "aliases": [], "firstSeenAt": "2026-10-08", "lastSeenAt": "2026-10-08", "status": "accepted", "resourceId": "paul-hudson-adversarial-review-verified-bug-fixes"}
   ]
 }
