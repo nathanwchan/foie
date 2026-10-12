@@ -1,0 +1,33 @@
+{
+  "id": "simless-headless-swiftui-checks-with-device-boundary",
+  "slug": "simless-headless-swiftui-checks-with-device-boundary",
+  "canonicalUrl": "https://www.reddit.com/r/ClaudeAI/comments/1x2ph22/5_parallel_coding_agents_testing_swiftui_11_gb/",
+  "title": "5 parallel coding agents testing SwiftUI: 11 GB → 150 MB RAM, 22 s → 2 s per check. No iOS Simulator (open source)",
+  "publisher": "Reddit",
+  "publisherUrl": "https://www.reddit.com/r/ClaudeAI/",
+  "authors": [
+    {
+      "name": "Low-Future-9387",
+      "url": "https://www.reddit.com/user/Low-Future-9387/"
+    }
+  ],
+  "publishedAt": "2026-10-10",
+  "discoveredAt": "2026-10-11",
+  "lastVerifiedAt": "2026-10-11",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "visual-validation"
+  ],
+  "summary": "Low-Future-9387 describes running an iOS app’s Designed for iPad slice as a headless Mac host, with one host per worktree, hot-reloaded views, and compact accessibility checks. The reported speed and memory gains come from one app and one trial per scenario; an iOS team can calibrate representative fixtures against the Simulator and retain device checks for Dynamic Type, transitions, gestures, and the keyboard.",
+  "takeaway": "Use deterministic SwiftUI fixtures and a host per worktree for quick checks, calibrate render fidelity against the Simulator, and keep a real-device pass for interactions the Mac host cannot exercise.",
+  "media": {
+    "type": "image",
+    "url": "https://raw.githubusercontent.com/abacusai/simless/main/docs/fidelity/Settings-light-simless.png",
+    "alt": "Source-linked simless fidelity example whose Settings rows differ from the iOS Simulator rendering"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}

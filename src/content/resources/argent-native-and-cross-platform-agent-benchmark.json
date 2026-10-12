@@ -1,0 +1,37 @@
+{
+  "id": "argent-native-and-cross-platform-agent-benchmark",
+  "slug": "argent-native-and-cross-platform-agent-benchmark",
+  "canonicalUrl": "https://x.com/blazejkustra_/status/2107833622535209233",
+  "title": "Agent minutes across native and cross-platform mobile stacks",
+  "publisher": "X",
+  "publisherUrl": "https://x.com/",
+  "authors": [
+    {
+      "name": "Błażej Kustra",
+      "url": "https://x.com/blazejkustra_"
+    }
+  ],
+  "publishedAt": "2026-10-07",
+  "discoveredAt": "2026-10-11",
+  "lastVerifiedAt": "2026-10-11",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Błażej Kustra compares six mobile stacks using the same notes-app specification, one Claude Opus agent at a time, five follow-up changes, and 32 hidden QA checks. Swift finishes the iOS portion close to React Native, while the separate Kotlin app increases total native delivery time; an iOS team can measure build waits, accessibility, and device behavior separately instead of treating agent minutes as the whole quality result.",
+  "takeaway": "Benchmark the same bounded specification and follow-up changes with hidden QA checks; separate iOS build waits, Android reuse, accessibility failures, and real-device behavior from total agent time.",
+  "media": {
+    "type": "x",
+    "postId": "2107833622535209233",
+    "videoUrl": "https://video.twimg.com/amplify_video/2107833039245955072/vid/avc1/1080x1350/vgyEOQ-P0cv5M5s2.mp4?tag=29",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2107833039245955072/img/sWFqn6yA2OYiN_nT.jpg",
+    "title": "Argent benchmark workflow and mobile-stack results"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "argent-agentic-mobile-toolkit"
+  ]
+}

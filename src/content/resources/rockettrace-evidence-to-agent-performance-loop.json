@@ -1,0 +1,37 @@
+{
+  "id": "rockettrace-evidence-to-agent-performance-loop",
+  "slug": "rockettrace-evidence-to-agent-performance-loop",
+  "canonicalUrl": "https://www.avanderlee.com/ai-development/introducing-rockettrace-using-xcode-instruments-with-ai-agents/",
+  "title": "Introducing RocketTrace: Using Xcode Instruments with AI Agents",
+  "publisher": "SwiftLee",
+  "publisherUrl": "https://www.avanderlee.com/",
+  "authors": [
+    {
+      "name": "Antoine van der Lee",
+      "url": "https://www.avanderlee.com/"
+    }
+  ],
+  "publishedAt": "2026-10-05",
+  "discoveredAt": "2026-10-11",
+  "lastVerifiedAt": "2026-10-11",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Antoine van der Lee shows how to turn a profile-build Instruments recording into ranked findings, review an agent’s proposed fix, and record again to check the result. His vendor-run benchmark uses one frozen trace, two models, and three runs per model; an iOS team can apply the workflow to its own app while requiring the agent to inspect every finding rather than only the top-ranked ones.",
+  "takeaway": "Record a fresh profile build, give the agent compact findings with trace evidence, review its plan, and re-record the same flow to verify the fix; require coverage of every finding.",
+  "media": {
+    "type": "image",
+    "url": "https://www.avanderlee.com/wp-content/smush-webp/2026/10/xcode_instruments_ai_agents_rockettrace-1024x743.png.webp",
+    "alt": "Antoine van der Lee’s benchmark comparing agent investigations with raw Instruments exports and RocketTrace findings"
+  },
+  "availability": "available",
+  "userIds": [
+    "antoine-van-der-lee"
+  ],
+  "relatedResourceIds": [
+    "agent-session-audit-and-xcode-output-filtering"
+  ]
+}

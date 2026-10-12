@@ -1,0 +1,34 @@
+{
+  "id": "ios-factory-linux-review-mac-simulator-verification",
+  "slug": "ios-factory-linux-review-mac-simulator-verification",
+  "canonicalUrl": "https://x.com/BHolmesDev/status/2107962128883941684",
+  "title": "A software factory for an iOS team: Linux orchestration, Mac implementation",
+  "publisher": "X",
+  "publisherUrl": "https://x.com/",
+  "authors": [
+    {
+      "name": "Ben Holmes",
+      "url": "https://x.com/BHolmesDev"
+    }
+  ],
+  "publishedAt": "2026-10-07",
+  "discoveredAt": "2026-10-11",
+  "lastVerifiedAt": "2026-10-11",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "code-review",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "Ben Holmes describes a three-person iOS team keeping orchestration and review agents on Linux while a Mac-based implementer builds, exercises the Simulator, and returns screenshots or recordings. Slack makes tasks and design feedback visible to the team, and adversarial review repeats as changes are refined; an iOS team can require both visual evidence and review before accepting a feature, while making prototype exceptions explicit.",
+  "takeaway": "Keep native build and Simulator verification on a Mac, return screenshots or recordings to a shared review channel, and repeat adversarial review after feedback before accepting a production change.",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HUD5i8PXkAAVLnw.jpg",
+    "alt": "Ben Holmes’s source image accompanying his split Linux and Mac iOS agent workflow"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}
