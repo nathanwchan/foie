@@ -2,6 +2,8 @@
 
 A static intelligence dashboard tracking how LLMs and coding agents are changing iOS software development. The growing resource collection is ordered newest-first, backed by inspectable sources, and stored as schema-validated files in Git.
 
+Live site: [www.futureofios.com](https://www.futureofios.com/).
+
 ## Stack
 
 - Astro and TypeScript
