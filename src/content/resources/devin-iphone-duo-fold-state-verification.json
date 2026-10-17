@@ -1,0 +1,38 @@
+{
+  "id": "devin-iphone-duo-fold-state-verification",
+  "slug": "devin-iphone-duo-fold-state-verification",
+  "canonicalUrl": "https://x.com/dabit3/status/2111159738373226566",
+  "media": {
+    "type": "x",
+    "postId": "2111159738373226566",
+    "videoUrl": "https://video.twimg.com/amplify_video/2111154797965385728/vid/avc1/1880x1080/Rrpn7sU2kYPbrN7A.mp4?tag=29",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2111154797965385728/img/SZzusaOESD7UXspD.jpg?name=large",
+    "title": "Devin checks camera behavior and photo retention across iPhone Duo fold states"
+  },
+  "title": "Devin verifies iPhone Duo fold states in macOS cloud VMs",
+  "publisher": "Nader Dabit",
+  "publisherUrl": "https://x.com/dabit3",
+  "authors": [
+    {
+      "name": "Nader Dabit",
+      "url": "https://x.com/dabit3"
+    }
+  ],
+  "publishedAt": "2026-10-16",
+  "discoveredAt": "2026-10-17",
+  "lastVerifiedAt": "2026-10-17",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "visual-validation"
+  ],
+  "summary": "Nader Dabit shares demos of Devin building and checking iPhone Duo apps in macOS cloud VMs, with video verification across open, half-folded, and closed states. An iOS team can use the illustrated checks to specify state-preservation requirements, such as retaining a photo when the phone closes during a countdown or reopening a book on the same page.",
+  "takeaway": "Give agents explicit checks for each fold state and transition, including interrupted actions and state restoration, and require recordings that show the result on both inner and outer screens.",
+  "availability": "available",
+  "relatedResourceIds": [
+    "devin-gets-a-mac",
+    "cloud-agents-real-mac-xcode"
+  ],
+  "userIds": []
+}

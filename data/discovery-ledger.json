@@ -1,7 +1,8 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-11",
+  "updatedAt": "2026-10-17",
   "entries": [
+    {"canonicalUrl": "https://x.com/dabit3/status/2111159738373226566", "aliases": ["https://x.com/dabit3/status/2111159741271646674", "https://x.com/dabit3/status/2111159744211910833", "https://x.com/dabit3/status/2111159746526908777", "https://x.com/dabit3/status/2111159748330405926", "https://x.com/dabit3/status/2111159750746616132", "https://x.com/dabit3/status/2111159753376497668"], "firstSeenAt": "2026-10-17", "lastSeenAt": "2026-10-17", "status": "accepted", "resourceId": "devin-iphone-duo-fold-state-verification"},
     {"canonicalUrl": "https://www.keremcanyesildag.com/blog/xcode-27-mcp-codex/", "aliases": ["https://x.com/keremdzan/status/2099875893497733620"], "firstSeenAt": "2026-09-20", "lastSeenAt": "2026-09-20", "status": "accepted", "resourceId": "xcode-mcp-approval-and-headless-verification"},
     {"canonicalUrl": "https://www.avanderlee.com/ai-development/swiftui-agent-skill-build-better-views-with-ai/", "aliases": ["https://x.com/twannl/status/2099482830354960440", "https://x.com/twannl/status/2099831370818138601", "https://x.com/twannl/status/2100574018675912776", "https://x.com/twannl/status/2100976644106211714", "https://bsky.app/profile/avanderlee.com/post/3mvu7cygi3o2s"], "firstSeenAt": "2026-09-20", "lastSeenAt": "2026-09-20", "status": "accepted", "resourceId": "swiftui-agent-skill-focused-code-review"},
     {"canonicalUrl": "https://codex.danielvaughan.com/2026/04/26/codex-cli-swift-ios-teams-xcode-mcp-swiftui-agent-workflows/", "aliases": [], "firstSeenAt": "2026-09-20", "lastSeenAt": "2026-09-20", "status": "skipped", "reason": "secondary-summary: generic configuration roundup without a documented exercised native iOS outcome; the recent update label does not establish material new evidence."},
