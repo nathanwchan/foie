@@ -1,0 +1,33 @@
+{
+  "id": "swiftui-preview-loop-in-claude-mods",
+  "slug": "swiftui-preview-loop-in-claude-mods",
+  "canonicalUrl": "https://www.natashatherobot.com/p/faster-swiftui-development-in-claude",
+  "title": "Faster SwiftUI Development in Claude Code: See Xcode Previews Without a Simulator Run",
+  "publisher": "NatashaTheRobot",
+  "publisherUrl": "https://www.natashatherobot.com/",
+  "authors": [
+    {
+      "name": "NatashaTheRobot",
+      "url": "https://www.natashatherobot.com/"
+    }
+  ],
+  "publishedAt": "2026-10-14",
+  "discoveredAt": "2026-10-18",
+  "lastVerifiedAt": "2026-10-18",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "visual-validation"
+  ],
+  "summary": "NatashaTheRobot explains a Claude mod that resolves a requested screen and device against open Xcode projects and previews, calls RenderPreview, and returns a saved PNG with a bezel in the session. An iOS team can use the same preview loop for bounded layout iterations while retaining Simulator or device checks for behavior a static preview cannot establish.",
+  "takeaway": "Resolve preview and device identifiers from the project, validate tool arguments, and return the rendered image to the agent; keep runtime acceptance checks separate from preview inspection.",
+  "media": {
+    "type": "image",
+    "url": "https://substack-post-media.s3.amazonaws.com/public/images/1edd777b-bbbb-49e1-9b38-176a8838311c_1400x552.png",
+    "alt": "NatashaTheRobot’s source screenshot illustrating the SwiftUI preview workflow inside a Claude session"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}

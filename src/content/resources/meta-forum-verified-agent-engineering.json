@@ -1,0 +1,68 @@
+{
+  "id": "meta-forum-verified-agent-engineering",
+  "slug": "meta-forum-verified-agent-engineering",
+  "canonicalUrl": "https://engineering.fb.com/2026/10/15/ml-applications/how-meta-built-forum-ai-native-engineering/",
+  "title": "How Meta Built Forum With AI-Native Engineering",
+  "publisher": "Engineering at Meta",
+  "publisherUrl": "https://engineering.fb.com/",
+  "authors": [
+    {
+      "name": "Shengbo Guo",
+      "url": "https://engineering.fb.com/author/shengbo-guo/"
+    },
+    {
+      "name": "Bohou Luo",
+      "url": "https://engineering.fb.com/author/bohou-luo/"
+    },
+    {
+      "name": "Shubhojeet Sarkar",
+      "url": "https://engineering.fb.com/author/shubhojeet-sarkar/"
+    },
+    {
+      "name": "Vivian Qu",
+      "url": "https://engineering.fb.com/author/vivian-qu/"
+    },
+    {
+      "name": "Max (Xiangjun) Fan",
+      "url": "https://engineering.fb.com/author/max-xiangjun-fan/"
+    },
+    {
+      "name": "Prerna Jain",
+      "url": "https://engineering.fb.com/author/prerna-jain/"
+    },
+    {
+      "name": "Mike Plumpe",
+      "url": "https://engineering.fb.com/author/mike-plumpe/"
+    },
+    {
+      "name": "Chinmay Abhyankar",
+      "url": "https://engineering.fb.com/author/chinmay-abhyankar/"
+    },
+    {
+      "name": "Rish Tandon",
+      "url": "https://engineering.fb.com/author/rish-tandon/"
+    }
+  ],
+  "publishedAt": "2026-10-15",
+  "discoveredAt": "2026-10-18",
+  "lastVerifiedAt": "2026-10-18",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "agent-readable-architecture",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Shengbo Guo and coauthors describe adapting Forum’s architecture and tooling so agents can plan, build, test, inspect live Simulator state, and return recorded verification for engineer approval. An iOS team can isolate prototypes in a separate build flavor and run repeatable stress scenarios before review; Meta reports roughly halving memory use and page faults in one investigated issue.",
+  "takeaway": "Gate agent completion on tests and recorded visual checks, expose live UI state through tools, and compile prototypes out of production while engineers retain architecture and release decisions.",
+  "media": {
+    "type": "image",
+    "url": "https://engineering.fb.com/wp-content/uploads/2026/10/Meta-Forum-hero.jpg",
+    "alt": "Meta’s source image for its account of building Forum with AI-native engineering"
+  },
+  "availability": "available",
+  "userIds": [
+    "vivian-qu"
+  ],
+  "relatedResourceIds": []
+}

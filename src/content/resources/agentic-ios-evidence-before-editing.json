@@ -1,0 +1,38 @@
+{
+  "id": "agentic-ios-evidence-before-editing",
+  "slug": "agentic-ios-evidence-before-editing",
+  "canonicalUrl": "https://www.avanderlee.com/ai-development/agentic-ios-development-rocketsim-rockettrace/",
+  "title": "Agentic iOS Development with RocketSim and RocketTrace",
+  "publisher": "SwiftLee",
+  "publisherUrl": "https://www.avanderlee.com/",
+  "authors": [
+    {
+      "name": "Antoine van der Lee",
+      "url": "https://www.avanderlee.com/"
+    }
+  ],
+  "publishedAt": "2026-10-12",
+  "discoveredAt": "2026-10-18",
+  "lastVerifiedAt": "2026-10-18",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "Antoine van der Lee shares four workflows that combine Simulator navigation, accessibility audits, analytics, screenshots, and Instruments findings with a plan reviewed before edits. An iOS team can require evidence for each proposed change and repeat the measurement afterward; his reported accessibility score improved, but device remeasurement of the performance fixes was still pending.",
+  "takeaway": "Review the audit or trace evidence before approving edits, instrument unattributed hitches instead of guessing, and rerun the same device scenario before claiming a performance improvement.",
+  "media": {
+    "type": "image",
+    "url": "https://www.avanderlee.com/wp-content/uploads/2026/10/agentic-ios-development-rockettrace-performance-prompt.png",
+    "alt": "SwiftLee’s prompt for navigating an iOS app with RocketSim while recording and analyzing its performance with RocketTrace"
+  },
+  "availability": "available",
+  "userIds": [
+    "antoine-van-der-lee"
+  ],
+  "relatedResourceIds": [
+    "rockettrace-evidence-to-agent-performance-loop"
+  ]
+}

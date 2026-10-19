@@ -1,0 +1,33 @@
+{
+  "id": "ai-testability-independent-behavior-contracts",
+  "slug": "ai-testability-independent-behavior-contracts",
+  "canonicalUrl": "https://www.linkedin.com/pulse/ai-can-write-tests-your-architecture-support-them-amit-kumar-n2dvc",
+  "title": "AI can write tests. But can your architecture support them?",
+  "publisher": "Modern iOS Engineering",
+  "publisherUrl": "https://www.linkedin.com/newsletters/modern-ios-engineering-7499269334318571520/",
+  "authors": [
+    {
+      "name": "Amit Kumar",
+      "url": "https://www.linkedin.com/in/amitnw"
+    }
+  ],
+  "publishedAt": "2026-10-12",
+  "discoveredAt": "2026-10-18",
+  "lastVerifiedAt": "2026-10-18",
+  "format": "article",
+  "topics": [
+    "agent-readable-architecture",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Amit Kumar argues that AI-generated tests remain constrained by UI-bound logic, singleton dependencies, and nondeterministic state in mature iOS apps. An iOS team can use a feature change to extract one testable boundary, replace clocks or storage, and verify expected outcomes from requirements or known regressions rather than the agent’s own implementation assumptions.",
+  "takeaway": "Choose one regression-prone feature, make its dependencies controllable, and review refactoring against independent behavior contracts before measuring test speed and reliability.",
+  "media": {
+    "type": "image",
+    "url": "https://media.licdn.com/dms/image/v2/D5612AQEhnMAHaHK2vg/article-cover_image-shrink_720_1280/B56aEoskaoJcAQ-/0/1791684141696?e=2147483647&v=beta&t=ODxFs0xDa6g2K_S4RAZ8sxbpQXTLItpWzwa0qqpo1C4",
+    "alt": "Modern iOS Engineering’s source cover for the article on architecture and AI-generated tests"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}
