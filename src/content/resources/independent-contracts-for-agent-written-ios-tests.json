@@ -1,0 +1,36 @@
+{
+  "id": "independent-contracts-for-agent-written-ios-tests",
+  "slug": "independent-contracts-for-agent-written-ios-tests",
+  "canonicalUrl": "https://roland.leth.ro/blog/tech/ios-testing-with-claude-code",
+  "title": "iOS testing with Claude Code",
+  "publisher": "Roland Leth",
+  "publisherUrl": "https://roland.leth.ro/",
+  "authors": [
+    {
+      "name": "Roland Leth",
+      "url": "https://roland.leth.ro/"
+    }
+  ],
+  "publishedAt": "2026-10-21",
+  "discoveredAt": "2026-10-25",
+  "lastVerifiedAt": "2026-10-25",
+  "format": "article",
+  "topics": [
+    "testing-evaluation",
+    "agent-readable-architecture",
+    "human-in-the-loop"
+  ],
+  "summary": "Roland Leth explains how Claude-written tests can preserve implementation bugs, then shows reachable async logic, injected system boundaries, StoreKit consistency checks, and explicit CloudKit isolation in Digest. An iOS team can derive expectations from platform behavior or product decisions and deliberately break one condition at a time to verify that a test detects it.",
+  "takeaway": "Derive expected behavior independently, prove tests fail under a deliberate fault, reject empty fixtures, and explicitly disable CloudKit in in-memory test containers.",
+  "media": {
+    "type": "image",
+    "url": "https://roland.leth.ro/images/og-card.png",
+    "alt": "Roland Leth’s source-owned Open Graph card identifying the article’s author"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "agent-simulator-failures-need-independent-evidence",
+    "planted-fixtures-and-preregistered-agent-evaluations"
+  ]
+}

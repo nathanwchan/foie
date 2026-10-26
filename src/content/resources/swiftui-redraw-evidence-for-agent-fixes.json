@@ -1,0 +1,37 @@
+{
+  "id": "swiftui-redraw-evidence-for-agent-fixes",
+  "slug": "swiftui-redraw-evidence-for-agent-fixes",
+  "canonicalUrl": "https://www.avanderlee.com/swiftui/swiftui-performance-xcode-instruments/",
+  "title": "SwiftUI Performance: Find Redraws in Xcode Instruments",
+  "publisher": "SwiftLee",
+  "publisherUrl": "https://www.avanderlee.com/",
+  "authors": [
+    {
+      "name": "Antoine van der Lee",
+      "url": "https://www.avanderlee.com/"
+    }
+  ],
+  "publishedAt": "2026-10-19",
+  "discoveredAt": "2026-10-25",
+  "lastVerifiedAt": "2026-10-25",
+  "format": "article",
+  "topics": [
+    "testing-evaluation",
+    "agent-workflows",
+    "xcode-tooling"
+  ],
+  "summary": "Antoine van der Lee walks through measuring SwiftUI update frequency, duration, and root causes, then explains how RocketTrace packages trace findings for a coding agent. An iOS team can record one focused interaction in Release configuration, review the evidence behind each proposed fix, and repeat the same interaction after editing.",
+  "takeaway": "Give the agent measured redraw causes and costs, distinguish frequent cheap updates from expensive bodies, and re-record the same interaction to verify improvement.",
+  "media": {
+    "type": "image",
+    "url": "https://www.avanderlee.com/wp-content/uploads/2026/10/swiftui_xcode_instruments-scaled.png",
+    "alt": "SwiftLee’s Instruments recording showing SwiftUI update lanes alongside hangs and hitches"
+  },
+  "availability": "available",
+  "userIds": [
+    "antoine-van-der-lee"
+  ],
+  "relatedResourceIds": [
+    "agentic-ios-evidence-before-editing"
+  ]
+}

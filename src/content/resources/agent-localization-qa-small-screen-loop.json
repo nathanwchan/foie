@@ -1,0 +1,33 @@
+{
+  "id": "agent-localization-qa-small-screen-loop",
+  "slug": "agent-localization-qa-small-screen-loop",
+  "canonicalUrl": "https://x.com/vladchai/status/2114192185684041761",
+  "title": "Check localized iOS screens with a repeatable Simulator loop",
+  "publisher": "X",
+  "publisherUrl": "https://x.com/vladchai",
+  "authors": [
+    {
+      "name": "Vladislav R",
+      "url": "https://x.com/vladchai"
+    }
+  ],
+  "publishedAt": "2026-10-25",
+  "discoveredAt": "2026-10-25",
+  "lastVerifiedAt": "2026-10-25",
+  "format": "social",
+  "topics": [
+    "visual-validation",
+    "testing-evaluation",
+    "agent-workflows"
+  ],
+  "summary": "Vladislav R describes checking Office 7’s localized iOS UI with Claude, starting on the smallest screens and comparing screenshots after fixes to labels, line breaks, right-to-left alignment, and number formats. An iOS team can repeat that loop across languages while retaining native-speaker review, which he notes remains necessary in the thread.",
+  "takeaway": "Check small-screen layouts across languages, rerun the same screens after fixes, and pair agent screenshot comparison with review by speakers of the target language.",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HVceldPagAAXXtJ.jpg",
+    "alt": "Office 7 source screenshots comparing Japanese, Vietnamese, Chinese, and Hebrew localized screens"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "planted-fixtures-and-preregistered-agent-evaluations",
+  "slug": "planted-fixtures-and-preregistered-agent-evaluations",
+  "canonicalUrl": "https://roland.leth.ro/blog/tech/testing-code-when-you-dont-know-the-right-answer",
+  "title": "Testing code when you don’t know the right answer",
+  "publisher": "Roland Leth",
+  "publisherUrl": "https://roland.leth.ro/",
+  "authors": [
+    {
+      "name": "Roland Leth",
+      "url": "https://roland.leth.ro/"
+    }
+  ],
+  "publishedAt": "2026-10-22",
+  "discoveredAt": "2026-10-25",
+  "lastVerifiedAt": "2026-10-25",
+  "format": "article",
+  "topics": [
+    "testing-evaluation",
+    "human-in-the-loop",
+    "agent-workflows"
+  ],
+  "summary": "Roland Leth describes evaluating a food-journal analysis engine with planted answers, negative controls, fixed generators, and pass criteria written before Claude Code ran the experiments. An iOS team can compare changes against the same synthetic scenarios and retain failed hypotheses; he explicitly limits claims about real users and says the engine was ultimately dropped.",
+  "takeaway": "Write the acceptance bar before an agent runs probes, include cases with nothing to find, and use invented scenarios for controlled comparisons rather than real-user accuracy claims.",
+  "media": {
+    "type": "image",
+    "url": "https://roland.leth.ro/images/og-card.png",
+    "alt": "Roland Leth’s source-owned Open Graph card identifying the article’s author"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "independent-contracts-for-agent-written-ios-tests"
+  ]
+}

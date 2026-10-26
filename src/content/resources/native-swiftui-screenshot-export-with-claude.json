@@ -1,0 +1,35 @@
+{
+  "id": "native-swiftui-screenshot-export-with-claude",
+  "slug": "native-swiftui-screenshot-export-with-claude",
+  "canonicalUrl": "https://roland.leth.ro/blog/tech/automating-app-store-screenshots-with-claude-code",
+  "title": "Automating App Store screenshots with Claude Code",
+  "publisher": "Roland Leth",
+  "publisherUrl": "https://roland.leth.ro/",
+  "authors": [
+    {
+      "name": "Roland Leth",
+      "url": "https://roland.leth.ro/"
+    }
+  ],
+  "publishedAt": "2026-10-23",
+  "discoveredAt": "2026-10-25",
+  "lastVerifiedAt": "2026-10-25",
+  "format": "article",
+  "topics": [
+    "sdlc-automation",
+    "visual-validation",
+    "agent-workflows"
+  ],
+  "summary": "Roland Leth describes Claude Code building and running a debug-only screenshot exporter from real SwiftUI components and isolated sample data, producing 106 PNGs across two device runs. An iOS team can trigger exports with launch arguments and fail on unsupported canvases or invalid variants, while reviewing compositions that do not automatically follow screen rearrangements.",
+  "takeaway": "Keep screenshot fixtures and export code out of production, validate device dimensions and variant IDs, and make the agent read exported PNGs before committing them.",
+  "media": {
+    "type": "image",
+    "url": "https://1b8s9qdvrd8l8jfm.public.blob.vercel-storage.com/posts/tech/automating-app-store-screenshots-with-claude-code/media/automating-app-store-screenshots-with-claude-code/8a490617db53dcb0-reckon-iphone-1-hook.png",
+    "alt": "Reckon screenshot rendered from the app’s SwiftUI components in Roland Leth’s export walkthrough"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "agent-simulator-failures-need-independent-evidence"
+  ]
+}

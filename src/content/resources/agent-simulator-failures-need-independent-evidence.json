@@ -1,0 +1,35 @@
+{
+  "id": "agent-simulator-failures-need-independent-evidence",
+  "slug": "agent-simulator-failures-need-independent-evidence",
+  "canonicalUrl": "https://roland.leth.ro/blog/tech/claude-code-and-the-ios-simulator-what-breaks",
+  "title": "Claude Code and the iOS Simulator: what breaks",
+  "publisher": "Roland Leth",
+  "publisherUrl": "https://roland.leth.ro/",
+  "authors": [
+    {
+      "name": "Roland Leth",
+      "url": "https://roland.leth.ro/"
+    }
+  ],
+  "publishedAt": "2026-10-20",
+  "discoveredAt": "2026-10-25",
+  "lastVerifiedAt": "2026-10-25",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "visual-validation"
+  ],
+  "summary": "Roland Leth documents Simulator and test failures from two native apps, including sandbox errors disguised as missing devices, stale captures, and filters that report success after running no tests. An iOS team can give each agent its own device, confirm individual test execution, and compare pane captures with simctl screenshots before trusting completion.",
+  "takeaway": "Check the command, destination, actual test count, and an independent screenshot; keep manual checks for controls and accessibility paths the agent cannot reliably exercise.",
+  "media": {
+    "type": "image",
+    "url": "https://1b8s9qdvrd8l8jfm.public.blob.vercel-storage.com/posts/tech/claude-code-and-the-ios-simulator-what-breaks/media/claude-code-and-the-ios-simulator-what-breaks/e144d7f816663d15-confirmation-dialog-no-cancel.png",
+    "alt": "Roland Leth’s source screenshot of a confirmation dialog whose cancel-role choice is absent"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "independent-contracts-for-agent-written-ios-tests"
+  ]
+}
