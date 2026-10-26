@@ -1,0 +1,38 @@
+{
+  "id": "codex-pdf-viewer-restoration-test-boundaries",
+  "slug": "codex-pdf-viewer-restoration-test-boundaries",
+  "canonicalUrl": "https://qiita.com/tyamada22/items/c033ae41dadca0241f67",
+  "title": "【第4回】XcodeとCodexでiOS用PDFビューアを育てる――読書位置と設定を、再起動後も残す",
+  "publisher": "Qiita",
+  "publisherUrl": "https://qiita.com/",
+  "authors": [
+    {
+      "name": "tyamada22",
+      "url": "https://qiita.com/tyamada22"
+    }
+  ],
+  "publishedAt": "2026-10-22",
+  "discoveredAt": "2026-10-25",
+  "lastVerifiedAt": "2026-10-25",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "tyamada22 describes using Codex to distinguish ordinary app switching from process termination, expose lost reading state and settings, and add persistence fixes with regression tests. An iOS team can reproduce those lifecycle transitions separately and preserve evidence limits: the reported iCloud substitute used local PDFs, and the retrospective did not rerun the historical tests.",
+  "takeaway": "Test background return, process termination, explicit document close, and settings reset separately; a local URL-import test does not establish iCloud Drive behavior.",
+  "media": {
+    "type": "image",
+    "url": "https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/187583/ccd35a41-d765-4a95-806a-4837318e6457.png",
+    "alt": "tyamada22's October 22 Simulator screenshot showing the viewer's restored reading-position example"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "codex-pdf-viewer-device-feedback",
+    "codex-pdf-viewer-explicit-test-fixtures",
+    "codex-pdf-viewer-bounded-diagnostic-logs",
+    "codex-review-to-refactoring-and-ci"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "codex-pdf-viewer-device-feedback",
+  "slug": "codex-pdf-viewer-device-feedback",
+  "canonicalUrl": "https://qiita.com/tyamada22/items/5298a050636d8dc8a10d",
+  "title": "【第2回】XcodeとCodexでiOS用PDFビューアを育てる――毎日のiPad試用で見つけた画質と表示の問題",
+  "publisher": "Qiita",
+  "publisherUrl": "https://qiita.com/",
+  "authors": [
+    {
+      "name": "tyamada22",
+      "url": "https://qiita.com/tyamada22"
+    }
+  ],
+  "publishedAt": "2026-10-20",
+  "discoveredAt": "2026-10-25",
+  "lastVerifiedAt": "2026-10-25",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "tyamada22 traces how daily iPad use exposed rendering, highlight alignment, and reading-order defects during Codex-assisted PDF-viewer development. An iOS team can inspect the actual drawing and coordinate changes behind an agent fix, then separate page grouping into testable logic; the author lacks matched images to prove the proposed cause of the rendering improvement.",
+  "takeaway": "Check rendering and overlay coordinates against the same origin, and test reading order separately from the arrangement of pages within each spread.",
+  "media": {
+    "type": "image",
+    "url": "https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/187583/30413037-be5c-4f6f-894d-bb75a753976c.png",
+    "alt": "tyamada22's explanatory diagram comparing PDF image and search-highlight coordinate origins"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "codex-pdf-viewer-explicit-test-fixtures",
+    "codex-pdf-viewer-restoration-test-boundaries",
+    "codex-pdf-viewer-bounded-diagnostic-logs",
+    "codex-review-to-refactoring-and-ci"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "codex-pdf-viewer-bounded-diagnostic-logs",
+  "slug": "codex-pdf-viewer-bounded-diagnostic-logs",
+  "canonicalUrl": "https://qiita.com/tyamada22/items/fd5babc9ec6198ee5fab",
+  "title": "【第5回】XcodeとCodexでiOS用PDFビューアを育てる――端末診断とログで、不具合を調べられるようにする",
+  "publisher": "Qiita",
+  "publisherUrl": "https://qiita.com/",
+  "authors": [
+    {
+      "name": "tyamada22",
+      "url": "https://qiita.com/tyamada22"
+    }
+  ],
+  "publishedAt": "2026-10-22",
+  "discoveredAt": "2026-10-25",
+  "lastVerifiedAt": "2026-10-25",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "code-review",
+    "human-in-the-loop"
+  ],
+  "summary": "tyamada22 recounts asking Codex for shareable device diagnostics and bounded event logging while excluding document content and identifying fields. An iOS team can encode logging limits in typed event APIs and review retention behavior; the author distinguishes basic device checks from stress tests and a historical agent code review from a comprehensive security assessment.",
+  "takeaway": "Use predefined diagnostic events and numeric fields, review app-log retention separately from OS logging, and state exactly what each diagnostic or review establishes.",
+  "media": {
+    "type": "image",
+    "url": "https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/187583/f3de80d4-7830-4342-95dd-e8bb695a6325.png",
+    "alt": "tyamada22's Simulator diagnostic screen; its reported memory is not physical iPad RAM"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "codex-pdf-viewer-device-feedback",
+    "codex-pdf-viewer-explicit-test-fixtures",
+    "codex-pdf-viewer-restoration-test-boundaries",
+    "codex-review-to-refactoring-and-ci"
+  ]
+}

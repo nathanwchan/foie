@@ -1,0 +1,37 @@
+{
+  "id": "shopify-remote-macs-agent-verification",
+  "slug": "shopify-remote-macs-agent-verification",
+  "canonicalUrl": "https://shopify.engineering/remote-dev",
+  "title": "We gave AI agents a mobile dev environment",
+  "publisher": "Shopify Engineering",
+  "publisherUrl": "https://shopify.engineering/",
+  "authors": [
+    {
+      "name": "Mauricio de Meirelles",
+      "url": "https://shopify.engineering/authors/mauricio-de-meirelles"
+    },
+    {
+      "name": "David Cortes",
+      "url": "https://shopify.engineering/authors/david-cortes"
+    }
+  ],
+  "publishedAt": "2026-10-22",
+  "discoveredAt": "2026-10-25",
+  "lastVerifiedAt": "2026-10-25",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "sdlc-automation"
+  ],
+  "summary": "Mauricio de Meirelles and David Cortes describe giving each River session an isolated, warm remote Mac, a browser-accessible live Simulator, and recordings of behavior before and after a change. An iOS team can require runtime evidence in agent PRs and encode remote-machine access in its workflow; Shopify reports reducing environment startup from over 30 minutes to a few minutes.",
+  "takeaway": "Give each agent an isolated, prebuilt Mac environment and require it to reproduce, record, fix, and replay a bug before human review.",
+  "media": {
+    "type": "image",
+    "url": "https://cdn.shopify.com/b/shopify-brochure2-assets/2da4b000319a7dd77e86bd9171793eea.jpg",
+    "alt": "Shopify's source illustration of its remote mobile development environment"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}
