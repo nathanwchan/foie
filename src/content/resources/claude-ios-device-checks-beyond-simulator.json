@@ -1,0 +1,33 @@
+{
+  "id": "claude-ios-device-checks-beyond-simulator",
+  "slug": "claude-ios-device-checks-beyond-simulator",
+  "canonicalUrl": "https://note.com/toru_aizawa/n/na11b799db3ff",
+  "title": "シミュレーターでは確かめられないこと：Claude と iOS アプリを作るときの実機の出番",
+  "publisher": "note",
+  "publisherUrl": "https://note.com/",
+  "authors": [
+    {
+      "name": "相沢 透",
+      "url": "https://note.com/toru_aizawa"
+    }
+  ],
+  "publishedAt": "2026-10-31",
+  "discoveredAt": "2026-11-01",
+  "lastVerifiedAt": "2026-11-01",
+  "format": "article",
+  "topics": [
+    "testing-evaluation",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "相沢 透 describes TestFlight checks that exposed missing drag feedback and overlapping advertisement audio after Claude’s Simulator checks had passed. An iOS team can retain fast, deterministic agent launch modes while scheduling human checks of continuous gestures, real ads, sound, and purchases on a device; the reported limitations belong to the author’s particular setup.",
+  "takeaway": "Add device checks at the end of implementation and after TestFlight upload; record transient rendering defects and listen to real audio rather than relying on static screenshots or simulated ads.",
+  "media": {
+    "type": "image",
+    "url": "https://assets.st-note.com/production/uploads/images/330546775/rectangle_large_type_2_6cf131a7f5e494303adf11e9c18d51e1.jpeg?fit=bounds&quality=85&width=1280",
+    "alt": "The author’s source cover for the article about real-device checks beyond Claude’s Simulator verification"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}

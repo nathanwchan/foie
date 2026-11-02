@@ -1,0 +1,35 @@
+{
+  "id": "parallel-ios-agents-verify-installed-build-identity",
+  "slug": "parallel-ios-agents-verify-installed-build-identity",
+  "canonicalUrl": "https://flowdeck.studio/blog/run-multiple-claude-code-agents-xcode-project",
+  "title": "How to Run Multiple Claude Code Agents on the Same Xcode Project",
+  "publisher": "FlowDeck",
+  "publisherUrl": "https://flowdeck.studio/",
+  "authors": [
+    {
+      "name": "Amarildo Lucas",
+      "url": "https://flowdeck.studio/blog/run-multiple-claude-code-agents-xcode-project"
+    }
+  ],
+  "publishedAt": "2026-10-29",
+  "discoveredAt": "2026-11-01",
+  "lastVerifiedAt": "2026-11-01",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "xcode-tooling"
+  ],
+  "summary": "Amarildo Lucas reproduces two agents reporting successful builds while one overwrites the other’s installed app and inherits its saved data on a shared Simulator. An iOS team can assign a Simulator UDID and DerivedData path to each worktree, then verify the installed build number and process after overlapping runs, rather than treating compilation as proof of isolation.",
+  "takeaway": "Pin every build, install, launch, and test to its assigned Simulator; check installed build identity and process continuity after concurrent agents finish.",
+  "media": {
+    "type": "image",
+    "url": "https://framerusercontent.com/images/Po3QjW1vRnljParRc7jsEgOm9Z8.png?width=2480&height=688",
+    "alt": "FlowDeck’s source output from rerunning the two tasks with separate Simulator destinations"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "worktree-simulator-isolation-and-test-ownership"
+  ]
+}

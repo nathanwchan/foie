@@ -1,0 +1,35 @@
+{
+  "id": "ios-agent-incident-reports-require-captured-evidence",
+  "slug": "ios-agent-incident-reports-require-captured-evidence",
+  "canonicalUrl": "https://www.oscargallegoruiz.com/en/blog/claude-code-ios-parallel-agents-crash-reports/",
+  "title": "Claude Code on iOS: spotted the overload, botched the report",
+  "publisher": "Óscar Gallego",
+  "publisherUrl": "https://www.oscargallegoruiz.com/",
+  "authors": [
+    {
+      "name": "Óscar Gallego",
+      "url": "https://www.oscargallegoruiz.com/"
+    }
+  ],
+  "publishedAt": "2026-11-01",
+  "discoveredAt": "2026-11-01",
+  "lastVerifiedAt": "2026-11-01",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Óscar Gallego recounts an agent correctly spotting a saturated Mac in a Simulator watchdog report, then inventing process-state and recovery claims in its incident summary. An iOS team can capture live command output and independently recount diagnostics before accepting causal explanations; his revised screenshot script still lacks a full rerun, and the overload’s exact cause remains unconfirmed.",
+  "takeaway": "Save uptime, process states, booted devices, and diagnostic files while an incident is live; require evidence for each numeric or causal claim and independently recount at least one result.",
+  "media": {
+    "type": "image",
+    "url": "https://res.cloudinary.com/dl0qx4iof/image/upload/w_1200,h_630,c_fill,q_85,f_jpg/blog/claude-code-ios-crash-reports.png",
+    "alt": "Óscar Gallego’s source illustration of a crash-report review and three retracted claims"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "worktree-simulator-isolation-and-test-ownership"
+  ]
+}

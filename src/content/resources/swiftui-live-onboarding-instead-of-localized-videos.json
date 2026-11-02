@@ -1,0 +1,37 @@
+{
+  "id": "swiftui-live-onboarding-instead-of-localized-videos",
+  "slug": "swiftui-live-onboarding-instead-of-localized-videos",
+  "canonicalUrl": "https://x.com/vladchai/status/2115324123467714868",
+  "title": "Animated onboarding for 4 editors with zero video files",
+  "publisher": "X",
+  "publisherUrl": "https://x.com/",
+  "authors": [
+    {
+      "name": "Vladislav R",
+      "url": "https://x.com/vladchai"
+    }
+  ],
+  "publishedAt": "2026-10-28",
+  "discoveredAt": "2026-11-01",
+  "lastVerifiedAt": "2026-11-01",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "Vladislav R describes replacing per-language onboarding recordings with live SwiftUI scenes driven by one timeline, easing, camera keyframes, and localized strings. An iOS team can use screenshot feedback to have an agent build, inspect intermediate frames, and install the result on an iPhone; his attached demo supports the visual result, while size and refresh-rate gains remain author-reported.",
+  "takeaway": "Prototype onboarding as code when recorded variants multiply; inspect intermediate frames, longer translations, and device behavior before accepting the agent’s visual changes.",
+  "media": {
+    "type": "x",
+    "postId": "2115324123467714868",
+    "videoUrl": "https://video.twimg.com/amplify_video/2115323996648685568/vid/avc1/2560x1024/aXWImkjZ92LcapVR.mp4?tag=29",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2115323996648685568/img/MtR6p3ZvhpYK2KTR.jpg",
+    "title": "Four editor onboarding sequences rendered with SwiftUI"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "agent-verifies-ios-animation-frame-sequence"
+  ]
+}

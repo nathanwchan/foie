@@ -1,0 +1,33 @@
+{
+  "id": "amp-linux-orb-ephemeral-mac-verification",
+  "slug": "amp-linux-orb-ephemeral-mac-verification",
+  "canonicalUrl": "https://ampcode.com/news/macos-satellites",
+  "title": "macOS Satellites",
+  "publisher": "Amp",
+  "publisherUrl": "https://ampcode.com/",
+  "authors": [
+    {
+      "name": "Amp",
+      "url": "https://ampcode.com/"
+    }
+  ],
+  "publishedAt": "2026-10-29",
+  "discoveredAt": "2026-11-01",
+  "lastVerifiedAt": "2026-11-01",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "visual-validation"
+  ],
+  "summary": "Amp explains a split workflow that keeps the agent, backend, and editing on Linux while attaching a fresh cloud Mac for Xcode builds and Simulator checks, illustrated with an iPhone Duo layout adaptation. An iOS team can return screenshots, logs, and a recording to the task before accepting a change; the beta reuses a Mac briefly, then deletes its state.",
+  "takeaway": "Keep native verification on a Mac while sharing the backend from Linux, and return build logs and interaction evidence before the temporary Mac is deleted.",
+  "media": {
+    "type": "image",
+    "url": "https://static.ampcode.com/news/orbs-now-have-a-mac-satellite-diagram-light.avif",
+    "alt": "Amp’s source diagram showing code synchronization and verification evidence returning from a macOS Satellite"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}

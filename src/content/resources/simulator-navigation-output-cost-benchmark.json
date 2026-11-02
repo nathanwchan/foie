@@ -1,0 +1,35 @@
+{
+  "id": "simulator-navigation-output-cost-benchmark",
+  "slug": "simulator-navigation-output-cost-benchmark",
+  "canonicalUrl": "https://www.avanderlee.com/ai-development/xcode-mcp-simulator-token-costs/",
+  "title": "How the Xcode 27 MCP can lead to higher token costs when navigating the Simulator",
+  "publisher": "SwiftLee",
+  "publisherUrl": "https://www.avanderlee.com/",
+  "authors": [
+    {
+      "name": "Antoine van der Lee",
+      "url": "https://www.avanderlee.com/"
+    }
+  ],
+  "publishedAt": "2026-10-26",
+  "discoveredAt": "2026-11-01",
+  "lastVerifiedAt": "2026-11-01",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "testing-evaluation"
+  ],
+  "summary": "Antoine van der Lee compares Xcode 27.1 MCP and his RocketSim CLI across ten Simulator scenarios in three rounds, with an independent app-state check after each run. An iOS team can measure the output its agent reads and reserve screenshots for visual checks; the reported token gap is a byte-based estimate from one scripted fixture, not live model usage or billing.",
+  "takeaway": "Benchmark navigation output and independent completion checks on your own app; compare hierarchy size, missed interactions, calls, and build support before choosing a tool.",
+  "media": {
+    "type": "image",
+    "url": "https://swiftlee-banners.herokuapp.com/imagegenerator.php?title=How+the+Xcode+27+MCP+can+lead+to+higher+token+costs+when+navigating+the+Simulator",
+    "alt": "SwiftLee’s source cover for its Xcode MCP and RocketSim Simulator navigation comparison"
+  },
+  "availability": "available",
+  "userIds": [
+    "antoine-van-der-lee"
+  ],
+  "relatedResourceIds": []
+}

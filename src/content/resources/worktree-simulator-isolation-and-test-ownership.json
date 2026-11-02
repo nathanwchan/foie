@@ -1,0 +1,36 @@
+{
+  "id": "worktree-simulator-isolation-and-test-ownership",
+  "slug": "worktree-simulator-isolation-and-test-ownership",
+  "canonicalUrl": "https://www.oscargallegoruiz.com/en/blog/claude-code-skills-vs-subagents/",
+  "title": "Claude Code skills vs subagents: the shared simulator bug",
+  "publisher": "Óscar Gallego",
+  "publisherUrl": "https://www.oscargallegoruiz.com/",
+  "authors": [
+    {
+      "name": "Óscar Gallego",
+      "url": "https://www.oscargallegoruiz.com/"
+    }
+  ],
+  "publishedAt": "2026-10-30",
+  "discoveredAt": "2026-11-01",
+  "lastVerifiedAt": "2026-11-01",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Óscar Gallego describes false UI-test failures when Rydger’s agents share a Simulator, then assigns devices per worktree and gives only one reviewer ownership of test execution. An iOS team can inventory shared resources before parallelizing; his private-project account reports five clean runs of 35 tests, but lacks a measured baseline failure rate or token-cost comparison.",
+  "takeaway": "Isolate Simulators and generated state per worktree, keep read-only reviews parallel, and assign test execution explicitly so reviewers do not disrupt each other.",
+  "media": {
+    "type": "image",
+    "url": "https://res.cloudinary.com/dl0qx4iof/image/upload/w_1200,h_630,c_fill,q_85,f_jpg/blog/claude-code-subagents-worktrees.webp",
+    "alt": "Óscar Gallego’s source illustration of separate workstations sharing one device"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": [
+    "parallel-ios-agents-verify-installed-build-identity",
+    "ios-agent-incident-reports-require-captured-evidence"
+  ]
+}
