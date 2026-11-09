@@ -1,0 +1,33 @@
+{
+  "id": "simulator-tools-app-confirmed-benchmark",
+  "slug": "simulator-tools-app-confirmed-benchmark",
+  "canonicalUrl": "https://simulator-use.dev/benchmarks",
+  "title": "iOS Simulator MCP benchmark: nine tools for AI agents",
+  "publisher": "NoMac",
+  "publisherUrl": "https://nomac.app/",
+  "authors": [
+    {
+      "name": "NoMac",
+      "url": "https://nomac.app/"
+    }
+  ],
+  "publishedAt": null,
+  "discoveredAt": "2026-11-08",
+  "lastVerifiedAt": "2026-11-08",
+  "format": "article",
+  "topics": [
+    "testing-evaluation",
+    "xcode-tooling",
+    "visual-validation"
+  ],
+  "summary": "NoMac compares tool latency, estimated response tokens, and app-confirmed actions across nine Simulator integrations on one sign-in flow. An iOS team can reproduce the calls against its own fixtures, count failed taps despite success responses, and measure setup separately; the report uses fixed tool calls on one virtual Mac and estimates tokens rather than measuring model usage.",
+  "takeaway": "Verify actions with app-side evidence; benchmark Device Hub open and closed, and report failed attempts, setup costs, and estimated-token assumptions alongside latency.",
+  "media": {
+    "type": "image",
+    "url": "https://simulator-use.dev/og.png",
+    "alt": "The simulator-use source preview showing the sign-in fixture used in NoMac’s benchmark"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}

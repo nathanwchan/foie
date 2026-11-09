@@ -1,0 +1,35 @@
+{
+  "id": "agent-hooks-filter-xcode-build-output",
+  "slug": "agent-hooks-filter-xcode-build-output",
+  "canonicalUrl": "https://www.avanderlee.com/ai-development/agent-hooks-claude-code-cursor-codex/",
+  "title": "Agent hooks in Claude Code, Cursor, and Codex explained",
+  "publisher": "SwiftLee",
+  "publisherUrl": "https://www.avanderlee.com/",
+  "authors": [
+    {
+      "name": "Antoine van der Lee",
+      "url": "https://www.avanderlee.com/"
+    }
+  ],
+  "publishedAt": "2026-11-02",
+  "discoveredAt": "2026-11-08",
+  "lastVerifiedAt": "2026-11-08",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "human-in-the-loop"
+  ],
+  "summary": "Antoine van der Lee replaces a frequently ignored instruction to filter xcodebuild logs with hooks that rewrite or reject unfiltered build commands. An iOS team can move this repeated step into a short, reviewed hook that preserves build failures with pipefail, while testing failure behavior and keeping independent safeguards for paths that bypass hooks.",
+  "takeaway": "Move repetitive build-output filtering into a reviewed hook; test timeouts, failure behavior, already-filtered commands, and exit-code preservation before enabling it.",
+  "media": {
+    "type": "image",
+    "url": "https://www.avanderlee.com/_sl/img/2026/11/agent-hook-anatomy.png",
+    "alt": "SwiftLee’s diagram showing the event, trigger, hook script, and action of an Xcode build hook"
+  },
+  "availability": "available",
+  "userIds": [
+    "antoine-van-der-lee"
+  ],
+  "relatedResourceIds": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "in-app-ios-feedback-to-signed-build",
+  "slug": "in-app-ios-feedback-to-signed-build",
+  "canonicalUrl": "https://x.com/anshuc/status/2118773154520727635",
+  "title": "Squircle: build your app inside your app!",
+  "publisher": "X",
+  "publisherUrl": "https://x.com/",
+  "authors": [
+    {
+      "name": "Anshu Chimala",
+      "url": "https://x.com/anshuc"
+    }
+  ],
+  "publishedAt": "2026-11-06",
+  "discoveredAt": "2026-11-08",
+  "lastVerifiedAt": "2026-11-08",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "Anshu Chimala demonstrates sending a recorded UI bug from inside his native iPhone app, letting a Mac-hosted T3 Code agent return a signed build, and installing it from the phone. An iOS team can try a development-only feedback overlay while keeping release exports free of the agent UI; this early-alpha demo does not establish reliable merge gates or rollback recovery.",
+  "takeaway": "Attach a screen recording where the bug occurs, inspect the resulting signed build on the phone, and verify that the development overlay is absent from distribution exports.",
+  "media": {
+    "type": "x",
+    "postId": "2118773154520727635",
+    "videoUrl": "https://video.twimg.com/amplify_video/2118769693150380032/vid/avc1/1080x1350/c5e-lk0Xr2MeyhVk.mp4?tag=29",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2118769693150380032/img/_07VkjK4QoLSZ2Zx.jpg",
+    "title": "Anshu Chimala reports a UI bug inside his iPhone app and installs the returned build"
+  },
+  "availability": "available",
+  "userIds": [
+    "anshu-chimala"
+  ],
+  "relatedResourceIds": []
+}

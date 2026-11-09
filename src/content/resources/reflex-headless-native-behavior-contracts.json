@@ -1,0 +1,33 @@
+{
+  "id": "reflex-headless-native-behavior-contracts",
+  "slug": "reflex-headless-native-behavior-contracts",
+  "canonicalUrl": "https://shopify.engineering/reflex",
+  "title": "Reflex: an architecture for building mobile apps with agents",
+  "publisher": "Shopify Engineering",
+  "publisherUrl": "https://shopify.engineering/",
+  "authors": [
+    {
+      "name": "Thiago Magalhaes",
+      "url": "https://shopify.engineering/reflex"
+    }
+  ],
+  "publishedAt": "2026-11-05",
+  "discoveredAt": "2026-11-08",
+  "lastVerifiedAt": "2026-11-08",
+  "format": "article",
+  "topics": [
+    "agent-readable-architecture",
+    "testing-evaluation",
+    "agent-workflows"
+  ],
+  "summary": "Thiago Magalhaes describes Reflex, which separates native app logic from platform UI and exposes ViewModel state and actions through a JSON contract. An iOS team can build a headless CLI around that contract, inject fixtures at external boundaries, and share behavior tests with Android while retaining visual review and live integration checks. Shopify reports more than 1,700 behavior tests finishing in about four minutes on CI across both platforms.",
+  "takeaway": "Keep UI imports out of the core, expose the same state and actions to views and the CLI, fail tests on unexpected network access, and retain separate checks for rendered UI.",
+  "media": {
+    "type": "image",
+    "url": "https://cdn.shopify.com/s/files/1/0779/4361/files/Core_module.png?v=1793809011",
+    "alt": "Shopify’s Reflex diagram separating the platform-free core from mobile and CLI hosts"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}
