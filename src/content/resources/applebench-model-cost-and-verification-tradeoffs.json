@@ -1,0 +1,35 @@
+{
+  "id": "applebench-model-cost-and-verification-tradeoffs",
+  "slug": "applebench-model-cost-and-verification-tradeoffs",
+  "canonicalUrl": "https://applebench.dev/blog/2026/11/sonnet-5-5-vs-glm-5-3-flash/",
+  "title": "Sonnet 5.5 is no better than GLM 5.3 Flash at iOS work. It just costs 2.6x more.",
+  "publisher": "AppleBench",
+  "publisherUrl": "https://applebench.dev/",
+  "authors": [
+    {
+      "name": "Daniel Bernal",
+      "url": "https://danielbernal.co/"
+    }
+  ],
+  "publishedAt": "2026-11-13",
+  "discoveredAt": "2026-11-15",
+  "lastVerifiedAt": "2026-11-15",
+  "format": "article",
+  "topics": [
+    "testing-evaluation",
+    "agent-workflows",
+    "human-in-the-loop"
+  ],
+  "summary": "Daniel Bernal compares Sonnet 5.5 and GLM 5.3 Flash on 148 Apple-platform repair tasks, reporting 145 versus 143 passes and lower list-price cost for GLM at longer execution times. An iOS team can inspect independent build, test, and Simulator graders before choosing a model, while accounting for different harnesses, effort settings, and run dates; weighted scores can change as the suite’s model coverage grows.",
+  "takeaway": "Compare raw passes, failed end-to-end tasks, list-price telemetry, harness settings, and elapsed time separately; reproduce representative native tasks before adopting the article’s broad cost conclusion.",
+  "media": {
+    "type": "image",
+    "url": "https://applebench.dev/assets/img/blog/score-vs-cost.svg",
+    "alt": "AppleBench’s source chart comparing weighted score with recorded list-price cost"
+  },
+  "availability": "available",
+  "userIds": [
+    "daniel-bernal"
+  ],
+  "relatedResourceIds": []
+}

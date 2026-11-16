@@ -1,0 +1,37 @@
+{
+  "id": "axe-snapshot-scoped-device-verification",
+  "slug": "axe-snapshot-scoped-device-verification",
+  "canonicalUrl": "https://x.com/camsoft2000/status/2120574808723235060",
+  "title": "AXe 2.0: snapshot-scoped actions on Simulators and real devices",
+  "publisher": "X",
+  "publisherUrl": "https://x.com/",
+  "authors": [
+    {
+      "name": "Cameron Cooke",
+      "url": "https://x.com/camsoft2000"
+    }
+  ],
+  "publishedAt": "2026-11-11",
+  "discoveredAt": "2026-11-15",
+  "lastVerifiedAt": "2026-11-15",
+  "format": "social",
+  "topics": [
+    "xcode-tooling",
+    "testing-evaluation",
+    "visual-validation"
+  ],
+  "summary": "Cameron Cooke demonstrates compact screen observations, snapshot-scoped controls, folded-device inspection, and real-iPhone interaction in AXe 2.0. An iOS team can ground each agent action in a fresh screen and require stale targets to fail before input; his thread says Xcode 27 is required and leaves iOS 26 compatibility untested, while the speed figures are the tool author’s own measurements.",
+  "takeaway": "Pair the device, enable Developer Mode, and re-observe after screen changes; treat screenChanged as a signal to refresh references, then verify the resulting UI rather than trusting command success.",
+  "media": {
+    "type": "x",
+    "postId": "2120574808723235060",
+    "videoUrl": "https://video.twimg.com/amplify_video/2120574741127876608/vid/avc1/1920x1080/7-vwktnjnT-gt6XC.mp4?tag=29",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2120574741127876608/img/VEYZYOKRQuToWIES.jpg",
+    "title": "Cameron Cooke demonstrates AXe screen snapshots, stale-target checks, folding, and real-device drawing"
+  },
+  "availability": "available",
+  "userIds": [
+    "cameron-cooke"
+  ],
+  "relatedResourceIds": []
+}

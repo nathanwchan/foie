@@ -1,0 +1,33 @@
+{
+  "id": "swift-agent-trust-through-enforced-dependencies",
+  "slug": "swift-agent-trust-through-enforced-dependencies",
+  "canonicalUrl": "https://ashfurrow.com/blog/engineering-with-agents/",
+  "title": "Engineering with Agents",
+  "publisher": "Ash Furrow",
+  "publisherUrl": "https://ashfurrow.com/",
+  "authors": [
+    {
+      "name": "Ash Furrow",
+      "url": "https://ashfurrow.com/about/"
+    }
+  ],
+  "publishedAt": "2026-11-15",
+  "discoveredAt": "2026-11-15",
+  "lastVerifiedAt": "2026-11-15",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "agent-readable-architecture",
+    "human-in-the-loop"
+  ],
+  "summary": "Ash Furrow describes adjusting agent autonomy to a repository’s verification support and shows a Swift lint rule that forbids singleton access inside methods in favor of injected dependencies. An iOS team can turn repeated agent mistakes into deterministic checks and provide Simulator access before increasing autonomy; his trust ladder is a practice framework, not evidence that automatic merging is safe for every project.",
+  "takeaway": "Enforce testable dependency access with a lint rule, make the agent verify its changes, and lower autonomy when the repository lacks the tests or rollback support needed to trust its output.",
+  "media": {
+    "type": "image",
+    "url": "https://ashfurrow.com/blog/engineering-with-agents/banner.jpeg",
+    "alt": "Ash Furrow’s source banner for Engineering with Agents"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}

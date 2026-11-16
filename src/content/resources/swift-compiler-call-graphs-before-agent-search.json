@@ -1,0 +1,33 @@
+{
+  "id": "swift-compiler-call-graphs-before-agent-search",
+  "slug": "swift-compiler-call-graphs-before-agent-search",
+  "canonicalUrl": "https://arturgruchala.com/map-not-grep/",
+  "title": "Stop paying tokens for grep: compiler-accurate call graphs for AI agents",
+  "publisher": "Artur Gruchała",
+  "publisherUrl": "https://arturgruchala.com/",
+  "authors": [
+    {
+      "name": "Artur Gruchała",
+      "url": "https://arturgruchala.com/author/artur/"
+    }
+  ],
+  "publishedAt": "2026-11-11",
+  "discoveredAt": "2026-11-15",
+  "lastVerifiedAt": "2026-11-15",
+  "format": "article",
+  "topics": [
+    "agent-workflows",
+    "xcode-tooling",
+    "agent-readable-architecture"
+  ],
+  "summary": "Artur Gruchała compares two Sonnet agents tracing callers in a 140,000-line SwiftUI app: the compiler-index graph reduced tool calls from eight to two, with both finding the answer. An iOS team can query the built index before opening relevant files, while retaining text search for dynamic dispatch and checking graph freshness; this single-task experiment measures processed input tokens, not equivalent savings on a cached bill.",
+  "takeaway": "Build a fresh index, use its caller tree to locate code, then inspect conditional paths and SwiftUI boundaries; fall back to search for selectors, notifications, and injected dependencies.",
+  "media": {
+    "type": "image",
+    "url": "https://arturgruchala.com/content/images/size/w1200/2026/11/cover.png",
+    "alt": "Artur Gruchała’s source cover for the Swift compiler call-graph experiment"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}
