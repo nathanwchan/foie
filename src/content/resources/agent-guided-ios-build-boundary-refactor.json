@@ -1,0 +1,33 @@
+{
+  "id": "agent-guided-ios-build-boundary-refactor",
+  "slug": "agent-guided-ios-build-boundary-refactor",
+  "canonicalUrl": "https://www.linkedin.com/pulse/your-biggest-module-might-smallest-build-problem-amit-kumar-h6c6c",
+  "title": "Your Biggest Module Might Be Your Smallest Build Problem",
+  "publisher": "Modern iOS Engineering",
+  "publisherUrl": "https://www.linkedin.com/newsletters/modern-ios-engineering-7499269334318571520/",
+  "authors": [
+    {
+      "name": "Amit Kumar",
+      "url": "https://www.linkedin.com/pulse/your-biggest-module-might-smallest-build-problem-amit-kumar-h6c6c"
+    }
+  ],
+  "publishedAt": "2026-11-23",
+  "discoveredAt": "2026-11-22",
+  "lastVerifiedAt": "2026-11-22",
+  "format": "article",
+  "topics": [
+    "agent-readable-architecture",
+    "agent-workflows",
+    "testing-evaluation"
+  ],
+  "summary": "Amit Kumar proposes ranking dependency refactors by elapsed time saved across frequent builds, then giving an agent one consumer to migrate behind a smaller API. An iOS team can require warm-cache before-and-after logs, an interface-breaking compile check, and a sign-out test; the Feed and AccountServices example is illustrative, not a measured production result.",
+  "takeaway": "Give the agent timings and a dependency graph, narrow one consumer’s interface, and review removed build tasks alongside compile-time and runtime checks before expanding the migration.",
+  "media": {
+    "type": "image",
+    "url": "https://media.licdn.com/dms/image/v2/D5612AQHsPuJrdn_-MQ/article-cover_image-shrink_720_1280/B56aIGNH7OJoAQ-/0/1795400438834?e=2147483647&v=beta&t=9DR1hTmg8uXhrDXK9SNpOT_a9IyjMpgPmRhuX5qi_3g",
+    "alt": "Modern iOS Engineering source cover asking what slows a build, with a diagram of module dependencies"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}

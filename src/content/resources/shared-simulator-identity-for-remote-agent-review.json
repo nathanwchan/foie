@@ -1,0 +1,39 @@
+{
+  "id": "shared-simulator-identity-for-remote-agent-review",
+  "slug": "shared-simulator-identity-for-remote-agent-review",
+  "canonicalUrl": "https://x.com/camsoft2000/status/2123735527379660815",
+  "title": "Share the exact Simulator with a remote coding agent",
+  "publisher": "X",
+  "publisherUrl": "https://x.com/",
+  "authors": [
+    {
+      "name": "Cameron Cooke",
+      "url": "https://x.com/camsoft2000"
+    }
+  ],
+  "publishedAt": "2026-11-20",
+  "discoveredAt": "2026-11-22",
+  "lastVerifiedAt": "2026-11-22",
+  "format": "social",
+  "topics": [
+    "xcode-tooling",
+    "visual-validation",
+    "human-in-the-loop"
+  ],
+  "summary": "Cameron Cooke demonstrates selecting a Mac-hosted Simulator from an iPhone Duo, using its lower half as a trackpad, and adapting the mirror to rotation. An iOS team can pass the exposed Simulator identifier to its coding agent so both inspect the same instance; the post describes work in progress and does not demonstrate agent-driven acceptance testing.",
+  "takeaway": "Pin the agent to the Simulator identifier selected in the remote viewer, then inspect the changed flow together; treat the demo as a preview of the workflow.",
+  "media": {
+    "type": "x",
+    "postId": "2123735527379660815",
+    "videoUrl": "https://video.twimg.com/amplify_video/2123735292024631296/vid/avc1/3840x2160/PN6lm7OOht-XCgFF.mp4?tag=29",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2123735292024631296/img/9D0JeK754u5p779L.jpg",
+    "title": "Share the exact Simulator with a remote coding agent"
+  },
+  "availability": "available",
+  "userIds": [
+    "cameron-cooke"
+  ],
+  "relatedResourceIds": [
+    "axe-snapshot-scoped-device-verification"
+  ]
+}

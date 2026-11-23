@@ -1,0 +1,35 @@
+{
+  "id": "unverified-agent-handoffs-become-device-test-plans",
+  "slug": "unverified-agent-handoffs-become-device-test-plans",
+  "canonicalUrl": "https://x.com/marcos_placona/status/2124148382394675606",
+  "title": "Turn an agent’s unverified handoff into a device test plan",
+  "publisher": "X",
+  "publisherUrl": "https://x.com/",
+  "authors": [
+    {
+      "name": "Marcos Placona",
+      "url": "https://x.com/marcos_placona"
+    }
+  ],
+  "publishedAt": "2026-11-21",
+  "discoveredAt": "2026-11-22",
+  "lastVerifiedAt": "2026-11-22",
+  "format": "social",
+  "topics": [
+    "agent-workflows",
+    "testing-evaluation",
+    "human-in-the-loop"
+  ],
+  "summary": "Marcos Placona requires each iOS-game task to report verified commands and test counts, unchecked behavior, and human blockers. An iOS team can turn the unchecked section into its device test plan: he reports finding an offline paywall alert and a missing rating prompt in areas already flagged, while acknowledging he does not yet know how the agent chooses which device-only risks to list.",
+  "takeaway": "Require all three handoff sections on every task and test the unverified flows on a phone; an agent’s risk list guides review but does not prove it is complete.",
+  "media": {
+    "type": "x",
+    "postId": "2124148382394675606",
+    "videoUrl": "https://video.twimg.com/amplify_video/2124148343370862592/vid/avc1/1080x1920/DjiAy0JjY6ISVLPL.mp4?tag=16",
+    "posterUrl": "https://pbs.twimg.com/amplify_video_thumb/2124148343370862592/img/mp7MKJI4gTtb-rgA.jpg",
+    "title": "Turn an agent’s unverified handoff into a device test plan"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}

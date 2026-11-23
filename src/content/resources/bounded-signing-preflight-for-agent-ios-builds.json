@@ -1,0 +1,33 @@
+{
+  "id": "bounded-signing-preflight-for-agent-ios-builds",
+  "slug": "bounded-signing-preflight-for-agent-ios-builds",
+  "canonicalUrl": "https://x.com/marcos_placona/status/2122623533843189949",
+  "title": "Fail agent-driven iOS builds quickly when signing is locked",
+  "publisher": "X",
+  "publisherUrl": "https://x.com/",
+  "authors": [
+    {
+      "name": "Marcos Placona",
+      "url": "https://x.com/marcos_placona"
+    }
+  ],
+  "publishedAt": "2026-11-17",
+  "discoveredAt": "2026-11-22",
+  "lastVerifiedAt": "2026-11-22",
+  "format": "social",
+  "topics": [
+    "sdlc-automation",
+    "agent-workflows",
+    "human-in-the-loop"
+  ],
+  "summary": "Marcos Placona traces a silent 30-minute iOS signing hang to a locked keychain and adds a preflight with time limits around security commands. An iOS team can fail signed builds with an actionable error before archiving; his follow-up clarifies that FileVault still requires login after reboot, so this is not a demonstrated unattended recovery solution.",
+  "takeaway": "Bound signing preflight calls, stop on a locked keychain, and test reboot recovery separately; never treat a successful logged-in build as proof of unattended operation.",
+  "media": {
+    "type": "image",
+    "url": "https://pbs.twimg.com/media/HXUS2wraMAAeO3L.jpg",
+    "alt": "Fail agent-driven iOS builds quickly when signing is locked"
+  },
+  "availability": "available",
+  "userIds": [],
+  "relatedResourceIds": []
+}
